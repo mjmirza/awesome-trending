@@ -1,0 +1,42 @@
+name: Submit a repo
+description: Suggest a repository to include in awesome-trending
+title: "[Submit] "
+labels: ["submit-repo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a public repository. One line on why is enough.
+        Appearing here is not guaranteed. We only list items we can verify.
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: The full GitHub URL.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: niche
+    attributes:
+      label: Niche
+      options:
+        - AI & LLMs
+        - Agents & MCP
+        - Dev tools
+        - Web
+        - Mobile
+        - DevOps & Cloud
+        - Security
+        - Data
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: why
+    attributes:
+      label: Why it belongs here
+      description: One short line. A few words are enough.
+      placeholder: Official MCP server for a widely used API
+    validations:
+      required: true
