@@ -33,7 +33,7 @@ from zoneinfo import ZoneInfo
 
 BERLIN = ZoneInfo("Europe/Berlin")
 USER_AGENT = (
-    "awesome-trending-bot/1.0 "
+    "awesome-trending/1.0 "
     "(+https://github.com/mjmirza/awesome-trending)"
 )
 REQUEST_TIMEOUT = 25
@@ -1131,7 +1131,7 @@ def render_readme(
     parts.append(
         f"[![Last commit](https://img.shields.io/github/last-commit/{REPO_OWNER}/{REPO_NAME})]"
         f"({REPO_URL}/commits/main) "
-        f"[![License: CC0-1.0](https://img.shields.io/github/license/{REPO_OWNER}/{REPO_NAME})](LICENSE) "
+        f"[![License](https://img.shields.io/badge/License-OpenRoots_ORA_2.3-2ea44f)](LICENSE) "
         f"[![Sources](https://img.shields.io/badge/sources-7-informational)](#sources)"
     )
     parts.append("")
@@ -1299,7 +1299,14 @@ def render_readme(
         f"- [Submit a repo]({REPO_URL}/issues/new?template=submit-repo.yml) — one form: the URL, a niche, and a one-line why."
     )
     parts.append("- [Add a badge](docs/badge.md) — only if your repo actually appeared here.")
-    parts.append("- [CC0 1.0](LICENSE) — the list content is dedicated to the public domain.")
+    parts.append(
+        "- License: [OpenRoots Agent License 2.3](LICENSE) (SPDX `LicenseRef-OpenRoots-ORA-2.3`). "
+        "Free and unconditional at or below USD 20,000,000 annual revenue, and for any individual, "
+        "nonprofit, school, or government body at any size. Above that threshold, a small self-reported "
+        "royalty applies, capped per year. AI training on this work is not granted by either tier and "
+        "needs a separate Compute license; human reading and search indexing are unaffected. "
+        "Canonical text: [openroots.org/licenses/ora/2.3](https://openroots.org/licenses/ora/2.3)."
+    )
     parts.append("")
     parts.append(render_sources_footer(bundle, fetched_at, x_note))
     parts.append("")

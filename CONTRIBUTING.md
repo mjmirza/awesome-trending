@@ -9,4 +9,4 @@ This repository is a daily directory, not a dump of everything on the internet.
 - The [Featured in awesome-trending](docs/badge.md) badge is only for repos that actually appeared here.
 - Numbers must come from a cited source. Do not invent counts.
 - The daily layout stays the same: a 30-second summary at the top, jump links, short tables, and long lists inside `<details>`.
-- List content is [CC0 1.0](LICENSE).
+- Contributions are accepted under the [OpenRoots Agent License 2.3](LICENSE) (SPDX `LicenseRef-OpenRoots-ORA-2.3`).

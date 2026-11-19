@@ -2,7 +2,7 @@
 
 A daily directory of what is rising on GitHub, in research, and across the open web.
 
-[![Last commit](https://img.shields.io/github/last-commit/mjmirza/awesome-trending)](https://github.com/mjmirza/awesome-trending/commits/main) [![License: CC0-1.0](https://img.shields.io/github/license/mjmirza/awesome-trending)](LICENSE) [![Sources](https://img.shields.io/badge/sources-7-informational)](#sources)
+[![Last commit](https://img.shields.io/github/last-commit/mjmirza/awesome-trending)](https://github.com/mjmirza/awesome-trending/commits/main) [![License](https://img.shields.io/badge/License-OpenRoots_ORA_2.3-2ea44f)](LICENSE) [![Sources](https://img.shields.io/badge/sources-7-informational)](#sources)
 
 **Today:** 19 November 2026 · snapshot at 22:15 Europe/Berlin (UTC+1)
 
@@ -215,7 +215,7 @@ These are projects by the maintainer. **They are not a ranking**, and they are n
 
 - [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml) — one form: the URL, a niche, and a one-line why.
 - [Add a badge](docs/badge.md) — only if your repo actually appeared here.
-- [CC0 1.0](LICENSE) — the list content is dedicated to the public domain.
+- License: [OpenRoots Agent License 2.3](LICENSE) (SPDX `LicenseRef-OpenRoots-ORA-2.3`). Free and unconditional at or below USD 20,000,000 annual revenue, and for any individual, nonprofit, school, or government body at any size. Above that threshold, a small self-reported royalty applies, capped per year. AI training on this work is not granted by either tier and needs a separate Compute license; human reading and search indexing are unaffected. Canonical text: [openroots.org/licenses/ora/2.3](https://openroots.org/licenses/ora/2.3).
 
 ## Sources
 
