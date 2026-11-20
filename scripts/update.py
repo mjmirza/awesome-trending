@@ -15,6 +15,7 @@ Optional flags:
 
     --root DIR     Repository root (default: parent of this script's directory)
     --only KEYS    Comma-separated source keys to fetch (for debugging)
+    --docs         Rewrite docs/methodology.md and the niches/ pointer files
 """
 
 from __future__ import annotations
@@ -74,6 +75,9 @@ ARXIV_CATEGORIES = [
     ("cs.CV", "Computer vision"),
     ("cs.CR", "Cryptography and security"),
     ("cs.SE", "Software engineering"),
+    ("cs.RO", "Robotics"),
+    ("q-bio.*", "Quantitative biology"),
+    ("q-fin.*", "Quantitative finance"),
 ]
 
 # Projects whose GitHub release feeds are checked (public Atom feeds, no API).
@@ -95,13 +99,13 @@ PYPI_WATCH = [
 ]
 
 NEWS_FEEDS = [
-    ("techmeme", "Techmeme", "https://www.techmeme.com/feed.xml", "pulse"),
-    ("verge", "The Verge", "https://www.theverge.com/rss/index.xml", "pulse"),
-    ("techcrunch", "TechCrunch", "https://techcrunch.com/feed/", "pulse"),
-    ("ars", "Ars Technica", "https://feeds.arstechnica.com/arstechnica/technology-lab", "pulse"),
-    ("lwn", "LWN.net", "https://lwn.net/headlines/rss", "devops-cloud"),
-    ("thn", "The Hacker News", "https://feeds.feedburner.com/TheHackersNews", "security"),
-    ("bleeping", "BleepingComputer", "https://www.bleepingcomputer.com/feed/", "security"),
+    ("techmeme", "Techmeme", "https://www.techmeme.com/feed.xml", None),
+    ("verge", "The Verge", "https://www.theverge.com/rss/index.xml", None),
+    ("techcrunch", "TechCrunch", "https://techcrunch.com/feed/", None),
+    ("ars", "Ars Technica", "https://feeds.arstechnica.com/arstechnica/technology-lab", None),
+    ("lwn", "LWN.net", "https://lwn.net/headlines/rss", "cloud-devops"),
+    ("thn", "The Hacker News", "https://feeds.feedburner.com/TheHackersNews", "cybersecurity"),
+    ("bleeping", "BleepingComputer", "https://www.bleepingcomputer.com/feed/", "cybersecurity"),
     ("ghchangelog", "GitHub Changelog", "https://github.blog/changelog/feed/", "devtools"),
     ("simonw", "Simon Willison", "https://simonwillison.net/atom/everything/", "ai-llms"),
 ]
@@ -113,35 +117,55 @@ LAB_FEEDS = [
     ("hf_blog", "Hugging Face blog", "https://huggingface.co/blog/feed.xml"),
 ]
 
+# Industry outlets: public RSS, headlines and links only. (key, outlet, url, industry)
+INDUSTRY_FEEDS = [
+    ("finextra", "Finextra", "https://www.finextra.com/rss/headlines.aspx", "fintech"),
+    ("pymnts", "PYMNTS", "https://www.pymnts.com/feed/", "fintech"),
+    ("coindesk", "CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/", "crypto-web3"),
+    ("decrypt", "Decrypt", "https://decrypt.co/feed", "crypto-web3"),
+    ("statnews", "STAT News", "https://www.statnews.com/feed/", "health-biotech"),
+    ("robotreport", "The Robot Report", "https://www.therobotreport.com/feed/", "robotics-hardware"),
+    ("ieee_robotics", "IEEE Spectrum Robotics", "https://spectrum.ieee.org/feeds/topic/robotics.rss", "robotics-hardware"),
+    ("ieee_semis", "IEEE Spectrum Semiconductors", "https://spectrum.ieee.org/feeds/topic/semiconductors.rss", "semiconductors"),
+    ("eetimes", "EE Times", "https://www.eetimes.com/feed/", "semiconductors"),
+    ("semiwiki", "SemiWiki", "https://semiwiki.com/feed/", "semiconductors"),
+    ("canary", "Canary Media", "https://www.canarymedia.com/rss.rss", "climate-energy"),
+    ("electrek", "Electrek", "https://electrek.co/feed/", "climate-energy"),
+    ("cleantechnica", "CleanTechnica", "https://cleantechnica.com/feed/", "climate-energy"),
+    ("eia", "EIA Today in Energy", "https://www.eia.gov/rss/todayinenergy.xml", "climate-energy"),
+    ("modernretail", "Modern Retail", "https://www.modernretail.co/feed/", "ecommerce-retail"),
+    ("retaildive", "Retail Dive", "https://www.retaildive.com/feeds/news/", "ecommerce-retail"),
+    ("dc360", "Digital Commerce 360", "https://www.digitalcommerce360.com/feed/", "ecommerce-retail"),
+    ("gamesindustry", "GamesIndustry.biz", "https://www.gamesindustry.biz/feed", "gaming-xr"),
+    ("gamedeveloper", "Game Developer", "https://www.gamedeveloper.com/rss.xml", "gaming-xr"),
+    ("uploadvr", "UploadVR", "https://www.uploadvr.com/rss/", "gaming-xr"),
+    ("tc_enterprise", "TechCrunch Enterprise", "https://techcrunch.com/category/enterprise/feed/", "enterprise-saas"),
+    ("edsurge", "EdSurge", "https://www.edsurge.com/articles_rss", "education"),
+    ("classcentral", "Class Central", "https://www.classcentral.com/report/feed/", "education"),
+    ("niemanlab", "Nieman Lab", "https://www.niemanlab.org/feed/", "media-creator"),
+    ("tubefilter", "Tubefilter", "https://www.tubefilter.com/feed/", "media-creator"),
+    ("spacenews", "SpaceNews", "https://spacenews.com/feed/", "space-mobility"),
+    ("nasa", "NASA news releases", "https://www.nasa.gov/news-release/feed/", "space-mobility"),
+    ("tc_transport", "TechCrunch Transportation", "https://techcrunch.com/category/transportation/feed/", "space-mobility"),
+    ("eff", "EFF Deeplinks", "https://www.eff.org/rss/updates.xml", "policy-regulation"),
+    ("ec_press", "European Commission press corner", "https://ec.europa.eu/commission/presscorner/api/rss?language=en", "policy-regulation"),
+    ("ninetofivemac", "9to5Mac", "https://9to5mac.com/feed/", "mobile"),
+    ("androidpolice", "Android Police", "https://www.androidpolice.com/feed/", "mobile"),
+    ("techeu", "Tech.eu", "https://tech.eu/feed/", None),
+    ("sifted", "Sifted", "https://sifted.eu/feed", None),
+]
+
+# GitHub topics searched for young repos in industries that trending pages rarely cover.
+GITHUB_TOPICS = [
+    ("robotics", "robotics-hardware"),
+    ("bioinformatics", "health-biotech"),
+    ("fintech", "fintech"),
+]
+
 STATUS_PAGES = [
     ("githubstatus", "GitHub", "https://www.githubstatus.com/api/v2/incidents.json"),
     ("cloudflarestatus", "Cloudflare", "https://www.cloudflarestatus.com/api/v2/incidents.json"),
 ]
-
-NICHES = [
-    {"slug": "ai-llms", "emoji": "🤖", "title": "AI & LLMs",
-     "intro": "Models, labs, inference tools and the work around large language models."},
-    {"slug": "agents-mcp", "emoji": "🧠", "title": "Agents & MCP",
-     "intro": "Agent frameworks, skills, sandboxes and Model Context Protocol servers."},
-    {"slug": "research", "emoji": "📄", "title": "Research & papers",
-     "intro": "New papers from arXiv and the Hugging Face daily papers page."},
-    {"slug": "devtools", "emoji": "🧰", "title": "Dev tools",
-     "intro": "Editors, CLIs, package ecosystems, languages and other tools for building software."},
-    {"slug": "web", "emoji": "🌐", "title": "Web",
-     "intro": "Web platforms, front-end frameworks, browsers and writing about the web."},
-    {"slug": "mobile", "emoji": "📱", "title": "Mobile",
-     "intro": "iOS, Android, cross-platform apps and app-store work."},
-    {"slug": "devops-cloud", "emoji": "☁️", "title": "DevOps & Cloud",
-     "intro": "Infrastructure, containers, CI/CD, self-hosting, outages and cloud operations."},
-    {"slug": "security", "emoji": "🔒", "title": "Security",
-     "intro": "Exploited and newly published vulnerabilities, advisories and security tools."},
-    {"slug": "data", "emoji": "📊", "title": "Data",
-     "intro": "Databases, datasets, pipelines and data tooling."},
-    {"slug": "pulse", "emoji": "🌍", "title": "Tech news & public pulse",
-     "intro": "Tech headlines plus what the wider public is searching, reading and posting."},
-]
-NICHE_BY_SLUG = {n["slug"]: n for n in NICHES}
-
 
 # ---------------------------------------------------------------------------
 # Small helpers
@@ -311,10 +335,12 @@ def within(dt: datetime | None, hours: float, ref: datetime) -> bool:
 
 _HOST_GAP = {
     "export.arxiv.org": 3.1,     # arXiv asks for 3 seconds between calls
-    "api.github.com": 1.0,
+    "api.github.com": 3.0,      # search API: 10 calls a minute without a token
     "github.com": 0.5,
     "pypistats.org": 0.6,
     "services.nvd.nist.gov": 6.5,  # NVD: 5 requests per 30 seconds without a key
+    "api.coingecko.com": 2.5,
+    "ll.thespacedevs.com": 2.0,
 }
 _host_lock = threading.Lock()
 _host_next: dict[str, float] = {}
@@ -566,7 +592,7 @@ def repo_from_api(r: dict) -> dict:
         "https://docs.github.com/en/rest/search/search#search-repositories")
 def src_gh_new():
     since = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
-    rows = github_search(f"created:>{since} fork:false archived:false", 40, sort="stars")
+    rows = github_search(f"created:>{since} fork:false archived:false", 100, sort="stars")
     out = []
     for r in rows:
         rec = repo_from_api(r)
@@ -575,7 +601,7 @@ def src_gh_new():
         if not rec["license"] or not rec["desc"]:
             continue
         out.append(rec)
-    out = out[:15]
+    out = out[:40]
     return out, f"GitHub search API, sorted by stars; {len(out)} repos that state a licence and a description"
 
 
@@ -591,7 +617,7 @@ def enrich_repos(results: dict[str, SourceResult]) -> str:
     """Add licence and topics to trending repos with batched search calls."""
     slugs: list[str] = []
     for key, res in results.items():
-        if key.startswith("gh_") and key != "gh_new" and res.ok:
+        if key.startswith("gh_") and key != "gh_new" and not key.startswith("gh_topic_") and res.ok:
             for it in res.items:
                 if it["title"] not in slugs:
                     slugs.append(it["title"])
@@ -608,7 +634,7 @@ def enrich_repos(results: dict[str, SourceResult]) -> str:
             errors.append(str(exc))
             break
     for key, res in results.items():
-        if key.startswith("gh_") and key != "gh_new":
+        if key.startswith("gh_") and key != "gh_new" and not key.startswith("gh_topic_"):
             for it in res.items:
                 r = found.get(it["title"].lower())
                 if r:
@@ -734,6 +760,7 @@ def src_hf_papers():
             github=p.get("githubRepo") or "", github_stars=p.get("githubStars"),
             org=(r.get("organization") or {}).get("fullname") or "",
             published=parse_dt(p.get("publishedAt")), category="HF daily papers",
+            desc=clip(re.sub(r"\s+", " ", p.get("summary") or ""), 200),
         ))
     out.sort(key=lambda x: x.get("upvotes") or 0, reverse=True)
     return out[:15], "daily_papers API, sorted by community upvotes"
@@ -769,7 +796,7 @@ def src_arxiv():
     out, failed = [], []
     for cat, label in ARXIV_CATEGORIES:
         try:
-            out.extend(_arxiv(cat, label))
+            out.extend(_arxiv(cat, label, 5))
         except FetchError as exc:
             failed.append(f"{cat}: {exc}")
     if not out:
@@ -857,6 +884,7 @@ def src_openrouter():
             context=r.get("context_length"), price_in=per_m(pr.get("prompt")), price_out=per_m(pr.get("completion")),
             created=parse_dt(r.get("created")),
             modality=((r.get("architecture") or {}).get("modality") or ""),
+            desc=clip(strip_html(r.get("description") or ""), 200),
         ))
         if len(out) >= 10:
             break
@@ -871,7 +899,7 @@ def _feed_source(key, name, url, kind, hours, limit, niche=None):
         recent = [e for e in entries if e["published"] and within(e["published"], hours, ref)]
         recent.sort(key=lambda e: e["published"], reverse=True)
         out = [item(kind, e["title"], e["url"], outlet=name.split(" · ")[0], published=e["published"],
-                    desc=clip(e["summary"], 140), author=e["author"], niche=niche) for e in recent[:limit]]
+                    desc=clip(e["summary"], 140), author=e["author"], industry=niche) for e in recent[:limit]]
         return out, f"feed, items from the last {hours} h ({len(recent)} found)"
     return _src
 
@@ -1017,10 +1045,14 @@ def src_releases():
 
 # ---- Security ---------------------------------------------------------------------------
 
+KEV_ALL: set[str] = set()
+
+
 @source("kev", "CISA KEV · known exploited vulnerabilities (last 14 days)",
         "https://www.cisa.gov/known-exploited-vulnerabilities-catalog")
 def src_kev():
     d = fetch_json("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json")
+    KEV_ALL.update(v.get("cveID") for v in d.get("vulnerabilities", []) if v.get("cveID"))
     ref = now_berlin().date()
     out = []
     for v in d.get("vulnerabilities", []):
@@ -1267,7 +1299,7 @@ def src_mastodon_links():
         hist = r.get("history") or []
         out.append(item("news", r.get("title"), r.get("url"), outlet=r.get("provider_name") or domain_of(r.get("url") or ""),
                         shares=sum(parse_int(h.get("uses")) or 0 for h in hist[:2]),
-                        published=parse_dt(r.get("published_at")), niche="pulse"))
+                        published=parse_dt(r.get("published_at"))))
     return out, "instance trends API; shares summed over the last two days"
 
 
@@ -1281,6 +1313,107 @@ def src_bluesky():
                         ("https://bsky.app" + link) if link.startswith("/") else link,
                         desc=t.get("description") or ""))
     return out, "public AppView API getTrendingTopics"
+
+
+# ---- Industry outlets, markets, preprints, launches -------------------------------------
+
+for _k, _n, _u, _ind in INDUSTRY_FEEDS:
+    _feed_source(_k, _n, _u, "news", 24 * 7, 6, _ind)
+
+
+def _make_topic_source(topic: str, industry: str):
+    @source(f"gh_topic_{topic}", f"GitHub · young repos tagged {topic}",
+            f"https://github.com/topics/{topic}")
+    def _src():
+        since = (datetime.now(timezone.utc) - timedelta(days=90)).strftime("%Y-%m-%d")
+        rows = github_search(f"topic:{topic} created:>{since} fork:false archived:false stars:>=50", 30, sort="stars")
+        out = []
+        for r in rows:
+            rec = repo_from_api(r)
+            if rec["license"] and rec["desc"]:
+                rec["industry"] = industry
+                out.append(rec)
+        return out[:10], f"GitHub search API: topic:{topic}, created in the last 90 days, 50+ stars, licence and description stated"
+    return _src
+
+
+for _t, _ind in GITHUB_TOPICS:
+    _make_topic_source(_t, _ind)
+
+
+@source("coingecko_trending", "CoinGecko · trending coins (searches, 24 h)", "https://www.coingecko.com/en/highlights/trending-crypto")
+def src_coingecko_trending():
+    d = fetch_json("https://api.coingecko.com/api/v3/search/trending")
+    out = []
+    for c in d.get("coins", []):
+        it = c.get("item") or {}
+        data = it.get("data") or {}
+        out.append(item(
+            "coin", f"{it.get('name')} ({(it.get('symbol') or '').upper()})",
+            f"https://www.coingecko.com/en/coins/{it.get('id')}", mcap_rank=it.get("market_cap_rank"),
+            price=data.get("price"), change_24h=(data.get("price_change_percentage_24h") or {}).get("usd"),
+            mcap=data.get("market_cap"), industry="crypto-web3",
+        ))
+    return out[:15], "public API search/trending (ranked by CoinGecko search activity)"
+
+
+@source("coingecko_markets", "CoinGecko · top 15 by market cap", "https://www.coingecko.com/")
+def src_coingecko_markets():
+    rows = fetch_json("https://api.coingecko.com/api/v3/coins/markets?" + urlencode(
+        {"vs_currency": "usd", "order": "market_cap_desc", "per_page": 15, "price_change_percentage": "24h,7d"}))
+    out = [item(
+        "coin", f"{r.get('name')} ({(r.get('symbol') or '').upper()})", f"https://www.coingecko.com/en/coins/{r.get('id')}",
+        mcap_rank=r.get("market_cap_rank"), price=r.get("current_price"), change_24h=r.get("price_change_percentage_24h"),
+        change_7d=r.get("price_change_percentage_7d_in_currency"), mcap=r.get("market_cap"),
+        volume=r.get("total_volume"), industry="crypto-web3",
+    ) for r in rows]
+    return out, "public API coins/markets, USD"
+
+
+@source("biorxiv", "bioRxiv and medRxiv · newest preprints", "https://www.biorxiv.org/")
+def src_biorxiv():
+    end = now_berlin().date() - timedelta(days=1)
+    start = end - timedelta(days=1)
+    out, failed = [], []
+    for server in ("biorxiv", "medrxiv"):
+        try:
+            d = fetch_json(f"https://api.biorxiv.org/details/{server}/{start}/{end}/0")
+        except FetchError as exc:
+            failed.append(f"{server}: {exc}")
+            continue
+        seen = set()
+        for r in d.get("collection", []):
+            doi = r.get("doi")
+            if doi in seen:
+                continue
+            seen.add(doi)
+            authors = [a.strip() for a in (r.get("authors") or "").split(";") if a.strip()]
+            out.append(item(
+                "paper", r.get("title"), f"https://doi.org/{doi}", authors=authors,
+                category=f"{'bioRxiv' if server == 'biorxiv' else 'medRxiv'} · {r.get('category')}",
+                published=parse_dt(r.get("date")), desc=clip(re.sub(r"\s+", " ", r.get("abstract") or ""), 200),
+                license=r.get("license") or "", industry="health-biotech",
+            ))
+            if len(seen) >= 8:
+                break
+    if not out:
+        raise FetchError("; ".join(failed) or "no preprints")
+    return out, f"public details API, first preprints posted {start} to {end}"
+
+
+@source("launches", "Launch Library 2 · next orbital launches", "https://thespacedevs.com/llapi")
+def src_launches():
+    d = fetch_json("https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=10&mode=list")
+    out = []
+    for r in d.get("results", []):
+        st = r.get("status") or {}
+        out.append(item(
+            "launch", r.get("name"), r.get("url") or "https://thespacedevs.com/llapi",
+            provider=r.get("lsp_name"), net=parse_dt(r.get("net")), status=st.get("abbrev") or st.get("name"),
+            status_desc=st.get("description"), pad=r.get("pad"), location=r.get("location"),
+            mission_type=r.get("mission_type"), orbit=r.get("orbit"), industry="space-mobility",
+        ))
+    return out, "Launch Library 2 public API (The Space Devs), next 10 launches"
 
 
 # ---------------------------------------------------------------------------
@@ -1363,237 +1496,6 @@ def select_tech_on_x(x_sections: dict[str, list[dict]]) -> list[dict]:
     return items
 
 
-# ---------------------------------------------------------------------------
-# Niche routing (keyword rules, conservative)
-# ---------------------------------------------------------------------------
-
-NICHE_RULES = {
-    "ai-llms": r"\b(ai|llms?|gpt|openai|anthropic|claude|gemini|llama|qwen|mistral|deepseek|transformers?|"
-               r"diffusion|inference|fine-?tun\w*|machine learning|deep learning|neural|embedding\w*|rag|"
-               r"vllm|ollama|pytorch|torch|tensorflow|text-generation|text-to-\w+|multimodal|vision-language|"
-               r"chatbot|prompt\w*|tokens?|reasoning model|language model|hugging ?face|openvino|minimind)\b",
-    "agents-mcp": r"\b(agents?|agentic|mcp|model context protocol|skills?|sandbox\w*|harness|claude code|codex|"
-                  r"coding agent|autonomous|crewai|langgraph|tool[- ]calling|a2a|computer[- ]use)\b",
-    "devtools": r"\b(cli|ide|editor|vs ?code|vim|neovim|emacs|plugin|sdk|compiler|debugg\w*|lint\w*|"
-                r"terminal|git|github|package manager|npm|pypi|crates?|cargo|rust|golang|python|typescript|"
-                r"javascript|zig|ruff|deno|node\.?js|refactor\w*|developers?|devtools?|programming|coding)\b",
-    "web": r"\b(web|frontend|front-end|browser|css|html|react|next\.js|vue|svelte|angular|tailwind|"
-           r"webassembly|wasm|http/?[23]?|chrome|firefox|safari|javascript|dom|web ?gpu|jsdelivr)\b",
-    "mobile": r"\b(ios|ipados|android|iphone|ipad|app store|google play|mobile|react native|flutter|"
-              r"swiftui|swift|kotlin|jetpack|xcode|testflight)\b",
-    "devops-cloud": r"\b(devops|kubernetes|k8s|docker|containers?|helm|terraform|ansible|ci/?cd|aws|azure|gcp|"
-                    r"cloud|serverless|nginx|linux|kernel|self-host\w*|homelab|observability|grafana|"
-                    r"prometheus|sre|outage|incident|hetzner|cloudflare|infrastructure)\b",
-    "security": r"\b(security|vulnerab\w*|cve-\d+|exploit\w*|malware|ransomware|phishing|breach\w*|"
-                r"pentest\w*|red[- ]team|bug[- ]?bount\w*|bug hunt\w*|zero-day|0-day|backdoor|encryption|cryptography|"
-                r"authentication bypass|xss|sqli|rce|privilege escalation|supply[- ]chain attack|cyber\w*|infosec|hacker\w*)\b",
-    "data": r"\b(database|postgres\w*|sqlite|mysql|duckdb|clickhouse|polars|pandas|spark|kafka|airflow|"
-            r"parquet|iceberg|etl|data pipeline|dataset|data engineering|vector (db|database)|analytics|olake)\b",
-    "research": r"\b(paper|arxiv|benchmark|survey|we propose|state-of-the-art)\b",
-}
-NICHE_RE = {k: re.compile(v, re.I) for k, v in NICHE_RULES.items()}
-
-SOURCE_NICHES = {
-    "hf_models": ["ai-llms"], "hf_spaces": ["ai-llms"], "hf_datasets": ["data", "ai-llms"],
-    "hf_papers": ["research", "ai-llms"], "arxiv": ["research"],
-    "mcp_registry": ["agents-mcp"], "smithery": ["agents-mcp"], "openrouter": ["ai-llms"],
-    "openai_news": ["ai-llms"], "google_ai": ["ai-llms"], "deepmind": ["ai-llms", "research"],
-    "hf_blog": ["ai-llms"], "npm": ["devtools"], "pypi": ["devtools"], "crates": ["devtools"],
-    "jsdelivr": ["web"], "dockerhub": ["devops-cloud"], "releases": [],
-    "kev": ["security"], "nvd": ["security"], "euvd": ["security"],
-    "githubstatus": ["devops-cloud"], "cloudflarestatus": ["devops-cloud"],
-    "gtrends": ["pulse"], "wikipedia": ["pulse"], "mastodon_tags": ["pulse"],
-    "mastodon_links": ["pulse"], "bluesky": ["pulse"],
-}
-# Text rules are not applied to these sources (their text is general news or search terms).
-NO_TEXT_RULES = {"gtrends", "wikipedia", "mastodon_tags", "mastodon_links", "bluesky", "kev", "nvd", "euvd"}
-
-
-def route(key: str, it: dict) -> list[str]:
-    hits = set(SOURCE_NICHES.get(key, []))
-    if it.get("niche"):
-        hits.add(it["niche"])
-    if key == "arxiv":
-        cat = it.get("category", "")
-        if cat in ("cs.AI", "cs.CL", "cs.LG", "cs.CV"):
-            hits.add("ai-llms")
-        elif cat == "cs.CR":
-            hits.add("security")
-        elif cat == "cs.SE":
-            hits.add("devtools")
-        return sorted(hits)
-    if key in NO_TEXT_RULES:
-        return sorted(hits)
-    text = " ".join(str(x) for x in (
-        it.get("title"), it.get("desc"), it.get("task"), it.get("language"),
-        " ".join(it.get("topics") or []), " ".join(it.get("tags") or []), it.get("keyword"),
-    ) if x)
-    for slug, rx in NICHE_RE.items():
-        if slug == "research" and key not in ("hn_front", "hn_best", "lobsters"):
-            continue
-        if rx.search(text):
-            hits.add(slug)
-    if key == "releases" and not hits:
-        hits.add("devtools")
-    return sorted(hits)
-
-
-# ---------------------------------------------------------------------------
-# Table renderers: one per item kind, used by README, archive and niche pages
-# ---------------------------------------------------------------------------
-
-def _topics(t: list[str], n: int = 3) -> str:
-    return ", ".join(f"`{x}`" for x in (t or [])[:n]) or "—"
-
-
-def _authors(a: list[str]) -> str:
-    if not a:
-        return "—"
-    return md_escape(", ".join(a[:3]) + (f" +{len(a) - 3}" if len(a) > 3 else ""))
-
-
-def _also(it: dict) -> str:
-    also = it.get("_also") or []
-    return f" <sub>also: {md_escape(', '.join(also))}</sub>" if also else ""
-
-
-def _gained_label(key: str) -> str:
-    return "Stars this week" if key == "gh_weekly" else ("Stars" if key in ("gh_new", "maintainer") else "Stars today")
-
-
-def columns(kind: str, key: str):
-    """Return (headers, row_fn). row_fn(item) -> list of cells (without the # column)."""
-    if kind == "repo":
-        if key in ("gh_new", "maintainer"):
-            return (["Repository", "What it is", "Lang", "Licence", "Stars", "Created", "Topics"],
-                    lambda i: [md_link(i["title"], i["url"]) + _also(i), md_escape(clip(i.get("desc"), 100)) or "—",
-                               md_escape(i.get("language")) or "—", md_escape(i.get("license")) or "—",
-                               fmt_int(i.get("stars")), fmt_day(i.get("created")).rsplit(" ", 1)[0], _topics(i.get("topics"))])
-        return (["Repository", "What it is", "Lang", "Licence", "Stars", _gained_label(key), "Topics"],
-                lambda i: [md_link(i["title"], i["url"]) + _also(i), md_escape(clip(i.get("desc"), 100)) or "—",
-                           md_escape(i.get("language")) or "—", md_escape(i.get("license")) or "—",
-                           fmt_int(i.get("stars")), fmt_int(i.get("gained")), _topics(i.get("topics"))])
-    if kind == "hn":
-        return (["Story", "Points", "Comments", "Site", "Discuss"],
-                lambda i: [md_link(i["title"], i["url"]) + _also(i), fmt_int(i.get("points")), fmt_int(i.get("comments")),
-                           md_escape(i.get("domain")) or "—", md_link("thread", i.get("discuss"))])
-    if kind == "model":
-        return (["Model", "Task", "Library", "Downloads (30 d)", "Likes", "Licence"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(i.get("task")) or "—", md_escape(i.get("library")) or "—",
-                           fmt_int(i.get("downloads")), fmt_int(i.get("likes")), md_escape(i.get("license")) or "—"])
-    if kind == "space":
-        return (["Space", "What it does", "SDK", "Likes", "Licence"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 90)) or "—", md_escape(i.get("sdk")) or "—",
-                           fmt_int(i.get("likes")), md_escape(i.get("license")) or "—"])
-    if kind == "dataset":
-        return (["Dataset", "Task", "Downloads (30 d)", "Likes", "Licence"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(i.get("task")) or "—", fmt_int(i.get("downloads")),
-                           fmt_int(i.get("likes")), md_escape(i.get("license")) or "—"])
-    if kind == "paper" and key == "hf_papers":
-        return (["Paper", "Authors", "Org", "Upvotes", "Code"],
-                lambda i: [md_link(clip(i["title"], 110), i["url"]) + _also(i), _authors(i.get("authors")),
-                           md_escape(i.get("org")) or "—", fmt_int(i.get("upvotes")),
-                           (md_link("repo", i["github"]) + (f" ⭐ {fmt_int(i['github_stars'])}" if i.get("github_stars") else ""))
-                           if i.get("github") else "—"])
-    if kind == "paper":
-        return (["Paper", "Authors", "Category", "Submitted"],
-                lambda i: [md_link(clip(i["title"], 110), i["url"]) + _also(i), _authors(i.get("authors")),
-                           f"`{md_escape(i.get('category'))}`", fmt_day(i.get("published"))])
-    if kind == "mcp":
-        if key == "smithery":
-            return (["Server", "What it does", "Uses", "Verified", "Hosted"],
-                    lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 100)) or "—", fmt_int(i.get("uses")),
-                               "yes" if i.get("verified") else "no", "remote" if i.get("remote") else "local"])
-        return (["Server", "What it does", "Version", "Transport", "Published"],
-                lambda i: [md_link(i["title"], i["url"]) + (f" <sub>`{md_escape(i['name'])}`</sub>" if i.get("name") and i["name"] != i["title"] else ""),
-                           md_escape(clip(i.get("desc"), 100)) or "—", md_escape(i.get("version")) or "—",
-                           ", ".join((["remote"] if i.get("remote") else []) + [p for p in i.get("packages") or [] if p]) or "—",
-                           fmt_day(i.get("published"))])
-    if kind == "llm":
-        return (["Model", "Provider id", "Context", "Input $/1M", "Output $/1M", "Added"],
-                lambda i: [md_link(i["title"], i["url"]), f"`{md_escape(i.get('model_id'))}`", fmt_compact(i.get("context")),
-                           "—" if i.get("price_in") is None else f"{i['price_in']:g}",
-                           "—" if i.get("price_out") is None else f"{i['price_out']:g}", fmt_day(i.get("created")).rsplit(" ", 1)[0]])
-    if kind == "lab" or kind == "news":
-        return (["Headline", "Outlet", "Published"],
-                lambda i: [md_link(clip(i["title"], 120), i["url"]) + _also(i), md_escape(i.get("outlet")) or "—",
-                           fmt_day(i.get("published"))])
-    if kind == "package":
-        if key == "crates":
-            return (["Crate", "What it is", "Version", "Downloads (90 d)", "All-time", "List"],
-                    lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 80)) or "—", f"`{md_escape(i.get('version'))}`",
-                               fmt_int(i.get("recent")), fmt_int(i.get("downloads")), i.get("group", "")])
-        return (["Package", "What it is", "Version", "Weekly downloads", "Released", "Licence"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 80)) or "—", f"`{md_escape(i.get('version'))}`",
-                           fmt_int(i.get("weekly")), fmt_day(i.get("published")).rsplit(" ", 1)[0], md_escape(i.get("license")) or "—"])
-    if kind == "cdn":
-        return (["Package", "CDN hits this week", "Change vs last week"],
-                lambda i: [md_link(i["title"], i["url"]), fmt_compact(i.get("hits")),
-                           "—" if i.get("change") is None else f"{i['change']:+.1f}%"])
-    if kind == "image":
-        return (["Image", "What it is", "Pulls (all-time)", "Stars", "Updated"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 80)) or "—", fmt_compact(i.get("pulls")),
-                           fmt_int(i.get("stars")), fmt_day(i.get("published"))])
-    if kind == "release":
-        return (["Project", "Release", "Type", "Published"],
-                lambda i: [md_link(i["project"], f"https://github.com/{i['project']}"), md_link(i.get("release_title") or i.get("tag"), i["url"]),
-                           "pre-release" if i.get("prerelease") else "release", fmt_day(i.get("published"))])
-    if kind == "kev":
-        return (["CVE", "Vendor", "Product", "Vulnerability", "Added", "Ransomware use", "Fix due"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(i.get("vendor")), md_escape(i.get("product")),
-                           md_escape(clip(i.get("name"), 80)), i.get("added") or "—", md_escape(i.get("ransomware")) or "—", i.get("due") or "—"])
-    if kind == "cve":
-        return (["CVE", "Score", "Vendor", "Reported by", "Summary", "Published"],
-                lambda i: [md_link(i["title"], i["url"]),
-                           f"{i['score']} {md_escape(i.get('severity', '').title())} <sub>v{i.get('cvss')}</sub>" if i.get("score") is not None else "—",
-                           md_escape(i.get("vendor")) or "—", md_escape(clip((i.get("assigner") or "").split("@")[-1], 30)) or "—",
-                           md_escape(clip(i.get("desc"), 110)), fmt_day(i.get("published"))])
-    if kind == "euvd":
-        return (["EUVD id", "CVE", "Score", "Vendor", "Product", "Summary"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(i.get("cve")) or "—",
-                           f"{i['score']} <sub>v{i.get('cvss')}</sub>" if i.get("score") is not None else "—",
-                           md_escape(i.get("vendor")) or "—", md_escape(i.get("product")) or "—", md_escape(clip(i.get("desc"), 100))])
-    if kind == "incident":
-        return (["Service", "Incident", "Impact", "Status", "Started"],
-                lambda i: [md_escape(i.get("service")), md_link(clip(i["title"], 90), i["url"]), md_escape(i.get("impact")) or "—",
-                           md_escape(i.get("status")) or "—", fmt_day(i.get("published"))])
-    if kind == "post":
-        if i_is_lobsters(key):
-            return (["Story", "Score", "Comments", "Tags", "Discuss"],
-                    lambda i: [md_link(clip(i["title"], 110), i["url"]) + _also(i), fmt_int(i.get("score")), fmt_int(i.get("comments")),
-                               _topics(i.get("tags")), md_link("thread", i.get("discuss"))])
-        return (["Article", "Author", "Reactions", "Comments", "Read", "Tags"],
-                lambda i: [md_link(clip(i["title"], 110), i["url"]) + _also(i), md_escape(i.get("author")) or "—",
-                           fmt_int(i.get("reactions")), fmt_int(i.get("comments")),
-                           f"{i['minutes']} min" if i.get("minutes") else "—", _topics(i.get("tags"))])
-    if kind == "question":
-        return (["Question", "Score", "Answers", "Views", "Tags"],
-                lambda i: [md_link(clip(i["title"], 110), i["url"]), fmt_int(i.get("score")),
-                           fmt_int(i.get("answers")) + (" ✓" if i.get("answered") else ""), fmt_int(i.get("views")), _topics(i.get("tags"))])
-    if kind == "product":
-        return (["Product", "Tagline", "Posted by"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 100)) or "—", md_escape(i.get("author")) or "—"])
-    if kind == "search":
-        return (["Search", "Country", "Searches", "Top story"],
-                lambda i: [md_link(i["title"], i["url"]), i.get("geo"), md_escape(i.get("traffic")) or "—",
-                           (md_link(clip(i["news_title"], 80), i["news_url"]) + (f" <sub>{md_escape(i['news_source'])}</sub>" if i.get("news_source") else ""))
-                           if i.get("news_title") else "—"])
-    if kind == "wiki":
-        return (["Article", "Views", "Rank"],
-                lambda i: [md_link(i["title"], i["url"]), fmt_int(i.get("views")), fmt_int(i.get("rank"))])
-    if kind == "tag":
-        return (["Hashtag", "Posts (2 days)", "Accounts (2 days)"],
-                lambda i: [md_link(i["title"], i["url"]), fmt_int(i.get("uses")), fmt_int(i.get("accounts"))])
-    if kind == "topic":
-        return (["Topic", "Context"],
-                lambda i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 120)) or "—"])
-    return (["Item"], lambda i: [md_link(i["title"], i["url"])])
-
-
-def i_is_lobsters(key: str) -> bool:
-    return key == "lobsters"
-
-
 def table(headers: list[str], rows: list[list[str]], numbered: bool = True) -> str:
     if numbered:
         headers = ["#"] + headers
@@ -1603,299 +1505,9 @@ def table(headers: list[str], rows: list[list[str]], numbered: bool = True) -> s
     return "\n".join(out)
 
 
-def render_block(res: SourceResult, items: list[dict], visible: int, title: str | None = None,
-                 hidden_dupes: int = 0, cap: int | None = None, more_link: str = "") -> str:
-    """One source: heading line, source line, table with overflow in <details>."""
-    parts = []
-    if title:
-        parts += [f"### {title}", ""]
-    src = f"Source: {md_link(domain_of(res.url) or res.url, res.url)} · fetched {fmt_hm(res.fetched_at)} Europe/Berlin"
-    if not res.ok:
-        parts += [f"_Skipped today: {md_escape(res.note)}._ {src}", ""]
-        return "\n".join(parts)
-    if not items:
-        msg = "Nothing new in this window today."
-        if hidden_dupes:
-            msg = f"All {hidden_dupes} items were already listed higher up on this page."
-        parts += [f"_{msg}_ <sub>{src}</sub>", ""]
-        return "\n".join(parts)
-    kind = items[0]["kind"]
-    headers, fn = columns(kind, res.key)
-    rows = [fn(i) for i in items]
-    cut = 0
-    if cap is not None and len(rows) > cap:
-        cut = len(rows) - cap
-        rows = rows[:cap]
-    parts += [f"<sub>{src}. {md_escape(res.note)}.</sub>", ""]
-    parts.append(table(headers, rows[:visible]))
-    if len(rows) > visible:
-        more = [[str(n)] + r for n, r in enumerate(rows[visible:], visible + 1)]
-        parts += ["", "<details>", f"<summary>Show {len(rows) - visible} more</summary>", "",
-                  _table_with_numbers(headers, more), "", "</details>"]
-    notes = []
-    if cut and more_link:
-        notes.append(f"{cut} more in [today's full list]({more_link})")
-    if hidden_dupes:
-        notes.append(f"{hidden_dupes} already listed higher up and not repeated")
-    if notes:
-        parts += ["", "<sub>" + " · ".join(notes) + ".</sub>"]
-    parts.append("")
-    return "\n".join(parts)
-
 
 def _table_with_numbers(headers: list[str], rows: list[list[str]]) -> str:
     return table(["#"] + headers, rows, numbered=False)
-
-
-# ---------------------------------------------------------------------------
-# Page layout
-# ---------------------------------------------------------------------------
-
-# (anchor, heading, one-line blurb, [(source key, sub-heading, README rows, archive rows)])
-SECTIONS = [
-    ("github", "🐙 GitHub", "Repos people are starring right now. Stars and stars gained come straight from GitHub.", [
-        ("gh_daily", "Trending today · all languages", 10, 25),
-        ("gh_new", "New this week · fastest-starred repos created in the last 7 days", 5, 15),
-        ("gh_weekly", "Trending this week", 0, 15),
-        ("gh_python", "Trending today · Python", 0, 10),
-        ("gh_typescript", "Trending today · TypeScript", 0, 10),
-        ("gh_rust", "Trending today · Rust", 0, 10),
-        ("gh_go", "Trending today · Go", 0, 10),
-    ]),
-    ("hn", "🔥 Hacker News", "What engineers are reading and arguing about.", [
-        ("hn_front", "Front page", 10, 20),
-        ("hn_show", "Show HN · last 24 hours", 5, 10),
-        ("hn_best", "Best of the week", 0, 10),
-        ("hn_ask", "Ask HN · last 24 hours", 0, 8),
-    ]),
-    ("ai", "🤖 AI models & labs", "New models, what is rising on Hugging Face, and what the big labs published.", [
-        ("hf_models", "Hugging Face · trending models", 5, 15),
-        ("openrouter", "OpenRouter · newest models with prices", 5, 10),
-        ("hf_spaces", "Hugging Face · trending Spaces (demos)", 0, 12),
-        ("hf_datasets", "Hugging Face · trending datasets", 0, 12),
-        ("openai_news", "OpenAI news · last 7 days", 0, 4),
-        ("google_ai", "Google AI blog · last 7 days", 0, 4),
-        ("deepmind", "Google DeepMind blog · last 7 days", 0, 4),
-        ("hf_blog", "Hugging Face blog · last 7 days", 0, 4),
-    ]),
-    ("research", "📄 Research", "Papers the community upvoted today, then the newest arXiv submissions by field.", [
-        ("hf_papers", "Hugging Face daily papers · by upvotes", 5, 15),
-        ("arxiv", "arXiv · newest submissions", 0, 36),
-    ]),
-    ("agents", "🧠 Agents & MCP", "Model Context Protocol servers: what was just published and what people use most.", [
-        ("mcp_registry", "Official MCP Registry · published or updated in the last 24 hours", 5, 12),
-        ("smithery", "Smithery · most-used servers", 0, 10),
-    ]),
-    ("packages", "📦 Packages & releases", "Versions, downloads and releases across npm, PyPI, crates.io, Docker Hub and GitHub.", [
-        ("releases", "GitHub releases of major projects · last 72 hours", 8, 40),
-        ("npm", "npm · top MCP, agent and LLM packages", 0, 20),
-        ("pypi", "PyPI · latest versions of key packages", 0, 14),
-        ("crates", "crates.io · recent, new and just-updated crates", 0, 24),
-        ("jsdelivr", "jsDelivr · most-served npm packages this week", 0, 15),
-        ("dockerhub", "Docker Hub · official images updated in the last 48 hours", 0, 12),
-    ]),
-    ("security", "🔒 Security", "Exploited-in-the-wild bugs first, then fresh critical CVEs.", [
-        ("kev", "CISA KEV · added in the last 14 days", 5, 20),
-        ("nvd", "NVD · critical CVEs published in the last 48 hours", 0, 15),
-        ("euvd", "ENISA EU Vulnerability Database · latest", 0, 12),
-    ]),
-    ("status", "☁️ Platform status", "Incidents on the platforms most teams depend on.", [
-        ("githubstatus", "GitHub · last 72 hours", 3, 10),
-        ("cloudflarestatus", "Cloudflare · last 72 hours", 3, 10),
-    ]),
-    ("community", "✍️ Community", "Developer writing, questions and launches.", [
-        ("lobsters", "Lobsters · hottest", 5, 15),
-        ("devto_day", "Dev.to · top today", 0, 10),
-        ("devto_week", "Dev.to · top this week", 0, 10),
-        ("stackoverflow", "Stack Overflow · hot questions", 0, 12),
-        ("producthunt", "Product Hunt · newest featured", 0, 15),
-    ]),
-    ("news", "🗞️ Tech news", "Headlines and links only, newest first, from the last 36 hours.", [
-        (k, f"{n}", 5 if k == "techmeme" else 0, 6) for k, n, _u, _ni in NEWS_FEEDS
-    ]),
-    ("pulse", "🌍 Public pulse", "What the wider public is searching, reading and sharing. Not tech-only.", [
-        ("gtrends", "Google Trends · today's searches (US, DE)", 5, 20),
-        ("wikipedia", "Wikipedia · most read yesterday", 0, 15),
-        ("mastodon_links", "Mastodon · most shared links", 0, 12),
-        ("mastodon_tags", "Mastodon · trending hashtags", 0, 15),
-        ("bluesky", "Bluesky · trending topics", 0, 15),
-    ]),
-]
-
-
-def build_also(results: dict[str, SourceResult]) -> None:
-    """Mark items that appear in more than one source (by URL, or by title for news)."""
-    names = {k: r.name.split(" · ")[0] for k, r in results.items()}
-    where: dict[str, list[str]] = {}
-    for key, res in results.items():
-        if key == "maintainer" or not res.ok:
-            continue
-        for it in res.items:
-            for k in {canonical_url(it["url"]), "t:" + title_key(it["title"]) if it["kind"] in ("news", "hn", "post", "lab") else ""}:
-                if k and names[key] not in where.setdefault(k, []):
-                    where[k].append(names[key])
-    for key, res in results.items():
-        for it in res.items:
-            seen = where.get(canonical_url(it["url"]), [])
-            it["_also"] = [n for n in seen if n != names[key]][:3]
-
-
-def dedupe_keys(it: dict) -> set[str]:
-    keys = {canonical_url(it["url"])}
-    if it["kind"] in ("news", "hn", "post", "lab"):
-        keys.add("t:" + title_key(it["title"]))
-    return {k for k in keys if k and k != "t:"}
-
-
-def section_blocks(results, mode: str) -> list[tuple]:
-    """Resolve SECTIONS against results with cross-source dedupe, in page order."""
-    shown: set[str] = set()
-    out = []
-    for anchor, heading, blurb, blocks in SECTIONS:
-        resolved = []
-        for key, sub, readme_n, archive_n in blocks:
-            res = results.get(key)
-            if not res:
-                continue
-            limit = archive_n
-            keep, dupes = [], 0
-            for it in res.items:
-                ks = dedupe_keys(it)
-                if ks & shown:
-                    dupes += 1
-                    continue
-                keep.append(it)
-            keep = keep[:limit]
-            for it in keep:
-                shown |= dedupe_keys(it)
-            resolved.append((key, sub, readme_n, archive_n, res, keep, dupes))
-        out.append((anchor, heading, blurb, resolved))
-    return out
-
-
-def count_ok(results) -> tuple[int, int]:
-    keys = [k for k in results if k != "maintainer"]
-    return sum(1 for k in keys if results[k].ok), len(keys)
-
-
-def render_today(results, tech_x: list[dict]) -> list[str]:
-    b = []
-
-    def ok(k):
-        r = results.get(k)
-        return r.items if r and r.ok else []
-
-    gh = [i for i in ok("gh_daily") if i.get("gained") is not None]
-    if gh:
-        top = max(gh, key=lambda i: i["gained"])
-        b.append(f"🐙 **Most stars today:** {md_link(top['title'], top['url'])} — {md_escape(clip(top.get('desc'), 80))} "
-                 f"(+{fmt_int(top['gained'])} today, {fmt_int(top.get('stars'))} total, {md_escape(top.get('language')) or 'no language listed'}).")
-    new = ok("gh_new")
-    if new:
-        n = new[0]
-        b.append(f"🆕 **Fastest new repo this week:** {md_link(n['title'], n['url'])} — {md_escape(clip(n.get('desc'), 70))} "
-                 f"({fmt_int(n.get('stars'))} stars since {fmt_day(n.get('created')).rsplit(' ', 1)[0]}).")
-    hn = ok("hn_front")
-    if hn:
-        h = hn[0]
-        b.append(f"🔥 **Top on Hacker News:** {md_link(h['title'], h['url'])} — {fmt_int(h.get('points'))} points, "
-                 f"{fmt_int(h.get('comments'))} comments.")
-    pp = ok("hf_papers")
-    if pp:
-        p = pp[0]
-        b.append(f"📄 **Most upvoted paper:** {md_link(clip(p['title'], 90), p['url'])} — {fmt_int(p.get('upvotes'))} upvotes on Hugging Face.")
-    hm = ok("hf_models")
-    if hm:
-        m = hm[0]
-        b.append(f"🤗 **#1 trending model:** {md_link(m['title'], m['url'])} — {md_escape(m.get('task')) or 'task not listed'}, "
-                 f"{fmt_int(m.get('likes'))} likes.")
-    kev = ok("kev")
-    if kev:
-        recent = [k for k in kev if k["added"] == kev[0]["added"]]
-        names = ", ".join(md_escape(re.sub(r"\s*\([^)]*\)", "", k["product"])) for k in recent[:4])
-        b.append(f"🔒 **Exploited in the wild:** CISA added {len(recent)} on {kev[0]['added']} ({names}); "
-                 f"{len(kev)} in the last 14 days.")
-    mcp = results.get("mcp_registry")
-    if mcp and mcp.ok:
-        m = re.search(r"(\d+) distinct servers", mcp.note)
-        if m:
-            b.append(f"🧠 **MCP:** {m.group(1)} servers were published or updated in the official registry in the last 24 hours.")
-    rel, projects = [], set()
-    for r in ok("releases"):
-        if not r.get("prerelease") and r["project"] not in projects:
-            projects.add(r["project"])
-            rel.append(r)
-    if rel:
-        b.append("🚀 **Shipped:** " + ", ".join(f"{md_link(r['project'].split('/')[1] + ' ' + (r.get('release_title') or r['tag']), r['url'])}"
-                                                for r in rel[:3]) + ".")
-    if tech_x:
-        t = tech_x[0]
-        posts = f"{t['posts']} posts" if t.get("posts") and t["posts"] != "—" else "volume not shown"
-        b.append(f"🐦 **Tech on X:** {md_link(t['name'], t['url'])} ({posts}, {md_escape(t['region'])} list).")
-    return [f"- {x}" for x in b[:9]]
-
-
-def render_jump(blocks) -> list[str]:
-    rows = [["[⚡ Today in 30 seconds](#today)", "The headlines, one line each", "—"]]
-    for anchor, heading, blurb, resolved in blocks:
-        n = sum(len(r[5]) for r in resolved)
-        live = sum(1 for r in resolved if r[4].ok)
-        rows.append([f"[{heading}](#{anchor})", md_escape(blurb.split('.')[0]), f"{n} items · {live}/{len(resolved)} sources"])
-    rows += [["[🐦 Tech on X](#x)", "Tech topics from today's X trend lists", "—"],
-             ["[🗂️ Niches](#niches)", "The same items, sorted by topic", "—"],
-             ["[👤 From the maintainer](#maintainer)", "Labelled, not a ranking", "—"],
-             ["[📚 Archive](#archive) · [✅ Sources](#sources)", "Past days and where every number comes from", "—"]]
-    return [table(["Section", "What's inside", "Today"], rows, numbered=False)]
-
-
-def render_sources_table(results, x_note: str, enrich_note: str) -> list[str]:
-    rows = []
-    for n, (key, name, url, _fn) in enumerate(SOURCES, 1):
-        r = results.get(key)
-        if not r:
-            continue
-        status = "✅ OK" if r.ok else "⏭️ Skipped"
-        note = r.note if r.ok else f"{r.note}"
-        rows.append([str(n), md_link(name, url), status, str(len(r.items)) if r.ok else "0",
-                     fmt_hm(r.fetched_at), md_escape(clip(note, 140))])
-    rows.append(["—", "X trends", "✅ OK" if "reused" in x_note else "⏭️ Skipped", "—", "—", md_escape(x_note)])
-    rows.append(["—", "Licence and topics for trending repos", "✅ OK" if "added for" in enrich_note else "⏭️ Skipped",
-                 "—", "—", md_escape(enrich_note)])
-    return [table(["#", "Source", "Status", "Items", "Fetched", "How it is read"], rows, numbered=False)]
-
-
-def render_niche_index(niche_counts: dict[str, int], prefix: str) -> list[str]:
-    rows = [[f"{n['emoji']} [{n['title']}]({prefix}niches/{n['slug']}.md)", md_escape(n["intro"]), str(niche_counts.get(n["slug"], 0))]
-            for n in NICHES]
-    return [table(["Niche", "What's in it", "Items today"], rows, numbered=False)]
-
-
-def render_x(tech_x, x_sections, full: bool) -> list[str]:
-    p = []
-    if not tech_x:
-        p.append("_No tech topics in today's X trend lists, or the lists were not captured yet._")
-        return p + [""]
-    p.append("Post volume is the `tweet_count` X showed when the lists were captured. A dash means X showed no number.")
-    p.append("")
-    rows = [[md_link(t["name"], t["url"]), md_escape(t["posts"]), md_escape(t["region"]),
-             md_escape(clip(t["context"], 100)) if "No independently confirmed" not in t["context"] else "—"] for t in tech_x[:12]]
-    p.append(table(["Trend", "Posts", "List", "Context"], rows))
-    if full and x_sections:
-        p += ["", "<details>", "<summary>Full X trend lists (all topics, not just tech)</summary>", ""]
-        for region, rows_ in x_sections.items():
-            p += [f"#### {region}", "", table(["Trend", "Posts"], [[md_link(r["name"], r["url"]), md_escape(r["posts"])] for r in rows_]), ""]
-        p.append("</details>")
-    return p + [""]
-
-
-def render_maintainer(results) -> list[str]:
-    r = results.get("maintainer")
-    p = ["These are the maintainer's own projects. **This is not a ranking.** They show up in the tables above only when a source listed them on its own.", ""]
-    if not r or not r.ok or not r.items:
-        return p + ["- [mjmirza on GitHub](https://github.com/mjmirza)", ""]
-    for it in r.items:
-        p.append(f"- {md_link(it['title'], it['url'])} — {md_escape(it.get('desc'))} ({fmt_int(it.get('stars'))} stars)")
-    return p + [""]
 
 
 LICENSE_LINE = (
@@ -1906,185 +1518,6 @@ LICENSE_LINE = (
     "[openroots.org/licenses/ora/2.3](https://openroots.org/licenses/ora/2.3)."
 )
 
-
-def render_page(results, blocks, fetched_at, tech_x, x_sections, x_note, enrich_note,
-                niche_counts, archive_links, mode: str, archive_rel: str = "") -> str:
-    """mode='readme' (compact, top rows visible) or 'archive' (every row)."""
-    readme = mode == "readme"
-    okn, total = count_ok(results)
-    p = []
-    if readme:
-        p += ["# awesome-trending", "",
-              "One page for everything rising in tech today: GitHub, Hacker News, AI models and papers, MCP servers, "
-              "packages, releases, security advisories, platform status, tech news and the public pulse.", "",
-              f"[![Last commit](https://img.shields.io/github/last-commit/{REPO_OWNER}/{REPO_NAME})]({REPO_URL}/commits/main) "
-              f"[![License](https://img.shields.io/badge/License-OpenRoots_ORA_2.3-2ea44f)](LICENSE) "
-              f"[![Sources](https://img.shields.io/badge/sources_live_today-{okn}%2F{total}-informational)](#sources)", ""]
-    else:
-        p += [f"# awesome-trending — {fmt_date(fetched_at)}", ""]
-    p += [f"**Today:** {fmt_date(fetched_at)} · snapshot at {fmt_time(fetched_at)} · {okn} of {total} sources answered", "",
-          "**How to read this page:** the 30-second summary first, then one section per area. "
-          + ("Each table shows the top rows; click **Show more** for the rest. The [daily archive](#archive) has every row." if readme
-             else "Every row fetched today is here. Long lists are folded; click **Show more**."), "",
-          '<a id="today"></a>', "", "## ⚡ Today in 30 seconds", ""]
-    p += render_today(results, tech_x) + [""]
-    p += ["## 🧭 Jump to", ""] + render_jump(blocks) + [""]
-
-    for anchor, heading, blurb, resolved in blocks:
-        p += [f'<a id="{anchor}"></a>', "", f"## {heading}", "", blurb, ""]
-        folded = []
-        full = f"{archive_rel}#{anchor}" if archive_rel else ""
-        for key, sub, readme_n, archive_n, res, keep, dupes in resolved:
-            if readme:
-                if readme_n > 0:
-                    p.append(render_block(res, keep, readme_n, sub, dupes, cap=10, more_link=full))
-                else:
-                    folded.append((sub, res, keep, dupes))
-            else:
-                p.append(render_block(res, keep, 10, sub, dupes))
-        if folded:
-            label = ", ".join(f"{s.split(' · ')[0]}" if " · " in s else s for s, *_ in folded)
-            total_items = sum(len(k) for _s, _r, k, _d in folded)
-            p += ["<details>", f"<summary><b>More in this section</b> ({total_items} items): {md_escape(clip(', '.join(dict.fromkeys(label.split(', '))), 150))}</summary>", ""]
-            for sub, res, keep, dupes in folded:
-                p.append(render_block(res, keep, 5, sub, dupes, cap=5, more_link=full))
-            p += ["</details>", ""]
-        p += [f"<sub>[↑ Back to top](#today)</sub>", ""]
-
-    p += ['<a id="x"></a>', "", "## 🐦 Tech on X", ""] + render_x(tech_x, x_sections, full=not readme)
-    prefix = "" if readme else "../../../"
-    p += ['<a id="niches"></a>', "", "## 🗂️ Niches", "", "Every item above, routed by topic. One file per niche.", ""]
-    p += render_niche_index(niche_counts, prefix) + [""]
-    p += ['<a id="maintainer"></a>', "", "## 👤 From the maintainer", ""] + render_maintainer(results)
-    if readme:
-        p += ['<a id="archive"></a>', "", "## 📚 Archive", "", "<details>", "<summary>Every past day</summary>", ""]
-        p += [f"- [{label}]({rel})" for label, rel in archive_links] + ["", "</details>", ""]
-        p += ["## 🤝 Contribute", "",
-              f"- Submit a repo with the [issue form]({SUBMIT_URL}). Tables are rebuilt from the sources every morning.",
-              "- [Featured in awesome-trending badge](docs/badge.md) for repos that appeared here.",
-              "- How it works and the full source list: [CONTRIBUTING.md](CONTRIBUTING.md).", LICENSE_LINE, ""]
-    p += ['<a id="sources"></a>', "", "## ✅ Sources", "",
-          f"Fetched {fmt_date(fetched_at)} at {fmt_time(fetched_at)}. Every figure comes from the source named in its row. "
-          "A dash means the source did not give a number. Nothing here is invented. Items listed by more than one source appear "
-          "once, with an <sub>also:</sub> note.", ""]
-    p += render_sources_table(results, x_note, enrich_note) + [""]
-    return "\n".join(p).rstrip() + "\n"
-
-
-NICHE_LABELS = {
-    "repo": "Repositories", "hn": "Hacker News", "model": "Models", "space": "Spaces", "dataset": "Datasets",
-    "paper": "Papers", "mcp": "MCP servers", "llm": "New hosted models", "lab": "Lab posts", "news": "Headlines",
-    "package": "Packages", "cdn": "CDN traffic", "image": "Container images", "release": "Releases",
-    "kev": "Exploited vulnerabilities (CISA KEV)", "cve": "Critical CVEs (NVD)", "euvd": "EU vulnerability database",
-    "incident": "Incidents", "post": "Posts", "question": "Questions", "product": "Launches",
-    "search": "Searches", "wiki": "Most-read articles", "tag": "Hashtags", "topic": "Topics",
-}
-
-
-def _momentum(key: str, i: dict) -> str:
-    if key == "gh_new":
-        return f"new, created {fmt_day(i.get('created')).rsplit(' ', 1)[0]}"
-    if i.get("gained") is None:
-        return "—"
-    return f"+{fmt_int(i['gained'])} {'this week' if key == 'gh_weekly' else 'today'}"
-
-
-def niche_columns(kind: str):
-    """Unified columns per kind so one niche table can mix several sources. fn(key, item)."""
-    if kind == "repo":
-        return (["Repository", "What it is", "Lang", "Licence", "Stars", "Momentum", "Topics"],
-                lambda k, i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 100)) or "—",
-                              md_escape(i.get("language")) or "—", md_escape(i.get("license")) or "—",
-                              fmt_int(i.get("stars")), _momentum(k, i), _topics(i.get("topics"))])
-    if kind == "paper":
-        return (["Paper", "Authors", "Signal"],
-                lambda k, i: [md_link(clip(i["title"], 110), i["url"]), _authors(i.get("authors")),
-                              f"{fmt_int(i.get('upvotes'))} upvotes" if k == "hf_papers" else f"`{md_escape(i.get('category'))}`, new"])
-    if kind == "mcp":
-        return (["Server", "What it does", "Signal"],
-                lambda k, i: [md_link(i["title"], i["url"]), md_escape(clip(i.get("desc"), 100)) or "—",
-                              f"{fmt_int(i.get('uses'))} uses" if k == "smithery" else f"v{md_escape(i.get('version'))}, {fmt_day(i.get('published'))}"])
-    if kind == "package":
-        def cells(k, i):
-            if k == "crates":
-                dl = f"{fmt_int(i.get('recent'))} in 90 d"
-            else:
-                dl = f"{fmt_int(i.get('weekly'))} a week" if i.get("weekly") is not None else "—"
-            return [md_link(i["title"], i["url"]), md_escape(i.get("ecosystem")), f"`{md_escape(i.get('version'))}`",
-                    dl, md_escape(clip(i.get("desc"), 80)) or "—"]
-        return (["Package", "Ecosystem", "Version", "Downloads", "What it is"], cells)
-    if kind == "post":
-        def pcells(k, i):
-            if k == "lobsters":
-                eng = f"{fmt_int(i.get('score'))} score, {fmt_int(i.get('comments'))} comments"
-            else:
-                eng = f"{fmt_int(i.get('reactions'))} reactions, {fmt_int(i.get('comments'))} comments"
-            return [md_link(clip(i["title"], 110), i["url"]), eng, _topics(i.get("tags"))]
-        return (["Post", "Engagement", "Tags"], pcells)
-    headers, fn = columns(kind, "")
-    return headers, (lambda k, i, _fn=fn: columns(kind, k)[1](i))
-
-
-def render_niche_page(niche: dict, rows: list[tuple[str, dict]], results, fetched_at: datetime) -> str:
-    slug = niche["slug"]
-    p = [f"# {niche['emoji']} {niche['title']}", "", niche["intro"], "",
-         f"**Updated:** {fmt_date(fetched_at)} at {fmt_time(fetched_at)} · {len(rows)} items from today's sources. "
-         "This is a daily snapshot, not a complete catalogue.", "",
-         f"[⬅ All of today on the main page](../README.md) · [Other niches](../README.md#niches) · [Submit a repo]({SUBMIT_URL})", ""]
-    if not rows:
-        p += ["Nothing from today's sources landed in this niche. It fills as matching items appear.", ""]
-        return "\n".join(p)
-    groups: dict[str, list[tuple[str, dict]]] = {}
-    first_core: dict[str, int] = {}
-    for n, (key, it) in enumerate(rows):
-        kind = it["kind"]
-        groups.setdefault(kind, []).append((key, it))
-        core = slug in SOURCE_NICHES.get(key, []) or it.get("niche") == slug
-        first_core.setdefault(kind, n if core else 10_000 + n)
-        if core:
-            first_core[kind] = min(first_core[kind], n)
-    order = sorted(groups, key=lambda k: first_core[k])
-    p += ["**In this file:** " + " · ".join(f"[{NICHE_LABELS.get(k, k)}](#{_anchor(NICHE_LABELS.get(k, k))}) ({len(groups[k])})"
-                                           for k in order), ""]
-    for kind in order:
-        group = groups[kind][:30]
-        label = NICHE_LABELS.get(kind, kind)
-        p += [f"## {label}", ""]
-        headers, fn = niche_columns(kind)
-        body = [fn(k, it) + [md_link(results[k].name.split(" · ")[0], results[k].url)] for k, it in group]
-        p.append(table(headers + ["Source"], body[:10]))
-        if len(body) > 10:
-            more = [[str(n)] + r for n, r in enumerate(body[10:], 11)]
-            p += ["", "<details>", f"<summary>Show {len(body) - 10} more</summary>", "",
-                  _table_with_numbers(headers + ["Source"], more), "", "</details>"]
-        p.append("")
-    p += [f"<sub>Every figure comes from the linked source, fetched {fmt_time(fetched_at)}. "
-          "See the [sources table](../README.md#sources).</sub>", ""]
-    return "\n".join(p)
-
-
-def _anchor(heading: str) -> str:
-    a = heading.lower()
-    a = re.sub(r"[^\w\- ]", "", a)
-    return a.replace(" ", "-")
-
-
-def collect_niches(results) -> dict[str, list[tuple[str, dict]]]:
-    out: dict[str, list[tuple[str, dict]]] = {n["slug"]: [] for n in NICHES}
-    seen: dict[str, set] = {n["slug"]: set() for n in NICHES}
-    for _a, _h, _b, blocks in SECTIONS:
-        for key, *_rest in blocks:
-            res = results.get(key)
-            if not res or not res.ok:
-                continue
-            for it in res.items:
-                for slug in route(key, it):
-                    ks = dedupe_keys(it)
-                    if ks & seen[slug]:
-                        continue
-                    seen[slug] |= ks
-                    out[slug].append((key, it))
-    return out
 
 
 # ---------------------------------------------------------------------------
@@ -2161,6 +1594,1020 @@ def run_sources(only: set[str] | None) -> dict[str, SourceResult]:
     return {k: results[k] for k, *_ in SOURCES if k in results}
 
 
+
+
+# ---------------------------------------------------------------------------
+# Industry taxonomy (multi-label, transparent rules). See docs/methodology.md.
+# ---------------------------------------------------------------------------
+
+INDUSTRIES = [
+    # slug, emoji, title, short label, one-line scope, keyword regex, GitHub topics
+    ("ai-llms", "🤖", "AI & LLMs", "AI",
+     "Foundation models, inference, ML research and the labs behind them.",
+     r"\b(ai|a\.i\.|artificial intelligence|llms?|gpt[-\w.]*|chatgpt|openai|anthropic|claude|gemini|llama|qwen|mistral|"
+     r"deepseek|transformers?|diffusion|inference|fine-?tun\w*|machine learning|deep learning|neural|embeddings?|"
+     r"rag|vllm|ollama|pytorch|tensorflow|multimodal|vision-language|language models?|reasoning model|"
+     r"text-generation|text-to-\w+|image-text-to-text|hugging ?face|openvino|copilot)\b",
+     {"machine-learning", "deep-learning", "llm", "llms", "artificial-intelligence", "ai", "nlp", "pytorch",
+      "transformers", "large-language-models", "generative-ai", "computer-vision", "openai", "llama"}),
+    ("ai-agents", "🧠", "AI agents & MCP", "Agents",
+     "Agent frameworks, skills, tool use and Model Context Protocol servers.",
+     r"\b(agents?|agentic|mcp|model context protocol|agent skills?|skills? (bundle|library|framework)|"
+     r"claude code|codex|coding agents?|autonomous agents?|crewai|langgraph|autogen|tool[- ]calling|a2a|"
+     r"computer[- ]use|browser[- ]use|sandbox(es|ed)?)\b",
+     {"ai-agents", "agents", "mcp", "mcp-server", "model-context-protocol", "agent-skills", "claude-code",
+      "agentic-ai", "ai-agent", "llm-agents", "autonomous-agents"}),
+    ("devtools", "🧰", "Developer tools", "Dev tools",
+     "Languages, editors, CLIs, package ecosystems and the software toolchain.",
+     r"\b(cli|ide|editor|vs ?code|vim|neovim|emacs|plugins?|sdk|compiler|debugg\w*|linters?|terminal|git|"
+     r"package manager|npm|pypi|crates?\.io|cargo|rustc?|golang|python|typescript|javascript|zig|ruff|deno|"
+     r"bun|node\.?js|refactor\w*|developers?|devtools?|programming|open[- ]source)\b",
+     {"cli", "developer-tools", "devtools", "rust", "golang", "python", "typescript", "compiler", "neovim",
+      "vscode", "terminal", "git", "programming-language"}),
+    ("cloud-devops", "☁️", "Cloud & DevOps", "Cloud",
+     "Infrastructure, containers, CI/CD, self-hosting, outages and operations.",
+     r"\b(devops|kubernetes|k8s|docker|containers?|helm|terraform|ansible|ci/?cd|aws|azure|gcp|google cloud|"
+     r"cloud|serverless|nginx|linux|kernel|self-host\w*|homelab|observability|grafana|prometheus|sre|outages?|"
+     r"incident|hetzner|cloudflare|data ?cent(er|re)s?|infrastructure)\b",
+     {"kubernetes", "docker", "devops", "terraform", "self-hosted", "cloud", "aws", "observability",
+      "infrastructure", "homelab", "linux"}),
+    ("cybersecurity", "🔒", "Cybersecurity", "Security",
+     "Exploited and new vulnerabilities, attacks, defence and security tooling.",
+     r"\b(security|vulnerab\w*|cve-\d+|exploit\w*|malware|ransomware|phishing|breach\w*|pentest\w*|red[- ]team|"
+     r"bug[- ]?bount\w*|bug hunt\w*|zero-day|0-day|backdoor|cryptography|authentication bypass|xss|rce|"
+     r"privilege escalation|supply[- ]chain attack|cyber\w*|infosec|hackers?|spyware|botnet|ddos)\b",
+     {"security", "cybersecurity", "pentesting", "penetration-testing", "red-team", "bug-bounty", "malware",
+      "vulnerability", "infosec", "ai-security", "osint", "ctf"}),
+    ("data-analytics", "📊", "Data & analytics", "Data",
+     "Databases, datasets, pipelines, analytics and BI.",
+     r"\b(databases?|postgres\w*|sqlite|mysql|duckdb|clickhouse|polars|pandas|spark|kafka|airflow|parquet|"
+     r"iceberg|etl|data pipelines?|datasets?|data engineering|vector (db|database)|analytics|olap|warehouse)\b",
+     {"database", "data-engineering", "analytics", "postgresql", "sql", "etl", "data-science", "dataset",
+      "vector-database", "big-data"}),
+    ("web-frontend", "🌐", "Web & frontend", "Web",
+     "Browsers, front-end frameworks, CSS, web platform and the CDN layer.",
+     r"\b(frontend|front-end|web apps?|web development|web framework|web platform|web standards?|browsers?|css|"
+     r"html|react|next\.js|nextjs|vue|svelte|angular|tailwind|webassembly|wasm|chrome|firefox|safari|webgpu)\b",
+     {"react", "nextjs", "vue", "svelte", "css", "frontend", "web", "tailwindcss", "webassembly", "javascript"}),
+    ("mobile", "📱", "Mobile", "Mobile",
+     "iOS, Android, phones, wearables and app stores.",
+     r"\b(ios|ipados|android|iphone|ipad|app store|google play|mobile|react native|flutter|swiftui|swift|kotlin|"
+     r"jetpack|xcode|testflight|smartphones?|samsung galaxy|pixel \d+|whatsapp|apple watch|wearables?)\b",
+     {"ios", "android", "flutter", "react-native", "swift", "kotlin", "mobile", "swiftui"}),
+    ("fintech", "💳", "Fintech & payments", "Fintech",
+     "Banking, payments, lending, trading, insurance and finance infrastructure.",
+     r"\b(fintech|payments?|banks?|banking|neobank|stripe|paypal|visa|mastercard|klarna|adyen|lending|loans?|"
+     r"credit cards?|trading|brokerage|insurtech|insurance|remittances?|open banking|financial)\b",
+     {"fintech", "payments", "banking", "trading", "finance", "quantitative-finance", "algorithmic-trading"}),
+    ("crypto-web3", "🪙", "Crypto & web3", "Crypto",
+     "Cryptocurrencies, blockchains, DeFi, stablecoins and tokenisation.",
+     r"\b(crypto\w*|bitcoin|btc|ethereum|eth|solana|blockchains?|web3|defi|stablecoins?|tokens? (sale|launch)|"
+     r"nfts?|coinbase|binance|monero|xrp|tokeni[sz]\w*)\b",
+     {"blockchain", "cryptocurrency", "ethereum", "bitcoin", "solana", "web3", "defi", "smart-contracts", "crypto"}),
+    ("health-biotech", "🧬", "Health & biotech", "Health",
+     "Medicine, biology, pharma, health systems and medtech.",
+     r"\b(health\w*|medic\w*|clinical|patients?|hospitals?|biotech\w*|pharma\w*|drugs?|fda|genom\w*|proteins?|"
+     r"bioinformatics|biology|cancer|vaccines?|medicare|medicaid|disease|neuro\w*|medrxiv|biorxiv)\b",
+     {"bioinformatics", "healthcare", "medical", "biology", "genomics", "health", "medical-imaging"}),
+    ("robotics-hardware", "🦾", "Robotics & hardware", "Robotics",
+     "Robots, drones, embedded devices and consumer hardware.",
+     r"\b(robot\w*|humanoids?|drones?|embedded|firmware|arduino|raspberry pi|esp32|microcontrollers?|"
+     r"hardware|3d print\w*|lidar|actuators?|exoskeleton\w*)\b",
+     {"robotics", "ros", "ros2", "embedded", "hardware", "arduino", "esp32", "drones", "3d-printing", "iot"}),
+    ("semiconductors", "🔌", "Semiconductors & chips", "Chips",
+     "Chip design, fabs, GPUs, accelerators and the supply chain.",
+     r"\b(semiconductors?|chips?|chipmakers?|gpus?|tpus?|npus?|asics?|fpgas?|nvidia|nvda|amd|intel|tsmc|"
+     r"qualcomm|risc-v|wafers?|fabs?|foundry|lithography|asml|hbm|cuda|silicon)\b",
+     {"fpga", "risc-v", "verilog", "cuda", "gpu", "semiconductor", "vlsi", "chip-design"}),
+    ("climate-energy", "⚡", "Climate & energy", "Energy",
+     "Clean energy, grids, EVs, batteries, oil and gas, and climate.",
+     r"\b(climate|energy|solar|wind (power|farms?|turbines?)|battery storage|energy storage|power grids?|evs?|electric vehicles?|"
+     r"ev charging|hydrogen|nuclear|carbon|emissions|oil|natural gas|lng|renewables?|heat pumps?|power plants?|utilities)\b",
+     {"climate", "energy", "solar", "climate-change", "electric-vehicles", "renewable-energy", "sustainability"}),
+    ("ecommerce-retail", "🛒", "E-commerce & retail", "Retail",
+     "Online and physical retail, marketplaces, logistics and shopping.",
+     r"\b(e-?commerce|retail\w*|shopping|shoppers?|black friday|cyber monday|amazon|shopify|walmart|"
+     r"marketplaces?|checkout|merchants?|logistics|grocer\w*|consumer brands?)\b",
+     {"ecommerce", "e-commerce", "shopify", "retail", "marketplace"}),
+    ("gaming-xr", "🎮", "Gaming & XR", "Gaming",
+     "Games, studios, engines, consoles and VR/AR.",
+     r"\b(video ?games?|gaming|gamers?|game (studio|engine|developers?)|playstation|ps5|xbox|nintendo|switch 2|steam|"
+     r"epic games|unreal engine|unity|godot|esports|gta ?(6|vi)|grand theft auto|rockstar|ubisoft|"
+     r"vr|xr|virtual reality|mixed reality|vr headsets?|vision pro|meta quest)\b",
+     {"game", "gamedev", "game-development", "godot", "unity", "unreal-engine", "vr", "xr", "game-engine"}),
+    ("enterprise-saas", "🏢", "Enterprise SaaS & productivity", "SaaS",
+     "Business software, productivity, collaboration and the enterprise market.",
+     r"\b(saas|enterprise software|enterprise ai|crm|erp|salesforce|workday|servicenow|sap|productivity apps?|"
+     r"notion|slack|microsoft 365|no-?code|low-?code|b2b|knowledge base|workflow automation)\b",
+     {"saas", "productivity", "crm", "erp", "workflow", "automation", "no-code", "low-code", "notion"}),
+    ("education", "🎓", "Education", "Education",
+     "Schools, universities, edtech, courses and learning resources.",
+     r"\b(education\w*|edtech|schools?|students?|teachers?|universit(y|ies)|courses?|learning resources|"
+     r"tutorials?|mooc|curriculum|classrooms?|lessons?)\b",
+     {"education", "learning", "tutorial", "course", "edtech", "roadmap", "interview"}),
+    ("media-creator", "🎬", "Media & creator economy", "Media",
+     "News media, video, streaming, music, social platforms and creators.",
+     r"\b(media|newsrooms?|newspapers?|journalis\w*|youtube|tiktok|instagram|creators?|influencers?|podcasts?|"
+     r"streaming|netflix|spotify|music|films?|movies?|tv|publishers?|social media|bluesky)\b",
+     {"video", "youtube", "streaming", "music", "media", "social-media", "podcast"}),
+    ("space-mobility", "🚀", "Space & mobility", "Space",
+     "Launches, satellites, aviation, autonomous vehicles and transport.",
+     r"\b(space ?x|spacex|spaceflight|starship|starlink|rockets?|satellites?|orbit(al)?|nasa|esa|moon|lunar|mars|"
+     r"astronauts?|aviation|aircraft|airlines?|faa|autonomous (vehicles?|driving)|robotaxis?|waymo|"
+     r"self-driving|uber|lyft|transportation|mobility)\b",
+     {"space", "aerospace", "satellite", "autonomous-driving", "self-driving-car", "astronomy"}),
+    ("policy-regulation", "⚖️", "Policy & regulation", "Policy",
+     "Laws, regulators, courts, antitrust, privacy and digital policy.",
+     r"\b(regulat\w*|laws?|legislat\w*|courts?|lawsuits?|sues?|judges?|antitrust|competition authority|"
+     r"ftc|fcc|doj|european commission|commissioner|eu ai act|dma|dsa|gdpr|privacy|public policy|tech policy|government|"
+     r"ministers?|congress|senate|parliament|tariffs?|sanctions|export controls?)\b",
+     {"privacy", "gdpr", "regulation", "policy", "legal", "compliance"}),
+]
+OTHER = ("other", "📦", "Other", "Other", "Items that no rule matched. They still count; nothing is dropped.", r"$^", set())
+ALL_INDUSTRIES = INDUSTRIES + [OTHER]
+IND = {i[0]: i for i in ALL_INDUSTRIES}
+IND_ORDER = [i[0] for i in ALL_INDUSTRIES]
+IND_RE = {i[0]: re.compile(i[5], re.I) for i in INDUSTRIES}
+
+# Sources whose items always belong to an industry, before any keyword rule.
+SOURCE_INDUSTRIES = {
+    "hf_models": ["ai-llms"], "hf_spaces": ["ai-llms"], "hf_datasets": ["ai-llms", "data-analytics"],
+    "hf_papers": ["ai-llms"], "openrouter": ["ai-llms"], "openai_news": ["ai-llms"], "google_ai": ["ai-llms"],
+    "deepmind": ["ai-llms"], "hf_blog": ["ai-llms"],
+    "mcp_registry": ["ai-agents"], "smithery": ["ai-agents"],
+    "npm": ["devtools"], "pypi": ["devtools"], "crates": ["devtools"], "stackoverflow": ["devtools"],
+    "ghchangelog": ["devtools"], "jsdelivr": ["web-frontend"], "dockerhub": ["cloud-devops"],
+    "githubstatus": ["cloud-devops"], "cloudflarestatus": ["cloud-devops"], "lwn": ["cloud-devops"],
+    "kev": ["cybersecurity"], "nvd": ["cybersecurity"], "euvd": ["cybersecurity"],
+    "thn": ["cybersecurity"], "bleeping": ["cybersecurity"],
+}
+# Sources where only the source rule applies (keyword rules would misfire on vendor names or prices).
+SOURCE_ONLY = {"kev", "nvd", "euvd", "coingecko_trending", "coingecko_markets", "launches",
+               "githubstatus", "cloudflarestatus", "jsdelivr"}
+ARXIV_INDUSTRY = {"cs.AI": "ai-llms", "cs.CL": "ai-llms", "cs.LG": "ai-llms", "cs.CV": "ai-llms",
+                  "cs.CR": "cybersecurity", "cs.SE": "devtools", "cs.RO": "robotics-hardware",
+                  "q-bio": "health-biotech", "q-fin": "fintech"}
+
+
+def classify(key: str, it: dict) -> list[str]:
+    hits = set(SOURCE_INDUSTRIES.get(key, []))
+    if it.get("industry"):
+        hits.add(it["industry"])
+    if key == "arxiv":
+        cat = it.get("category", "")
+        ind = ARXIV_INDUSTRY.get(cat) or ARXIV_INDUSTRY.get(cat.split(".")[0])
+        if ind:
+            hits.add(ind)
+    if key not in SOURCE_ONLY:
+        topics = {t.lower() for t in (it.get("topics") or []) + (it.get("tags") or [])}
+        for slug, _e, _t, _s, _i, _rx, tset in INDUSTRIES:
+            if topics & tset:
+                hits.add(slug)
+        title = it.get("title") or ""
+        if it["kind"] in ("repo", "model", "dataset", "space") and "/" in title:
+            title = title.split("/", 1)[1]   # match the project name, not the owner (avoids "nvidia/..." -> chips)
+        text = " ".join(str(x) for x in (title, it.get("desc"), it.get("task"),
+                                          " ".join(it.get("topics") or []), " ".join(it.get("tags") or []),
+                                          it.get("keyword")) if x)
+        for slug, rx in IND_RE.items():
+            if rx.search(text):
+                hits.add(slug)
+    return sorted(hits, key=IND_ORDER.index) or ["other"]
+
+
+# ---------------------------------------------------------------------------
+# Entities: one row per real-world item, merged across sources, with a score
+# ---------------------------------------------------------------------------
+
+RANKED = {"gh_daily", "gh_weekly", "gh_new", "hn_front", "hn_show", "hn_best", "hn_ask", "hf_models", "hf_spaces",
+          "hf_datasets", "hf_papers", "smithery", "npm", "jsdelivr", "lobsters", "devto_day", "devto_week",
+          "stackoverflow", "coingecko_trending", "gtrends", "wikipedia", "mastodon_tags", "mastodon_links",
+          "bluesky"} | {f"gh_{s}" for s, _ in GITHUB_LANGUAGES} | {f"gh_topic_{t}" for t, _ in GITHUB_TOPICS}
+PULSE_FAMILIES = {"Google Trends", "Wikipedia", "Mastodon", "Bluesky"}
+UNRANKED_BASE = 0.25
+W_RANK, W_SPREAD, SPREAD_CAP = 0.6, 0.4, 3
+
+
+def family(key: str, results) -> str:
+    for prefix, name in (("gh_", "GitHub"), ("hn_", "Hacker News"), ("hf_", "Hugging Face"), ("devto", "Dev.to"),
+                         ("mastodon", "Mastodon"), ("coingecko", "CoinGecko")):
+        if key.startswith(prefix):
+            return name
+    return results[key].name.split(" · ")[0]
+
+
+def dedupe_keys(it: dict) -> set[str]:
+    keys = {canonical_url(it["url"])}
+    if it["kind"] in ("news", "hn", "post", "lab"):
+        keys.add("t:" + title_key(it["title"]))
+    if it.get("github"):
+        keys.add(canonical_url(it["github"]))
+    return {k for k in keys if k and k != "t:"}
+
+
+class Entity:
+    def __init__(self):
+        self.hits: list[tuple[str, dict, float | None, int]] = []   # key, item, percentile, position
+        self.families: list[str] = []
+        self.industries: list[str] = []
+        self.score = 0
+        self.best_pct = 0.0
+
+    @property
+    def key(self):
+        return self.hits[0][0]
+
+    @property
+    def item(self):
+        return self.hits[0][1]
+
+
+def build_entities(results) -> list["Entity"]:
+    order = [k for k, *_ in SOURCES if k in results and results[k].ok and k != "maintainer"]
+    by_key: dict[str, Entity] = {}
+    ents: list[Entity] = []
+    for key in order:
+        items = results[key].items
+        n = len(items)
+        for pos, it in enumerate(items):
+            ks = dedupe_keys(it)
+            ent = next((by_key[k] for k in ks if k in by_key), None)
+            if ent is None:
+                ent = Entity()
+                ents.append(ent)
+            pct = (1 - pos / n) if key in RANKED and n else None
+            ent.hits.append((key, it, pct, pos + 1))
+            fam = family(key, results)
+            if fam not in ent.families:
+                ent.families.append(fam)
+            for ind in classify(key, it):
+                if ind not in ent.industries:
+                    ent.industries.append(ind)
+            for k in ks:
+                by_key.setdefault(k, ent)
+    for e in ents:
+        if len(e.industries) > 1 and "other" in e.industries:
+            e.industries.remove("other")
+        e.industries.sort(key=IND_ORDER.index)
+        pcts = [p for _k, _i, p, _pos in e.hits if p is not None]
+        e.best_pct = max(pcts) if pcts else UNRANKED_BASE
+        spread = min(len(e.families) - 1, SPREAD_CAP) / SPREAD_CAP
+        e.score = round(100 * (W_RANK * e.best_pct + W_SPREAD * spread))
+        for _k, it, _p, _pos in e.hits:
+            it["_seen"] = e.families
+            it["_ind"] = e.industries
+            it["_score"] = e.score
+    return ents
+
+
+def mark_exploited(results) -> None:
+    kev = results.get("kev")
+    ids = set(KEV_ALL)
+    if kev and kev.ok:
+        ids |= {i["title"] for i in kev.items}
+    for key in ("kev", "nvd", "euvd"):
+        r = results.get(key)
+        if r and r.ok:
+            for it in r.items:
+                cve = it.get("cve") if it["kind"] == "euvd" else it["title"]
+                it["_exploited"] = it["kind"] == "kev" or (cve in ids)
+
+
+# ---------------------------------------------------------------------------
+# Cell helpers: why it matters, key metric, momentum, maturity
+# ---------------------------------------------------------------------------
+
+def first_sentence(text: str, n: int = 110) -> str:
+    t = re.sub(r"\s+", " ", text or "").strip()
+    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    return clip(m.group(1) if m and len(m.group(1)) > 25 else t, n)
+
+
+def why(key: str, it: dict) -> str:
+    k = it["kind"]
+    if k == "hn":
+        d = it.get("domain")
+        return f"Link to {d}" if d and d != "news.ycombinator.com" else "Discussion thread on HN"
+    if k == "model":
+        return " · ".join(b for b in (it.get("task"), it.get("library")) if b) or "—"
+    if k == "kev":
+        return clip(it.get("name") or it.get("desc"), 100)
+    if k == "coin":
+        return f"Market-cap rank #{it['mcap_rank']}" if it.get("mcap_rank") else "—"
+    if k == "launch":
+        orbit = it.get("orbit") if isinstance(it.get("orbit"), str) else None
+        return " · ".join(b for b in (it.get("provider"), it.get("mission_type"), orbit) if b) or "—"
+    if k == "release":
+        return f"New {'pre-release' if it.get('prerelease') else 'release'} of {it['project']}"
+    if k == "search":
+        return clip(it.get("news_title"), 100) or "—"
+    if k == "incident":
+        return ", ".join(it.get("components") or []) or "—"
+    if k in ("wiki", "tag"):
+        return "—"
+    if k == "cdn":
+        return "Served from the jsDelivr CDN"
+    if k in ("question", "post"):
+        return ", ".join(f"#{t}" for t in (it.get("tags") or [])[:3]) or "—"
+    return first_sentence(it.get("desc") or "", 110) or "—"
+
+
+def momentum(key: str, it: dict) -> str:
+    k = it["kind"]
+    if k == "repo" and it.get("gained") is not None and it.get("stars"):
+        base = max(it["stars"] - it["gained"], 1)
+        return f"{it['gained'] / base * 100:+.1f}%"
+    if k == "hn" and it.get("points") is not None and it.get("created"):
+        hours = max((datetime.now(timezone.utc) - it["created"]).total_seconds() / 3600, 1)
+        return f"{it['points'] / hours:.0f} pts/h"
+    if k == "cdn" and it.get("change") is not None:
+        return f"{it['change']:+.1f}% w/w"
+    if k == "coin" and it.get("change_24h") is not None:
+        return f"{it['change_24h']:+.1f}% 24h"
+    return "—"
+
+
+def _price(v) -> str:
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return "—"
+    return f"{f:,.2f}" if f >= 1 else f"{f:.6f}".rstrip("0")
+
+
+def key_metric(key: str, it: dict) -> str:
+    k = it["kind"]
+    if k == "repo":
+        s = f"⭐ {fmt_compact(it.get('stars'))}"
+        if it.get("gained") is not None:
+            s += f" · +{fmt_int(it['gained'])} {'this week' if key == 'gh_weekly' else 'today'}"
+        elif it.get("created"):
+            s += f" · created {fmt_day(it['created']).rsplit(' ', 1)[0]}"
+        return s
+    if k == "hn":
+        return f"{fmt_int(it.get('points'))} pts · {fmt_int(it.get('comments'))} comments"
+    if k == "post":
+        if key == "lobsters":
+            return f"{fmt_int(it.get('score'))} score · {fmt_int(it.get('comments'))} comments"
+        return f"{fmt_int(it.get('reactions'))} reactions · {fmt_int(it.get('comments'))} comments"
+    if k == "question":
+        return f"{fmt_int(it.get('score'))} score · {fmt_int(it.get('answers'))} answers · {fmt_compact(it.get('views'))} views"
+    if k in ("model", "dataset"):
+        return f"{fmt_int(it.get('likes'))} likes · {fmt_compact(it.get('downloads'))} dl/30d"
+    if k == "space":
+        return f"{fmt_int(it.get('likes'))} likes"
+    if k == "llm":
+        pin = "—" if it.get("price_in") is None else f"${it['price_in']:g}"
+        pout = "—" if it.get("price_out") is None else f"${it['price_out']:g}"
+        return f"{pin} in / {pout} out per 1M · {fmt_compact(it.get('context'))} ctx"
+    if k == "paper":
+        if it.get("upvotes") is not None:
+            return f"{fmt_int(it['upvotes'])} upvotes"
+        return f"{md_escape(it.get('category'))} · new"
+    if k == "mcp":
+        return f"{fmt_int(it.get('uses'))} uses" if key == "smithery" else f"v{md_escape(it.get('version'))} · {fmt_day(it.get('published'))}"
+    if k == "package":
+        if key == "crates":
+            return f"{fmt_compact(it.get('recent'))} dl/90d"
+        return f"{fmt_compact(it.get('weekly'))} dl/week" if it.get("weekly") is not None else f"v{md_escape(it.get('version'))}"
+    if k == "cdn":
+        return f"{fmt_compact(it.get('hits'))} hits/week"
+    if k == "image":
+        return f"{fmt_compact(it.get('pulls'))} pulls"
+    if k == "release":
+        return f"{md_escape(clip(it.get('release_title') or it.get('tag'), 40))} · {fmt_day(it.get('published'))}"
+    if k in ("kev", "cve", "euvd"):
+        s = f"CVSS {it['score']}" if it.get("score") is not None else "CVSS not scored"
+        return s + (" · exploited" if it.get("_exploited") else "")
+    if k in ("news", "lab"):
+        return f"{md_escape(it.get('outlet'))} · {fmt_day(it.get('published'))}"
+    if k == "incident":
+        return f"{md_escape(it.get('impact'))} · {md_escape(it.get('status'))}"
+    if k == "coin":
+        return f"${_price(it.get('price'))} · {momentum(key, it)}"
+    if k == "launch":
+        return f"NET {fmt_day(it.get('net'))} · {md_escape(it.get('status'))}"
+    if k == "search":
+        return f"{md_escape(it.get('traffic'))} searches ({it.get('geo')})"
+    if k == "wiki":
+        return f"{fmt_compact(it.get('views'))} views"
+    if k == "tag":
+        return f"{fmt_int(it.get('uses'))} posts / 2 days"
+    if k == "product":
+        return "Featured launch"
+    return "—"
+
+
+def maturity(key: str, it: dict) -> str:
+    k = it["kind"]
+    if k == "repo":
+        lic = it.get("license") or "no licence"
+        created = it.get("created")
+        if created:
+            days = (datetime.now(timezone.utc) - created).days
+            age = f"{days} d old" if days < 60 else (f"{days // 30} mo old" if days < 730 else f"{days // 365} y old")
+            return f"{md_escape(lic)} · {age}"
+        return md_escape(lic)
+    if k in ("model", "dataset", "space"):
+        return md_escape(it.get("license")) or "licence not stated"
+    if k == "package":
+        v = str(it.get("version") or "")
+        stage = "pre-1.0" if v.startswith("0.") else ("pre-release" if re.search(r"(a|b|rc|alpha|beta|dev)\d*$", v) else "stable")
+        return " · ".join(x for x in (md_escape(it.get("license")), stage) if x)
+    if k == "paper":
+        return "preprint · code" if it.get("github") else "preprint"
+    if k == "mcp":
+        if key == "smithery":
+            return ("verified" if it.get("verified") else "unverified") + (" · remote" if it.get("remote") else " · local")
+        return "pre-1.0" if str(it.get("version") or "").startswith("0.") else "1.0+"
+    if k == "release":
+        return "pre-release" if it.get("prerelease") else "stable"
+    return "—"
+
+
+def seen_cell(it: dict) -> str:
+    fams = it.get("_seen") or []
+    if len(fams) <= 1:
+        return "1"
+    return f"**{len(fams)}** <sub>{md_escape(', '.join(fams))}</sub>"
+
+
+def ind_cell(it: dict, n: int = 2) -> str:
+    inds = it.get("_ind") or ["other"]
+    out = ", ".join(f"{IND[s][1]} {IND[s][3]}" for s in inds[:n])
+    return out + (f" +{len(inds) - n}" if len(inds) > n else "")
+
+
+def src_cell(key: str, results) -> str:
+    r = results[key]
+    return md_link(r.name.split(" · ")[0], r.url)
+
+
+def ttl(it: dict, n: int = 90) -> str:
+    return md_link(clip(it["title"], n), it["url"])
+
+
+def _authors(a: list[str]) -> str:
+    if not a:
+        return "—"
+    return md_escape(", ".join(a[:2]) + (f" +{len(a) - 2}" if len(a) > 2 else ""))
+
+
+# ---------------------------------------------------------------------------
+# Table designs, one per item type. Every design ends with Seen on, Industry, Source.
+# ---------------------------------------------------------------------------
+
+TYPE_OF = {"kev": "vuln", "cve": "vuln", "euvd": "vuln", "lab": "news"}
+TYPE_LABEL = {"repo": "Repositories", "hn": "Discussions", "post": "Posts", "question": "Questions", "product": "Product launches",
+              "model": "Models", "space": "Demos (Spaces)", "dataset": "Datasets", "llm": "Hosted models", "paper": "Papers",
+              "mcp": "MCP servers", "package": "Packages", "cdn": "CDN traffic", "image": "Container images",
+              "release": "Releases", "vuln": "Vulnerabilities", "news": "Headlines", "incident": "Incidents",
+              "coin": "Crypto assets", "launch": "Launches to orbit", "search": "Searches", "wiki": "Most-read articles",
+              "tag": "Hashtags", "topic": "Topics"}
+TYPE_EMOJI = {"repo": "🐙", "hn": "💬", "post": "✍️", "question": "❓", "product": "🛍️", "model": "🤗", "space": "🧪",
+              "dataset": "🗃️", "llm": "🧩", "paper": "📄", "mcp": "🔌", "package": "📦", "cdn": "📶", "image": "🐳",
+              "release": "🏷️", "vuln": "🛡️", "news": "🗞️", "incident": "🚨", "coin": "🪙", "launch": "🛰️",
+              "search": "🔎", "wiki": "📖", "tag": "#️⃣", "topic": "🦋"}
+TYPE_DESIGN_NOTE = {
+    "repo": "stars, stars gained, momentum % (gained ÷ stars before), language, licence and age",
+    "hn": "points, comments, velocity (points per hour) and the thread link",
+    "post": "tags, reactions or score, comments and author",
+    "question": "tags, score, answers (✓ = accepted), views",
+    "product": "tagline and who posted it",
+    "model": "task and library, likes, 30-day downloads, licence",
+    "space": "what the demo does, SDK, likes, licence",
+    "dataset": "task, likes, 30-day downloads, licence",
+    "llm": "USD per 1M input and output tokens, context window, date added",
+    "paper": "abstract's first sentence, authors, upvotes or category, code link",
+    "mcp": "what the server does, uses or version, maturity",
+    "package": "ecosystem, version, downloads with the period, release date, licence and stage",
+    "cdn": "CDN hits this week and change against last week",
+    "image": "pulls, stars, last update",
+    "release": "project, release, stable or pre-release, date",
+    "vuln": "vendor and product, CVSS, exploited (in CISA KEV or not), ransomware use, date",
+    "news": "first sentence of the outlet's summary, outlet, time",
+    "incident": "service, affected components, impact, status, start",
+    "coin": "market-cap rank, price, 24 h and 7 d change, market cap",
+    "launch": "provider, launch window in Berlin time, status, site",
+    "search": "country, Google's search-volume bucket, top story",
+    "wiki": "views and rank", "tag": "posts and accounts over two days", "topic": "context line",
+}
+
+
+def ttype(it: dict) -> str:
+    return TYPE_OF.get(it["kind"], it["kind"])
+
+
+def vuln_vendor(it: dict) -> str:
+    v = " · ".join(x for x in (it.get("vendor"), it.get("product")) if x)
+    if not v and it.get("assigner"):
+        v = f"reported by {it['assigner'].split('@')[-1]}"
+    return md_escape(clip(v, 60)) or "—"
+
+
+def _pct(v) -> str:
+    return "—" if v is None else f"{v:+.1f}%"
+
+
+def _gained(k, i) -> str:
+    if i.get("gained") is None:
+        return "new"
+    return f"+{fmt_int(i['gained'])} {'wk' if k == 'gh_weekly' else 'today'}"
+
+
+def _cvss(i) -> str:
+    if i.get("score") is None:
+        return "—"
+    return f"{i['score']}" + (f" {md_escape(i.get('severity', '').title())}" if i.get("severity") else "")
+
+
+DESIGNS = {
+    "repo": (["Repository", "Why it matters", "Stars", "Gained", "Momentum", "Lang", "Licence · age"],
+             lambda k, i: [ttl(i, 60), md_escape(why(k, i)), fmt_int(i.get("stars")), _gained(k, i), momentum(k, i),
+                           md_escape(i.get("language")) or "—", maturity(k, i)]),
+    "hn": (["Story", "Why it matters", "Points", "Comments", "Velocity", "Thread"],
+           lambda k, i: [ttl(i), md_escape(why(k, i)), fmt_int(i.get("points")), fmt_int(i.get("comments")),
+                         momentum(k, i), md_link("open", i.get("discuss"))]),
+    "post": (["Post", "Tags", "Engagement", "Author"],
+             lambda k, i: [ttl(i), md_escape(why(k, i)), key_metric(k, i), md_escape(i.get("author")) or "—"]),
+    "question": (["Question", "Tags", "Score", "Answers", "Views"],
+                 lambda k, i: [ttl(i), md_escape(why(k, i)), fmt_int(i.get("score")),
+                               fmt_int(i.get("answers")) + (" ✓" if i.get("answered") else ""), fmt_compact(i.get("views"))]),
+    "product": (["Product", "Why it matters", "Posted by"],
+                lambda k, i: [ttl(i, 50), md_escape(why(k, i)), md_escape(i.get("author")) or "—"]),
+    "model": (["Model", "Task · library", "Likes", "Downloads 30 d", "Licence"],
+              lambda k, i: [ttl(i, 60), md_escape(why(k, i)), fmt_int(i.get("likes")), fmt_compact(i.get("downloads")), maturity(k, i)]),
+    "space": (["Demo", "Why it matters", "SDK", "Likes", "Licence"],
+              lambda k, i: [ttl(i, 60), md_escape(why(k, i)), md_escape(i.get("sdk")) or "—", fmt_int(i.get("likes")), maturity(k, i)]),
+    "dataset": (["Dataset", "Why it matters", "Task", "Likes", "Downloads 30 d", "Licence"],
+                lambda k, i: [ttl(i, 60), md_escape(why(k, i)), md_escape(i.get("task")) or "—", fmt_int(i.get("likes")),
+                              fmt_compact(i.get("downloads")), maturity(k, i)]),
+    "llm": (["Model", "Why it matters", "$ in / 1M", "$ out / 1M", "Context", "Added"],
+            lambda k, i: [ttl(i, 50), md_escape(why(k, i)),
+                          "—" if i.get("price_in") is None else f"{i['price_in']:g}",
+                          "—" if i.get("price_out") is None else f"{i['price_out']:g}",
+                          fmt_compact(i.get("context")), fmt_day(i.get("created")).rsplit(" ", 1)[0]]),
+    "paper": (["Paper", "Why it matters", "Authors", "Signal", "Code · maturity"],
+              lambda k, i: [ttl(i), md_escape(why(k, i)), _authors(i.get("authors")), key_metric(k, i),
+                            (md_link("repo", i["github"]) + (f" ⭐ {fmt_int(i['github_stars'])}" if i.get("github_stars") else ""))
+                            if i.get("github") else maturity(k, i)]),
+    "mcp": (["Server", "Why it matters", "Signal", "Maturity"],
+            lambda k, i: [ttl(i, 50), md_escape(why(k, i)), key_metric(k, i), maturity(k, i)]),
+    "package": (["Package", "Why it matters", "Ecosystem", "Version", "Downloads", "Released", "Licence · stage"],
+                lambda k, i: [ttl(i, 40), md_escape(why(k, i)), md_escape(i.get("ecosystem")), f"`{md_escape(i.get('version'))}`",
+                              key_metric(k, i), fmt_day(i.get("published")).rsplit(" ", 1)[0], maturity(k, i)]),
+    "cdn": (["Package", "Hits this week", "Change w/w"],
+            lambda k, i: [ttl(i, 40), fmt_compact(i.get("hits")), momentum(k, i)]),
+    "image": (["Image", "Why it matters", "Pulls", "Stars", "Updated"],
+              lambda k, i: [ttl(i, 40), md_escape(why(k, i)), fmt_compact(i.get("pulls")), fmt_int(i.get("stars")),
+                            fmt_day(i.get("published"))]),
+    "release": (["Project", "Release", "Stage", "Published"],
+                lambda k, i: [md_link(i["project"], f"https://github.com/{i['project']}"),
+                              md_link(clip(i.get("release_title") or i.get("tag"), 60), i["url"]), maturity(k, i),
+                              fmt_day(i.get("published"))]),
+    "vuln": (["ID", "Why it matters", "Vendor · product", "CVSS", "Exploited", "Ransomware", "Date"],
+             lambda k, i: [md_link(i["title"], i["url"]) + (f" <sub>{md_escape(i['cve'])}</sub>" if i.get("cve") else ""),
+                           md_escape(why(k, i)), vuln_vendor(i), _cvss(i),
+                           "**yes** (CISA KEV)" if i.get("_exploited") else "not in KEV",
+                           md_escape(i.get("ransomware")) if i["kind"] == "kev" else "—",
+                           i.get("added") or fmt_day(i.get("published"))]),
+    "news": (["Headline", "Why it matters", "Outlet", "Published"],
+             lambda k, i: [ttl(i), md_escape(why(k, i)), md_escape(i.get("outlet")), fmt_day(i.get("published"))]),
+    "incident": (["Incident", "Service", "Components", "Impact", "Status", "Started"],
+                 lambda k, i: [ttl(i), md_escape(i.get("service")), md_escape(why(k, i)), md_escape(i.get("impact")) or "—",
+                               md_escape(i.get("status")) or "—", fmt_day(i.get("published"))]),
+    "coin": (["Asset", "Market-cap rank", "Price (USD)", "24 h", "7 d", "Market cap"],
+             lambda k, i: [ttl(i, 40), fmt_int(i.get("mcap_rank")), _price(i.get("price")), _pct(i.get("change_24h")),
+                           _pct(i.get("change_7d")),
+                           fmt_compact(i.get("mcap")) if isinstance(i.get("mcap"), (int, float)) else (md_escape(i.get("mcap")) or "—")]),
+    "launch": (["Mission", "Provider", "Window (Berlin)", "Status", "Site"],
+               lambda k, i: [ttl(i, 60), md_escape(i.get("provider")) or "—", fmt_day(i.get("net")),
+                             md_escape(i.get("status")) or "—", md_escape(clip(str(i.get("location") or i.get("pad") or ""), 50)) or "—"]),
+    "search": (["Search", "Country", "Searches", "Top story"],
+               lambda k, i: [ttl(i, 50), i.get("geo"), md_escape(i.get("traffic")) or "—",
+                             md_link(clip(i["news_title"], 70), i["news_url"]) if i.get("news_title") else "—"]),
+    "wiki": (["Article", "Views", "Rank"], lambda k, i: [ttl(i, 60), fmt_int(i.get("views")), fmt_int(i.get("rank"))]),
+    "tag": (["Hashtag", "Posts (2 d)", "Accounts (2 d)"], lambda k, i: [ttl(i, 40), fmt_int(i.get("uses")), fmt_int(i.get("accounts"))]),
+    "topic": (["Topic", "Context"], lambda k, i: [ttl(i, 60), md_escape(clip(i.get("desc"), 110)) or "—"]),
+}
+
+
+def type_table(t: str):
+    h, fn = DESIGNS.get(t, (["Item"], lambda k, i: [ttl(i)]))
+    return h + ["Seen on", "Industry", "Source"], (
+        lambda k, i, results: fn(k, i) + [seen_cell(i), ind_cell(i), src_cell(k, results)])
+
+
+def fold_table(headers: list[str], rows: list[list[str]], visible: int) -> list[str]:
+    """Numbered table; rows beyond `visible` go in a <details> fold with continued numbering."""
+    if not rows:
+        return []
+    numbered = [[str(n)] + r for n, r in enumerate(rows, 1)]
+    for r in numbered:
+        assert len(r) == len(headers) + 1, (headers, r)
+    out = [table(["#"] + headers, numbered[:visible], numbered=False)]
+    if len(numbered) > visible:
+        out += ["", "<details>", f"<summary>Show {len(numbered) - visible} more</summary>", "",
+                table(["#"] + headers, numbered[visible:], numbered=False), "", "</details>"]
+    return out
+
+
+UNIFIED_H = ["Item", "Type", "Why it matters", "Key metric", "Seen on", "Score", "Source"]
+
+
+def unified_row(e, results) -> list[str]:
+    k, it = e.key, e.item
+    t = ttype(it)
+    return [ttl(it, 70), f"{TYPE_EMOJI.get(t, '')} {TYPE_LABEL.get(t, t)}", md_escape(why(k, it)), key_metric(k, it),
+            seen_cell(it), str(e.score), src_cell(k, results)]
+
+
+# ---------------------------------------------------------------------------
+# Page blocks
+# ---------------------------------------------------------------------------
+
+GROUPS = [
+    ("src-github", "🐙 GitHub", ["gh_daily", "gh_new", "gh_weekly"] + [f"gh_{s}" for s, _ in GITHUB_LANGUAGES]
+     + [f"gh_topic_{t}" for t, _ in GITHUB_TOPICS]),
+    ("src-hn", "💬 Hacker News", ["hn_front", "hn_show", "hn_best", "hn_ask"]),
+    ("src-ai", "🤗 Models & labs", ["hf_models", "openrouter", "hf_spaces", "hf_datasets", "openai_news", "google_ai",
+                                   "deepmind", "hf_blog"]),
+    ("src-research", "📄 Papers & preprints", ["hf_papers", "arxiv", "biorxiv"]),
+    ("src-mcp", "🔌 MCP registries", ["mcp_registry", "smithery"]),
+    ("src-packages", "📦 Packages & releases", ["releases", "npm", "pypi", "crates", "jsdelivr", "dockerhub"]),
+    ("src-security", "🛡️ Vulnerabilities", ["kev", "nvd", "euvd"]),
+    ("src-markets", "🪙 Markets & launches", ["coingecko_trending", "coingecko_markets", "launches"]),
+    ("src-community", "✍️ Community", ["lobsters", "devto_day", "devto_week", "stackoverflow", "producthunt"]),
+    ("src-news", "🗞️ Tech news", [k for k, *_ in NEWS_FEEDS]),
+    ("src-industry-news", "🏭 Industry outlets", [k for k, *_ in INDUSTRY_FEEDS]),
+    ("src-pulse", "🌍 Public pulse", ["gtrends", "wikipedia", "mastodon_links", "mastodon_tags", "bluesky"]),
+]
+STATUS_KEYS = ["githubstatus", "cloudflarestatus"]
+
+
+def count_ok(results) -> tuple[int, int]:
+    keys = [k for k in results if k != "maintainer"]
+    return sum(1 for k in keys if results[k].ok), len(keys)
+
+
+def source_block(key: str, results, visible: int, cap: int | None, level: str = "####") -> list[str]:
+    res = results.get(key)
+    if not res:
+        return []
+    p = [f"{level} {md_escape(res.name)}", ""]
+    src = f"{md_link(domain_of(res.url) or res.url, res.url)} · fetched {fmt_hm(res.fetched_at)} Europe/Berlin"
+    if not res.ok:
+        return p + [f"_Skipped today: {md_escape(res.note)}._ <sub>{src}</sub>", ""]
+    items = res.items if cap is None else res.items[:cap]
+    if not items:
+        return p + [f"_Nothing in this window today._ <sub>{src}</sub>", ""]
+    p += [f"<sub>{src} · {md_escape(res.note)}</sub>", ""]
+    headers, fn = type_table(ttype(items[0]))
+    p += fold_table(headers, [fn(key, it, results) for it in items], visible)
+    if cap is not None and len(res.items) > cap:
+        p += ["", f"<sub>{len(res.items) - cap} more in the archive file for today.</sub>"]
+    return p + [""]
+
+
+def render_today(results, ents, tech_x) -> list[str]:
+    b = []
+
+    def ok(k):
+        r = results.get(k)
+        return r.items if r and r.ok else []
+    gh = [i for i in ok("gh_daily") if i.get("gained") is not None]
+    if gh:
+        top = max(gh, key=lambda i: i["gained"])
+        b.append(f"🐙 **Most stars today:** {ttl(top, 50)} — {md_escape(why('gh_daily', top))} "
+                 f"(+{fmt_int(top['gained'])} today, {momentum('gh_daily', top)}).")
+    multi = [e for e in ents if len(e.families) >= 2 and not set(e.families) <= PULSE_FAMILIES]
+    if multi:
+        e = max(multi, key=lambda x: (len(x.families), x.score))
+        b.append(f"🔁 **On the most sources:** {ttl(e.item, 60)} — {len(e.families)} sources ({md_escape(', '.join(e.families))}).")
+    hn = ok("hn_front")
+    if hn:
+        b.append(f"💬 **Top on Hacker News:** {ttl(hn[0], 70)} — {key_metric('hn_front', hn[0])}.")
+    pp = ok("hf_papers")
+    if pp:
+        b.append(f"📄 **Most upvoted paper:** {ttl(pp[0], 70)} — {fmt_int(pp[0].get('upvotes'))} upvotes.")
+    lm = ok("openrouter")
+    if lm:
+        b.append(f"🧩 **Newest hosted model:** {ttl(lm[0], 50)} — {key_metric('openrouter', lm[0])}.")
+    kev = ok("kev")
+    if kev:
+        recent = [k for k in kev if k["added"] == kev[0]["added"]]
+        names = ", ".join(md_escape(re.sub(r"\s*\([^)]*\)", "", k["product"])) for k in recent[:4])
+        b.append(f"🛡️ **Exploited in the wild:** CISA added {len(recent)} on {kev[0]['added']} ({names}); {len(kev)} in 14 days.")
+    coins = ok("coingecko_markets")
+    if coins:
+        c = coins[0]
+        b.append(f"🪙 **Crypto:** {ttl(c, 30)} at ${_price(c.get('price'))} ({_pct(c.get('change_24h'))} in 24 h, "
+                 f"{_pct(c.get('change_7d'))} in 7 d).")
+    la = ok("launches")
+    if la:
+        b.append(f"🛰️ **Next launch:** {ttl(la[0], 60)} — {key_metric('launches', la[0])}.")
+    if tech_x:
+        t = tech_x[0]
+        posts = f"{t['posts']} posts" if t.get("posts") and t["posts"] != "—" else "volume not shown"
+        b.append(f"🐦 **Tech on X:** {md_link(t['name'], t['url'])} ({posts}, {md_escape(t['region'])} list).")
+    return [f"- {x}" for x in b[:10]]
+
+
+def top_signals(ents, n: int):
+    pool = [e for e in ents if not set(e.families) <= PULSE_FAMILIES and e.best_pct != UNRANKED_BASE]
+    pool.sort(key=lambda e: (e.score, len(e.families), e.best_pct), reverse=True)
+    return pool[:n]
+
+
+def render_top_signals(ents, results, n: int, visible: int, prefix: str) -> list[str]:
+    top = top_signals(ents, n)
+    if not top:
+        return ["_No ranked source answered today._", ""]
+    headers = ["Item", "Type", "Why it matters", "Key metric", "Momentum", "Seen on", "Industry", "Score"]
+    rows = []
+    for e in top:
+        k, it = e.key, e.item
+        t = ttype(it)
+        rows.append([ttl(it, 60), f"{TYPE_EMOJI.get(t, '')} {TYPE_LABEL.get(t, t)}", md_escape(why(k, it)),
+                     key_metric(k, it), momentum(k, it), seen_cell(it), ind_cell(it), f"**{e.score}**"])
+    return fold_table(headers, rows, visible) + [
+        "", f"<sub>Score = 100 × ({W_RANK} × best rank percentile + {W_SPREAD} × extra sources ÷ {SPREAD_CAP}, capped). "
+        f"[How the score works]({prefix}docs/methodology.md#score).</sub>", ""]
+
+
+def industry_members(ents) -> dict[str, list]:
+    out = {s: [] for s in IND_ORDER}
+    for e in ents:
+        for s in e.industries:
+            out[s].append(e)
+    for s in out:
+        out[s].sort(key=lambda e: (e.score, len(e.families)), reverse=True)
+    return out
+
+
+def strongest_signal(e) -> str:
+    k, it = e.key, e.item
+    m = momentum(k, it)
+    base = key_metric(k, it)
+    return base + (f" · {m}" if m != "—" and m not in base else "")
+
+
+def render_matrix(members, prefix: str) -> list[str]:
+    rows = []
+    for slug, emo, title, short, intro, *_ in ALL_INDUSTRIES:
+        ms = members[slug]
+        link = f"[open]({prefix}industries/{slug}.md)"
+        if not ms:
+            rows.append([f"{emo} {title}", "0", "_Nothing today_", "—", "—", link])
+            continue
+        e = ms[0]
+        fams = len({f for m in ms for f in m.families})
+        rows.append([f"{emo} [{title}](#ind-{slug})", f"**{len(ms)}** <sub>{fams} sources</sub>", ttl(e.item, 55),
+                     strongest_signal(e), str(e.score), link])
+    return [table(["Industry", "Items", "Top item", "Strongest signal", "Score", "File"], rows, numbered=False), ""]
+
+
+def render_industry_section(slug: str, members, results, visible: int, cap: int, prefix: str) -> list[str]:
+    _s, emo, title, short, intro, *_ = IND[slug]
+    ms = members[slug]
+    p = [f'<a id="ind-{slug}"></a>', "", f"### {emo} {title}", "",
+         f"{intro} **{len(ms)} items** · [full list →]({prefix}industries/{slug}.md)", ""]
+    if not ms:
+        return p + ["_Nothing today. No source returned an item that matches this industry's rules._", ""]
+    p += fold_table(UNIFIED_H, [unified_row(e, results) for e in ms[:cap]], visible)
+    if len(ms) > cap:
+        p += ["", f"<sub>{len(ms) - cap} more in [{title}]({prefix}industries/{slug}.md).</sub>"]
+    return p + [""]
+
+
+def render_sources_table(results, x_note: str, enrich_note: str) -> list[str]:
+    rows = []
+    for n, (key, name, url, _fn) in enumerate(SOURCES, 1):
+        r = results.get(key)
+        if not r:
+            continue
+        rows.append([str(n), md_link(name, url), "✅ OK" if r.ok else "⏭️ Skipped", str(len(r.items)) if r.ok else "0",
+                     "ranked" if key in RANKED else "unranked", fmt_hm(r.fetched_at), md_escape(clip(r.note, 120))])
+    rows.append(["—", "X trends", "✅ OK" if "reused" in x_note else "⏭️ Skipped", "—", "—", "—", md_escape(x_note)])
+    rows.append(["—", "Licence, topics and age for trending repos", "✅ OK" if "added for" in enrich_note else "⏭️ Skipped",
+                 "—", "—", "—", md_escape(enrich_note)])
+    return [table(["#", "Source", "Status", "Items", "Rank use", "Fetched", "How it is read"], rows, numbered=False)]
+
+
+def render_x(tech_x, x_sections, full: bool) -> list[str]:
+    if not tech_x:
+        return ["_No tech topics in today's X trend lists, or the lists were not captured yet._", ""]
+    p = ["Post volume is the `tweet_count` X showed when the lists were captured. A dash means X showed no number.", ""]
+    rows = []
+    for t in tech_x[:12]:
+        inds = classify("x", {"title": t["name"], "url": "", "kind": "x"})
+        rows.append([md_link(t["name"], t["url"]), md_escape(t["posts"]), md_escape(t["region"]), ind_cell({"_ind": inds}),
+                     md_escape(clip(t["context"], 100)) if "No independently confirmed" not in t["context"] else "—"])
+    p += fold_table(["Trend", "Posts", "List", "Industry", "Context"], rows, 12)
+    if full and x_sections:
+        p += ["", "<details>", "<summary>Full X trend lists (all topics, not just tech)</summary>", ""]
+        for region, rows_ in x_sections.items():
+            p += [f"#### {region}", "", table(["Trend", "Posts"], [[md_link(r["name"], r["url"]), md_escape(r["posts"])] for r in rows_]), ""]
+        p.append("</details>")
+    return p + [""]
+
+
+def render_maintainer(results) -> list[str]:
+    r = results.get("maintainer")
+    p = ["The maintainer's own projects. **This is not a ranking.** They show up in the tables above only when a source "
+         "listed them on its own.", ""]
+    if not r or not r.ok or not r.items:
+        return p + ["- [mjmirza on GitHub](https://github.com/mjmirza)", ""]
+    for it in r.items:
+        p.append(f"- {md_link(it['title'], it['url'])} — {md_escape(it.get('desc'))} ({fmt_int(it.get('stars'))} stars)")
+    return p + [""]
+
+
+def render_page(results, ents, fetched_at, tech_x, x_sections, x_note, enrich_note, archive_links, mode: str) -> str:
+    readme = mode == "readme"
+    prefix = "" if readme else "../../../"
+    okn, total = count_ok(results)
+    members = industry_members(ents)
+    live = sum(1 for s in IND_ORDER if members[s] and s != "other")
+    p = []
+    if readme:
+        p += ["# awesome-trending", "",
+              f"A daily market scan of technology: {len(INDUSTRIES)} industries, {total} public sources, one page. "
+              "Every number links to where it came from.", "",
+              f"[![Last commit](https://img.shields.io/github/last-commit/{REPO_OWNER}/{REPO_NAME})]({REPO_URL}/commits/main) "
+              f"[![License](https://img.shields.io/badge/License-OpenRoots_ORA_2.3-2ea44f)](LICENSE) "
+              f"[![Sources](https://img.shields.io/badge/sources_live_today-{okn}%2F{total}-informational)](#sources) "
+              f"[![Industries](https://img.shields.io/badge/industries_with_items-{live}%2F{len(INDUSTRIES)}-blueviolet)](#map)", ""]
+    else:
+        p += [f"# awesome-trending — {fmt_date(fetched_at)}", ""]
+    p += [f"**{fmt_date(fetched_at)}** · snapshot at {fmt_time(fetched_at)} · {okn}/{total} sources answered · "
+          f"{len(ents)} distinct items", "",
+          "**Read it in this order:** ⚡ 30 seconds → 🏆 top signals → 🗺️ industry map → your industry. Everything else is folded.", ""]
+    nav = ["[⚡ 30 seconds](#today)", "[🏆 Top signals](#signals)", "[🗺️ Industry map](#map)", "[🏭 Industries](#industries)",
+           "[📡 By source](#by-source)", "[🚨 Status](#status)", "[🐦 X](#x)", "[👤 Maintainer](#maintainer)"]
+    nav += (["[📚 Archive](#archive)"] if readme else []) + ["[✅ Sources](#sources)"]
+    p += [" · ".join(nav), "", '<a id="today"></a>', "", "## ⚡ Today in 30 seconds", ""]
+    p += render_today(results, ents, tech_x) + [""]
+    p += ['<a id="signals"></a>', "", "## 🏆 Top signals today", "",
+          "One score for everything: how high an item ranks in its own source, plus how many separate sources list it.", ""]
+    p += render_top_signals(ents, results, 15 if readme else 30, 10 if readme else 15, prefix)
+    p += ['<a id="map"></a>', "", "## 🗺️ Industry map", "",
+          "One row per industry. **Top item** is its highest-scoring item today. An item can sit in more than one industry.", ""]
+    p += render_matrix(members, prefix)
+    p += ['<a id="industries"></a>', "", "## 🏭 Industries", "",
+          f"Top {'5' if readme else '10'} per industry, highest score first. The same columns in every industry.", ""]
+    for slug in IND_ORDER:
+        p += render_industry_section(slug, members, results, 5 if readme else 10, 10, prefix)
+        p += ["<sub>[↑ Industry map](#map)</sub>", ""]
+    p += ['<a id="by-source"></a>', "", "## 📡 By source", "",
+          "The raw lists, grouped by kind of source. Each item type has its own columns. Click a group to open it.", ""]
+    for anchor, heading, keys in GROUPS:
+        present = [k for k in keys if k in results]
+        if not present:
+            continue
+        n_items = sum(len(results[k].items) for k in present if results[k].ok)
+        n_ok = sum(1 for k in present if results[k].ok)
+        p += [f'<a id="{anchor}"></a>', "", "<details>",
+              f"<summary><b>{heading}</b> · {n_items} items from {n_ok}/{len(present)} sources</summary>", ""]
+        for k in present:
+            p += source_block(k, results, 3 if readme else 10, 3 if readme else 25)
+        p += ["</details>", ""]
+    p += ['<a id="status"></a>', "", "## 🚨 Platform status", "", "Incidents in the last 72 hours on platforms most teams depend on.", ""]
+    for k in STATUS_KEYS:
+        p += source_block(k, results, 5, 10, "###")
+    p += ['<a id="x"></a>', "", "## 🐦 Tech on X", ""] + render_x(tech_x, x_sections, full=not readme)
+    p += ['<a id="maintainer"></a>', "", "## 👤 From the maintainer", ""] + render_maintainer(results)
+    if readme:
+        p += ['<a id="archive"></a>', "", "## 📚 Archive", "", "<details>", "<summary>Every past day</summary>", ""]
+        p += [f"- [{label}]({rel})" for label, rel in archive_links] + ["", "</details>", ""]
+        p += ["## 🤝 Contribute", "",
+              f"- Submit a repo with the [issue form]({SUBMIT_URL}). Tables are rebuilt from the sources every morning.",
+              "- How items are scored and sorted into industries: [docs/methodology.md](docs/methodology.md).",
+              "- Full source list and how to run it: [CONTRIBUTING.md](CONTRIBUTING.md) · [badge](docs/badge.md).",
+              LICENSE_LINE, ""]
+    p += ['<a id="sources"></a>', "", "## ✅ Sources", "",
+          f"Fetched {fmt_date(fetched_at)} at {fmt_time(fetched_at)}. Every figure comes from the source in its row. "
+          "A dash means the source gave no number. Nothing is estimated or invented.", ""]
+    p += render_sources_table(results, x_note, enrich_note) + [""]
+    return "\n".join(p).rstrip() + "\n"
+
+
+def _anchor(heading: str) -> str:
+    return re.sub(r"[^\w\- ]", "", heading.lower()).strip().replace(" ", "-")
+
+
+def render_industry_file(slug: str, members, results, fetched_at: datetime) -> str:
+    _s, emo, title, short, intro, rx, topics = IND[slug]
+    ms = members[slug]
+    p = [f"# {emo} {title}", "", intro, "",
+         f"**{fmt_date(fetched_at)}** · {fmt_time(fetched_at)} · {len(ms)} items · daily snapshot, rebuilt every morning.", "",
+         f"[⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · "
+         f"[Submit a repo]({SUBMIT_URL})", ""]
+    if not ms:
+        return "\n".join(p + ["_Nothing today. No source returned an item that matches this industry's rules._", ""])
+    fams = sorted({f for m in ms for f in m.families})
+    by_type: dict[str, list] = {}
+    for e in ms:
+        by_type.setdefault(ttype(e.item), []).append((e.key, e.item))
+    order = sorted(by_type, key=lambda t: -len(by_type[t]))
+    p += [f"**Sources with items here ({len(fams)}):** {md_escape(', '.join(fams))}", "",
+          "**By type:** " + " · ".join(f"{TYPE_EMOJI.get(t, '')} [{TYPE_LABEL.get(t, t)}](#{_anchor(TYPE_LABEL.get(t, t))}) "
+                                       f"({len(by_type[t])})" for t in order), "",
+          "## 🏆 Top 10", ""]
+    p += fold_table(UNIFIED_H, [unified_row(e, results) for e in ms[:10]], 10) + [""]
+    for t in order:
+        p += [f"## {TYPE_LABEL.get(t, t)}", ""]
+        headers, fn = type_table(t)
+        p += fold_table(headers, [fn(k, it, results) for k, it in by_type[t][:20]], 10)
+        if len(by_type[t]) > 20:
+            p += ["", f"<sub>{len(by_type[t]) - 20} more in today's archive.</sub>"]
+        p.append("")
+    p += [f"<sub>Every figure comes from the linked source, fetched {fmt_time(fetched_at)}. "
+          "See the [sources table](../README.md#sources).</sub>", ""]
+    return "\n".join(p)
+
+
+# ---------------------------------------------------------------------------
+# Methodology document (generated from the rules above, so it never drifts)
+# ---------------------------------------------------------------------------
+
+def render_methodology() -> str:
+    p = ["# Methodology", "",
+         "How awesome-trending turns public sources into one scored, industry-sorted page. This file is generated from "
+         "`scripts/update.py --docs`, so the document and the code cannot drift apart.", "",
+         '<a id="score"></a>', "", "## Score", "", "Every distinct item gets one score from 0 to 100:", "",
+         "```text",
+         f"score = 100 × ( {W_RANK} × best_rank_percentile  +  {W_SPREAD} × min(sources − 1, {SPREAD_CAP}) / {SPREAD_CAP} )",
+         "```", "",
+         "- **best_rank_percentile**: for each *ranked* source that lists the item, `1 − (position − 1) / list length`. "
+         "Position 1 of 20 is 1.0 and position 11 of 20 is 0.5. The best value across sources counts.",
+         f"- Items found only in *unranked* sources (news feeds, registries, advisories, releases, markets) get {UNRANKED_BASE}.",
+         "- **sources** counts distinct platforms, not lists: GitHub trending today, this week and per language all count as GitHub.",
+         "- Items are merged by normalised URL (GitHub repos by owner/name, papers by arXiv id, a paper's code repo joins its repo) "
+         "and, for headlines and discussions, by normalised title.",
+         "- **Top signals** leaves out items seen only on public-pulse sources (Google Trends, Wikipedia, Mastodon, Bluesky) "
+         "and items with no ranked source.", "",
+         "Example: a repo at position 2 of 16 on GitHub trending that is also on Hacker News scores "
+         f"`100 × ({W_RANK} × 0.94 + {W_SPREAD} × 1/3) = {round(100 * (W_RANK * (1 - 1 / 16) + W_SPREAD / 3))}`.", "",
+         "**Ranked sources:** " + ", ".join(f"`{k}`" for k in sorted(RANKED)), "",
+         "## Table designs", "",
+         "Each item type has its own columns. Every table ends with **Seen on** (number of platforms listing the item), "
+         "**Industry** and **Source**.", "", "| Type | Columns |", "| --- | --- |"]
+    for t, note in TYPE_DESIGN_NOTE.items():
+        p.append(f"| {TYPE_EMOJI.get(t, '')} {TYPE_LABEL.get(t, t)} | {md_escape(note)} |")
+    p += ["", "Industry tables mix types, so they use one shared layout: item, type, why it matters, key metric, seen on, score, source.", "",
+          "## Metrics", "",
+          "- **Momentum (repos):** stars gained ÷ stars before the gain. **Velocity (HN):** points ÷ hours since posting.",
+          "- **Exploited:** the CVE is in the CISA Known Exploited Vulnerabilities catalogue (the whole catalogue is checked).",
+          "- **Downloads:** the period is always written next to the number (30 d for Hugging Face, week for npm and PyPI, 90 d for crates.io).",
+          "- **Why it matters** is the item's own description, abstract or summary, cut to its first sentence. Where a source "
+          "has no description (Hacker News), the cell names the linked site instead.", "",
+          '<a id="industries"></a>', "", "## Industries", "",
+          "An item can belong to several industries. It is placed by:", "",
+          "1. **Source rule**: some sources always map to an industry (table below).",
+          "2. **Topic rule**: GitHub topics or post tags that match the industry's topic list.",
+          "3. **Keyword rule**: a case-insensitive whole-word match on the title, description, task, topics and tags.",
+          "4. Anything with no match goes to **Other**. Keyword-free sources ("
+          + ", ".join(f"`{k}`" for k in sorted(SOURCE_ONLY)) + ") use only the source rule, because vendor names or prices "
+          "would trigger false matches.", "",
+          "| Industry | Scope | GitHub topics | Keywords (regex) |", "| --- | --- | --- | --- |"]
+    for slug, emo, title, short, intro, rx, topics in INDUSTRIES:
+        p.append(f"| {emo} {title} | {md_escape(intro)} | {', '.join(f'`{t}`' for t in sorted(topics))} | <sub>`{md_escape(rx)}`</sub> |")
+    p += ["", "### Source rules", "", "| Source key | Always in |", "| --- | --- |"]
+    for k, v in SOURCE_INDUSTRIES.items():
+        p.append(f"| `{k}` | {', '.join(IND[s][2] for s in v)} |")
+    p.append(f"| `arxiv` | by category: {', '.join(f'{c} → {IND[s][2]}' for c, s in ARXIV_INDUSTRY.items())} |")
+    for k, _n, _u, ind in INDUSTRY_FEEDS:
+        if ind:
+            p.append(f"| `{k}` | {IND[ind][2]} |")
+    for t, ind in GITHUB_TOPICS:
+        p.append(f"| `gh_topic_{t}` | {IND[ind][2]} |")
+    p += ["| `coingecko_trending`, `coingecko_markets` | Crypto & web3 |", "| `biorxiv` | Health & biotech |",
+          "| `launches` | Space & mobility |", "",
+          "## What is never done", "",
+          "- No number is estimated, rounded up or filled in. A dash means the source gave none.",
+          "- No source that needs a key, a login, or scraping against its terms.",
+          "- The maintainer's own repos sit in their own labelled section and are never boosted.", ""]
+    return "\n".join(p)
+
+
+# ---------------------------------------------------------------------------
+# Run
+# ---------------------------------------------------------------------------
+
+NICHE_REDIRECTS = {
+    "ai-llms": ["ai-llms"], "agents-mcp": ["ai-agents"], "devtools": ["devtools"], "web": ["web-frontend"],
+    "mobile": ["mobile"], "devops-cloud": ["cloud-devops"], "security": ["cybersecurity"], "data": ["data-analytics"],
+    "research": ["ai-llms", "health-biotech", "robotics-hardware"], "pulse": ["media-creator", "policy-regulation", "other"],
+}
+
+
+def render_niche_redirect(old: str) -> str:
+    links = " · ".join(f"[{IND[s][1]} {IND[s][2]}](../industries/{s}.md)" for s in NICHE_REDIRECTS[old])
+    return (f"# Moved\n\nThe niche lists became industry files. This topic now lives in: {links}\n\n"
+            "[All industries](../README.md#map)\n")
+
+
 def run(root: Path, dry_run: bool = False, only: set[str] | None = None) -> int:
     t0 = time.monotonic()
     DEADLINE[0] = t0 + TOTAL_BUDGET
@@ -2168,51 +2615,52 @@ def run(root: Path, dry_run: bool = False, only: set[str] | None = None) -> int:
     results = run_sources(only)
     DEADLINE[0] = max(DEADLINE[0], time.monotonic() + 25)  # small reserve for the enrichment calls
     enrich_note = enrich_repos(results)
-    build_also(results)
-
+    mark_exploited(results)
+    ents = build_entities(results)
     x_sections, x_note = load_x_trends(root, fetched_at)
     tech_x = select_tech_on_x(x_sections) if x_sections else []
 
     for r in results.values():
-        flag = "ok  " if r.ok else "SKIP"
-        print(f"  [{flag}] {r.key:18} {len(r.items):3} items {r.elapsed:5.1f}s  {r.note[:90]}")
+        print(f"  [{'ok  ' if r.ok else 'SKIP'}] {r.key:20} {len(r.items):3} items {r.elapsed:5.1f}s  {r.note[:80]}")
     print(f"  [x   ] {x_note}; {len(tech_x)} tech rows")
     print(f"  [enr ] {enrich_note}")
 
-    niche_rows = collect_niches(results)
-    niche_counts = {k: len(v) for k, v in niche_rows.items()}
-    blocks = section_blocks(results, "readme")
-
-    day_dir = root / "archive" / fetched_at.strftime("%Y/%m")
     rel_archive = f"archive/{fetched_at:%Y/%m}/{fetched_at:%Y-%m-%d}.md"
     archive_links = list_archive_links(root, rel_archive)
-
-    readme = render_page(results, blocks, fetched_at, tech_x, x_sections, x_note, enrich_note,
-                         niche_counts, archive_links, "readme", rel_archive)
-    archive_body = render_page(results, blocks, fetched_at, tech_x, x_sections, x_note, enrich_note,
-                               niche_counts, archive_links, "archive")
+    members = industry_members(ents)
+    readme = render_page(results, ents, fetched_at, tech_x, x_sections, x_note, enrich_note, archive_links, "readme")
+    archive_body = render_page(results, ents, fetched_at, tech_x, x_sections, x_note, enrich_note, archive_links, "archive")
     archive_path = root / rel_archive
     archive_md = merge_archive(archive_path, archive_body, fetched_at)
-    niche_pages = {f"niches/{n['slug']}.md": render_niche_page(n, niche_rows[n["slug"]], results, fetched_at) for n in NICHES}
+    pages = {f"industries/{s}.md": render_industry_file(s, members, results, fetched_at) for s in IND_ORDER}
 
     okn, total = count_ok(results)
-    print(f"Sources answered: {okn}/{total}; fetch time {time.monotonic() - t0:.1f}s")
+    print(f"Sources answered: {okn}/{total}; {len(ents)} distinct items; {time.monotonic() - t0:.1f}s")
+    for s in IND_ORDER:
+        print(f"  {s:20} {len(members[s]):4} items")
     if dry_run:
         print(f"Dry run: README {len(readme):,} bytes, archive {len(archive_md):,} bytes")
-        for path, text in niche_pages.items():
-            print(f"  {path}: {niche_counts[Path(path).stem]} items, {len(text):,} bytes")
         return 0
     if okn == 0:
         print("No source answered; leaving files untouched.")
         return 1
     (root / "README.md").write_text(readme, encoding="utf-8")
-    day_dir.mkdir(parents=True, exist_ok=True)
+    archive_path.parent.mkdir(parents=True, exist_ok=True)
     archive_path.write_text(archive_md, encoding="utf-8")
-    for rel, text in niche_pages.items():
+    for rel, text in pages.items():
         (root / rel).parent.mkdir(parents=True, exist_ok=True)
         (root / rel).write_text(text, encoding="utf-8")
-    print(f"Wrote README.md, {rel_archive} and {len(niche_pages)} niche files")
+    print(f"Wrote README.md, {rel_archive} and {len(pages)} industry files")
     return 0
+
+
+def write_static_docs(root: Path) -> None:
+    (root / "docs").mkdir(exist_ok=True)
+    (root / "docs" / "methodology.md").write_text(render_methodology(), encoding="utf-8")
+    (root / "niches").mkdir(exist_ok=True)
+    for old in NICHE_REDIRECTS:
+        (root / "niches" / f"{old}.md").write_text(render_niche_redirect(old), encoding="utf-8")
+    print("Wrote docs/methodology.md and the niches/ redirects")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -2220,10 +2668,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", type=Path, default=None, help="Repository root")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--only", default="", help="Comma-separated source keys")
+    parser.add_argument("--docs", action="store_true", help="Rewrite docs/methodology.md and niches/ redirects, then exit")
     args = parser.parse_args(argv)
-    root = args.root or Path(__file__).resolve().parent.parent
+    root = (args.root or Path(__file__).resolve().parent.parent).resolve()
+    if args.docs:
+        write_static_docs(root)
+        return 0
     only = {k.strip() for k in args.only.split(",") if k.strip()} or None
-    return run(root.resolve(), dry_run=args.dry_run, only=only)
+    return run(root, dry_run=args.dry_run, only=only)
 
 
 if __name__ == "__main__":

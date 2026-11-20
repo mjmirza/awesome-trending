@@ -17,20 +17,31 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: niche
+    id: industry
     attributes:
-      label: Niche
+      label: Industry
       options:
         - AI & LLMs
-        - Agents & MCP
-        - Research & papers
-        - Dev tools
-        - Web
+        - AI agents & MCP
+        - Developer tools
+        - Cloud & DevOps
+        - Cybersecurity
+        - Data & analytics
+        - Web & frontend
         - Mobile
-        - DevOps & Cloud
-        - Security
-        - Data
-        - Tech news & public pulse
+        - Fintech & payments
+        - Crypto & web3
+        - Health & biotech
+        - Robotics & hardware
+        - Semiconductors & chips
+        - Climate & energy
+        - E-commerce & retail
+        - Gaming & XR
+        - Enterprise SaaS & productivity
+        - Education
+        - Media & creator economy
+        - Space & mobility
+        - Policy & regulation
         - Other / not sure
     validations:
       required: true
