@@ -2,35 +2,35 @@
 
 Online and physical retail, marketplaces, logistics and shopping.
 
-**20 November 2026** · 09:34 Europe/Berlin (UTC+1) · 32 items · daily snapshot, rebuilt every morning.
+**20 November 2026** · 10:02 Europe/Berlin (UTC+1) · 49 items · daily snapshot, rebuilt every morning.
 
 [⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (15):** 9to5Mac, Android Police, Class Central, Digital Commerce 360, Electrek, GitHub, GitHub Changelog, Hacker News, MCP Registry, Modern Retail, PYMNTS, Retail Dive, SpaceNews, Stack Overflow, arXiv
+**Sources with items here (24):** 9to5Mac, AWS Machine Learning blog, Android Police, BBC, Bloomberg, Bluesky, Class Central, Crunchbase News, Digital Commerce 360, Electrek, ElevenLabs blog, GitHub, GitHub Changelog, Google News, Hacker News, MCP Registry, MarketWatch, Modern Retail, NVIDIA blog, Retail Dive, SpaceNews, Stack Overflow, The Guardian, arXiv
 
-**By type:** 🗞️ [Headlines](#headlines) (27) · 💬 [Discussions](#discussions) (1) · 📄 [Papers](#papers) (1) · 🔌 [MCP servers](#mcp-servers) (1) · 🐙 [Repositories](#repositories) (1) · ❓ [Questions](#questions) (1)
+**By type:** 🗞️ [Headlines](#headlines) (42) · 🦋 [Topics](#topics) (2) · 💬 [Discussions](#discussions) (1) · 📄 [Papers](#papers) (1) · 🔌 [MCP servers](#mcp-servers) (1) · 🐙 [Repositories](#repositories) (1) · ❓ [Questions](#questions) (1)
 
 ## 🏆 Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Show HN: AgentMall – Let your AI agent buy groceries](https://getagentmall.com) | 💬 Discussions | Link to getagentmall.com | 18 pts · 5 comments | 1 | 42 | [Hacker News](https://news.ycombinator.com/show) |
-| 2 | [Held While Waiting: What LLM Agent Sessions Reserve on Serverless…](https://arxiv.org/abs/2611.26480) | 📄 Papers | LLM agents spend nearly all their time waiting for the model. | cs.PF · new | 1 | 15 | [arXiv](https://arxiv.org/) |
-| 3 | [Bowmark web data: LinkedIn, Amazon, YouTube, Reddit, Airbnb, Instagram](https://github.com/bowmark-ai/skill) | 🔌 MCP servers | Web scraping and automation for AI agents: live prices, quotes, bookings, anything behind a login. | v8.229.0 · 20 Nov 08:29 | 1 | 15 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
-| 4 | [S3 audit log streaming with OpenID Connect expands to GHE.com](https://github.blog/changelog/2026-11-19-s3-audit-log-streaming-with-openid-connect-expands-to-ghe-com) | 🗞️ Headlines | You can now stream enterprise audit logs to Amazon S3 using OpenID Connect (OIDC) on GitHub Enterprise Cloud… | GitHub Changelog · 19 Nov 09:27 | 1 | 15 | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 5 | [Coinbase Eyes 2027 Launch for In-House Prediction Markets](https://www.pymnts.com/economy/markets/2026/coinbase-eyes-2027-launch-for-in-house-prediction-markets/) | 🗞️ Headlines | Coinbase aims to begin offering in-house event contracts to retail and institutional customers in the United… | PYMNTS · 20 Nov 00:40 | 1 | 15 | [PYMNTS](https://www.pymnts.com/feed/) |
-| 6 | [EcoFlow Black Friday Sale + flash deals drop DELTA 3800 Gen4 to…](https://electrek.co/2026/11/19/ecoflow-black-friday-sale-delta-3800-gen4-segway-xyber-air-e-bike-more/) | 🗞️ Headlines | With Amazon’s full Black Friday event in motion, we’re seeing expanded and increased Green Deal savings… | Electrek · 19 Nov 20:00 | 1 | 15 | [Electrek](https://electrek.co/feed/) |
-| 7 | [On is making a bigger play for American shoppers, one store at a time](https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | Swiss sportswear brand On is gearing up for a bigger U.S. | Modern Retail · 20 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
-| 8 | [Walmart’s convenience lures high-income shoppers](https://www.modernretail.co/operations/walmarts-convenience-lures-high-income-shoppers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | For years, Walmart has won on cost. | Modern Retail · 20 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
-| 9 | [Retailers ride the Grand Theft Auto VI wave with special promos](https://www.modernretail.co/marketing/retailers-ride-the-grand-theft-auto-vi-wave-with-special-promos/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | Retailers and brands mark GTA VI’s launch with food, delivery, tech and even cannabis promos as gamers take… | Modern Retail · 19 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
-| 10 | [In Graphic Detail: Welcome to the agentic commerce quarter](https://www.modernretail.co/technology/in-graphic-detail-welcome-to-the-agentic-commerce-quarter/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | OpenAI, Google, Amazon and Walmart are betting on agent-led holiday shopping. | Modern Retail · 19 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
+| 2 | [Pattinson will be next James Bond](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/22769c70f72c) | 🦋 Topics | Amazon MGM Studios announced they had cast Robert Pattinson as the new 007. | — | 1 | 36 | [Bluesky](https://bsky.app/) |
+| 3 | [Use Kimi Code CLI with models on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/) | 🗞️ Headlines | Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent… | AWS Machine Learning blog · 20 Nov 01:33 | **2** <sub>AWS Machine Learning blog, Google News</sub> | 28 | [AWS Machine Learning blog](https://aws.amazon.com/blogs/machine-learning/feed/) |
+| 4 | [Etsy terms allow AI training](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/3179f800469d) | 🦋 Topics | Artists and indie sellers close their shops after the marketplace lets uploads train AI models. | — | 1 | 28 | [Bluesky](https://bsky.app/) |
+| 5 | [Held While Waiting: What LLM Agent Sessions Reserve on Serverless…](https://arxiv.org/abs/2611.26480) | 📄 Papers | LLM agents spend nearly all their time waiting for the model. | cs.PF · new | 1 | 15 | [arXiv](https://arxiv.org/) |
+| 6 | [Bowmark web data: LinkedIn, Amazon, YouTube, Reddit, Airbnb, Instagram](https://github.com/bowmark-ai/skill) | 🔌 MCP servers | Web scraping and automation for AI agents: live prices, quotes, bookings, anything behind a login. | v8.229.0 · 20 Nov 08:29 | 1 | 15 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+| 7 | [S3 audit log streaming with OpenID Connect expands to GHE.com](https://github.blog/changelog/2026-11-19-s3-audit-log-streaming-with-openid-connect-expands-to-ghe-com) | 🗞️ Headlines | You can now stream enterprise audit logs to Amazon S3 using OpenID Connect (OIDC) on GitHub Enterprise Cloud… | GitHub Changelog · 19 Nov 09:27 | 1 | 15 | [GitHub Changelog](https://github.blog/changelog/feed/) |
+| 8 | [EcoFlow Black Friday Sale + flash deals drop DELTA 3800 Gen4 to…](https://electrek.co/2026/11/19/ecoflow-black-friday-sale-delta-3800-gen4-segway-xyber-air-e-bike-more/) | 🗞️ Headlines | With Amazon’s full Black Friday event in motion, we’re seeing expanded and increased Green Deal savings… | Electrek · 19 Nov 20:00 | 1 | 15 | [Electrek](https://electrek.co/feed/) |
+| 9 | [On is making a bigger play for American shoppers, one store at a time](https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | Swiss sportswear brand On is gearing up for a bigger U.S. | Modern Retail · 20 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
+| 10 | [Walmart’s convenience lures high-income shoppers](https://www.modernretail.co/operations/walmarts-convenience-lures-high-income-shoppers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | For years, Walmart has won on cost. | Modern Retail · 20 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [S3 audit log streaming with OpenID Connect expands to GHE.com](https://github.blog/changelog/2026-11-19-s3-audit-log-streaming-with-openid-connect-expands-to-ghe-com) | You can now stream enterprise audit logs to Amazon S3 using OpenID Connect (OIDC) on GitHub Enterprise Cloud… | GitHub Changelog | 19 Nov 09:27 | 1 | 🧰 Dev tools, ☁️ Cloud +2 | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 2 | [Coinbase Eyes 2027 Launch for In-House Prediction Markets](https://www.pymnts.com/economy/markets/2026/coinbase-eyes-2027-launch-for-in-house-prediction-markets/) | Coinbase aims to begin offering in-house event contracts to retail and institutional customers in the United… | PYMNTS | 20 Nov 00:40 | 1 | 💳 Fintech, 🪙 Crypto +1 | [PYMNTS](https://www.pymnts.com/feed/) |
+| 1 | [Use Kimi Code CLI with models on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/) | Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent… | AWS Machine Learning blog | 20 Nov 01:33 | **2** <sub>AWS Machine Learning blog, Google News</sub> | 🤖 AI, 🧠 Agents +2 | [AWS Machine Learning blog](https://aws.amazon.com/blogs/machine-learning/feed/) |
+| 2 | [S3 audit log streaming with OpenID Connect expands to GHE.com](https://github.blog/changelog/2026-11-19-s3-audit-log-streaming-with-openid-connect-expands-to-ghe-com) | You can now stream enterprise audit logs to Amazon S3 using OpenID Connect (OIDC) on GitHub Enterprise Cloud… | GitHub Changelog | 19 Nov 09:27 | 1 | 🧰 Dev tools, ☁️ Cloud +2 | [GitHub Changelog](https://github.blog/changelog/feed/) |
 | 3 | [EcoFlow Black Friday Sale + flash deals drop DELTA 3800 Gen4 to $1,614 low, Segway Xyber…](https://electrek.co/2026/11/19/ecoflow-black-friday-sale-delta-3800-gen4-segway-xyber-air-e-bike-more/) | With Amazon’s full Black Friday event in motion, we’re seeing expanded and increased Green Deal savings… | Electrek | 19 Nov 20:00 | 1 | ⚡ Energy, 🛒 Retail | [Electrek](https://electrek.co/feed/) |
 | 4 | [On is making a bigger play for American shoppers, one store at a time](https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Swiss sportswear brand On is gearing up for a bigger U.S. | Modern Retail | 20 Nov 06:00 | 1 | 🛒 Retail | [Modern Retail](https://www.modernretail.co/feed/) |
 | 5 | [Walmart’s convenience lures high-income shoppers](https://www.modernretail.co/operations/walmarts-convenience-lures-high-income-shoppers/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | For years, Walmart has won on cost. | Modern Retail | 20 Nov 06:00 | 1 | 🛒 Retail | [Modern Retail](https://www.modernretail.co/feed/) |
@@ -58,7 +58,14 @@ Online and physical retail, marketplaces, logistics and shopping.
 
 </details>
 
-<sub>7 more in today's archive.</sub>
+<sub>22 more in today's archive.</sub>
+
+## Topics
+
+| # | Topic | Context | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [Pattinson will be next James Bond](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/22769c70f72c) | Amazon MGM Studios announced they had cast Robert Pattinson as the new 007. | 1 | 💹 Markets, 🛒 Retail | [Bluesky](https://bsky.app/) |
+| 2 | [Etsy terms allow AI training](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/3179f800469d) | Artists and indie sellers close their shops after the marketplace lets uploads train AI models. | 1 | 🤖 AI, 🛒 Retail | [Bluesky](https://bsky.app/) |
 
 ## Discussions
 
@@ -82,7 +89,7 @@ Online and physical retail, marketplaces, logistics and shopping.
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [wshobson/agents](https://github.com/wshobson/agents) | Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub… | 42,716 | +43 today | +0.1% | Python | MIT | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
+| 1 | [wshobson/agents](https://github.com/wshobson/agents) | Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub… | 42,717 | +43 today | +0.1% | Python | MIT | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
 
 ## Questions
 
@@ -90,4 +97,4 @@ Online and physical retail, marketplaces, logistics and shopping.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [How to hide delivery method "SHIPPING" when "pickup-only" products are in the cart?](https://stackoverflow.com/questions/80017705/how-to-hide-delivery-method-shipping-when-pickup-only-products-are-in-the-ca) | #shopify | -2 | 0 | 62 | 1 | 🧰 Dev tools, 🛒 Retail | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
 
-<sub>Every figure comes from the linked source, fetched 09:34 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 10:02 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>

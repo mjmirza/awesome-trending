@@ -2,21 +2,21 @@
 
 Games, studios, engines, consoles and VR/AR.
 
-**20 November 2026** · 09:34 Europe/Berlin (UTC+1) · 26 items · daily snapshot, rebuilt every morning.
+**20 November 2026** · 10:02 Europe/Berlin (UTC+1) · 30 items · daily snapshot, rebuilt every morning.
 
 [⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (9):** Dev.to, Game Developer, GamesIndustry.biz, GitHub, Modern Retail, The Verge, Tubefilter, UploadVR, Wikipedia
+**Sources with items here (13):** BBC, CNBC, Dev.to, Game Developer, GamesIndustry.biz, Google Trends, Modern Retail, NVIDIA blog, New York Times, The Verge, Tubefilter, UploadVR, Wikipedia
 
-**By type:** 🗞️ [Headlines](#headlines) (21) · 📖 [Most-read articles](#most-read-articles) (3) · 🐙 [Repositories](#repositories) (1) · ✍️ [Posts](#posts) (1)
+**By type:** 🗞️ [Headlines](#headlines) (25) · 📖 [Most-read articles](#most-read-articles) (3) · 🔎 [Searches](#searches) (1) · ✍️ [Posts](#posts) (1)
 
 ## 🏆 Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Grand Theft Auto VI](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI) | 📖 Most-read articles | — | 750.2k views | 1 | 60 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 2 | [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) | 🐙 Repositories | Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. | ⭐ 4.8k · created 16 Nov | 1 | 58 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-| 3 | [Grand Theft Auto](https://en.wikipedia.org/wiki/Grand_Theft_Auto) | 📖 Most-read articles | — | 171.3k views | 1 | 40 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 2 | [Grand Theft Auto](https://en.wikipedia.org/wiki/Grand_Theft_Auto) | 📖 Most-read articles | — | 171.3k views | 1 | 40 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 3 | [will gta 6 have online](https://trends.google.com/trending?geo=US&q=will%20gta%206%20have%20online) | 🔎 Searches | GTA 6 Is Finally Here...So When Can You Play Online With Friends? | 100+ searches (US) | 1 | 33 | [Google Trends](https://trends.google.com/trending) |
 | 4 | [Meta now sells 3D movies on Quest VR headsets](https://www.theverge.com/tech/1038157/meta-quest-vr-3d-movies-tv-app) | 🗞️ Headlines | Meta now offers more than 150 3D movies that you can buy or rent to watch in VR on its Quest 3 and 3S… | The Verge · 19 Nov 22:12 | 1 | 15 | [The Verge](https://www.theverge.com/rss/index.xml) |
 | 5 | [Retailers ride the Grand Theft Auto VI wave with special promos](https://www.modernretail.co/marketing/retailers-ride-the-grand-theft-auto-vi-wave-with-special-promos/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | 🗞️ Headlines | Retailers and brands mark GTA VI’s launch with food, delivery, tech and even cannabis promos as gamers take… | Modern Retail · 19 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
 | 6 | [Ubisoft lays off 166 staff in Montreal and Quebec studios](https://www.gamesindustry.biz/ubisoft-lays-off-166-staff-in-montreal-and-quebec-studios) | 🗞️ Headlines | Ubisoft is laying off staff in its vast Montreal and Quebec studios, with 166 roles being lost "to ensure… | GamesIndustry.biz · 19 Nov 16:15 | 1 | 15 | [GamesIndustry.biz](https://www.gamesindustry.biz/feed) |
@@ -58,7 +58,7 @@ Games, studios, engines, consoles and VR/AR.
 
 </details>
 
-<sub>1 more in today's archive.</sub>
+<sub>5 more in today's archive.</sub>
 
 ## Most-read articles
 
@@ -68,11 +68,11 @@ Games, studios, engines, consoles and VR/AR.
 | 2 | [Grand Theft Auto](https://en.wikipedia.org/wiki/Grand_Theft_Auto) | 171,292 | 10 | 1 | 🎮 Gaming | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
 | 3 | [Rockstar Games](https://en.wikipedia.org/wiki/Rockstar_Games) | 112,864 | 18 | 1 | 🎮 Gaming | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
 
-## Repositories
+## Searches
 
-| # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [krisgfx9/Wireless-Device-Battery-Monitor](https://github.com/krisgfx9/Wireless-Device-Battery-Monitor) | Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. | 4,833 | new | — | C++ | GPL-3.0 · 3 d old | 1 | 🎮 Gaming | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
+| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [will gta 6 have online](https://trends.google.com/trending?geo=US&q=will%20gta%206%20have%20online) | US | 100+ | [GTA 6 Is Finally Here...So When Can You Play Online With Friends?](https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer) | 1 | 🎮 Gaming | [Google Trends](https://trends.google.com/trending) |
 
 ## Posts
 
@@ -80,4 +80,4 @@ Games, studios, engines, consoles and VR/AR.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [I Built a Ghibli-Style Mughal-Tudor Palace With World Labs Atlas (Chisel). Here's What…](https://dev.to/amananandrai/i-built-a-ghibli-style-mughal-tudor-palace-with-world-labs-atlas-chisel-heres-what-it-can-do-l21) | #ai, #gamedev, #3d | 6 reactions · 0 comments | amananandrai | 1 | 🤖 AI, 🎮 Gaming | [Dev.to](https://dev.to/top/day) |
 
-<sub>Every figure comes from the linked source, fetched 09:34 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 10:02 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
