@@ -23,12 +23,14 @@ body:
       options:
         - AI & LLMs
         - Agents & MCP
+        - Research & papers
         - Dev tools
         - Web
         - Mobile
         - DevOps & Cloud
         - Security
         - Data
+        - Tech news & public pulse
         - Other / not sure
     validations:
       required: true
