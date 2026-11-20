@@ -20,7 +20,7 @@ score = 100 × ( 0.6 × best_rank_percentile  +  0.4 × min(sources − 1, 3) / 
 
 Example: a repo at position 2 of 16 on GitHub trending that is also on Hacker News scores `100 × (0.6 × 0.94 + 0.4 × 1/3) = 70`.
 
-**Ranked sources:** `bluesky`, `coingecko_trending`, `devto_day`, `devto_week`, `gh_daily`, `gh_go`, `gh_new`, `gh_python`, `gh_rust`, `gh_topic_bioinformatics`, `gh_topic_fintech`, `gh_topic_robotics`, `gh_typescript`, `gh_weekly`, `gtrends`, `hf_datasets`, `hf_models`, `hf_papers`, `hf_spaces`, `hn_ask`, `hn_best`, `hn_front`, `hn_show`, `jsdelivr`, `lobsters`, `mastodon_links`, `mastodon_tags`, `npm`, `smithery`, `stackoverflow`, `wikipedia`
+**Ranked sources:** `bluesky`, `coingecko_trending`, `devto_day`, `devto_month`, `devto_week`, `devto_year`, `gh_daily`, `gh_go`, `gh_monthly`, `gh_new`, `gh_new_month`, `gh_new_year`, `gh_python`, `gh_rust`, `gh_topic_bioinformatics`, `gh_topic_fintech`, `gh_topic_robotics`, `gh_typescript`, `gh_weekly`, `gtrends`, `hf_datasets`, `hf_models`, `hf_papers`, `hf_papers_month`, `hf_papers_week`, `hf_spaces`, `hn_ask`, `hn_best`, `hn_front`, `hn_month`, `hn_show`, `hn_year`, `jsdelivr`, `lobsters`, `mastodon_links`, `mastodon_tags`, `npm`, `smithery`, `stackoverflow`, `wikipedia`
 
 ## Table designs
 
@@ -52,6 +52,8 @@ Each item type has its own columns. Every table ends with **Seen on** (number of
 | 📖 Most-read articles | views and rank |
 | #️⃣ Hashtags | posts and accounts over two days |
 | 🦋 Topics | context line |
+| 🏁 Leaderboard positions | board, rank, rating, votes, organisation, licence, publish date |
+| 💹 Market quotes | level, change against the previous published value, as-of date |
 
 Industry tables mix types, so they use one shared layout: item, type, why it matters, key metric, seen on, score, source.
 
@@ -71,18 +73,20 @@ An item can belong to several industries. It is placed by:
 1. **Source rule**: some sources always map to an industry (table below).
 2. **Topic rule**: GitHub topics or post tags that match the industry's topic list.
 3. **Keyword rule**: a case-insensitive whole-word match on the title, description, task, topics and tags.
-4. Anything with no match goes to **Other**. Keyword-free sources (`cloudflarestatus`, `coingecko_markets`, `coingecko_trending`, `euvd`, `githubstatus`, `jsdelivr`, `kev`, `launches`, `nvd`) use only the source rule, because vendor names or prices would trigger false matches.
+4. Anything with no match goes to **Other**. Keyword-free sources (`arena_image`, `arena_text`, `arena_video`, `cloudflarestatus`, `coingecko_markets`, `coingecko_trending`, `ecb_fx`, `euvd`, `fred`, `githubstatus`, `jsdelivr`, `kev`, `launches`, `nvd`, `st_anthropic`, `st_cohere`, `st_elevenlabs`, `st_mistral`, `st_openai`, `st_perplexity`) use only the source rule, because vendor names or prices would trigger false matches.
 
 | Industry | Scope | GitHub topics | Keywords (regex) |
 | --- | --- | --- | --- |
 | 🤖 AI & LLMs | Foundation models, inference, ML research and the labs behind them. | `ai`, `artificial-intelligence`, `computer-vision`, `deep-learning`, `generative-ai`, `large-language-models`, `llama`, `llm`, `llms`, `machine-learning`, `nlp`, `openai`, `pytorch`, `transformers` | <sub>`\b(ai\|a\.i\.\|artificial intelligence\|llms?\|gpt[-\w.]*\|chatgpt\|openai\|anthropic\|claude\|gemini\|llama\|qwen\|mistral\|deepseek\|transformers?\|diffusion\|inference\|fine-?tun\w*\|machine learning\|deep learning\|neural\|embeddings?\|rag\|vllm\|ollama\|pytorch\|tensorflow\|multimodal\|vision-language\|language models?\|reasoning model\|text-generation\|text-to-\w+\|image-text-to-text\|hugging ?face\|openvino\|copilot)\b`</sub> |
 | 🧠 AI agents & MCP | Agent frameworks, skills, tool use and Model Context Protocol servers. | `agent-skills`, `agentic-ai`, `agents`, `ai-agent`, `ai-agents`, `autonomous-agents`, `claude-code`, `llm-agents`, `mcp`, `mcp-server`, `model-context-protocol` | <sub>`\b(agents?\|agentic\|mcp\|model context protocol\|agent skills?\|skills? (bundle\|library\|framework)\|claude code\|codex\|coding agents?\|autonomous agents?\|crewai\|langgraph\|autogen\|tool[- ]calling\|a2a\|computer[- ]use\|browser[- ]use\|sandbox(es\|ed)?)\b`</sub> |
+| 🎥 AI media: video, image, audio & voice | Generative video, image, music, speech and voice models and the companies that make them. | `comfyui`, `diffusion-models`, `image-generation`, `music-generation`, `speech-synthesis`, `stable-diffusion`, `text-to-image`, `text-to-speech`, `text-to-video`, `tts`, `video-generation`, `voice-cloning` | <sub>`\b(text-to-(video\|image\|speech\|audio\|music)\|image-to-video\|video generat\w*\|image generat\w*\|ai video\|ai images?\|generative video\|sora\|veo ?\d*\|runway(ml)?\|kling\|hailuo\|higgsfield\|midjourney\|black forest labs\|flux\.\d\|stable diffusion\|stability ai\|elevenlabs?\|suno\|udio\|heygen\|synthesia\|nano banana\|firefly\|ideogram\|luma ai\|dream machine\|tts\|speech synthesis\|voice clon\w*\|voice ai\|music generat\w*\|lip-?sync\|diffusion models?\|comfyui)\b`</sub> |
 | 🧰 Developer tools | Languages, editors, CLIs, package ecosystems and the software toolchain. | `cli`, `compiler`, `developer-tools`, `devtools`, `git`, `golang`, `neovim`, `programming-language`, `python`, `rust`, `terminal`, `typescript`, `vscode` | <sub>`\b(cli\|ide\|editor\|vs ?code\|vim\|neovim\|emacs\|plugins?\|sdk\|compiler\|debugg\w*\|linters?\|terminal\|git\|package manager\|npm\|pypi\|crates?\.io\|cargo\|rustc?\|golang\|python\|typescript\|javascript\|zig\|ruff\|deno\|bun\|node\.?js\|refactor\w*\|developers?\|devtools?\|programming\|open[- ]source)\b`</sub> |
 | ☁️ Cloud & DevOps | Infrastructure, containers, CI/CD, self-hosting, outages and operations. | `aws`, `cloud`, `devops`, `docker`, `homelab`, `infrastructure`, `kubernetes`, `linux`, `observability`, `self-hosted`, `terraform` | <sub>`\b(devops\|kubernetes\|k8s\|docker\|containers?\|helm\|terraform\|ansible\|ci/?cd\|aws\|azure\|gcp\|google cloud\|cloud\|serverless\|nginx\|linux\|kernel\|self-host\w*\|homelab\|observability\|grafana\|prometheus\|sre\|outages?\|incident\|hetzner\|cloudflare\|data ?cent(er\|re)s?\|infrastructure)\b`</sub> |
 | 🔒 Cybersecurity | Exploited and new vulnerabilities, attacks, defence and security tooling. | `ai-security`, `bug-bounty`, `ctf`, `cybersecurity`, `infosec`, `malware`, `osint`, `penetration-testing`, `pentesting`, `red-team`, `security`, `vulnerability` | <sub>`\b(security\|vulnerab\w*\|cve-\d+\|exploit\w*\|malware\|ransomware\|phishing\|breach\w*\|pentest\w*\|red[- ]team\|bug[- ]?bount\w*\|bug hunt\w*\|zero-day\|0-day\|backdoor\|cryptography\|authentication bypass\|xss\|rce\|privilege escalation\|supply[- ]chain attack\|cyber\w*\|infosec\|hackers?\|spyware\|botnet\|ddos)\b`</sub> |
 | 📊 Data & analytics | Databases, datasets, pipelines, analytics and BI. | `analytics`, `big-data`, `data-engineering`, `data-science`, `database`, `dataset`, `etl`, `postgresql`, `sql`, `vector-database` | <sub>`\b(databases?\|postgres\w*\|sqlite\|mysql\|duckdb\|clickhouse\|polars\|pandas\|spark\|kafka\|airflow\|parquet\|iceberg\|etl\|data pipelines?\|datasets?\|data engineering\|vector (db\|database)\|analytics\|olap\|warehouse)\b`</sub> |
 | 🌐 Web & frontend | Browsers, front-end frameworks, CSS, web platform and the CDN layer. | `css`, `frontend`, `javascript`, `nextjs`, `react`, `svelte`, `tailwindcss`, `vue`, `web`, `webassembly` | <sub>`\b(frontend\|front-end\|web apps?\|web development\|web framework\|web platform\|web standards?\|browsers?\|css\|html\|react\|next\.js\|nextjs\|vue\|svelte\|angular\|tailwind\|webassembly\|wasm\|chrome\|firefox\|safari\|webgpu)\b`</sub> |
 | 📱 Mobile | iOS, Android, phones, wearables and app stores. | `android`, `flutter`, `ios`, `kotlin`, `mobile`, `react-native`, `swift`, `swiftui` | <sub>`\b(ios\|ipados\|android\|iphone\|ipad\|app store\|google play\|mobile\|react native\|flutter\|swiftui\|swift\|kotlin\|jetpack\|xcode\|testflight\|smartphones?\|samsung galaxy\|pixel \d+\|whatsapp\|apple watch\|wearables?)\b`</sub> |
+| 💹 Markets & economy | Stocks, rates, inflation, central banks, earnings, funding rounds, M&A, IPOs and layoffs. | `economics`, `finance`, `quantitative-finance`, `stock-market`, `trading` | <sub>`\b(stocks?\|shares (fell\|rose\|jumped\|slid\|surged\|sank\|climbed\|dropped)\|wall street\|nasdaq\|s&p 500\|s&p\|dow jones\|dax\|ftse\|nikkei\|bonds?\|treasur(y\|ies)\|yields?\|interest rates?\|rate (cut\|hike)s?\|inflation\|cpi\|gdp\|recession\|central banks?\|federal reserve\|the fed\|ecb\|earnings\|quarterly results\|revenue\|profits?\|valuations?\|ipos?\|acquisitions?\|acquires?\|acquired\|mergers?\|m&a\|takeover\|funding rounds?\|raises \$[\d.]+\|series [a-f]\|venture capital\|investors?\|layoffs?\|job cuts\|tariffs?\|econom(y\|ic\|ies)\|oil prices?\|gold prices?\|dollar\|bitcoin etf\|market cap)\b`</sub> |
 | 💳 Fintech & payments | Banking, payments, lending, trading, insurance and finance infrastructure. | `algorithmic-trading`, `banking`, `finance`, `fintech`, `payments`, `quantitative-finance`, `trading` | <sub>`\b(fintech\|payments?\|banks?\|banking\|neobank\|stripe\|paypal\|visa\|mastercard\|klarna\|adyen\|lending\|loans?\|credit cards?\|trading\|brokerage\|insurtech\|insurance\|remittances?\|open banking\|financial)\b`</sub> |
 | 🪙 Crypto & web3 | Cryptocurrencies, blockchains, DeFi, stablecoins and tokenisation. | `bitcoin`, `blockchain`, `crypto`, `cryptocurrency`, `defi`, `ethereum`, `smart-contracts`, `solana`, `web3` | <sub>`\b(crypto\w*\|bitcoin\|btc\|ethereum\|eth\|solana\|blockchains?\|web3\|defi\|stablecoins?\|tokens? (sale\|launch)\|nfts?\|coinbase\|binance\|monero\|xrp\|tokeni[sz]\w*)\b`</sub> |
 | 🧬 Health & biotech | Medicine, biology, pharma, health systems and medtech. | `bioinformatics`, `biology`, `genomics`, `health`, `healthcare`, `medical`, `medical-imaging` | <sub>`\b(health\w*\|medic\w*\|clinical\|patients?\|hospitals?\|biotech\w*\|pharma\w*\|drugs?\|fda\|genom\w*\|proteins?\|bioinformatics\|biology\|cancer\|vaccines?\|medicare\|medicaid\|disease\|neuro\w*\|medrxiv\|biorxiv)\b`</sub> |
@@ -125,6 +129,22 @@ An item can belong to several industries. It is placed by:
 | `kev` | Cybersecurity |
 | `nvd` | Cybersecurity |
 | `euvd` | Cybersecurity |
+| `hf_media` | AI media: video, image, audio & voice |
+| `arena_image` | AI media: video, image, audio & voice |
+| `arena_video` | AI media: video, image, audio & voice |
+| `arena_text` | AI & LLMs |
+| `lab_models` | AI & LLMs |
+| `lab_hf` | AI & LLMs |
+| `lab_releases` | AI & LLMs |
+| `anthropic_news` | AI & LLMs |
+| `st_anthropic` | AI & LLMs |
+| `st_openai` | AI & LLMs |
+| `st_mistral` | AI & LLMs |
+| `st_cohere` | AI & LLMs |
+| `st_perplexity` | AI & LLMs |
+| `st_elevenlabs` | AI media: video, image, audio & voice |
+| `fred` | Markets & economy |
+| `ecb_fx` | Markets & economy |
 | `thn` | Cybersecurity |
 | `bleeping` | Cybersecurity |
 | `arxiv` | by category: cs.AI → AI & LLMs, cs.CL → AI & LLMs, cs.LG → AI & LLMs, cs.CV → AI & LLMs, cs.CR → Cybersecurity, cs.SE → Developer tools, cs.RO → Robotics & hardware, q-bio → Health & biotech, q-fin → Fintech & payments |
@@ -160,12 +180,86 @@ An item can belong to several industries. It is placed by:
 | `ec_press` | Policy & regulation |
 | `ninetofivemac` | Mobile |
 | `androidpolice` | Mobile |
+| `decoder` | AI & LLMs |
+| `tc_ai` | AI & LLMs |
+| `mittr_ai` | AI & LLMs |
+| `importai` | AI & LLMs |
+| `latent` | AI & LLMs |
+| `bensbites` | AI & LLMs |
+| `lwiai` | AI & LLMs |
+| `tldr_ai` | AI & LLMs |
+| `rundown` | AI & LLMs |
+| `interconnects` | AI & LLMs |
+| `cnbc_top` | Markets & economy |
+| `cnbc_markets` | Markets & economy |
+| `mw_top` | Markets & economy |
+| `bbg_markets` | Markets & economy |
+| `bbg_econ` | Markets & economy |
+| `ft_home` | Markets & economy |
+| `nyt_biz` | Markets & economy |
+| `bbc_biz` | Markets & economy |
+| `guardian_biz` | Markets & economy |
+| `economist_fin` | Markets & economy |
+| `crunchbase` | Markets & economy |
+| `tc_venture` | Markets & economy |
+| `ecb_press` | Markets & economy |
+| `fed_press` | Markets & economy |
+| `deals_funding`, `deals_ipo` | Markets & economy |
+| `media_news_1`, `media_news_2`, `media_news_3`, `media_news_4`, `media_news_5`, `elevenlabs_blog` | AI media: video, image, audio & voice |
+| `lab_news_*`, lab blog feeds | AI & LLMs |
 | `gh_topic_robotics` | Robotics & hardware |
 | `gh_topic_bioinformatics` | Health & biotech |
 | `gh_topic_fintech` | Fintech & payments |
 | `coingecko_trending`, `coingecko_markets` | Crypto & web3 |
 | `biorxiv` | Health & biotech |
 | `launches` | Space & mobility |
+
+<a id="shaking"></a>
+
+## What's shaking the market
+
+Every headline, lab post and Hacker News front-page story from the last 36 hours is a candidate. Each headline is cut into its distinctive words (common words, and words found in more than 6% of all candidate headlines, are ignored). A headline joins a story when it shares at least two distinctive words with the story's longest headline and those shared words are at least 50% of the shorter headline's distinctive words. Stories are ranked by the number of distinct outlets (Google News results count the original outlet, not Google), then distinct platforms, then recency. Only stories carried by two or more outlets are shown. "Why it matters" is the first sentence of a summary written by one of the outlets; Google News results carry no summary.
+
+**Markets strip:** FRED (St. Louis Fed) latest published values for the S&P 500, Nasdaq Composite, Dow Jones, VIX, US 10-year yield and Brent; the ECB euro reference rate for EUR/USD; CoinGecko for Bitcoin and Ether. Changes compare the last two published values. DAX, gold and single stocks (NVDA, MSFT, AAPL, GOOGL, AMZN, META, TSLA, TSM) are not shown: no keyless source that allows this kind of reuse was found.
+
+<a id="windows"></a>
+
+## Week, month and year
+
+| Window | Native lists |
+| --- | --- |
+| This week (7 days) | `gh_weekly`, `gh_new`, `hn_best`, `devto_week`, `hf_papers_week` |
+| This month (30 days) | `gh_monthly`, `gh_new_month`, `hn_month`, `devto_month`, `hf_papers_month` |
+| This year (365 days) | `gh_new_year`, `hn_year`, `devto_year` |
+
+Each window is scored with the same formula as today, using only that window's lists. Lists for a longer period are never used for today's tables. The **archive rollup** in each window file counts the days an item appeared in the archive. The archive starts on 2026-11-19, so a month or year rollup only covers the days that exist; the file always states how many.
+
+<a id="labs"></a>
+
+## AI labs
+
+| Lab | Google News query | Official feeds | SDK repos | Status page | OpenRouter prefix | Hugging Face orgs |
+| --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | <sub>`"Anthropic" OR "Claude AI"`</sub> | `anthropic_news` | anthropics/anthropic-sdk-python, anthropics/claude-code | `st_anthropic` | anthropic | — |
+| OpenAI | <sub>`"OpenAI"`</sub> | `openai_news` | openai/openai-python, openai/codex | `st_openai` | openai | openai |
+| Google DeepMind & Gemini | <sub>`"Google DeepMind" OR "Gemini" Google AI`</sub> | `google_ai`, `deepmind`, `gemini_blog` | googleapis/python-genai, google-gemini/gemini-cli | — | google | google |
+| Meta AI | <sub>`"Meta AI" OR "Meta Superintelligence" OR "Llama" Meta`</sub> | — | — | — | meta-llama | meta-llama, facebook |
+| Microsoft AI | <sub>`"Microsoft AI" OR "Microsoft Copilot"`</sub> | `ms_ai` | microsoft/semantic-kernel | — | microsoft | microsoft |
+| xAI | <sub>`"xAI" Musk AI`</sub> | — | xai-org/xai-sdk-python | — | x-ai | xai-org |
+| Mistral AI | <sub>`"Mistral AI"`</sub> | — | mistralai/client-python | `st_mistral` | mistralai | mistralai |
+| Cohere | <sub>`"Cohere" AI`</sub> | — | cohere-ai/cohere-python | `st_cohere` | cohere | CohereLabs |
+| NVIDIA | <sub>`Nvidia AI`</sub> | `nvidia_blog` | NVIDIA/TensorRT-LLM | — | nvidia | nvidia |
+| Amazon & AWS | <sub>`"Amazon" AI (Bedrock OR Nova OR AWS)`</sub> | `aws_ml` | — | — | amazon | amazon |
+| Apple | <sub>`"Apple Intelligence" OR "Apple AI"`</sub> | `apple_ml` | ml-explore/mlx | — | — | apple |
+| DeepSeek | <sub>`DeepSeek`</sub> | — | — | — | deepseek | deepseek-ai |
+| Qwen & Alibaba | <sub>`Qwen OR "Alibaba" AI model`</sub> | — | QwenLM/qwen-code | — | qwen | Qwen |
+| Moonshot AI (Kimi) | <sub>`"Moonshot AI" OR Kimi AI`</sub> | — | MoonshotAI/kimi-cli | — | moonshotai | moonshotai |
+| Zhipu (Z.ai, GLM) | <sub>`Zhipu OR "Z.ai" GLM`</sub> | — | — | — | z-ai | zai-org |
+| Perplexity | <sub>`"Perplexity AI" OR "Perplexity" Comet`</sub> | — | — | `st_perplexity` | perplexity | — |
+| Hugging Face | <sub>`"Hugging Face"`</sub> | `hf_blog` | huggingface/transformers | — | — | — |
+| Stability AI | <sub>`"Stability AI"`</sub> | — | Stability-AI/generative-models | — | — | stabilityai |
+
+Google News headlines are kept only when the title names the lab. Anthropic publishes no RSS feed, so its newsroom comes from the public sitemap (page address and last-change date). Leaderboard positions come from the LMArena leaderboard dataset on Hugging Face (CC BY 4.0).
 
 ## What is never done
 
