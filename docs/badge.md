@@ -1,6 +1,6 @@
 # Add a badge
 
-Use this badge only if your repository actually appeared in [awesome-trending](https://github.com/mjmirza/awesome-trending) — for example on the daily GitHub trending table or in a niche list. Do not add it just because you submitted an issue.
+Use this badge only if your repository actually appeared in [awesome-trending](https://github.com/mjmirza/awesome-trending) — for example on the daily GitHub trending table or in an industry list. Do not add it just because you submitted an issue.
 
 Markdown:
 
