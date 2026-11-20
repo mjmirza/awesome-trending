@@ -2,13 +2,13 @@
 
 Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 
-**20 November 2026** · 09:34 Europe/Berlin (UTC+1) · 107 items · daily snapshot, rebuilt every morning.
+**20 November 2026** · 10:02 Europe/Berlin (UTC+1) · 101 items · daily snapshot, rebuilt every morning.
 
 [⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (27):** Ars Technica, Bluesky, CleanTechnica, Cloudflare status, Dev.to, Docker Hub, EE Times, EFF Deeplinks, European Commission press corner, GitHub, GitHub Changelog, GitHub releases, GitHub status, Hacker News, LWN.net, Lobsters, Mastodon, Product Hunt, Simon Willison, SpaceNews, Stack Overflow, TechCrunch Enterprise, TechCrunch Transportation, Techmeme, The Hacker News, arXiv, bioRxiv and medRxiv
+**Sources with items here (35):** AWS Machine Learning blog, Ars Technica, CNBC, CleanTechnica, Cloudflare status, Dev.to, Docker Hub, EE Times, EFF Deeplinks, European Commission press corner, Financial Times, GitHub, GitHub Changelog, GitHub releases, GitHub status, Google News, Hacker News, LWN.net, Latent Space, Lobsters, Mastodon, NVIDIA blog, New York Times, Simon Willison, SpaceNews, Stack Overflow, TechCrunch, TechCrunch Enterprise, TechCrunch Transportation, Techmeme, The Decoder, The Hacker News, The Rundown AI, arXiv, bioRxiv and medRxiv
 
-**By type:** 🐙 [Repositories](#repositories) (45) · 🗞️ [Headlines](#headlines) (22) · 🚨 [Incidents](#incidents) (13) · 🐳 [Container images](#container-images) (12) · ✍️ [Posts](#posts) (4) · 📄 [Papers](#papers) (3) · ❓ [Questions](#questions) (2) · 💬 [Discussions](#discussions) (2) · 🛍️ [Product launches](#product-launches) (2) · 🦋 [Topics](#topics) (1) · 🏷️ [Releases](#releases) (1)
+**By type:** 🗞️ [Headlines](#headlines) (43) · 🐙 [Repositories](#repositories) (21) · 🚨 [Incidents](#incidents) (13) · 🐳 [Container images](#container-images) (12) · ✍️ [Posts](#posts) (4) · 📄 [Papers](#papers) (3) · ❓ [Questions](#questions) (2) · 🏷️ [Releases](#releases) (2) · 💬 [Discussions](#discussions) (1)
 
 ## 🏆 Top 10
 
@@ -17,48 +17,13 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 | 1 | [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) | ✍️ Posts | #databases, #release | 69 score · 3 comments | **3** <sub>Lobsters, LWN.net, Simon Willison</sub> | 83 | [Lobsters](https://lobste.rs/) |
 | 2 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 🐙 Repositories | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | ⭐ 13.1k · +1,349 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
 | 3 | [janhq/jan](https://github.com/janhq/jan) | 🐙 Repositories | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | ⭐ 45.9k · +54 today | 1 | 60 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 4 | [Azure Enterprise Application "Default Role" Assignment Bug?](https://stackoverflow.com/questions/80017769/azure-enterprise-application-default-role-assignment-bug) | ❓ Questions | #advice, #azure, #azure-active-directory | -2 score · 0 answers · 31 views | 1 | 60 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 4 | [Azure Enterprise Application "Default Role" Assignment Bug?](https://stackoverflow.com/questions/80017769/azure-enterprise-application-default-role-assignment-bug) | ❓ Questions | #advice, #azure, #azure-active-directory | -2 score · 0 answers · 44 views | 1 | 60 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
 | 5 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | 🐙 Repositories | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | ⭐ 351 · created 6 Oct | 1 | 60 | [GitHub](https://github.com/topics/fintech) |
 | 6 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 🐙 Repositories | Knowledge infrastructure to make your agents smarter. | ⭐ 204.6k · +825 today | 1 | 54 | [GitHub trending](https://github.com/trending?since=daily) |
 | 7 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | 🐙 Repositories | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | ⭐ 34.7k · +98 today | 1 | 54 | [GitHub trending](https://github.com/trending/go?since=daily) |
 | 8 | [Adopt Pre-Existing Docker Containers with Zero Downtime…](https://dev.to/gde/adopt-pre-existing-docker-containers-with-zero-downtime-reverse-engineering-docker-composeyml-in-3cic) | ✍️ Posts | #devops, #docker, #opensource | 15 reactions · 2 comments | 1 | 54 | [Dev.to](https://dev.to/top/day) |
 | 9 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | 🐙 Repositories | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | ⭐ 99 · created 21 Oct | 1 | 54 | [GitHub](https://github.com/topics/bioinformatics) |
-| 10 | [haziqahmedqasmi/PeakCut](https://github.com/haziqahmedqasmi/PeakCut) | 🐙 Repositories | AI clipping for long videos and live streams. | ⭐ 1.4k · created 14 Nov | 1 | 52 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-
-## Repositories
-
-| # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 13,082 | +1,349 today | +11.5% | Python | MIT | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [janhq/jan](https://github.com/janhq/jan) | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 45,909 | +54 today | +0.1% | Rust | Other | 1 | 🤖 AI, 🧰 Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 3 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 351 | new | — | Python | MIT · 44 d old | 1 | 🤖 AI, 🧰 Dev tools +2 | [GitHub](https://github.com/topics/fintech) |
-| 4 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Knowledge infrastructure to make your agents smarter. | 204,596 | +825 today | +0.4% | TypeScript | AGPL-3.0 | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
-| 5 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,654 | +98 today | +0.3% | Go | MIT | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 6 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | 99 | new | — | — | Other · 29 d old | 1 | 🧰 Dev tools, ☁️ Cloud +4 | [GitHub](https://github.com/topics/bioinformatics) |
-| 7 | [haziqahmedqasmi/PeakCut](https://github.com/haziqahmedqasmi/PeakCut) | AI clipping for long videos and live streams. | 1,411 | new | — | Python | MIT · 6 d old | 1 | 🤖 AI, ☁️ Cloud | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-| 8 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Self-hosted workflows for coding-agent delivery. | 5,151 | +276 today | +5.7% | Go | Other | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 9 | [reality-opened/openreality](https://github.com/reality-opened/openreality) | Open Reality: phone video to AI-queryable 3D scenes. | 661 | new | — | Python | BSD-2-Clause · 2 mo old | 1 | 🤖 AI, 🧠 Agents +3 | [GitHub](https://github.com/topics/robotics) |
-| 10 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,016 | +155 today | +0.5% | Rust | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-
-<details>
-<summary>Show 10 more</summary>
-
-| # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 32,425 | +73 today | +0.2% | C | BSD-2-Clause | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
-| 12 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | The open-source agent for CI/CD reliability. | 13,284 | +38 today | +0.3% | Python | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +3 | [GitHub trending](https://github.com/trending?since=daily) |
-| 13 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45,851 | +35 today | +0.1% | Rust | Apache-2.0 | 1 | 🧰 Dev tools, ☁️ Cloud +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 14 | [getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) | Modern Docker Management, Designed for Everyone | 10,155 | +497 today | +5.1% | Go | BSD-3-Clause | 1 | 🧰 Dev tools, ☁️ Cloud | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 15 | [YellowLaborerMarket/Gemini-Config-Checker-](https://github.com/YellowLaborerMarket/Gemini-Config-Checker-) | Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser… | 474 | new | — | Makefile | Apache-2.0 · 4 d old | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-| 16 | [weightcashiercupola/Gemini-Config-Checker-](https://github.com/weightcashiercupola/Gemini-Config-Checker-) | Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser… | 473 | new | — | Makefile | Apache-2.0 · 4 d old | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-| 17 | [WindGatorRise37/Gemini-Config-Checker-](https://github.com/WindGatorRise37/Gemini-Config-Checker-) | Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser… | 472 | new | — | Makefile | Apache-2.0 · 4 d old | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-| 18 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,419 | +325 today | +0.6% | TypeScript | BSD-3-Clause | 1 | 🧠 Agents, 🧰 Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 19 | [multica-ai/multica](https://github.com/multica-ai/multica) | Make humans and AI agents work as one team — open-source and self-hostable. | 56,845 | +155 today | +0.3% | Go | Other | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 20 | [WyrmClimberManacle/Gemini-Config-Checker-](https://github.com/WyrmClimberManacle/Gemini-Config-Checker-) | Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser… | 472 | new | — | Makefile | Apache-2.0 · 4 d old | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
-
-</details>
-
-<sub>25 more in today's archive.</sub>
+| 10 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | 🐙 Repositories | Self-hosted workflows for coding-agent delivery. | ⭐ 5.2k · +276 today | 1 | 48 | [GitHub trending](https://github.com/trending/go?since=daily) |
 
 ## Headlines
 
@@ -66,7 +31,7 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Datacentres to create 70% more carbon emissions by 2030, IEA report warns](https://www.theguardian.com/world/2026/nov/19/datacentres-to-create-70-more-carbon-emissions-by-2030-iea-report-warns) | — | The Guardian | 19 Nov 06:00 | 1 | ☁️ Cloud, ⚡ Energy | [Mastodon](https://mastodon.social/explore/links) |
 | 2 | [Ram through datacentres no one wants and hope the AI bubble never bursts: that’s the…](https://www.theguardian.com/commentisfree/2026/nov/19/uk-growth-plan-datacentres-ai-bubble-big-tech) | — | The Guardian | 19 Nov 07:00 | 1 | 🤖 AI, ☁️ Cloud | [Mastodon](https://mastodon.social/explore/links) |
-| 3 | [Sources: Singapore-based DayOne pauses its US IPO plans to raise up to $5B as soon as Q4…](https://www.techmeme.com/261120/p5#a261120p5) | Bloomberg : Sources: Singapore-based DayOne pauses its US IPO plans to raise up to $5B as soon as Q4 amid… | Techmeme | 20 Nov 08:00 | 1 | 🤖 AI, ☁️ Cloud | [Techmeme](https://www.techmeme.com/feed.xml) |
+| 3 | [Sources: Singapore-based DayOne pauses its US IPO plans to raise up to $5B as soon as Q4…](https://www.techmeme.com/261120/p5#a261120p5) | Bloomberg : Sources: Singapore-based DayOne pauses its US IPO plans to raise up to $5B as soon as Q4 amid… | Techmeme | 20 Nov 08:00 | 1 | 🤖 AI, ☁️ Cloud +1 | [Techmeme](https://www.techmeme.com/feed.xml) |
 | 4 | [How to tell a cyberattack from a plain old outage](https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/) | When everything goes down, don’t assume it’s a cyberattack. | Ars Technica | 19 Nov 12:13 | 1 | ☁️ Cloud, 🔒 Security | [Ars Technica](https://feeds.arstechnica.com/arstechnica/technology-lab) |
 | 5 | [\[$\] Added indirection allows for larger BPF programs](https://lwn.net/Articles/1106537/) | The BPF verifier has historically worked by tracing every possible path of execution through a program… | LWN.net | 19 Nov 18:32 | 1 | ☁️ Cloud | [LWN.net](https://lwn.net/headlines/rss) |
 | 6 | [PHP 8.6.0 released](https://lwn.net/Articles/1108555/) | Version 8.6.0 of PHP has been released. | LWN.net | 19 Nov 15:43 | 1 | ☁️ Cloud | [LWN.net](https://lwn.net/headlines/rss) |
@@ -83,7 +48,7 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 | 11 | [Enterprise Live Migrations from Azure DevOps generally available](https://github.blog/changelog/2026-11-19-enterprise-live-migrations-from-azure-devops-generally-available) | Enterprise Live Migrations (ELM) from Azure DevOps Services to GitHub Enterprise Cloud with data residency… | GitHub Changelog | 19 Nov 19:50 | 1 | 🧰 Dev tools, ☁️ Cloud | [GitHub Changelog](https://github.blog/changelog/feed/) |
 | 12 | [Red Hat Enterprise Linux runner images now generally available](https://github.blog/changelog/2026-11-19-red-hat-enterprise-linux-runner-images-now-generally-available) | Red Hat Enterprise Linux (RHEL) 9 and RHEL 10 images for GitHub-hosted larger runners are now generally… | GitHub Changelog | 19 Nov 19:48 | 1 | 🧰 Dev tools, ☁️ Cloud | [GitHub Changelog](https://github.blog/changelog/feed/) |
 | 13 | [S3 audit log streaming with OpenID Connect expands to GHE.com](https://github.blog/changelog/2026-11-19-s3-audit-log-streaming-with-openid-connect-expands-to-ghe-com) | You can now stream enterprise audit logs to Amazon S3 using OpenID Connect (OIDC) on GitHub Enterprise Cloud… | GitHub Changelog | 19 Nov 09:27 | 1 | 🧰 Dev tools, ☁️ Cloud +2 | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 14 | [Nvidia Reports $115.8B in Quarterly Revenue Under Interim CEO](https://www.eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo/) | Strong AI infrastructure demand helped Nvidia revenue and profit as the company deals with leadership changes. | EE Times | 19 Nov 11:26 | 1 | 🤖 AI, ☁️ Cloud +1 | [EE Times](https://www.eetimes.com/feed/) |
+| 14 | [Nvidia Reports $115.8B in Quarterly Revenue Under Interim CEO](https://www.eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo/) | Strong AI infrastructure demand helped Nvidia revenue and profit as the company deals with leadership changes. | EE Times | 19 Nov 11:26 | 1 | 🤖 AI, ☁️ Cloud +2 | [EE Times](https://www.eetimes.com/feed/) |
 | 15 | [Pacific Power Begins New Customer Protections Against Data Centers](https://cleantechnica.com/2026/11/19/pacific-power-begins-new-customer-protections-against-data-centers/) | Regulators approve new agreement to ensure data centers pay for their own energy costs SALEM, Oregon — The… | CleanTechnica | 20 Nov 01:34 | 1 | ☁️ Cloud, ⚡ Energy +1 | [CleanTechnica](https://cleantechnica.com/feed/) |
 | 16 | [Cyber giant Infoblox confirms security incident after hackers access ‘company information’](https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/) | The cybersecurity and automation giant said it's working with outside investigators to understand the scale… | TechCrunch Enterprise | 16 Nov 23:12 | 1 | ☁️ Cloud, 🔒 Security +1 | [TechCrunch Enterprise](https://techcrunch.com/category/enterprise/feed/) |
 | 17 | [Flexell Space and ALATYR Sign MoU to Explore Solar Power Solutions for Orbital Data…](https://spacenews.com/flexell-space-and-alatyr-sign-mou-to-explore-solar-power-solutions-for-orbital-data-centers/) | – Collaboration to assess next-generation ultralight solar cells for space-based computing infrastructure… | SpaceNews | 18 Nov 23:02 | 1 | ☁️ Cloud, ⚡ Energy +1 | [SpaceNews](https://spacenews.com/feed/) |
@@ -93,7 +58,42 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 
 </details>
 
-<sub>2 more in today's archive.</sub>
+<sub>23 more in today's archive.</sub>
+
+## Repositories
+
+| # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 13,146 | +1,349 today | +11.4% | Python | MIT | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [janhq/jan](https://github.com/janhq/jan) | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 45,915 | +54 today | +0.1% | Rust | Other | 1 | 🤖 AI, 🧰 Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 3 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 351 | new | — | Python | MIT · 44 d old | 1 | 🤖 AI, 🧰 Dev tools +3 | [GitHub](https://github.com/topics/fintech) |
+| 4 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Knowledge infrastructure to make your agents smarter. | 204,618 | +825 today | +0.4% | TypeScript | AGPL-3.0 | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
+| 5 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,655 | +98 today | +0.3% | Go | MIT | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 6 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | 99 | new | — | — | Other · 29 d old | 1 | 🧰 Dev tools, ☁️ Cloud +4 | [GitHub](https://github.com/topics/bioinformatics) |
+| 7 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Self-hosted workflows for coding-agent delivery. | 5,160 | +276 today | +5.7% | Go | Other | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 8 | [reality-opened/openreality](https://github.com/reality-opened/openreality) | Open Reality: phone video to AI-queryable 3D scenes. | 661 | new | — | Python | BSD-2-Clause · 2 mo old | 1 | 🤖 AI, 🧠 Agents +3 | [GitHub](https://github.com/topics/robotics) |
+| 9 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,021 | +155 today | +0.5% | Rust | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 10 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 32,434 | +73 today | +0.2% | C | BSD-2-Clause | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
+
+<details>
+<summary>Show 10 more</summary>
+
+| # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 11 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | The open-source agent for CI/CD reliability. | 13,296 | +38 today | +0.3% | Python | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +3 | [GitHub trending](https://github.com/trending?since=daily) |
+| 12 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45,851 | +35 today | +0.1% | Rust | Apache-2.0 | 1 | 🧰 Dev tools, ☁️ Cloud +5 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 13 | [getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) | Modern Docker Management, Designed for Everyone | 10,157 | +497 today | +5.1% | Go | BSD-3-Clause | 1 | 🧰 Dev tools, ☁️ Cloud | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 14 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,421 | +325 today | +0.6% | TypeScript | BSD-3-Clause | 1 | 🧠 Agents, 🧰 Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 15 | [multica-ai/multica](https://github.com/multica-ai/multica) | Make humans and AI agents work as one team — open-source and self-hostable. | 56,855 | +155 today | +0.3% | Go | Other | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 16 | [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Secure, Fast, and Extensible Sandbox runtime for AI agents. | 17,692 | +92 today | +0.5% | Go | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +1 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 17 | [tianma-if/edgeever](https://github.com/tianma-if/edgeever) | AI-native note-taking app & Evernote/Obsidian alternative. | 3,453 | +45 today | +1.3% | TypeScript | AGPL-3.0 | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 18 | [nats-io/nats-server](https://github.com/nats-io/nats-server) | High-Performance server for NATS.io, the cloud and edge native messaging system. | 21,073 | +8 today | +0.0% | Go | Apache-2.0 | 1 | 🤖 AI, 🧰 Dev tools +1 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 19 | [hieunc229/mailflare](https://github.com/hieunc229/mailflare) | Email for professionals and teams | 7,330 | +211 today | +3.0% | TypeScript | AGPL-3.0 | 1 | ☁️ Cloud | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 20 | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 130,403 | +221 today | +0.2% | Rust | AGPL-3.0 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+
+</details>
+
+<sub>1 more in today's archive.</sub>
 
 ## Incidents
 
@@ -129,8 +129,8 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 | 2 | [postgres](https://hub.docker.com/_/postgres) | The PostgreSQL object-relational database system provides reliability and data integrity. | 12.6B | 15,058 | 20 Nov 05:11 | 1 | ☁️ Cloud, 📊 Data | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 3 | [ubuntu](https://hub.docker.com/_/ubuntu) | Ubuntu is a Debian-based Linux operating system based on free software. | 10.2B | 17,880 | 20 Nov 08:04 | 1 | ☁️ Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 4 | [mongo](https://hub.docker.com/_/mongo) | MongoDB document databases provide high availability and easy scalability. | 4.9B | 10,760 | 20 Nov 07:08 | 1 | ☁️ Cloud, 📊 Data | [Docker Hub](https://hub.docker.com/search?badges=official) |
-| 5 | [rabbitmq](https://hub.docker.com/_/rabbitmq) | RabbitMQ is an open source multi-protocol messaging broker. | 3.9B | 5,373 | 20 Nov 06:55 | 1 | 🧰 Dev tools, ☁️ Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
-| 6 | [mariadb](https://hub.docker.com/_/mariadb) | MariaDB Server is a high performing open source relational database, forked from MySQL. | 3.3B | 6,117 | 20 Nov 06:37 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| 5 | [rabbitmq](https://hub.docker.com/_/rabbitmq) | RabbitMQ is an open source multi-protocol messaging broker. | 3.9B | 5,373 | 20 Nov 09:53 | 1 | 🧰 Dev tools, ☁️ Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| 6 | [mariadb](https://hub.docker.com/_/mariadb) | MariaDB Server is a high performing open source relational database, forked from MySQL. | 3.3B | 6,117 | 20 Nov 09:35 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 7 | [php](https://hub.docker.com/_/php) | While designed for web development, the PHP scripting language also provides general-purpose use. | 1.4B | 7,888 | 20 Nov 07:59 | 1 | ☁️ Cloud, 🌐 Web | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 8 | [sonarqube](https://hub.docker.com/_/sonarqube) | Official images for SonarQube, code analysis tool for code quality and security | 1.2B | 2,567 | 20 Nov 08:53 | 1 | ☁️ Cloud, 🔒 Security | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 9 | [influxdb](https://hub.docker.com/_/influxdb) | InfluxDB is the open source time series database built for real-time analytic workloads. | 1.1B | 2,016 | 20 Nov 08:21 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
@@ -167,33 +167,20 @@ Infrastructure, containers, CI/CD, self-hosting, outages and operations.
 
 | # | Question | Tags | Score | Answers | Views | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Azure Enterprise Application "Default Role" Assignment Bug?](https://stackoverflow.com/questions/80017769/azure-enterprise-application-default-role-assignment-bug) | #advice, #azure, #azure-active-directory | -2 | 0 | 31 | 1 | 🧰 Dev tools, ☁️ Cloud | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 1 | [Azure Enterprise Application "Default Role" Assignment Bug?](https://stackoverflow.com/questions/80017769/azure-enterprise-application-default-role-assignment-bug) | #advice, #azure, #azure-active-directory | -2 | 0 | 44 | 1 | 🧰 Dev tools, ☁️ Cloud | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
 | 2 | [Need some suggestions on Mac hosting provider](https://stackoverflow.com/questions/80017755/need-some-suggestions-on-mac-hosting-provider) | #advice, #deployment, #artificial-intelligence | -6 | 0 | 42 | 1 | 🤖 AI, 🧰 Dev tools +1 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-
-## Discussions
-
-| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Unauthenticated remote code execution in Nginx](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities) | Link to wiz.io | 1,492 | 639 | 36 pts/h | [open](https://news.ycombinator.com/item?id=50547374) | 1 | ☁️ Cloud | [Hacker News](https://news.ycombinator.com/best) |
-| 2 | [Show HN: Volcano, a self-healing agent cloud](https://volcano.dev/blog/introducing-volcano-agent-cloud) | Link to volcano.dev | 16 | 1 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50560789) | 1 | 🧠 Agents, ☁️ Cloud | [Hacker News](https://news.ycombinator.com/show) |
-
-## Product launches
-
-| # | Product | Why it matters | Posted by | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Memanto Cloud](https://www.producthunt.com/products/memanto-by-moorcheh) | A companion memory for agents to improve as you work | Majid Fekri | 1 | 🧠 Agents, ☁️ Cloud | [Product Hunt](https://www.producthunt.com/) |
-| 2 | [Volcano](https://www.producthunt.com/products/volcano-3) | The self-healing agent cloud by Kong | Connor Church | 1 | 🧠 Agents, ☁️ Cloud | [Product Hunt](https://www.producthunt.com/) |
-
-## Topics
-
-| # | Topic | Context | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- |
-| 1 | [AI patching likely behind outages](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/2fff3b60524e) | Officials say rushed fixes for AI-found flaws, not hackers, likely downed Microsoft, FAA, banks. | 1 | 🤖 AI, ☁️ Cloud +3 | [Bluesky](https://bsky.app/) |
 
 ## Releases
 
 | # | Project | Release | Stage | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [docker/compose](https://github.com/docker/compose) | [v5.8.0](https://github.com/docker/compose/releases/tag/v5.8.0) | stable | 17 Nov 14:40 | 1 | ☁️ Cloud | [GitHub releases](https://github.com/) |
+| 2 | [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | [dotnet-1.82.0](https://github.com/microsoft/semantic-kernel/releases/tag/dotnet-1.82.0) | stable | 7 Nov 02:00 | 1 | 🤖 AI, ☁️ Cloud | [GitHub releases](https://github.com/) |
 
-<sub>Every figure comes from the linked source, fetched 09:34 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+## Discussions
+
+| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Show HN: Volcano, a self-healing agent cloud](https://volcano.dev/blog/introducing-volcano-agent-cloud) | Link to volcano.dev | 16 | 1 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50560789) | 1 | 🧠 Agents, ☁️ Cloud | [Hacker News](https://news.ycombinator.com/show) |
+
+<sub>Every figure comes from the linked source, fetched 10:02 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>

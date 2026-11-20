@@ -2,13 +2,13 @@
 
 Databases, datasets, pipelines, analytics and BI.
 
-**20 November 2026** · 09:34 Europe/Berlin (UTC+1) · 42 items · daily snapshot, rebuilt every morning.
+**20 November 2026** · 10:02 Europe/Berlin (UTC+1) · 44 items · daily snapshot, rebuilt every morning.
 
 [⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (11):** Docker Hub, GitHub, Google AI blog, Hacker News, Hugging Face, LWN.net, Lobsters, MCP Registry, PyPI, Simon Willison, Smithery
+**Sources with items here (14):** Docker Hub, ElevenLabs blog, GitHub, Google AI blog, Hacker News, Hugging Face, LWN.net, Lobsters, MCP Registry, NVIDIA blog, PyPI, Simon Willison, Smithery, crates.io
 
-**By type:** 🐙 [Repositories](#repositories) (15) · 🗃️ [Datasets](#datasets) (12) · 🐳 [Container images](#container-images) (5) · ✍️ [Posts](#posts) (3) · 🔌 [MCP servers](#mcp-servers) (3) · 💬 [Discussions](#discussions) (1) · 🗞️ [Headlines](#headlines) (1) · 📦 [Packages](#packages) (1) · 📄 [Papers](#papers) (1)
+**By type:** 🐙 [Repositories](#repositories) (14) · 🗃️ [Datasets](#datasets) (12) · 🐳 [Container images](#container-images) (5) · ✍️ [Posts](#posts) (3) · 🔌 [MCP servers](#mcp-servers) (3) · 🗞️ [Headlines](#headlines) (3) · 💬 [Discussions](#discussions) (2) · 📦 [Packages](#packages) (2)
 
 ## 🏆 Top 10
 
@@ -33,23 +33,22 @@ Databases, datasets, pipelines, analytics and BI.
 | 2 | [malisper/pgrust](https://github.com/malisper/pgrust) | Postgres rewritten in Rust, now faster than Postgres and Clickhouse | 5,958 | +47 today | +0.8% | Rust | AGPL-3.0 | 1 | 🤖 AI, 🧰 Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
 | 3 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | 99 | new | — | — | Other · 29 d old | 1 | 🧰 Dev tools, ☁️ Cloud +4 | [GitHub](https://github.com/topics/bioinformatics) |
 | 4 | [pola-rs/polars](https://github.com/pola-rs/polars) | Extremely fast Query Engine for DataFrames, written in Rust | 40,392 | +10 today | +0.0% | Rust | MIT | 1 | 🧰 Dev tools, 📊 Data | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 5 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,016 | +155 today | +0.5% | Rust | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 5 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,021 | +155 today | +0.5% | Rust | Apache-2.0 | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
 | 6 | [styczynski/bioseqdb](https://github.com/styczynski/bioseqdb) | Genomic sequence storage, indexing and alignment inside PostgreSQL: https://bioseqdb.com/ | 96 | new | — | VHDL | Apache-2.0 · 53 d old | 1 | 📊 Data, 🧬 Health | [GitHub](https://github.com/topics/bioinformatics) |
-| 7 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,419 | +325 today | +0.6% | TypeScript | BSD-3-Clause | 1 | 🧠 Agents, 🧰 Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 8 | [jeokeo011222/quantbot](https://github.com/jeokeo011222/quantbot) | QuantBot（AI 量化机器人）的全量源码。基于 **Go+React + TypeScript + Vite** 构建，通过 **Wails** 与 Go 后端通信，提供 A… | 95 | new | — | Go | Other · 2 mo old | 1 | 🤖 AI, 🧠 Agents +4 | [GitHub](https://github.com/topics/fintech) |
-| 9 | [hasan6969macho-bit/vectorbt-avoria-analysis](https://github.com/hasan6969macho-bit/vectorbt-avoria-analysis) | Vectorbt research code for Avoria analysis, built for reproducible strategy experiments. | 94 | new | — | TypeScript | MIT · 1 d old | 1 | 🤖 AI, 📊 Data +2 | [GitHub](https://github.com/topics/fintech) |
+| 7 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,421 | +325 today | +0.6% | TypeScript | BSD-3-Clause | 1 | 🧠 Agents, 🧰 Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 8 | [jeokeo011222/quantbot](https://github.com/jeokeo011222/quantbot) | QuantBot（AI 量化机器人）的全量源码。基于 **Go+React + TypeScript + Vite** 构建，通过 **Wails** 与 Go 后端通信，提供 A… | 95 | new | — | Go | Other · 2 mo old | 1 | 🤖 AI, 🧠 Agents +5 | [GitHub](https://github.com/topics/fintech) |
+| 9 | [hasan6969macho-bit/vectorbt-avoria-analysis](https://github.com/hasan6969macho-bit/vectorbt-avoria-analysis) | Vectorbt research code for Avoria analysis, built for reproducible strategy experiments. | 94 | new | — | TypeScript | MIT · 1 d old | 1 | 🤖 AI, 📊 Data +3 | [GitHub](https://github.com/topics/fintech) |
 | 10 | [tianma-if/edgeever](https://github.com/tianma-if/edgeever) | AI-native note-taking app & Evernote/Obsidian alternative. | 3,453 | +45 today | +1.3% | TypeScript | AGPL-3.0 | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
 
 <details>
-<summary>Show 5 more</summary>
+<summary>Show 4 more</summary>
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 11 | [siqiwang0712-commits/financial-risk-agent](https://github.com/siqiwang0712-commits/financial-risk-agent) | Evidence-grounded financial risk analysis from corporate filings, combining constrained LLM interpretation… | 75 | new | — | Python | Apache-2.0 · 2 mo old | 1 | 🤖 AI, 🧠 Agents +2 | [GitHub](https://github.com/topics/fintech) |
 | 12 | [twentyhq/twenty](https://github.com/twentyhq/twenty) | The open alternative to Salesforce, designed for AI. | 61,234 | +68 today | +0.1% | TypeScript | Other | 1 | 🤖 AI, 🧰 Dev tools +3 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 13 | [apache/airflow](https://github.com/apache/airflow) | Apache Airflow - A platform to programmatically author, schedule, and monitor workflows | 47,568 | +23 today | +0.0% | Python | Apache-2.0 | 1 | 🤖 AI, 🧰 Dev tools +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
+| 13 | [apache/airflow](https://github.com/apache/airflow) | Apache Airflow - A platform to programmatically author, schedule, and monitor workflows | 47,569 | +23 today | +0.0% | Python | Apache-2.0 | 1 | 🤖 AI, 🧰 Dev tools +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
 | 14 | [wrab12/awesome-spatial-transcriptomics](https://github.com/wrab12/awesome-spatial-transcriptomics) | A curated list of tools, foundation models, datasets and tutorials for spatial transcriptomics and… | 60 | new | — | — | CC0-1.0 · 44 d old | 1 | 🤖 AI, 📊 Data +2 | [GitHub](https://github.com/topics/bioinformatics) |
-| 15 | [replit/datacat](https://github.com/replit/datacat) | Self-hosted observability: metrics, logs, traces, dashboards and alerts. | 426 | new | — | TypeScript | Apache-2.0 · 3 d old | 1 | ☁️ Cloud, 📊 Data | [GitHub](https://docs.github.com/en/rest/search/search#search-repositories) |
 
 </details>
 
@@ -58,7 +57,7 @@ Databases, datasets, pipelines, analytics and BI.
 | # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | text-generation, question-answering | 1,286 | 27.4k | apache-2.0 | 1 | 🤖 AI, 🔒 Security +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
-| 2 | [Angais/pixel-art-atlas-1.4m](https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m) | Pixel Art Atlas · 1.4M Synthetic Sprites 1,409,404 synthetic game sprites with English… | text-to-image | 619 | 71k | cc0-1.0 | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 2 | [Angais/pixel-art-atlas-1.4m](https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m) | Pixel Art Atlas · 1.4M Synthetic Sprites 1,409,404 synthetic game sprites with English… | text-to-image | 619 | 71k | cc0-1.0 | 1 | 🤖 AI, 🎥 AI media +1 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 3 | [nvidia/USDCraft-10K](https://huggingface.co/datasets/nvidia/USDCraft-10K) | USDCraft-10K: Simulation-Ready Articulated 3D Assets in OpenUSD USDCraft-10K is a… | robotics | 113 | 50.3k | apache-2.0 | 1 | 🤖 AI, 📊 Data +1 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 4 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | — | 1,677 | 1.7M | cc-by-4.0 | 1 | 🤖 AI, 🧰 Dev tools +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 5 | [Digitaluz/uzbek-language-corpus](https://huggingface.co/datasets/Digitaluz/uzbek-language-corpus) | Uzbek Language Corpus Dataset Summary A cleaned Uzbek language corpus for language-model… | text-generation, fill-mask | 57 | 480 | odc-by | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
@@ -66,14 +65,14 @@ Databases, datasets, pipelines, analytics and BI.
 | 7 | [HubLabs/HubEgo-100K](https://huggingface.co/datasets/HubLabs/HubEgo-100K) | HubEgo-100K A 100,000-hour dataset of first-person video of skilled manual work… | robotics, video-classification | 61 | 94.2k | cc-by-4.0 | 1 | 🤖 AI, 📊 Data +1 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 8 | [google/multimodal-knowledge-agent](https://huggingface.co/datasets/google/multimodal-knowledge-agent) | Multimodal Knowledge Agent (MKA) — 10 Showcase Examples Multimodal Knowledge Agent (MKA)… | image-text-to-text, visual-question-answering | 75 | 6.9k | apache-2.0 | 1 | 🤖 AI, 🧠 Agents +1 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 9 | [nvidia/PhysicalAI-Human-1M-100K](https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K) | Across AI, a common route to scale is distilling human experience into models: what… | — | 99 | 18.3k | cc-by-4.0 | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
-| 10 | [KORMo-VL/EVIDENT](https://huggingface.co/datasets/KORMo-VL/EVIDENT) | EVIDENT: Task Metadata for Evidence-Grounded GUI Evaluation This release contains 220… | — | 48 | 569 | licence not stated | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 10 | [codepawl/cmu-mocap-glb](https://huggingface.co/datasets/codepawl/cmu-mocap-glb) | CMU Motion Capture Database as GLB 2426 motion capture clips from CMU Graphics Lab… | — | 17 | 104 | other | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 
 <details>
 <summary>Show 2 more</summary>
 
 | # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [codepawl/cmu-mocap-glb](https://huggingface.co/datasets/codepawl/cmu-mocap-glb) | CMU Motion Capture Database as GLB 2426 motion capture clips from CMU Graphics Lab… | — | 16 | 104 | other | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 11 | [KORMo-VL/EVIDENT](https://huggingface.co/datasets/KORMo-VL/EVIDENT) | EVIDENT: Task Metadata for Evidence-Grounded GUI Evaluation This release contains 220… | — | 48 | 569 | licence not stated | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 | 12 | [HuggingFaceFW/fineweb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) | 🍷 FineWeb 15 trillion tokens of the finest data the 🌐 web has to offer What is it? | text-generation | 3,777 | 361.1k | odc-by | 1 | 🤖 AI, 📊 Data | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 
 </details>
@@ -84,7 +83,7 @@ Databases, datasets, pipelines, analytics and BI.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [postgres](https://hub.docker.com/_/postgres) | The PostgreSQL object-relational database system provides reliability and data integrity. | 12.6B | 15,058 | 20 Nov 05:11 | 1 | ☁️ Cloud, 📊 Data | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 2 | [mongo](https://hub.docker.com/_/mongo) | MongoDB document databases provide high availability and easy scalability. | 4.9B | 10,760 | 20 Nov 07:08 | 1 | ☁️ Cloud, 📊 Data | [Docker Hub](https://hub.docker.com/search?badges=official) |
-| 3 | [mariadb](https://hub.docker.com/_/mariadb) | MariaDB Server is a high performing open source relational database, forked from MySQL. | 3.3B | 6,117 | 20 Nov 06:37 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| 3 | [mariadb](https://hub.docker.com/_/mariadb) | MariaDB Server is a high performing open source relational database, forked from MySQL. | 3.3B | 6,117 | 20 Nov 09:35 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 4 | [influxdb](https://hub.docker.com/_/influxdb) | InfluxDB is the open source time series database built for real-time analytic workloads. | 1.1B | 2,016 | 20 Nov 08:21 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 5 | [elasticsearch](https://hub.docker.com/_/elasticsearch) | Elasticsearch is a powerful open source search and analytics engine that makes data easy to explore. | 990.9M | 6,602 | 20 Nov 06:25 | 1 | 🧰 Dev tools, ☁️ Cloud +1 | [Docker Hub](https://hub.docker.com/search?badges=official) |
 
@@ -102,30 +101,28 @@ Databases, datasets, pipelines, analytics and BI.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Polymarket Data by PolymarketScan](https://smithery.ai/server/jordan-s648/PolymarketScan) | Real-time Polymarket analytics for AI agents. | 39,483 uses | unverified · remote | 1 | 🤖 AI, 🧠 Agents +1 | [Smithery](https://smithery.ai/) |
 | 2 | [Sendinel](https://github.com/kmdesle/sendinel-ai) | AI-controlled email ops for campaigns, contacts, segments, analytics, and sending. | v1.0.273 · 20 Nov 07:56 | 1.0+ | 1 | 🤖 AI, 🧠 Agents +1 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
-| 3 | [emblem-mcp](https://smithery.ai/server/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | 🤖 AI, 🧠 Agents +6 | [Smithery](https://smithery.ai/) |
-
-## Discussions
-
-| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [PostgreSQL 19](https://www.postgresql.org/docs/release/19.0/) | Link to postgresql.org | 131 | 3 | 27 pts/h | [open](https://news.ycombinator.com/item?id=50569890) | 1 | 📊 Data | [Hacker News](https://news.ycombinator.com/) |
+| 3 | [emblem-mcp](https://smithery.ai/server/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | 🤖 AI, 🧠 Agents +7 | [Smithery](https://smithery.ai/) |
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Introducing Tool Retrieval in the Gemini API](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/) | Gemini spark on a space background | Google AI blog | 19 Nov 19:00 | 1 | 🤖 AI, 📊 Data | [Google AI blog](https://blog.google/technology/ai/rss/) |
+| 2 | [NVIDIA RTX Spark Compact Desktops Out Now](https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/) | New NVIDIA RTX Spark compact desktops from ASUS, Dell and MSI are available today, bringing local AI agents… | NVIDIA blog | 18 Nov 15:00 | 1 | 🤖 AI, 🧠 Agents +3 | [NVIDIA blog](https://blogs.nvidia.com/feed/) |
+| 3 | [What is a vector database? How AI search finds meaning](https://elevenlabs.io/blog/vector-database) | Learn what a vector database is, how it works, and where it’s used. | ElevenLabs blog | 18 Nov 13:00 | 1 | 🤖 AI, 🎥 AI media +1 | [ElevenLabs blog](https://elevenlabs.io/blog/rss.xml) |
+
+## Discussions
+
+| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [PostgreSQL 19](https://www.postgresql.org/docs/release/19.0/) | Link to postgresql.org | 146 | 3 | 28 pts/h | [open](https://news.ycombinator.com/item?id=50569890) | 1 | 📊 Data | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup](https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/) | Link to snowflake.com | 85 | 8 | 13 pts/h | [open](https://news.ycombinator.com/item?id=50569516) | 1 | 📊 Data | [Hacker News](https://news.ycombinator.com/) |
 
 ## Packages
 
 | # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [polars](https://pypi.org/project/polars/) | Blazingly fast DataFrame library | PyPI | `2.1.0` | 16.8M dl/week | 25 Oct | Copyright (c) 2025 Ritchie Vin · stable | 1 | 🧰 Dev tools, 📊 Data | [PyPI](https://pypi.org/) |
+| 2 | [datamonger-core](https://crates.io/crates/datamonger-core) | Strict research dataset decoding and canonical verification | crates.io | `0.3.0` | 197 dl/90d | 20 Nov | pre-1.0 | 1 | 🧰 Dev tools, 📊 Data | [crates.io](https://crates.io/) |
 
-## Papers
-
-| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](https://huggingface.co/papers/2611.24651) | We present Piccolo, a family of multimodal decision models (0.8B to 27B) that coevolves model capabilities… | Zhenqing Ling, Qirui Jiao +15 | 12 upvotes | [repo](https://github.com/agentscope-ai/Piccolo) ⭐ 60 | 1 | 🤖 AI, 🧠 Agents +1 | [Hugging Face](https://huggingface.co/papers) |
-
-<sub>Every figure comes from the linked source, fetched 09:34 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 10:02 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
