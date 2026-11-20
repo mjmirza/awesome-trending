@@ -2,7 +2,7 @@
 
 Infrastructure, CI/CD, servers, and cloud operations.
 
-Rising items are seeded only from the 19 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
+Rising items are seeded only from the 20 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
 
 ## Rising this week
 
@@ -23,6 +23,6 @@ Rising items are seeded only from the 19 November 2026 sources on the [main list
 | [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Secure, Fast, and Extensible Sandbox runtime | GitHub trending (go) |
 | [nats-io/nats-server](https://github.com/nats-io/nats-server) | High-Performance server for NATS.io, the cloud | GitHub trending (go) |
 | [TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) | Instant, Concurrent, Secure & Lightweight Sandbox | GitHub trending (go) |
-| [What this week's nginx HTTP/2 CVEs mean for the server I actually run](https://dev.to/alexgeorgiev17/what-this-weeks-nginx-http2-cves-mean-for-the-server-i-actually-run-3nbf) | 13 reactions on Dev.to | Dev.to |
+| [Adopt Pre-Existing Docker Containers with Zero Downtime: Reverse-Engineering docker-compose.yml in Gubernator v4.0](https://dev.to/gde/adopt-pre-existing-docker-containers-with-zero-downtime-reverse-engineering-docker-composeyml-in-3cic) | 14 reactions on Dev.to | Dev.to |
 
 See also: [awesome-trending](../README.md) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)

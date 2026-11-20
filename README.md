@@ -4,7 +4,7 @@ A daily directory of what is rising on GitHub, in research, and across the open 
 
 [![Last commit](https://img.shields.io/github/last-commit/mjmirza/awesome-trending)](https://github.com/mjmirza/awesome-trending/commits/main) [![License](https://img.shields.io/badge/License-OpenRoots_ORA_2.3-2ea44f)](LICENSE) [![Sources](https://img.shields.io/badge/sources-7-informational)](#sources)
 
-**Today:** 19 November 2026 · snapshot at 22:15 Europe/Berlin (UTC+1)
+**Today:** 20 November 2026 · snapshot at 08:05 Europe/Berlin (UTC+1)
 
 The page looks the same every day. Start at the top, or jump.
 
@@ -12,12 +12,12 @@ The page looks the same every day. Start at the top, or jump.
 
 ## Today in 30 seconds
 
-- **[GTA 6](https://x.com/search?q=GTA%206)** — *Grand Theft Auto VI* launched today (1,924,537 posts on X, Germany list).
-- **[$ANT](https://x.com/search?q=%24ANT)** — Anthropic, the company behind Claude, began trading (22,824 posts on X). Top HN story: [Anthropic hits $2T in Nasdaq debut](https://news.ycombinator.com/item?id=50562754) (609 points).
-- **Highest GitHub stars today:** [obra/superpowers](https://github.com/obra/superpowers) — An agentic skills framework & software development methodology (2,029 stars today).
-- **HN:** [Pancreatic cancer halted by virus injection in three patients](https://news.ycombinator.com/item?id=50563066) — 247 points on HN, 23 comments.
-- **Release:** [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) — 38 points on Lobsters.
-- **New arXiv (cs.AI / cs.CL / cs.LG):** Jailbreak Detection on Large Language Models; Knowing What You Know; Mapping the AI Supply Chain: Dependencies.
+- **[GTA 6](https://x.com/search?q=GTA%206)** — No independently confirmed context in this snapshot. (1,765,755 posts on X, Germany list).
+- **[$ANT](https://x.com/search?q=%24ANT)** — No independently confirmed context in this snapshot. (26,024 posts on X).
+- **Highest GitHub stars today:** [obra/superpowers](https://github.com/obra/superpowers) — An agentic skills framework & software development methodology (2,028 stars today).
+- **HN:** [OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)](https://news.ycombinator.com/item?id=50569226) — 153 points on HN, 82 comments.
+- **Release:** [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) — 64 points on Lobsters.
+- **New arXiv (cs.AI / cs.CL / cs.LG):** RL Post-Training in Diffusion Transformers Is; PlayCraft: Designing Engaging Games; TideCache: Efficient Hybrid LLM Serving.
 
 ## Jump
 
@@ -31,16 +31,16 @@ Top 10, in the order GitHub showed them on the [daily overall trending page](htt
 
 | # | Repository | Why it matters | Language | Stars | Stars today |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting | Python | 12,345 | 1,353 |
-| 2 | [obra/superpowers](https://github.com/obra/superpowers) | An agentic skills framework & software development methodology | Shell | 321,992 | 2,029 |
-| 3 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | CLI-Anything: Making ALL Software Agent-Native | Python | 60,472 | 899 |
-| 4 | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | Train your own 64M LLM from scratch | Python | 66,801 | 301 |
-| 5 | [cursor/plugins](https://github.com/cursor/plugins) | Cursor plugin specification and official plugins | TypeScript | 17,521 | 383 |
-| 6 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Knowledge infrastructure to make your agents smarter | TypeScript | 204,062 | 795 |
-| 7 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | C | 32,296 | 66 |
-| 8 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | OpenVINO™ is an open source toolkit | C++ | 11,534 | 246 |
-| 9 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Editorial diagram design for Claude Code, Codex, GitHub | HTML | 68,560 | 332 |
-| 10 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic | Python | 70,723 | 952 |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting | Python | 12,966 | 1,349 |
+| 2 | [obra/superpowers](https://github.com/obra/superpowers) | An agentic skills framework & software development methodology | Shell | 322,302 | 2,028 |
+| 3 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | CLI-Anything: Making ALL Software Agent-Native | Python | 60,781 | 898 |
+| 4 | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | Train your own 64M LLM from scratch | Python | 67,196 | 238 |
+| 5 | [cursor/plugins](https://github.com/cursor/plugins) | Cursor plugin specification and official plugins | TypeScript | 17,640 | 384 |
+| 6 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Knowledge infrastructure to make your agents smarter | TypeScript | 204,531 | 825 |
+| 7 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | C | 32,409 | 73 |
+| 8 | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | OpenVINO™ is an open source toolkit | C++ | 11,622 | 246 |
+| 9 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Editorial diagram design for Claude Code, Codex, GitHub | HTML | 68,837 | 271 |
+| 10 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic | Python | 71,001 | 954 |
 
 <a id="hn"></a>
 
@@ -50,16 +50,16 @@ Top 10 from the official [HN Firebase API](https://hacker-news.firebaseio.com/v0
 
 | # | Story | Why it matters | Points | Comments |
 | --- | --- | --- | --- | --- |
-| 1 | [Anthropic hits $2T in Nasdaq debut](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) | 609 points on HN | 609 | 1,000 |
-| 2 | [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) | 247 points on HN | 247 | 23 |
-| 3 | [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 270 points on HN | 270 | 104 |
-| 4 | [Garage Door Spam](https://blog.harrison.page/garage-door-spam/) | 639 points on HN | 639 | 268 |
-| 5 | [The 98% Slot Machine: How Paid Advertising Became an Extraction Tax](https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine) | 90 points on HN | 90 | 44 |
-| 6 | [Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest](https://cornholenews.news) | 143 points on HN | 143 | 64 |
-| 7 | [UK government forced to admit it issued Apple a secret encryption order](https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/) | 344 points on HN | 344 | 159 |
-| 8 | [Someone reported java4shell bug in September 2026](https://github.com/openjdk/jdk/pull/32781) | 289 points on HN | 289 | 80 |
-| 9 | [Reverse-Engineering Kevin J. Lang's Lost OCaml Code in Apache DataSketches](https://www.tisonkun.io/posts/ai-repair-program/) | 13 points on HN | 13 | 0 |
-| 10 | [Launch HN: Onlook (YC W25) – An open-source developer tool for designers](https://github.com/onlook-dev/onlook/) | 60 points on HN | 60 | 58 |
+| 1 | [OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)](https://github.com/openssl/openssl/pull/33652) | 153 points on HN | 153 | 82 |
+| 2 | [Jujutsu Primer](https://ethanlowman.com/posts/jj-primer/) | 28 points on HN | 28 | 9 |
+| 3 | [Google is pushing OEMs against GrapheneOS and bootloader unlocking](https://grapheneos.social/@GrapheneOS/117645038299496084) | 199 points on HN | 199 | 37 |
+| 4 | [Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup](https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/) | 57 points on HN | 57 | 8 |
+| 5 | [FFmpeg 9.1 'Gauss'](https://ffmpeg.org/download.html#release_9.1) | 51 points on HN | 51 | 10 |
+| 6 | [Bit Shifting in Basic](https://subethasoftware.com/2020/06/11/bit-shifting-in-basic/) | 19 points on HN | 19 | 0 |
+| 7 | [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 461 points on HN | 461 | 218 |
+| 8 | [Vint Cerf on why TCP/IP was never patented](https://seremot.com/p/vint-cerf-on-why-tcpip-was-never) | 86 points on HN | 86 | 27 |
+| 9 | [How to CAD Almost Anything](https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/) | 224 points on HN | 224 | 66 |
+| 10 | [Garage Door Spam](https://blog.harrison.page/garage-door-spam/) | 829 points on HN | 829 | 348 |
 
 <a id="hf"></a>
 
@@ -71,21 +71,21 @@ Order is the official Hub API `sort=trendingScore` (the `trending` sort name is 
 
 | # | Name | Why it matters | Likes |
 | --- | --- | --- | --- |
-| 1 | [higurashi-ai/Haru-4B](https://huggingface.co/higurashi-ai/Haru-4B) | audio to audio · 3,610 likes | 3,610 |
-| 2 | [tencent/Hy4-flash](https://huggingface.co/tencent/Hy4-flash) | image text to text · 332 likes | 332 |
-| 3 | [apple/FastFrames-L](https://huggingface.co/apple/FastFrames-L) | text to video · 319 likes | 319 |
-| 4 | [harness-hub/Qwen3.8-27B-pi-adapted](https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted) | image text to text · 726 likes | 726 |
-| 5 | [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | image text to text · 20,670 likes | 20,670 |
+| 1 | [higurashi-ai/Haru-4B](https://huggingface.co/higurashi-ai/Haru-4B) | audio to audio · 3,677 likes | 3,677 |
+| 2 | [tencent/Hy4-flash](https://huggingface.co/tencent/Hy4-flash) | image text to text · 375 likes | 375 |
+| 3 | [apple/FastFrames-L](https://huggingface.co/apple/FastFrames-L) | text to video · 356 likes | 356 |
+| 4 | [harness-hub/Qwen3.8-27B-pi-adapted](https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted) | image text to text · 758 likes | 758 |
+| 5 | [inworld/voice-isolator](https://huggingface.co/inworld/voice-isolator) | audio to audio · 295 likes | 295 |
 
 ### Spaces
 
 | # | Name | Why it matters | Likes |
 | --- | --- | --- | --- |
-| 1 | [huggingface/moe-blogpost](https://huggingface.co/spaces/huggingface/moe-blogpost) | docker · 754 likes | 754 |
-| 2 | [joelniklaus/harness-leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) | docker · 462 likes | 462 |
-| 3 | [MiniMaxAI/minimax-h3-image](https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image) | gradio · 195 likes | 195 |
-| 4 | [JCisHERE/wan2-2-i2v-v3](https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3) | gradio · 479 likes | 479 |
-| 5 | [hugging-apps/bfs-best-face-swap](https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap) | gradio · 996 likes | 996 |
+| 1 | [huggingface/moe-blogpost](https://huggingface.co/spaces/huggingface/moe-blogpost) | docker · 755 likes | 755 |
+| 2 | [joelniklaus/harness-leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) | docker · 467 likes | 467 |
+| 3 | [MiniMaxAI/minimax-h3-image](https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image) | gradio · 206 likes | 206 |
+| 4 | [JCisHERE/wan2-2-i2v-v3](https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3) | gradio · 505 likes | 505 |
+| 5 | [hugging-apps/bfs-best-face-swap](https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap) | gradio · 997 likes | 997 |
 
 <a id="arxiv"></a>
 
@@ -95,11 +95,11 @@ Five most recently submitted papers in cs.AI, cs.CL, or cs.LG, from the [arXiv e
 
 | # | Paper | Why it matters | Authors |
 | --- | --- | --- | --- |
-| 1 | [Jailbreak Detection on Large Language Models via Contrastive Prototype Structures](https://arxiv.org/abs/2611.24936v1) | cs.CL · submitted 18 Nov 2026 | Yan Qiu, Yuanyuan Li |
-| 2 | [Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems](https://arxiv.org/abs/2611.24932v1) | cs.AI · submitted 18 Nov 2026 | Priyanka Sinha, Sugam Pandey |
-| 3 | [Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem](https://arxiv.org/abs/2611.24927v1) | cs.CY · submitted 18 Nov 2026 | Sarah H. Cen, Lindsey A. Gailmard, Joohan Kim et al. |
-| 4 | [Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses](https://arxiv.org/abs/2611.24924v1) | cs.SE · submitted 18 Nov 2026 | Jiahang Lin, Jiahao Chen, Yiding Wang et al. |
-| 5 | [Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation](https://arxiv.org/abs/2611.24908v1) | stat.ML · submitted 18 Nov 2026 | Samet Demir, Zafer Dogan |
+| 1 | [RL Post-Training in Diffusion Transformers Is Activation Steering](https://arxiv.org/abs/2611.26627v1) | cs.CV · submitted 19 Nov 2026 | Tuna Han Salih Meral, Kaan Oktay, Alec Helbling et al. |
+| 2 | [PlayCraft: Designing Engaging Games from Agent Play Experience](https://arxiv.org/abs/2611.26624v1) | cs.AI · submitted 19 Nov 2026 | Weihao Cheng |
+| 3 | [TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming](https://arxiv.org/abs/2611.26619v1) | cs.DC · submitted 19 Nov 2026 | Jinbin Luo, Xiaozhe Yao, Shang Yang et al. |
+| 4 | [One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning](https://arxiv.org/abs/2611.26617v1) | cs.CV · submitted 19 Nov 2026 | Yuxin Jiang, Wenqiang Sun, Jiaqi Li et al. |
+| 5 | [AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control](https://arxiv.org/abs/2611.26613v1) | cs.RO · submitted 19 Nov 2026 | Yiyang Du, Yuxuan Kuang, Qitao Zhao et al. |
 
 <a id="writing"></a>
 
@@ -111,11 +111,11 @@ Top 5 from the Forem API (`/articles?top=1`, best of the last day).
 
 | # | Title | Why it matters | Reactions |
 | --- | --- | --- | --- |
-| 1 | [Stratagems #36: They Finished Their Coffee. The AI Still Has No Answer.](https://dev.to/xulingfeng/stratagems-36-they-finished-their-coffee-the-ai-still-has-no-answer-4igh) | 98 reactions on Dev.to | 98 |
-| 2 | [My Linux Course Put Me to Sleep, So I Built Something That Wouldn’t](https://dev.to/maame-codes/my-linux-course-put-me-to-sleep-so-i-built-something-that-wouldnt-5g4k) | 65 reactions on Dev.to | 65 |
-| 3 | [My First GitHub Issue & My First Forem (DEV.to) Issue 🚀](https://dev.to/necoz/my-first-github-issue-my-first-forem-devto-issue-5eap) | 53 reactions on Dev.to | 53 |
-| 4 | [Stop Wrapping Everything in Promise.all: How Unbounded Concurrency Crashes APIs](https://dev.to/johnnylemonny/stop-wrapping-everything-in-promiseall-how-unbounded-concurrency-crashes-apis-11ol) | 18 reactions on Dev.to | 18 |
-| 5 | [What this week's nginx HTTP/2 CVEs mean for the server I actually run](https://dev.to/alexgeorgiev17/what-this-weeks-nginx-http2-cves-mean-for-the-server-i-actually-run-3nbf) | 13 reactions on Dev.to | 13 |
+| 1 | [My First GitHub Issue & My First Forem (DEV.to) Issue 🚀](https://dev.to/necoz/my-first-github-issue-my-first-forem-devto-issue-5eap) | 54 reactions on Dev.to | 54 |
+| 2 | [What team-wide AI adoption actually takes](https://dev.to/peter/what-team-wide-ai-adoption-actually-takes-1gbh) | 29 reactions on Dev.to | 29 |
+| 3 | [Adopt Pre-Existing Docker Containers with Zero Downtime: Reverse-Engineering docker-compose.yml in Gubernator v4.0](https://dev.to/gde/adopt-pre-existing-docker-containers-with-zero-downtime-reverse-engineering-docker-composeyml-in-3cic) | 14 reactions on Dev.to | 14 |
+| 4 | [Maintaining open source projects up to date with Renovate and Antigravity](https://dev.to/gde/maintaining-open-source-projects-up-to-date-with-renovate-and-antigravity-3haj) | 17 reactions on Dev.to | 17 |
+| 5 | [Stop Paying LLM Prices for an if Statement: A Field Guide to Decision Models in Late 2026](https://dev.to/amananandrai/stop-paying-llm-prices-for-an-if-statement-a-field-guide-to-decision-models-in-late-2026-4d24) | 15 reactions on Dev.to | 15 |
 
 ### Lobsters
 
@@ -123,11 +123,11 @@ Top 5 from the official [hottest.json](https://lobste.rs/hottest.json) feed.
 
 | # | Title | Why it matters | Points |
 | --- | --- | --- | --- |
-| 1 | [Design for Understandability](https://jschuster.org/blog/2026/11/19/design-for-understandability/) | 25 points on Lobsters | 25 |
-| 2 | [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) | 38 points on Lobsters | 38 |
-| 3 | [We Need Smart People Who Give a Shit](https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/) | 101 points on Lobsters | 101 |
-| 4 | [Ruby2Shell (GHSA-34m4-m9fh-gqp5)](https://verialabs.com/ruby2shell/) | 17 points on Lobsters | 17 |
-| 5 | [Codeberg's domain suddenly disappeared from their account, site is unreachable](https://social.anoxinon.de/@Codeberg/117636454915265360) | 216 points on Lobsters | 216 |
+| 1 | [Design for Understandability](https://jschuster.org/blog/2026/11/19/design-for-understandability/) | 35 points on Lobsters | 35 |
+| 2 | [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) | 64 points on Lobsters | 64 |
+| 3 | [We Need Smart People Who Give a Shit](https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/) | 154 points on Lobsters | 154 |
+| 4 | [Mutex poisoning is not for everyone](https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html) | 30 points on Lobsters | 30 |
+| 5 | [Hiring a Systems Programmer for Boxem](https://lobste.rs/s/pnfs5p/hiring_systems_programmer_for_boxem) | 17 points on Lobsters | 17 |
 
 <a id="ai"></a>
 
@@ -179,14 +179,10 @@ Reused X trend tables from today's archive snapshot (no new X fetch). Only tech-
 
 | Trend | Posts | List | Why it matters |
 | --- | --- | --- | --- |
-| [GTA 6](https://x.com/search?q=GTA%206) | 1,924,537 | Germany | *Grand Theft Auto VI* launched today |
-| [GTA VI](https://x.com/search?q=GTA%20VI) | 775,545 | Germany | early posts compared water physics and other visuals |
-| [Rockstar](https://x.com/search?q=Rockstar) | 280,440 | Germany | Rockstar Games is the studio |
-| [Nasdaq](https://x.com/search?q=Nasdaq) | 33,049 | Worldwide | Anthropic's Nasdaq listing was the main market story |
-| [$83 IPO](https://x.com/search?q=%2483%20IPO) | 23,198 | Worldwide | Anthropic priced its IPO at $83 |
-| [$ANT](https://x.com/search?q=%24ANT) | 22,824 | Worldwide | Anthropic, the company behind Claude, began trading |
-| [$AMD](https://x.com/search?q=%24AMD) | 6,439 | Worldwide | Short seller Hunterbrook published a report alleging China-related |
-| [Hunterbrook](https://x.com/search?q=Hunterbrook) | 4,712 | Worldwide | Hunterbrook Capital said it is short AMD |
+| [GTA 6](https://x.com/search?q=GTA%206) | 1,765,755 | Germany | No independently confirmed context in this snapshot. |
+| [GTA VI](https://x.com/search?q=GTA%20VI) | 748,043 | Germany | No independently confirmed context in this snapshot. |
+| [Rockstar](https://x.com/search?q=Rockstar) | 258,514 | Germany | No independently confirmed context in this snapshot. |
+| [$ANT](https://x.com/search?q=%24ANT) | 26,024 | Germany | No independently confirmed context in this snapshot. |
 
 <a id="maintainer"></a>
 
@@ -207,6 +203,7 @@ These are projects by the maintainer. **They are not a ranking**, and they are n
 <details>
 <summary>Previous snapshots</summary>
 
+- [20 November 2026](archive/2026/11/2026-11-20.md)
 - [19 November 2026](archive/2026/11/2026-11-19.md)
 
 </details>
@@ -219,7 +216,7 @@ These are projects by the maintainer. **They are not a ranking**, and they are n
 
 ## Sources
 
-Fetched 19 November 2026 at 22:15 Europe/Berlin (UTC+1). Every figure comes from the source named in its row. A dash means the source did not show a number. Nothing here is invented.
+Fetched 20 November 2026 at 08:05 Europe/Berlin (UTC+1). Every figure comes from the source named in its row. A dash means the source did not show a number. Nothing here is invented.
 
 - **GitHub trending** — ok. GitHub overall daily trending page, page order. https://github.com/trending?since=daily
 - **Hacker News** — ok. Firebase topstories, then item lookup; 10 stories. https://hacker-news.firebaseio.com/v0/topstories.json

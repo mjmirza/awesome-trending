@@ -2,7 +2,7 @@
 
 Databases, pipelines, and data tooling.
 
-Rising items are seeded only from the 19 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
+Rising items are seeded only from the 20 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
 
 ## Rising this week
 
@@ -15,6 +15,7 @@ Rising items are seeded only from the 19 November 2026 sources on the [main list
 | [pola-rs/polars](https://github.com/pola-rs/polars) | Extremely fast Query Engine for DataFrames, written | GitHub trending (rust) |
 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client | GitHub trending (rust) |
 | [datazip-inc/olake-go](https://github.com/datazip-inc/olake-go) | OLake Go: open-source replication from databases, Kafka | GitHub trending (go) |
-| [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) | 38 points on Lobsters | Lobsters |
+| [Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup](https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/) | 57 points on HN | Hacker News |
+| [PostgreSQL 19 Released](https://www.postgresql.org/about/news/postgresql-19-released-3449/) | 64 points on Lobsters | Lobsters |
 
 See also: [awesome-trending](../README.md) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)

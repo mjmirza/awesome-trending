@@ -2,7 +2,7 @@
 
 Models, papers, and tools for artificial intelligence and large language models.
 
-Rising items are seeded only from the 19 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
+Rising items are seeded only from the 20 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
 
 ## Rising this week
 
@@ -26,7 +26,7 @@ Rising items are seeded only from the 19 November 2026 sources on the [main list
 | [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | ⚙️ Build modular and scalable LLM Applications | GitHub trending (rust) |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | CLI proxy that reduces LLM token consumption | GitHub trending (rust) |
 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Self-hosted workflows for coding-agent delivery | GitHub trending (go) |
-| [Anthropic hits $2T in Nasdaq debut](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) | 609 points on HN | Hacker News |
-| [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 270 points on HN | Hacker News |
+| [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 461 points on HN | Hacker News |
+| [higurashi-ai/Haru-4B](https://huggingface.co/higurashi-ai/Haru-4B) | audio to audio · 3,677 likes | Hugging Face models |
 
 See also: [awesome-trending](../README.md) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)

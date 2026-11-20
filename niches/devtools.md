@@ -2,7 +2,7 @@
 
 Editor plugins, CLIs, skills, and other tools that help people build software.
 
-Rising items are seeded only from the 19 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
+Rising items are seeded only from the 20 November 2026 sources on the [main list](../README.md). This is not a complete catalogue of the niche.
 
 ## Rising this week
 
