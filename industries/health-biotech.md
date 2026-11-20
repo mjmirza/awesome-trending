@@ -2,28 +2,28 @@
 
 Medicine, biology, pharma, health systems and medtech.
 
-**20 November 2026** · 09:34 Europe/Berlin (UTC+1) · 43 items · daily snapshot, rebuilt every morning.
+**20 November 2026** · 10:02 Europe/Berlin (UTC+1) · 48 items · daily snapshot, rebuilt every morning.
 
 [⬅ Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (13):** 9to5Mac, BleepingComputer, European Commission press corner, GitHub, Hacker News, IEEE Spectrum Robotics, IEEE Spectrum Semiconductors, Nieman Lab, STAT News, Smithery, Tech.eu, arXiv, bioRxiv and medRxiv
+**Sources with items here (16):** 9to5Mac, BleepingComputer, Bluesky, ElevenLabs blog, European Commission press corner, GitHub, Google News, Hacker News, IEEE Spectrum Robotics, IEEE Spectrum Semiconductors, Nieman Lab, STAT News, Smithery, Tech.eu, arXiv, bioRxiv and medRxiv
 
-**By type:** 📄 [Papers](#papers) (18) · 🗞️ [Headlines](#headlines) (13) · 🐙 [Repositories](#repositories) (10) · 💬 [Discussions](#discussions) (1) · 🔌 [MCP servers](#mcp-servers) (1)
+**By type:** 📄 [Papers](#papers) (18) · 🗞️ [Headlines](#headlines) (17) · 🐙 [Repositories](#repositories) (10) · 💬 [Discussions](#discussions) (1) · 🔌 [MCP servers](#mcp-servers) (1) · 🦋 [Topics](#topics) (1)
 
 ## 🏆 Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [heise3/ExtremaRank](https://github.com/heise3/ExtremaRank) | 🐙 Repositories | Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds… | ⭐ 288 · created 3 Oct | 1 | 60 | [GitHub](https://github.com/topics/bioinformatics) |
-| 2 | [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) | 💬 Discussions | Link to newscientist.com | 753 pts · 124 comments | 1 | 54 | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) | 💬 Discussions | Link to newscientist.com | 759 pts · 127 comments | 1 | 54 | [Hacker News](https://news.ycombinator.com/) |
 | 3 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | 🐙 Repositories | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | ⭐ 99 · created 21 Oct | 1 | 54 | [GitHub](https://github.com/topics/bioinformatics) |
 | 4 | [Paper Search](https://smithery.ai/server/adamamer20/paper-search-mcp-openai) | 🔌 MCP servers | Search and download academic papers from arXiv, PubMed, bioRxiv, medRxiv, Google Scholar, Semantic Scholar… | 59,106 uses | 1 | 48 | [Smithery](https://smithery.ai/) |
 | 5 | [JkingYu/DiffExplorer](https://github.com/JkingYu/DiffExplorer) | 🐙 Repositories | Differential analysis tool for coding-free researchers – instant statistical results and charts, ready for… | ⭐ 96 · created 8 Sep | 1 | 48 | [GitHub](https://github.com/topics/bioinformatics) |
-| 6 | [styczynski/bioseqdb](https://github.com/styczynski/bioseqdb) | 🐙 Repositories | Genomic sequence storage, indexing and alignment inside PostgreSQL: https://bioseqdb.com/ | ⭐ 96 · created 27 Sep | 1 | 42 | [GitHub](https://github.com/topics/bioinformatics) |
-| 7 | [NingyuSUN/bioai-evidence-validator](https://github.com/NingyuSUN/bioai-evidence-validator) | 🐙 Repositories | Evidence validation and policy engine for AI-assisted biological curation | ⭐ 91 · created 17 Sep | 1 | 36 | [GitHub](https://github.com/topics/bioinformatics) |
-| 8 | [ssinder/bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills) | 🐙 Repositories | Agent Skills for computational biology — RNA-seq, single-cell, protein structure, molecular dynamics… | ⭐ 76 · created 25 Oct | 1 | 30 | [GitHub](https://github.com/topics/bioinformatics) |
-| 9 | [poplarity/GelFigure](https://github.com/poplarity/GelFigure) | 🐙 Repositories | Turn a raw agarose gel image into a publication-ready figure in the browser. | ⭐ 71 · created 18 Oct | 1 | 24 | [GitHub](https://github.com/topics/bioinformatics) |
-| 10 | [sagirimo/BioDSH](https://github.com/sagirimo/BioDSH) | 🐙 Repositories | The bioinformatics agent desktop for clinicians and wet-lab scientists — built on DeepSeek Harness. | ⭐ 69 · created 31 Aug | 1 | 18 | [GitHub](https://github.com/topics/bioinformatics) |
+| 6 | [International Men's Day](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/0a57d32d5fd3) | 🦋 Topics | People send greetings to men and highlight mental health and the value of talking openly. | — | 1 | 44 | [Bluesky](https://bsky.app/) |
+| 7 | [styczynski/bioseqdb](https://github.com/styczynski/bioseqdb) | 🐙 Repositories | Genomic sequence storage, indexing and alignment inside PostgreSQL: https://bioseqdb.com/ | ⭐ 96 · created 27 Sep | 1 | 42 | [GitHub](https://github.com/topics/bioinformatics) |
+| 8 | [NingyuSUN/bioai-evidence-validator](https://github.com/NingyuSUN/bioai-evidence-validator) | 🐙 Repositories | Evidence validation and policy engine for AI-assisted biological curation | ⭐ 91 · created 17 Sep | 1 | 36 | [GitHub](https://github.com/topics/bioinformatics) |
+| 9 | [ssinder/bioinformatics-agent-skills](https://github.com/ssinder/bioinformatics-agent-skills) | 🐙 Repositories | Agent Skills for computational biology — RNA-seq, single-cell, protein structure, molecular dynamics… | ⭐ 76 · created 25 Oct | 1 | 30 | [GitHub](https://github.com/topics/bioinformatics) |
+| 10 | [poplarity/GelFigure](https://github.com/poplarity/GelFigure) | 🐙 Repositories | Turn a raw agarose gel image into a publication-ready figure in the browser. | ⭐ 71 · created 18 Oct | 1 | 24 | [GitHub](https://github.com/topics/bioinformatics) |
 
 ## Papers
 
@@ -68,17 +68,21 @@ Medicine, biology, pharma, health systems and medtech.
 | 6 | [STAT+: Lawmakers want U.S. biotech to outcompete China](https://www.statnews.com/2026/11/19/biotech-news-lawmakers-want-us-biotech-to-outcompete-china/?utm_campaign=rss) | Lawmakers leading the congressional BIOTech Caucus say Washington needs to act in the sector — and fast: | STAT News | 19 Nov 18:04 | 1 | 🧬 Health | [STAT News](https://www.statnews.com/feed/) |
 | 7 | [STAT+: Peptide market poised to explode with new Hims and Noom launches](https://www.statnews.com/2026/11/19/hims-noom-enter-peptide-market-mainstream-products-health-risks/?utm_campaign=rss) | Two telehealth giants rolled out peptide programs this week after HHS made it easier for compounding… | STAT News | 19 Nov 17:59 | 1 | 🧬 Health | [STAT News](https://www.statnews.com/feed/) |
 | 8 | [Can Robots Bring Stroke Surgery to Remote Hospitals?](https://spectrum.ieee.org/telesurgery-stroke) | I am practicing brain surgery on a patient lying 6 meters away, out of my sight and reach. | IEEE Spectrum Robotics | 16 Nov 15:00 | 1 | 🧬 Health, 🦾 Robotics | [IEEE Spectrum Robotics](https://spectrum.ieee.org/feeds/topic/robotics.rss) |
-| 9 | [Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement](https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaign=series1) | In advanced semiconductor manufacturing, small defects can have a large effect on yield. | IEEE Spectrum Semiconductors | 16 Nov 12:00 | 1 | 🧬 Health, 🔌 Chips +1 | [IEEE Spectrum Semiconductors](https://spectrum.ieee.org/feeds/topic/semiconductors.rss) |
+| 9 | [Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement](https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaign=series1) | In advanced semiconductor manufacturing, small defects can have a large effect on yield. | IEEE Spectrum Semiconductors | 16 Nov 12:00 | 1 | 💹 Markets, 🧬 Health +2 | [IEEE Spectrum Semiconductors](https://spectrum.ieee.org/feeds/topic/semiconductors.rss) |
 | 10 | [“A healthy degree of vitality”: Medill takes a look at the Twin Cities’ local news…](https://www.niemanlab.org/2026/11/a-healthy-degree-of-vitality-medill-takes-a-look-at-the-twin-cities-local-news-ecosystem/) | This year’s State of Local News Report from Medill was grim. | Nieman Lab | 17 Nov 21:31 | 1 | 🧬 Health, 🎬 Media | [Nieman Lab](https://www.niemanlab.org/feed/) |
 
 <details>
-<summary>Show 3 more</summary>
+<summary>Show 7 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 11 | [Statement on the incident at today's Cancer Summit](https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2528) | European Commission Statement Brussels, 19 Nov 2026 This morning, at the European Cancer Summit in Brussels… | European Commission press corner | 19 Nov 16:04 | 1 | ☁️ Cloud, 🧬 Health +1 | [European Commission press corner](https://ec.europa.eu/commission/presscorner/api/rss?language=en) |
 | 12 | [ChatGPT Health feature now works with Mac app, Dots, more](https://9to5mac.com/2026/11/19/chatgpt-health-feature-will-soon-work-with-mac-app-dots-more/) | OpenAI relaunched its ChatGPT Health feature over the summer after piloting earlier in the year. | 9to5Mac | 19 Nov 23:43 | 1 | 🤖 AI, 📱 Mobile +1 | [9to5Mac](https://9to5mac.com/feed/) |
-| 13 | [London-based Boltz raises $110M Series A](https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/) | London-based AI drug discovery startup Boltz has raised a $110m Series A funding round, less than a year… | Tech.eu | 19 Nov 11:04 | 1 | 🤖 AI, 🧬 Health | [Tech.eu](https://tech.eu/feed/) |
+| 13 | [London-based Boltz raises $110M Series A](https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/) | London-based AI drug discovery startup Boltz has raised a $110m Series A funding round, less than a year… | Tech.eu | 19 Nov 11:04 | 1 | 🤖 AI, 💹 Markets +1 | [Tech.eu](https://tech.eu/feed/) |
+| 14 | [How Candid Health automates payer calls with ElevenAgents](https://elevenlabs.io/blog/candid-health) | Candid Health uses ElevenAgents to investigate claim denials and verify eligibility on payer calls, saving… | ElevenLabs blog | 19 Nov 13:00 | 1 | 🎥 AI media, 🧬 Health | [ElevenLabs blog](https://elevenlabs.io/blog/rss.xml) |
+| 15 | [ElevenAgents for Healthcare: agents patients and medical teams trust in clinical settings](https://elevenlabs.io/blog/elevenagents-for-healthcare) | Build healthcare voice agents that patients trust, with Scribe v3 Live Medical, EHR integrations, custom… | ElevenLabs blog | 18 Nov 13:00 | 1 | 🧠 Agents, 🎥 AI media +1 | [ElevenLabs blog](https://elevenlabs.io/blog/rss.xml) |
+| 16 | [LSU Health New Orleans Gets Meta AI Funding](https://news.google.com/rss/articles/CBMimwFBVV95cUxPdDZNVFJDOVpTbGljbzl4ejc0ZTI0N1VQeHVpWWluejJYcU1xcXllTG1GWU5uOU41VjlNY09HRllVMHNKU1NUQVpCQ3oyelhDS05JM2Z6OWMxejhIWEItQ2NXbzloVVVnSmYwOWtuSVdVT0JvdGJfdEVnM2Z1RjdBVVQweU9WUzN4LWVzbzRKWklJU3VYd2p6czVJcw?oc=5) | Headline via Google News (Wisevoter) | Wisevoter | 19 Nov 22:54 | 1 | 🤖 AI, 🧬 Health | [Google News](https://news.google.com/search?q=%22Meta+AI%22+OR+%22Meta+Superintelligence%22+OR+%22Llama%22+Meta&hl=en-US&gl=US&ceid=US%3Aen) |
+| 17 | [Cohere Health Named to 2026 Deloitte Technology Fast 500™ for Second Consecutive Year as…](https://news.google.com/rss/articles/CBMiiAJBVV95cUxOME9DeTVyVFRNZ09NMVBNeDJ1VnE5TjVHcEtqbVdKdWxCU1pOZUpCOTlFd1JiZTNmTXpBOG04ZVRtM3Z3MlJuMmRYOUVmZHlSZ0dFYmNxWVI1UWQwMkxTUkppWm93MzJLSklIWTJJOUVibm9yT0pqdDgyZ1hMallIQktsbU1HSDFidTluVWRGTmozbDhScHB6ZDFRVl9qdzFySEQ1OEhrM1cxczMxNkpJbU1rNFRsRzhudnZzNEtvUkJZbnNScFdPdFpLM05JTjFrcVZzMXh1U1dHaTNCQm1mZmk5Y1NWQlNMVmw1R2NPdUV4bmFqdDFVc3hyTnlHU1hUdHJHYTd6TUo?oc=5) | Headline via Google News (PR Newswire) | PR Newswire | 19 Nov 15:00 | 1 | 🤖 AI, 🧬 Health +1 | [Google News](https://news.google.com/search?q=%22Cohere%22+AI&hl=en-US&gl=US&ceid=US%3Aen) |
 
 </details>
 
@@ -101,7 +105,7 @@ Medicine, biology, pharma, health systems and medtech.
 
 | # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) | Link to newscientist.com | 753 | 124 | 50 pts/h | [open](https://news.ycombinator.com/item?id=50563066) | 1 | 🧬 Health | [Hacker News](https://news.ycombinator.com/) |
+| 1 | [Pancreatic cancer halted by virus injection in three patients](https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/) | Link to newscientist.com | 759 | 127 | 49 pts/h | [open](https://news.ycombinator.com/item?id=50563066) | 1 | 🧬 Health | [Hacker News](https://news.ycombinator.com/) |
 
 ## MCP servers
 
@@ -109,4 +113,10 @@ Medicine, biology, pharma, health systems and medtech.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Paper Search](https://smithery.ai/server/adamamer20/paper-search-mcp-openai) | Search and download academic papers from arXiv, PubMed, bioRxiv, medRxiv, Google Scholar, Semantic Scholar… | 59,106 uses | unverified · remote | 1 | 🧠 Agents, 🧬 Health | [Smithery](https://smithery.ai/) |
 
-<sub>Every figure comes from the linked source, fetched 09:34 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+## Topics
+
+| # | Topic | Context | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [International Men's Day](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/0a57d32d5fd3) | People send greetings to men and highlight mental health and the value of talking openly. | 1 | 🧬 Health | [Bluesky](https://bsky.app/) |
+
+<sub>Every figure comes from the linked source, fetched 10:02 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
