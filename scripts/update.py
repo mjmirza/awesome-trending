@@ -2936,7 +2936,8 @@ def render_today(results, ents, tech_x) -> list[str]:
         t = tech_x[0]
         posts = f"{t['posts']} posts" if t.get("posts") and t["posts"] != "—" else "volume not shown"
         b.append(f"**Tech on X:** {md_link(t['name'], t['url'])} ({posts}, {md_escape(t['region'])} list).")
-    la = ok("launches")
+    now = datetime.now(timezone.utc)
+    la = [x for x in ok("launches") if x.get("net") and x["net"] >= now]   # the upcoming feed also lists launches already flown
     if la:
         b.append(f"**Next launch:** {ttl(la[0], 60)} — {key_metric('launches', la[0])}.")
     return [f"- {x}" for x in b[:11]]
@@ -3245,6 +3246,11 @@ def _outlet(key: str, it: dict, results) -> str:
     return it.get("outlet") or results[key].name.split(" · ")[0]
 
 
+def _outlet_key(name: str) -> str:
+    """Compare outlet names without case or a leading "The", so "The New York Times" and "New York Times" count once."""
+    return re.sub(r"^the\s+", "", (name or "").strip().lower())
+
+
 def story_candidates(results) -> list[tuple[str, dict]]:
     ref = datetime.now(timezone.utc)
     out = []
@@ -3313,7 +3319,7 @@ def cluster_stories(results) -> list[dict]:
         outlets, fams = [], []
         for k, it in mem:
             o = _outlet(k, it, results)
-            if o not in outlets:
+            if all(_outlet_key(o) != _outlet_key(x) for x in outlets):
                 outlets.append(o)
             f = family(k, results)
             if f not in fams:
@@ -3350,7 +3356,7 @@ def render_shaking(results, n: int) -> list[str]:
         links = []
         for mk, mit in s["members"]:
             o = _outlet(mk, mit, results)
-            if all(o != lbl for lbl, _u in links):
+            if all(_outlet_key(o) != _outlet_key(lbl) for lbl, _u in links):
                 links.append((o, mit.get("discuss") if mit["kind"] == "hn" else mit["url"]))
             if len(links) >= 3:
                 break
