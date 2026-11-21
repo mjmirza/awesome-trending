@@ -2057,6 +2057,14 @@ LICENSE_LINE = (
 # Archive handling
 # ---------------------------------------------------------------------------
 
+_EMOJI_RE = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B50\u2B06\u2B07\u2705\uFE0F\u200d]")
+
+
+def _no_emoji(text: str) -> str:
+    """Drop emoji characters that arrive inside third-party titles and descriptions."""
+    return re.sub(r"  +", " ", _EMOJI_RE.sub("", text)) if False else _EMOJI_RE.sub("", text)
+
+
 def merge_archive(path: Path, generated: str, fetched_at: datetime) -> str:
     """Keep anything written earlier in the day (the X trend snapshot) above the generated block."""
     existing = path.read_text(encoding="utf-8") if path.is_file() else ""
@@ -3971,6 +3979,8 @@ def run(root: Path, dry_run: bool = False, only: set[str] | None = None) -> int:
     if okn == 0:
         print("No source answered; leaving files untouched.")
         return 1
+    readme, archive_md = _no_emoji(readme), _no_emoji(archive_md)
+    pages = {k: _no_emoji(v) for k, v in pages.items()}
     (root / "README.md").write_text(readme, encoding="utf-8")
     archive_path.parent.mkdir(parents=True, exist_ok=True)
     archive_path.write_text(archive_md, encoding="utf-8")
