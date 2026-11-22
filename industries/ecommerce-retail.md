@@ -2,23 +2,23 @@
 
 Online and physical retail, marketplaces, logistics and shopping.
 
-**21 November 2026** · 08:10 Europe/Berlin (UTC+1) · 43 items · daily snapshot, rebuilt every morning.
+**22 November 2026** · 08:12 Europe/Berlin (UTC+1) · 49 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (21):** 9to5Mac, AWS Machine Learning blog, BBC, Bloomberg, Class Central, Crunchbase News, Digital Commerce 360, Electrek, Game Developer, GamesIndustry.biz, GitHub, Google, Google News, Google Trends, Modern Retail, NVIDIA blog, New York Times, Retail Dive, SpaceNews, The Verge, arXiv
+**Sources with items here (22):** 9to5Mac, AWS Machine Learning blog, Bloomberg, Class Central, Crunchbase News, Digital Commerce 360, Financial Times, Game Developer, GamesIndustry.biz, GitHub, Google, Google News, MCP Registry, Modern Retail, NVIDIA blog, New York Times, Retail Dive, SpaceNews, The Guardian, The Information, The Verge, arXiv
 
-**By type:** [Headlines](#headlines) (40) · [Searches](#searches) (1) · [Papers](#papers) (1) · [Repositories](#repositories) (1)
+**By type:** [Headlines](#headlines) (46) · [Papers](#papers) (1) · [MCP servers](#mcp-servers) (1) · [Repositories](#repositories) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [black friday deals games](https://trends.google.com/trending?geo=US&q=black%20friday%20deals%20games) | Searches | The best Black Friday deals for gamers already live this weekend: tracking the PS5, Switch 2… | 200+ searches (US) | 1 | 51 | [Google Trends](https://trends.google.com/trending) |
+| 1 | [Amazon closes in on $7.5bn deal to buy AI start-up Decart](https://news.google.com/rss/articles/CBMihAFBVV95cUxNTEFvVDlwcmNmNEl1WGpwZ3A3TzF3ZkNLSDFrUHA3XzY3REJxa3Jyc3pjUnVLdXdydFp3eTBYR1E1elQzVllDV1JQVzJENFNhV3RjVWl1eFB3dWFZS1BQWlRpTC1WZWZ1OV9CZmdhQnNtdmUxb25DWS16SEVodXVlRnBFUFQ?oc=5) | Headlines | Headline via Google News (Financial Times) | Financial Times · 21 Nov 18:21 | **2** <sub>Google News, Financial Times</sub> | 28 | [Google News](https://news.google.com/search?q=%22Amazon%22+AI+%28Bedrock+OR+Nova+OR+AWS%29&hl=en-US&gl=US&ceid=US%3Aen) |
 | 2 | [Held While Waiting: What LLM Agent Sessions Reserve on Serverless…](https://arxiv.org/abs/2611.26480) | Papers | LLM agents spend nearly all their time waiting for the model. | cs.PF · new | 1 | 15 | [arXiv](https://arxiv.org/) |
-| 3 | [Eufy’s Omni C28 is 53 percent off ahead of Black Friday](https://www.theverge.com/gadgets/1037933/eufy-omni-c28-robot-vacuum-deal-sale) | Headlines | Hosting Thanksgiving can be fun, but cleaning up afterwards? | The Verge · 20 Nov 20:15 | 1 | 15 | [The Verge](https://www.theverge.com/rss/index.xml) |
-| 4 | [Kia, Lucid, and Volkswagen are slashing EV prices by $10,000+ for…](https://electrek.co/2026/11/20/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/) | Headlines | Forget waiting in line for a discounted TV or other gadget you probably don’t need. | Electrek · 20 Nov 20:59 | 1 | 15 | [Electrek](https://electrek.co/feed/) |
-| 5 | [Anker S5000 5kWh power station back at $2,375 exclusive low ($1,225…](https://electrek.co/2026/11/20/anker-s5000-5kwh-power-station-segway-max-g3-plus-e-scooter-more/) | Headlines | If you weren’t aware, Amazon’s full Black Friday event is in motion, and deals are flying from across… | Electrek · 20 Nov 20:00 | 1 | 15 | [Electrek](https://electrek.co/feed/) |
+| 3 | [Bowmark web data: LinkedIn, Amazon, YouTube, Reddit, Airbnb, Instagram](https://github.com/bowmark-ai/skill) | MCP servers | Web scraping and automation for AI agents: live prices, quotes, bookings, anything behind a login. | v8.234.0 · 22 Nov 06:36 | 1 | 15 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+| 4 | [Amazon is complaining about NYC Council on shipping labels, too](https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label) | Headlines | Amazon is leaving no venue unexplored in its fight against the New York City Council and the Delivery… | The Verge · 21 Nov 22:59 | 1 | 15 | [The Verge](https://www.theverge.com/rss/index.xml) |
+| 5 | [Amazon’s first digital photo frame is up to 50 percent off for Black…](https://www.theverge.com/gadgets/1038762/amazon-alexa-photo-frame-black-friday-2026-deal-sale) | Headlines | Amazon only announced its first digital photo frame less than a month ago, but it’s already getting a… | The Verge · 21 Nov 17:00 | 1 | 15 | [The Verge](https://www.theverge.com/rss/index.xml) |
 | 6 | [2026 marked a turning point for artificial dye removal from food](https://www.modernretail.co/podcasts/2026-artificial-dye-removal-from-food/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Headlines | U.S. food brands and retailers are phasing out artificial dyes as policy shifts and consumer demand increases. | Modern Retail · 21 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
 | 7 | [Big-Box Briefing: Target faces off with Trader Joe’s, Quince and…](https://www.modernretail.co/operations/big-box-briefing-targets-retail-reset-means-facing-off-with-trader-joes-quince-and-homegoods/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Headlines | Target’s third-quarter earnings, released on Wednesday, gave investors confidence that it’s finding its… | Modern Retail · 20 Nov 15:30 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
 | 8 | [On is making a bigger play for American shoppers, one store at a time](https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Headlines | Swiss sportswear brand On is gearing up for a bigger U.S. | Modern Retail · 20 Nov 06:00 | 1 | 15 | [Modern Retail](https://www.modernretail.co/feed/) |
@@ -29,9 +29,9 @@ Online and physical retail, marketplaces, logistics and shopping.
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Eufy’s Omni C28 is 53 percent off ahead of Black Friday](https://www.theverge.com/gadgets/1037933/eufy-omni-c28-robot-vacuum-deal-sale) | Hosting Thanksgiving can be fun, but cleaning up afterwards? | The Verge | 20 Nov 20:15 | 1 | Robotics, Retail | [The Verge](https://www.theverge.com/rss/index.xml) |
-| 2 | [Kia, Lucid, and Volkswagen are slashing EV prices by $10,000+ for Black Friday](https://electrek.co/2026/11/20/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/) | Forget waiting in line for a discounted TV or other gadget you probably don’t need. | Electrek | 20 Nov 20:59 | 1 | Energy, Retail +1 | [Electrek](https://electrek.co/feed/) |
-| 3 | [Anker S5000 5kWh power station back at $2,375 exclusive low ($1,225 off), Segway Max G3…](https://electrek.co/2026/11/20/anker-s5000-5kwh-power-station-segway-max-g3-plus-e-scooter-more/) | If you weren’t aware, Amazon’s full Black Friday event is in motion, and deals are flying from across… | Electrek | 20 Nov 20:00 | 1 | Energy, Retail | [Electrek](https://electrek.co/feed/) |
+| 1 | [Amazon closes in on $7.5bn deal to buy AI start-up Decart](https://news.google.com/rss/articles/CBMihAFBVV95cUxNTEFvVDlwcmNmNEl1WGpwZ3A3TzF3ZkNLSDFrUHA3XzY3REJxa3Jyc3pjUnVLdXdydFp3eTBYR1E1elQzVllDV1JQVzJENFNhV3RjVWl1eFB3dWFZS1BQWlRpTC1WZWZ1OV9CZmdhQnNtdmUxb25DWS16SEVodXVlRnBFUFQ?oc=5) | Headline via Google News (Financial Times) | Financial Times <sub>ft.com · via Google News</sub> | 21 Nov 18:21 | **2** <sub>Google News, Financial Times</sub> | AI, Cloud +3 | [Google News](https://news.google.com/search?q=%22Amazon%22+AI+%28Bedrock+OR+Nova+OR+AWS%29&hl=en-US&gl=US&ceid=US%3Aen) |
+| 2 | [Amazon is complaining about NYC Council on shipping labels, too](https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label) | Amazon is leaving no venue unexplored in its fight against the New York City Council and the Delivery… | The Verge | 21 Nov 22:59 | 1 | Retail | [The Verge](https://www.theverge.com/rss/index.xml) |
+| 3 | [Amazon’s first digital photo frame is up to 50 percent off for Black Friday](https://www.theverge.com/gadgets/1038762/amazon-alexa-photo-frame-black-friday-2026-deal-sale) | Amazon only announced its first digital photo frame less than a month ago, but it’s already getting a… | The Verge | 21 Nov 17:00 | 1 | Retail | [The Verge](https://www.theverge.com/rss/index.xml) |
 | 4 | [2026 marked a turning point for artificial dye removal from food](https://www.modernretail.co/podcasts/2026-artificial-dye-removal-from-food/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | U.S. food brands and retailers are phasing out artificial dyes as policy shifts and consumer demand increases. | Modern Retail | 21 Nov 06:00 | 1 | Retail | [Modern Retail](https://www.modernretail.co/feed/) |
 | 5 | [Big-Box Briefing: Target faces off with Trader Joe’s, Quince and HomeGoods](https://www.modernretail.co/operations/big-box-briefing-targets-retail-reset-means-facing-off-with-trader-joes-quince-and-homegoods/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Target’s third-quarter earnings, released on Wednesday, gave investors confidence that it’s finding its… | Modern Retail | 20 Nov 15:30 | 1 | Markets, Retail | [Modern Retail](https://www.modernretail.co/feed/) |
 | 6 | [On is making a bigger play for American shoppers, one store at a time](https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss) | Swiss sportswear brand On is gearing up for a bigger U.S. | Modern Retail | 20 Nov 06:00 | 1 | Retail | [Modern Retail](https://www.modernretail.co/feed/) |
@@ -58,13 +58,7 @@ Online and physical retail, marketplaces, logistics and shopping.
 
 </details>
 
-<sub>20 more in today's archive.</sub>
-
-## Searches
-
-| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [black friday deals games](https://trends.google.com/trending?geo=US&q=black%20friday%20deals%20games) | US | 200+ | [The best Black Friday deals for gamers already live this weekend…](https://www.gamesradar.com/live/news/best-early-black-friday-deals-for-gamers-this-weekend-26/) | 1 | Retail | [Google Trends](https://trends.google.com/trending) |
+<sub>26 more in today's archive.</sub>
 
 ## Papers
 
@@ -72,10 +66,16 @@ Online and physical retail, marketplaces, logistics and shopping.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes](https://arxiv.org/abs/2611.26480) | LLM agents spend nearly all their time waiting for the model. | Mekhala Hithyshini Sreenivasa | cs.PF · new | preprint | 1 | AI, Agents +2 | [arXiv](https://arxiv.org/) |
 
+## MCP servers
+
+| # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Bowmark web data: LinkedIn, Amazon, YouTube…](https://github.com/bowmark-ai/skill) | Web scraping and automation for AI agents: live prices, quotes, bookings, anything behind a login. | v8.234.0 · 22 Nov 06:36 | 1.0+ | 1 | AI, Agents +2 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+
 ## Repositories
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [wshobson/agents](https://github.com/wshobson/agents) | Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub… | 42,755 | +41 today | +0.1% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
+| 1 | [wshobson/agents](https://github.com/wshobson/agents) | Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub… | 42,780 | +39 today | +0.1% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending/python?since=daily) |
 
-<sub>Every figure comes from the linked source, fetched 08:10 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
