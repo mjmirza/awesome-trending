@@ -1,150 +1,167 @@
 {
- "date": "2026-11-21",
- "fetched_at": "2026-11-21T07:10:26Z",
+ "date": "2026-11-22",
+ "fetched_at": "2026-11-22T07:12:10Z",
  "timezone_shown": "Europe/Berlin",
  "home": "https://github.com/mjmirza/awesome-trending",
  "methodology": "https://github.com/mjmirza/awesome-trending/blob/main/docs/methodology.md",
- "sources_ok": 178,
+ "sources_ok": 176,
  "sources_total": 179,
  "stories": [
   {
-   "title": "Anthropic Researcher Claims to Solve Riemann Problem With Claude",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-21/anthropic-researcher-claims-to-solve-riemann-problem-with-claude",
-   "why": "On the heels of Anthropic PBC’s record-breaking initial public offering, a researcher at the company said he believes he used its…",
+   "title": "Amazon Nearing $7.5 Billion Purchase of Decart",
+   "url": "https://www.theinformation.com/briefings/amazon-nearing-7-5-billion-purchase-decart",
+   "why": "Amazon is nearing a deal to buy Decart, an Israeli AI startup developing video models, for $7.5 billion, the Financial Times reported on…",
    "outlets": [
-    "Santa Fe New Mexican",
-    "Marietta Daily Journal",
-    "95.5 WSB",
-    "Scientific American",
-    "Bloomberg",
+    "BigGo Finance",
+    "Livemint",
+    "https://ascendants.in/",
+    "조선일보",
     "The Information",
+    "Financial Times"
+   ],
+   "industries": [
+    "ai-llms",
+    "markets-economy",
+    "semiconductors",
+    "ecommerce-retail",
+    "fintech",
+    "cloud-devops"
+   ],
+   "latest": "2026-11-22T06:29:34Z"
+  },
+  {
+   "title": "How Jensen Huang Made Humiliation Routine at Nvidia",
+   "url": "https://www.nytimes.com/2026/11/20/technology/jensen-huang-nvidia-culture.html",
+   "why": "The Nvidia co-founder’s belittling behavior toward employees goes back decades.",
+   "outlets": [
+    "Techmeme",
+    "The New York Times",
+    "Financial Times"
+   ],
+   "industries": [
+    "ai-llms",
+    "semiconductors",
+    "markets-economy"
+   ],
+   "latest": "2026-11-22T07:09:38Z"
+  },
+  {
+   "title": "A joint statement by the Lean and Mathlib communities says \"we have full confidence that Alpöge's proof of the Riemann Hypothesis is correct\" (Lean community blog)",
+   "url": "https://www.techmeme.com/261122/p3#a261122p3",
+   "why": "Lean community blog : A joint statement by the Lean and Mathlib communities says “we have full confidence that Alpöge's proof of the…",
+   "outlets": [
+    "Techmeme",
     "Hacker News",
-    "TechCrunch"
+    "The Information"
    ],
    "industries": [
     "ai-llms"
    ],
-   "latest": "2026-11-21T05:30:00Z"
+   "latest": "2026-11-22T06:00:02Z"
   },
   {
-   "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "why": "Trump said he discussed Jensen Huang with China's Xi.",
+   "title": "Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to smuggling restricted AI chips from Southeast Asia to China (Stu Woo/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261122/p1#a261122p1",
+   "why": "Stu Woo / Wall Street Journal : Sources: Alice Huang associate Li Ming, whom Singapore charged with fraud in 2025, was central to…",
    "outlets": [
-    "CNBC",
-    "The New York Times",
-    "New York Times",
-    "KuCoin",
-    "The Jakarta Post",
-    "재경일보",
-    "ForkLog"
-   ],
-   "industries": [
-    "markets-economy",
-    "semiconductors",
-    "ai-llms",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-21T05:13:03Z"
-  },
-  {
-   "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
-   "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-   "why": "Trump spoke at the White House after meeting with Chinese President Xi Jinping and Russian President Vladimir Putin for a historic…",
-   "outlets": [
-    "CNBC",
-    "New York Times",
-    "The Verge",
-    "BBC",
-    "The Guardian"
-   ],
-   "industries": [
-    "cloud-devops",
-    "ai-llms",
-    "markets-economy"
-   ],
-   "latest": "2026-11-20T21:47:41Z"
-  },
-  {
-   "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-   "why": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI…",
-   "outlets": [
-    "BBC",
+    "Techmeme",
     "Bloomberg",
-    "The Guardian",
-    "Hacker News"
+    "Financial Times"
+   ],
+   "industries": [
+    "ai-llms",
+    "markets-economy",
+    "semiconductors"
+   ],
+   "latest": "2026-11-22T05:45:01Z"
+  },
+  {
+   "title": "Tech suppliers raise AI server prices up to 45% months after deals are signed",
+   "url": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f?syn-25a6b1a6=1",
+   "why": "Dell, HPE, Lenovo and Supermicro demand more for equipment, with the increased costs hitting trading firms",
+   "outlets": [
+    "Techmeme",
+    "Financial Times"
    ],
    "industries": [
     "ai-llms",
     "markets-economy",
     "fintech"
    ],
-   "latest": "2026-11-20T22:58:38Z"
+   "latest": "2026-11-22T05:50:01Z"
   },
   {
-   "title": "Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor",
-   "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
-   "why": "Cybersecurity companies have been hunting for acquisitions in the AI era.",
+   "title": "Meta ads is now available in AWS Quick",
+   "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+   "why": "AWS Quick now has a Meta ads AI connector.",
    "outlets": [
-    "Blockonomi",
-    "CNBC",
-    "The Information",
-    "The Economic Times"
+    "AWS Machine Learning blog",
+    "Amazon Web Services"
+   ],
+   "industries": [
+    "ai-llms",
+    "cloud-devops"
+   ],
+   "latest": "2026-11-22T01:59:13Z"
+  },
+  {
+   "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+   "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+   "why": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+   "outlets": [
+    "TechCrunch",
+    "Decrypt"
+   ],
+   "industries": [
+    "ai-llms",
+    "mobile",
+    "cybersecurity",
+    "crypto-web3"
+   ],
+   "latest": "2026-11-21T21:37:10Z"
+  },
+  {
+   "title": "Crowdstrike’s Talks With Zscaler Show AI-Led Cyber Consolidation",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
+   "why": "A wave of multibillion-dollar takeovers is reshaping the cybersecurity industry as the biggest companies race to expand their defenses…",
+   "outlets": [
+    "Bloomberg",
+    "The Information"
    ],
    "industries": [
     "ai-llms",
     "cybersecurity",
     "markets-economy"
    ],
-   "latest": "2026-11-21T02:43:00Z"
+   "latest": "2026-11-21T19:02:24Z"
   },
   {
-   "title": "Google DeepMind’s Henry Shevlin: ‘This is the most important part of being human’",
-   "url": "https://www.ft.com/content/6f807d57-f0ea-4251-9f4d-75a6edc8d49a?syn-25a6b1a6=1",
-   "why": "The in-house philosopher on the problem of consciousness and what it might feel like to be an AI agent",
+   "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
+   "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
+   "why": "This would make the second recent intrusion into the FBI system.",
    "outlets": [
-    "Startup Fortune",
-    "PCMag Middle East",
-    "Tbreak UAE",
-    "Financial Times"
+    "CNBC",
+    "TechCrunch"
    ],
    "industries": [
-    "ai-llms",
-    "ai-agents"
+    "data-analytics",
+    "markets-economy"
    ],
-   "latest": "2026-11-21T05:44:44Z"
+   "latest": "2026-11-21T18:44:53Z"
   },
   {
-   "title": "Mistral opens Asia-Pacific headquarters in Singapore to sell sovereign AI",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMl8wYi1fakNlZ2tpbWtKZ0xjWjVibTA5N3FUdzJMZ1RIR0xmbGk5Zk5uSG9scjFncnF3Z1pDR2tPYUVfSkxldGFibGU2YUQ0ZC1jLU1rdE5ndF82eld2Qk5zODcweHFhUjFQVGVOMlZ4STVma3lJTEJ1LUFvd0tSMjkwdEhnekllbE81V0tJcTZ3dlNESTJXUW12VHRvVlg4WXZv?oc=5",
-   "why": "",
+   "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+   "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+   "why": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information…",
    "outlets": [
-    "MLQ.ai",
-    "ActuIA",
-    "The Next Web",
-    "Startup Fortune"
+    "BleepingComputer",
+    "The Verge"
    ],
    "industries": [
-    "ai-llms"
+    "cybersecurity",
+    "data-analytics"
    ],
-   "latest": "2026-11-20T21:14:07Z"
-  },
-  {
-   "title": "Hugging Face says it delivers almost an exabyte a month. Mind the bandwidth.",
-   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFAxMmNlVTQyQjNyNWFrR1hHM2R0U2ZaVHk0bGpUQ19EYURWV0RMRFpoaGtMTnNQWEEzTFdHNEp6U1Q5Zw?oc=5",
-   "why": "",
-   "outlets": [
-    "Digg",
-    "explainx.ai",
-    "WSJ",
-    "N2K CyberWire"
-   ],
-   "industries": [
-    "ai-llms",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-20T16:01:34Z"
+   "latest": "2026-11-21T17:42:27Z"
   },
   {
    "title": "GTA 6 hits $3.79 billion in its first day on sale, becoming \"the biggest entertainment launch in history\"",
@@ -152,8 +169,7 @@
    "why": "Rockstar has announced that GTA 6 achieved $3.79 billion in retail sales in its first day on sale, \"setting a new record for entertainment…",
    "outlets": [
     "GamesIndustry.biz",
-    "BBC",
-    "The Verge"
+    "BBC"
    ],
    "industries": [
     "ecommerce-retail",
@@ -164,167 +180,92 @@
    "latest": "2026-11-20T22:53:24Z"
   },
   {
-   "title": "Alibaba and Tencent put their faith in Chinese chips as U.S. curbs threatens to slow down their AI development",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1fYm4yUGRqSWM1dXhYdUV5QU8xM25lLXVqRGlESE0tVTRPWUJZN0lVOXo4QzBNWmVVZGtwQ3NzWTZkZEJULUpCbUlfY0dfTHJKWGhobVFkUVMxeUJDVGZ1bDJVWE1wWDZkSU9JQWVJR2JMLWVlMDZqaHlR?oc=5",
-   "why": "",
+   "title": "Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor",
+   "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
+   "why": "Cybersecurity companies have been hunting for acquisitions in the AI era.",
    "outlets": [
-    "Fortune",
-    "TradingView",
-    "Breakingviews"
+    "Blockonomi",
+    "CNBC"
    ],
    "industries": [
     "ai-llms",
-    "semiconductors",
+    "cybersecurity",
+    "markets-economy"
+   ],
+   "latest": "2026-11-20T21:35:24Z"
+  },
+  {
+   "title": "Days after telling Apple CEO, 'great doing business with you', Meta’s AI chief Alexandr Wang takes a dig",
+   "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQYmJRSkQ4VmZwSlN3aGpEU2hWa0diTE9kcE51c0ZCbDZ5NEc3bTE3ZHh3U2Y1c0V1RWNoOHBCS3A1eE5HOC1NUFQ1MEpaWjNLOVZUOXU4RUQzb2NZTHJBbHgyZFVsbDZCYWx0RmVfRXdQNmR5Znc3UjdWN3FKc2E3dkRVcmljb1BjVlliVDBxN2VkbFA3ZEszcUpRNGEwTFEtQXp5ZTJOWHFSNFJ5dkk1bUpLc3NwT1d3VU5KblI5SUN1THp0SDZTRmlMbFhab1didHN1dzdpNVVaWjMwbWEzU2JrYzh2ZEJTVklfRW1zaUFaMFF0MlE5anlKRHdFUjFXc0hYeUdJNlZGQnpDZV9iOUtiUTY3em1ETC1nZ3NfTHBXN0duTDVYZFFRXzFFLXZFbVhfOWZxYTl5Q2VX0gHCAkFVX3lxTE1UMkhsd2dWNmwzLTRKVGFqbHJRWDYxVTRpN2RGNmhxVFRWVFdqNlREMkxvWk1na3pId0I3ZDVxM1Y5M0FIdENRTEFOSTVEVXk0RmhBNDBxbV9ESFZ1N1lGem9pYmJxMU1qWVFwdnRmTzdPYk80dWROcW9aV2gzMmY5UjBNQXdwanJsVFA3Y3JMWGgydGJMYmpjbUpfTDZYTTBtR2ozcUxsSWE4MllaSFo1RzdDUVNFeHRpem1xOHFiVUNLTy1rbHoxMUR2RlNscm1mb1hMbkF1SFpiRWFFOE1oOFpBdzVseE4xVFpGMm8zSncxbVdTRml0Uk1WZ0dCcFlLUUg4VnRwdVdkb3Foalc3VjdzZDROZzhpSld0Y0FHM2RTUXNYeU94ajVHSTJRUzJ6b1ZDVTRvX09yNTNqRUdHUnc?oc=5",
+   "why": "",
+   "outlets": [
+    "The Times of India",
+    "Wisevoter"
+   ],
+   "industries": [
+    "ai-llms",
+    "ai-agents"
+   ],
+   "latest": "2026-11-22T06:10:06Z"
+  },
+  {
+   "title": "Best AI Video Generators in 2026: The Best Tools for Creating Videos with AI",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1LeURxUjdPQWZhVVZWUkRwSXlCczl4Q1FITFVyUzY1WXJxdmEzRWVfN0paNEVmeUJTekoydlBwSjRlYzZIbjc0bGxmWkNORzdJa2FpN0g4OEVLcnlYVHZJcnBnR2FLYmhn0gFuQVVfeXFMT2dSVnFUVjlSMzNrMEVCdWM2UVhMTE03dEFXaTdsMXBSSHFsdlBUV1hVSVdja0VpanotMUNWbm1hUGpHZVVlbWdGMUhUTUhEcGNraDh0bGhBZTE1ZnprZWVYN2wwa1hEa3Z6clREY3c?oc=5",
+   "why": "",
+   "outlets": [
+    "SoaplandTV",
+    "TechloMedia"
+   ],
+   "industries": [
+    "ai-llms",
+    "ai-media",
+    "media-creator"
+   ],
+   "latest": "2026-11-21T23:26:00Z"
+  },
+  {
+   "title": "China’s military sought DeepSeek for cyber drills",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcWFVSnRnSXlFTVdMT1I2Z1ROYTVzMVRBLXFyV29HeDRKMGJfbVREdUczdTVabjlXXzBrbTlTZml6VXBtMDZsWGRSaUxpV05oaXc3TXRjMDlGVFhYSGI0Z0VaLS1VS2lTRDF3dmhndnhaTnVlUUwwYTIwU3dKSnBnWENXaUdoZzIyYlBxaktsWWHSAZABQVVfeXFMT3FhVUp0Z0l5RU1XTE9SNmdUTmE1czFUQS1xcldvR3g0SjBiX21URHVHM3U1Wm45V18wa205U2ZpelVwbTA2bFhkUmlMaVdOaGl3N010YzA5RlRYWEhiNGdFWi0tVUtpU0Qxd3ZoZ3Z4Wk51ZVFMMGEyMFN3SkpwZ1hDV2lHaGcyMmJQcWpLbFlh?oc=5",
+   "why": "",
+   "outlets": [
+    "Social News XYZ",
+    "Wisevoter"
+   ],
+   "industries": [
+    "ai-llms",
+    "cybersecurity"
+   ],
+   "latest": "2026-11-21T14:53:27Z"
+  },
+  {
+   "title": "Homelabber’s second-gen Optane build uses two RTX 3090s to run 2.8-trillion-parameter Kimi AI model at 3.11 tokens per second — moving nearly half the model into a RAM drive boosted performance by 41%",
+   "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxQZGw4SXliaVBSLTN6UzdueVpzZ2ZPRlhBQkdZbEpaQ3R3Qi1aQ3ozSWVuYXVuVjdNdVp2N0xTUTV1amhycGNWeDFTYkJLNVZ2ZzR4LS0yU295TlJWQUhxeTFDSGNRcFEwRGpVd0NsTmplX1ZFX1F4Y1hKUDdJY01MbXV5dlVWM0dqUTNaSG9wODBrZjBXV25yVG9hNndaQVQ3LVVwcEo5V2I3QlFKY08tYXhIaGJ2Z1JRMU4tdHhJNFpDbHRhcUVQUmRzY2V1TC1RU1RKaEN5QUc2M1ZMQXNhcmtGN0d1ZWNDUWxjSC1lR3JFQlZKTFlRNjlJVlZfUFhYV1kwc0JWaWtWN3hXQlNKODRMalRLc3lRMjU4UnNIMGhPMng4Q3g3Y1hlT3JzQm9zbzNybUZjSkVlSWxfY19Hcnk2d19NLU9maTZETjcwZmg3NnN1WFlLa2hLZGhCV0lPTnIzYjg0c0oyYmEwLS1VY0xKNXJWTmxOYUNYSDZLNmdtWkg3V3c?oc=5",
+   "why": "",
+   "outlets": [
+    "Tom's Hardware",
+    "news.lavx.hu"
+   ],
+   "industries": [
+    "ai-llms",
     "cloud-devops"
    ],
-   "latest": "2026-11-20T21:42:05Z"
+   "latest": "2026-11-21T12:51:52Z"
   },
   {
-   "title": "Deutsche Telekom invests $109 million in Mistral AI as first step in larger partnership",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORlluWl9lWnNNeENyV1E2SnFMb1NmTlNRSmFnbVQzMEVCZEFfaktCNENReGYxcGFPTW1pNnA3Q1JGcVpMRl96M2M3S0JvaVB1Q1hESE5oeGRZZ1BrMGRoVFd5cjh5V2EyS0NNOExOcHNSdmxkdE8wcW5LUUhndUY1UXBJcFNYYUhJbmM1S2ZQVkNPNVdtNk5LbnZsLWpwZGlub3BSOFFRUWJzSGktUk1QVHBqejUwWnFmaXNhNTJVRFdaWnhfZUlhd0l3?oc=5",
+   "title": "Amazon's bid to block Perplexity AI shopping agent faces skeptical US judge",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbWswUHM5R2ozUDJISVVyVzhITXZOd2Noc2x0WGZkUkZ4Nm9KVFlKRUF6N0Nkblo1Y0xUeVY4c0ZfNUlLdm1SSE55TllLd0xHdmRSUndrZE9oQ2pLdWdfXy1ET0VFbDBhNjU0UGxKSmd3cnpEMUhqQTJ5S0FxdFZJVDVlMW9aZ0ljbDVPOGZ1OVhBcUtYU3hmZ3V1SDBtUzNPNS1qMWJRbi12TEhySFdzSUMzQ3hCckx2VUHSAVpBVV95cUxQVkJmUmRPYzFPTkJQSFJ4dGN1QndnNjRmdDM2dWlYT1pJYllUVklWVG9rMWh3N3cyc3BZVExtZG1QOExrTG1kQVppSVlldC05aDEtd3NhODhfVGc?oc=5",
    "why": "",
    "outlets": [
-    "Data Center Dynamics",
-    "Mobile World Live",
-    "Techzine Global"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "latest": "2026-11-20T12:39:44Z"
-  },
-  {
-   "title": "NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes blowup, saying it closes a loophole in OpenAI's solution (Peter Hall/Scientific American)",
-   "url": "https://www.techmeme.com/261121/p4#a261121p4",
-   "why": "Peter Hall / Scientific American : NYU's Tristan Buckmaster and Anthropic's Levent Alpöge publish an AI-aided proof of Navier-Stokes…",
-   "outlets": [
-    "Techmeme",
-    "Simon Willison"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "latest": "2026-11-21T06:30:00Z"
-  },
-  {
-   "title": "Ubisoft launches Motherbrain, a subsidiary focused on developing \"smart NPCs with memory and AI game masters that manage large-scale systemic worlds\" (Sophie McEvoy/GamesIndustry.biz)",
-   "url": "https://www.techmeme.com/261121/p1#a261121p1",
-   "why": "Sophie McEvoy / GamesIndustry.biz : Ubisoft launches Motherbrain, a subsidiary focused on developing “smart NPCs with memory and AI game…",
-   "outlets": [
-    "Techmeme",
-    "EE Times"
-   ],
-   "industries": [
-    "ai-llms",
-    "gaming-xr",
-    "semiconductors"
-   ],
-   "latest": "2026-11-21T05:15:00Z"
-  },
-  {
-   "title": "Judge approves $7.25bn Bayer payout to settle claims that Roundup causes cancer",
-   "url": "https://www.theguardian.com/business/2026/nov/20/bayer-roundup-cancer-litigation",
-   "why": "German company faced 65,000 claims from people who said they developed cancer after using weedkiller A Missouri judge on Friday approved…",
-   "outlets": [
-    "The Guardian",
-    "New York Times"
-   ],
-   "industries": [
-    "markets-economy",
-    "health-biotech",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-21T03:23:04Z"
-  },
-  {
-   "title": "Sources: Masayoshi Son recently explored a possible $1T buyout of SK Hynix; SoftBank says the deal is \"no longer under active consideration\" (The Information)",
-   "url": "https://www.techmeme.com/261120/p45#a261120p45",
-   "why": "The Information : Sources: Masayoshi Son recently explored a possible $1T buyout of SK Hynix; SoftBank says the deal is “no longer under…",
-   "outlets": [
-    "Techmeme",
-    "The Information"
-   ],
-   "industries": [
-    "markets-economy",
-    "semiconductors"
-   ],
-   "latest": "2026-11-21T02:45:01Z"
-  },
-  {
-   "title": "energyRe Agreed to Sell 100% of a Portfolio of Utility-Scale Solar Projects in South Carolina to Enel Green Power North America, Totaling 317 MWdc",
-   "url": "https://cleantechnica.com/2026/11/20/energyre-agreed-to-sell-100-of-a-portfolio-of-utility-scale-solar-projects-in-south-carolina-to-enel-green-power-north-america-totaling-317-mwdc/",
-   "why": "energyRe Will Continue as Construction Manager Through Commercial Operation; Sale Reflects Strength of the Company’s South Carolina…",
-   "outlets": [
-    "CleanTechnica",
-    "Canary Media"
-   ],
-   "industries": [
-    "climate-energy",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-21T02:32:49Z"
-  },
-  {
-   "title": "Nvidia faces US regulator’s probe into its accounting",
-   "url": "https://www.ft.com/content/9b28ed72-aac4-4291-9734-bf60b66645ab?syn-25a6b1a6=1",
-   "why": "Securities and Exchange Commission’s investigation adds to difficulties facing chip group after Jensen Huang’s resignation",
-   "outlets": [
-    "New York Times",
-    "Financial Times"
-   ],
-   "industries": [
-    "markets-economy",
-    "semiconductors",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-21T01:06:52Z"
-  },
-  {
-   "title": "New in AWS Quick: More capable flows, an updated web experience, and agents that work together",
-   "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
-   "why": "AWS Quick is the AI workspace built only for work.",
-   "outlets": [
-    "AWS Machine Learning blog",
-    "explainx.ai"
+    "MLex",
+    "Wisevoter"
    ],
    "industries": [
     "ai-llms",
     "ai-agents",
-    "cloud-devops"
+    "ecommerce-retail",
+    "policy-regulation"
    ],
-   "latest": "2026-11-21T01:06:42Z"
-  },
-  {
-   "title": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
-   "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
-   "why": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn.",
-   "outlets": [
-    "AWS Machine Learning blog",
-    "explainx.ai"
-   ],
-   "industries": [
-    "ai-llms",
-    "ai-agents",
-    "cloud-devops",
-    "semiconductors",
-    "ecommerce-retail"
-   ],
-   "latest": "2026-11-21T00:14:26Z"
-  },
-  {
-   "title": "S&P 500 and Dow close in correction; Nasdaq erases 2026 gain as AI rout picks up steam",
-   "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
-   "why": "A decline in Anthropic shares weighed on the broader market following the artificial intelligence giant's public market debut in the…",
-   "outlets": [
-    "CNBC",
-    "MarketWatch"
-   ],
-   "industries": [
-    "ai-llms",
-    "markets-economy",
-    "gaming-xr"
-   ],
-   "latest": "2026-11-20T23:46:18Z"
+   "latest": "2026-11-21T00:43:19Z"
   }
  ],
  "markets": [
@@ -394,8 +335,27 @@
  ],
  "top_signals": [
   {
-   "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
-   "url": "https://alpo.ge/remark.pdf",
+   "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "type": "post",
+   "score": 77,
+   "seen_on": [
+    "Lobsters",
+    "Ars Technica",
+    "Mastodon"
+   ],
+   "industries": [
+    "ai-llms",
+    "cybersecurity",
+    "policy-regulation"
+   ],
+   "why": "#ai, #security",
+   "key_metric": "11 score · 3 comments",
+   "source_key": "lobsters"
+  },
+  {
+   "title": "My monitor was cutting my download speed by 75%",
+   "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
    "type": "hn",
    "score": 73,
    "seen_on": [
@@ -405,27 +365,25 @@
    "industries": [
     "other"
    ],
-   "why": "Link to alpo.ge",
-   "key_metric": "2,526 pts · 1,746 comments",
+   "why": "Link to blog.tymscar.com",
+   "key_metric": "555 pts · 265 comments",
    "source_key": "hn_front"
   },
   {
-   "title": "Vim Classic 8.3.1 released",
-   "url": "https://vim-classic.org/news/vim-8.3.1-released.html",
-   "type": "post",
-   "score": 69,
+   "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+   "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+   "type": "hn",
+   "score": 68,
    "seen_on": [
-    "Lobsters",
-    "LWN.net"
+    "Hacker News",
+    "Mastodon"
    ],
    "industries": [
-    "ai-llms",
-    "devtools",
-    "cloud-devops"
+    "health-biotech"
    ],
-   "why": "#editors, #release",
-   "key_metric": "57 score · 10 comments",
-   "source_key": "lobsters"
+   "why": "Link to theguardian.com",
+   "key_metric": "884 pts · 203 comments",
+   "source_key": "hn_front"
   },
   {
    "title": "elementalsouls/Claude-BugHunter",
@@ -442,7 +400,7 @@
     "cybersecurity"
    ],
    "why": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681…",
-   "key_metric": "14.7k stars · +1,622 today",
+   "key_metric": "16.4k stars · +1,803 today",
    "source_key": "gh_daily"
   },
   {
@@ -457,7 +415,7 @@
     "devtools"
    ],
    "why": "Cursor plugin specification and official plugins",
-   "key_metric": "17.9k stars · +299 today",
+   "key_metric": "18.2k stars · +260 today",
    "source_key": "gh_daily"
   },
   {
@@ -474,7 +432,7 @@
     "cloud-devops"
    ],
    "why": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-   "key_metric": "46k stars · +101 today",
+   "key_metric": "46k stars · +45 today",
    "source_key": "gh_rust"
   },
   {
@@ -490,27 +448,42 @@
     "data-analytics"
    ],
    "why": "OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet.",
-   "key_metric": "2.1k stars · +62 today",
+   "key_metric": "2.2k stars · +93 today",
    "source_key": "gh_go"
   },
   {
-   "title": "Show HN: OpenComputer – an open source alternative to Devin",
-   "url": "https://github.com/diggerhq/opencomputer",
+   "title": "Hurried Announcement: Alessandro Masullo GRH",
+   "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
    "type": "hn",
    "score": 60,
    "seen_on": [
     "Hacker News"
    ],
    "industries": [
-    "devtools"
+    "other"
    ],
-   "why": "Link to github.com",
-   "key_metric": "100 pts · 25 comments",
-   "source_key": "hn_show"
+   "why": "Link to math216.wordpress.com",
+   "key_metric": "2,404 pts · 1,169 comments",
+   "source_key": "hn_front"
   },
   {
-   "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
-   "url": "https://news.ycombinator.com/item?id=50577613",
+   "title": "Show HN: Zero C# – C# without a runtime or GC",
+   "url": "https://onurgumus.github.io/zero-csharp/index.html",
+   "type": "hn",
+   "score": 60,
+   "seen_on": [
+    "Hacker News"
+   ],
+   "industries": [
+    "other"
+   ],
+   "why": "Link to onurgumus.github.io",
+   "key_metric": "151 pts · 104 comments",
+   "source_key": "hn_front"
+  },
+  {
+   "title": "Does anybody read their emails anymore?",
+   "url": "https://news.ycombinator.com/item?id=50591050",
    "type": "hn",
    "score": 60,
    "seen_on": [
@@ -520,7 +493,7 @@
     "other"
    ],
    "why": "Discussion thread on HN",
-   "key_metric": "108 pts · 151 comments",
+   "key_metric": "5 pts · 14 comments",
    "source_key": "hn_ask"
   },
   {
@@ -535,7 +508,7 @@
     "ai-llms"
    ],
    "why": "image-text-to-text · transformers",
-   "key_metric": "941 likes · 136 dl/30d",
+   "key_metric": "3,301 likes · 7.9k dl/30d",
    "source_key": "hf_models"
   },
   {
@@ -550,7 +523,7 @@
     "ai-llms"
    ],
    "why": "A hands-on guide to training Mixture-of-Experts models",
-   "key_metric": "784 likes",
+   "key_metric": "812 likes",
    "source_key": "hf_spaces"
   },
   {
@@ -568,7 +541,7 @@
     "enterprise-saas"
    ],
    "why": "Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most…",
-   "key_metric": "1,330 likes · 28.1k dl/30d",
+   "key_metric": "1,380 likes · 28.7k dl/30d",
    "source_key": "hf_datasets"
   },
   {
@@ -585,7 +558,7 @@
     "ai-media"
    ],
    "why": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence.",
-   "key_metric": "50 upvotes",
+   "key_metric": "54 upvotes",
    "source_key": "hf_papers"
   },
   {
@@ -616,7 +589,7 @@
     "devtools"
    ],
    "why": "Model Context Protocol implementation for TypeScript",
-   "key_metric": "93.3M dl/week",
+   "key_metric": "93.8M dl/week",
    "source_key": "npm"
   },
   {
@@ -635,24 +608,23 @@
    "source_key": "jsdelivr"
   },
   {
-   "title": "Tell us your story, and we might read it on the CodeNewbie Podcast ",
-   "url": "https://dev.to/codenewbie/tell-us-your-story-and-we-might-read-it-on-the-codenewbie-podcast-2840",
+   "title": "The Chairs Are Back. The Coffee Is On. ",
+   "url": "https://dev.to/thethirdcup/the-chairs-are-back-the-coffee-is-on-243p",
    "type": "post",
    "score": 60,
    "seen_on": [
     "Dev.to"
    ],
    "industries": [
-    "ai-llms",
-    "media-creator"
+    "ai-llms"
    ],
-   "why": "#codenewbie, #ai, #beginners",
-   "key_metric": "29 reactions · 4 comments",
+   "why": "#community, #discuss, #ai",
+   "key_metric": "94 reactions · 38 comments",
    "source_key": "devto_day"
   },
   {
-   "title": "Why do we use serialVersionUID and marker interface in java?",
-   "url": "https://stackoverflow.com/questions/80017924/why-do-we-use-serialversionuid-and-marker-interface-in-java",
+   "title": "Is it significant to use size_t in place of int?",
+   "url": "https://stackoverflow.com/questions/80018068/is-it-significant-to-use-size-t-in-place-of-int",
    "type": "question",
    "score": 60,
    "seen_on": [
@@ -661,8 +633,8 @@
    "industries": [
     "devtools"
    ],
-   "why": "#java",
-   "key_metric": "-3 score · 0 answers · 37 views",
+   "why": "#c++",
+   "key_metric": "-1 score · 0 answers · 19 views",
    "source_key": "stackoverflow"
   },
   {
@@ -712,12 +684,12 @@
     "fintech"
    ],
    "why": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash…",
-   "key_metric": "351 stars · created 6 Oct",
+   "key_metric": "352 stars · created 6 Oct",
    "source_key": "gh_topic_fintech"
   },
   {
-   "title": "Chunkee The Manatee (CHUNKEE)",
-   "url": "https://www.coingecko.com/en/coins/chunkee-the-manatee",
+   "title": "Official Trump (TRUMP)",
+   "url": "https://www.coingecko.com/en/coins/official-trump",
    "type": "coin",
    "score": 60,
    "seen_on": [
@@ -726,9 +698,25 @@
    "industries": [
     "crypto-web3"
    ],
-   "why": "Market-cap rank #920",
-   "key_metric": "$0.013879 · -7.6% 24h",
+   "why": "Market-cap rank #134",
+   "key_metric": "$0.888278 · +5.5% 24h",
    "source_key": "coingecko_trending"
+  },
+  {
+   "title": "Advice for the next 100 Rust GUIs",
+   "url": "https://linebender.org/blog/next-100-guis/",
+   "type": "hn",
+   "score": 57,
+   "seen_on": [
+    "Hacker News",
+    "Lobsters"
+   ],
+   "industries": [
+    "devtools"
+   ],
+   "why": "Link to linebender.org",
+   "key_metric": "136 pts · 37 comments",
+   "source_key": "hn_front"
   },
   {
    "title": "Posterior Matching Distillation",
@@ -745,28 +733,12 @@
     "education"
    ],
    "why": "Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's…",
-   "key_metric": "35 upvotes",
+   "key_metric": "37 upvotes",
    "source_key": "hf_papers"
   },
   {
-   "title": "Internet Archive Staffers Are Unionizing",
-   "url": "https://cwa-union.org/news/releases/internet-archive-workers-launch-union-campaign-communications-workers-america",
-   "type": "post",
-   "score": 57,
-   "seen_on": [
-    "Lobsters",
-    "Mastodon"
-   ],
-   "industries": [
-    "other"
-   ],
-   "why": "#culture",
-   "key_metric": "48 score · 7 comments",
-   "source_key": "lobsters"
-  },
-  {
-   "title": "Hurried Announcement: Alessandro Masullo GRH",
-   "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+   "title": "Lean verification of the Riemann Hypothesis",
+   "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
    "type": "hn",
    "score": 57,
    "seen_on": [
@@ -775,8 +747,8 @@
    "industries": [
     "other"
    ],
-   "why": "Link to math216.wordpress.com",
-   "key_metric": "1,875 pts · 863 comments",
+   "why": "Link to leanprover-community.github.io",
+   "key_metric": "954 pts · 810 comments",
    "source_key": "hn_front"
   },
   {
@@ -793,7 +765,7 @@
     "devtools"
    ],
    "why": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model…",
-   "key_metric": "48.7M dl/week",
+   "key_metric": "48.5M dl/week",
    "source_key": "npm"
   },
   {
@@ -809,12 +781,12 @@
     "ai-agents"
    ],
    "why": "An agentic skills framework & software development methodology that works.",
-   "key_metric": "323k stars · +890 today",
+   "key_metric": "323.9k stars · +883 today",
    "source_key": "gh_daily"
   },
   {
-   "title": "Sentinel7/h3",
-   "url": "https://huggingface.co/Sentinel7/h3",
+   "title": "unsloth/Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
    "type": "model",
    "score": 56,
    "seen_on": [
@@ -823,8 +795,8 @@
    "industries": [
     "ai-llms"
    ],
-   "why": "—",
-   "key_metric": "472 likes · 0 dl/30d",
+   "why": "image-text-to-text",
+   "key_metric": "691 likes · 238.2k dl/30d",
    "source_key": "hf_models"
   },
   {
@@ -840,38 +812,8 @@
     "robotics-hardware"
    ],
    "why": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and…",
-   "key_metric": "46 upvotes",
+   "key_metric": "51 upvotes",
    "source_key": "hf_papers"
-  },
-  {
-   "title": "bootstrap",
-   "url": "https://www.jsdelivr.com/package/npm/bootstrap",
-   "type": "cdn",
-   "score": 56,
-   "seen_on": [
-    "jsDelivr"
-   ],
-   "industries": [
-    "web-frontend"
-   ],
-   "why": "Served from the jsDelivr CDN",
-   "key_metric": "3.4B hits/week",
-   "source_key": "jsdelivr"
-  },
-  {
-   "title": "Bitcoin (BTC)",
-   "url": "https://www.coingecko.com/en/coins/bitcoin",
-   "type": "coin",
-   "score": 56,
-   "seen_on": [
-    "CoinGecko"
-   ],
-   "industries": [
-    "crypto-web3"
-   ],
-   "why": "Market-cap rank #1",
-   "key_metric": "$57,927.95 · -6.6% 24h",
-   "source_key": "coingecko_trending"
   }
  ],
  "windows": {
@@ -889,25 +831,22 @@
      "ai-agents"
     ],
     "why": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share…",
-    "key_metric": "14k stars · +3,555 this week",
+    "key_metric": "14.2k stars · +3,396 this week",
     "source_key": "gh_weekly"
    },
    {
-    "title": "erkamyaman/rust-anything",
-    "url": "https://github.com/erkamyaman/rust-anything",
+    "title": "ItsNotRexed/Leonida",
+    "url": "https://github.com/ItsNotRexed/Leonida",
     "type": "repo",
     "score": 60,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "ai-llms",
-     "ai-agents",
-     "devtools",
-     "web-frontend"
+     "gaming-xr"
     ],
-    "why": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at…",
-    "key_metric": "6.9k stars · created 16 Nov",
+    "why": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
+    "key_metric": "7.7k stars · created 20 Nov",
     "source_key": "gh_new"
    },
    {
@@ -922,7 +861,7 @@
      "other"
     ],
     "why": "Link to alpo.ge",
-    "key_metric": "2,527 pts · 1,746 comments",
+    "key_metric": "2,868 pts · 2,049 comments",
     "source_key": "hn_best"
    },
    {
@@ -940,7 +879,7 @@
      "enterprise-saas"
     ],
     "why": "#ai, #programming, #productivity",
-    "key_metric": "205 reactions · 182 comments",
+    "key_metric": "231 reactions · 196 comments",
     "source_key": "devto_week"
    },
    {
@@ -958,14 +897,32 @@
      "semiconductors"
     ],
     "why": "We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated…",
-    "key_metric": "166 upvotes",
+    "key_metric": "167 upvotes",
     "source_key": "hf_papers_week"
+   },
+   {
+    "title": "erkamyaman/rust-anything",
+    "url": "https://github.com/erkamyaman/rust-anything",
+    "type": "repo",
+    "score": 58,
+    "seen_on": [
+     "GitHub"
+    ],
+    "industries": [
+     "ai-llms",
+     "ai-agents",
+     "devtools",
+     "web-frontend"
+    ],
+    "why": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at…",
+    "key_metric": "7.6k stars · created 16 Nov",
+    "source_key": "gh_new"
    },
    {
     "title": "krisgfx9/Wireless-Device-Battery-Monitor",
     "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
     "type": "repo",
-    "score": 58,
+    "score": 57,
     "seen_on": [
      "GitHub"
     ],
@@ -973,22 +930,7 @@
      "gaming-xr"
     ],
     "why": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar.",
-    "key_metric": "5.4k stars · created 16 Nov",
-    "source_key": "gh_new"
-   },
-   {
-    "title": "Hut-hzf/ung220z-tool",
-    "url": "https://github.com/Hut-hzf/ung220z-tool",
-    "type": "repo",
-    "score": 57,
-    "seen_on": [
-     "GitHub"
-    ],
-    "industries": [
-     "other"
-    ],
-    "why": "ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
-    "key_metric": "2.1k stars · created 15 Nov",
+    "key_metric": "5.9k stars · created 16 Nov",
     "source_key": "gh_new"
    },
    {
@@ -1003,7 +945,7 @@
      "other"
     ],
     "why": "System One models such as Jev return decisions through fast, parallel prediction.",
-    "key_metric": "148 upvotes",
+    "key_metric": "149 upvotes",
     "source_key": "hf_papers_week"
    },
    {
@@ -1020,7 +962,7 @@
      "devtools"
     ],
     "why": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows.",
-    "key_metric": "1.9k stars · created 19 Nov",
+    "key_metric": "2.7k stars · created 19 Nov",
     "source_key": "gh_new"
    },
    {
@@ -1037,12 +979,12 @@
      "devtools"
     ],
     "why": "A library of Agent Skills designed to work with the Stitch MCP server.",
-    "key_metric": "11.1k stars · +2,152 this week",
+    "key_metric": "11.6k stars · +2,431 this week",
     "source_key": "gh_weekly"
    },
    {
-    "title": "sybil-solutions/inference-optimisation-skill",
-    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+    "title": "iamajmeena/neonclipping",
+    "url": "https://github.com/iamajmeena/neonclipping",
     "type": "repo",
     "score": 54,
     "seen_on": [
@@ -1050,27 +992,26 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents",
-     "robotics-hardware"
+     "devtools",
+     "media-creator"
     ],
-    "why": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup…",
-    "key_metric": "1.4k stars · created 16 Nov",
+    "why": "Paste a link, get captioned 9:16 clips in ~2 min.",
+    "key_metric": "1.8k stars · created 19 Nov",
     "source_key": "gh_new"
    },
    {
-    "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-    "url": "https://www.cs.cmu.edu/learn/",
+    "title": "Hurried Announcement: Alessandro Masullo GRH",
+    "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
     "type": "hn",
     "score": 54,
     "seen_on": [
      "Hacker News"
     ],
     "industries": [
-     "education",
-     "media-creator"
+     "other"
     ],
-    "why": "Link to cs.cmu.edu",
-    "key_metric": "2,380 pts · 333 comments",
+    "why": "Link to math216.wordpress.com",
+    "key_metric": "2,405 pts · 1,169 comments",
     "source_key": "hn_best"
    },
    {
@@ -1086,7 +1027,7 @@
      "media-creator"
     ],
     "why": "#codenewbie, #ai, #podcast",
-    "key_metric": "77 reactions · 10 comments",
+    "key_metric": "88 reactions · 12 comments",
     "source_key": "devto_week"
    },
    {
@@ -1103,12 +1044,12 @@
      "gaming-xr"
     ],
     "why": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive…",
-    "key_metric": "144 upvotes",
+    "key_metric": "148 upvotes",
     "source_key": "hf_papers_week"
    },
    {
-    "title": "iamajmeena/neonclipping",
-    "url": "https://github.com/iamajmeena/neonclipping",
+    "title": "sybil-solutions/inference-optimisation-skill",
+    "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
     "type": "repo",
     "score": 52,
     "seen_on": [
@@ -1116,11 +1057,11 @@
     ],
     "industries": [
      "ai-llms",
-     "devtools",
-     "media-creator"
+     "ai-agents",
+     "robotics-hardware"
     ],
-    "why": "Paste a link, get captioned 9:16 clips in ~2 min.",
-    "key_metric": "1.4k stars · created 19 Nov",
+    "why": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup…",
+    "key_metric": "1.8k stars · created 16 Nov",
     "source_key": "gh_new"
    }
   ],
@@ -1138,7 +1079,7 @@
      "ai-agents"
     ],
     "why": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "key_metric": "58.7k stars · +28,266 this month",
+    "key_metric": "59.2k stars · +28,684 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1153,7 +1094,7 @@
      "other"
     ],
     "why": "Craft Anything: understand how any software works, and craft your own.",
-    "key_metric": "39.7k stars · created 31 Oct",
+    "key_metric": "40.6k stars · created 31 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1201,7 +1142,7 @@
      "semiconductors"
     ],
     "why": "We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated…",
-    "key_metric": "166 upvotes",
+    "key_metric": "167 upvotes",
     "source_key": "hf_papers_month"
    },
    {
@@ -1219,7 +1160,7 @@
      "mobile"
     ],
     "why": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-    "key_metric": "29.2k stars · created 25 Oct",
+    "key_metric": "29.8k stars · created 25 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1249,7 +1190,7 @@
      "other"
     ],
     "why": "System One models such as Jev return decisions through fast, parallel prediction.",
-    "key_metric": "148 upvotes",
+    "key_metric": "149 upvotes",
     "source_key": "hf_papers_month"
    },
    {
@@ -1265,7 +1206,7 @@
      "cybersecurity"
     ],
     "why": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "key_metric": "76.4k stars · +43,310 this month",
+    "key_metric": "76.8k stars · +41,810 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1295,7 +1236,7 @@
      "ai-agents"
     ],
     "why": "Towards a More Autonomous Agent System",
-    "key_metric": "24.1k stars · created 31 Oct",
+    "key_metric": "24.2k stars · created 31 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1314,8 +1255,8 @@
     "source_key": "hn_month"
    },
    {
-    "title": "Advances in Agentic Computer Graphics",
-    "url": "https://huggingface.co/papers/2611.01860",
+    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+    "url": "https://huggingface.co/papers/2611.18397",
     "type": "paper",
     "score": 54,
     "seen_on": [
@@ -1323,9 +1264,10 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents"
+     "ai-agents",
+     "gaming-xr"
     ],
-    "why": "Computer graphics is built on code.",
+    "why": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive…",
     "key_metric": "148 upvotes",
     "source_key": "hf_papers_month"
    },
@@ -1344,7 +1286,7 @@
      "cloud-devops"
     ],
     "why": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "key_metric": "26.3k stars · +21,024 this month",
+    "key_metric": "26.6k stars · +21,249 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1359,14 +1301,14 @@
      "ai-llms"
     ],
     "why": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-    "key_metric": "19.4k stars · created 29 Oct",
+    "key_metric": "19.9k stars · created 29 Oct",
     "source_key": "gh_new_month"
    }
   ],
   "year": [
    {
-    "title": "NandhaKishorM/laya",
-    "url": "https://github.com/NandhaKishorM/laya",
+    "title": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
     "type": "repo",
     "score": 60,
     "seen_on": [
@@ -1374,10 +1316,15 @@
     ],
     "industries": [
      "ai-llms",
-     "devtools"
+     "ai-agents",
+     "devtools",
+     "cloud-devops",
+     "cybersecurity",
+     "web-frontend",
+     "mobile"
     ],
-    "why": "Non-autoregressive System 1 decision engine.",
-    "key_metric": "35.8k stars · created 18 Sep",
+    "why": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "key_metric": "473.1k stars · created 14 Apr",
     "source_key": "gh_new_year"
    },
    {
@@ -1407,12 +1354,12 @@
      "other"
     ],
     "why": "#news, #devto, #hackathon",
-    "key_metric": "447 reactions · 125 comments",
+    "key_metric": "449 reactions · 125 comments",
     "source_key": "devto_year"
    },
    {
-    "title": "akitaonrails/ai-memory",
-    "url": "https://github.com/akitaonrails/ai-memory",
+    "title": "Graphify-Labs/graphify",
+    "url": "https://github.com/Graphify-Labs/graphify",
     "type": "repo",
     "score": 58,
     "seen_on": [
@@ -1420,10 +1367,11 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents"
+     "ai-agents",
+     "devtools"
     ],
-    "why": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-    "key_metric": "16.2k stars · created 22 May",
+    "why": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph.",
+    "key_metric": "151.7k stars · created 3 Apr",
     "source_key": "gh_new_year"
    },
    {
@@ -1457,18 +1405,20 @@
     "source_key": "devto_year"
    },
    {
-    "title": "nikopueringer/CorridorKey",
-    "url": "https://github.com/nikopueringer/CorridorKey",
+    "title": "tt-a1i/archify",
+    "url": "https://github.com/tt-a1i/archify",
     "type": "repo",
     "score": 55,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "other"
+     "ai-llms",
+     "ai-agents",
+     "devtools"
     ],
-    "why": "Perfect Green Screen Keys",
-    "key_metric": "15k stars · created 25 Feb",
+    "why": "Turn any idea, plan, or codebase into a beautiful interactive diagram.",
+    "key_metric": "98.6k stars · created 15 Apr",
     "source_key": "gh_new_year"
    },
    {
@@ -1487,8 +1437,8 @@
     "source_key": "hn_year"
    },
    {
-    "title": "kyegomez/OpenMythos",
-    "url": "https://github.com/kyegomez/OpenMythos",
+    "title": "koala73/worldmonitor",
+    "url": "https://github.com/koala73/worldmonitor",
     "type": "repo",
     "score": 53,
     "seen_on": [
@@ -1497,10 +1447,12 @@
     "industries": [
      "ai-llms",
      "ai-agents",
-     "devtools"
+     "devtools",
+     "cloud-devops",
+     "cybersecurity"
     ],
-    "why": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the…",
-    "key_metric": "14.9k stars · created 18 Apr",
+    "why": "Real-time global intelligence dashboard.",
+    "key_metric": "91k stars · created 8 Jan",
     "source_key": "gh_new_year"
    },
    {
@@ -1534,8 +1486,8 @@
     "source_key": "hn_year"
    },
    {
-    "title": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "title": "blader/humanizer",
+    "url": "https://github.com/blader/humanizer",
     "type": "repo",
     "score": 50,
     "seen_on": [
@@ -1543,17 +1495,15 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents",
-     "cloud-devops",
-     "cybersecurity"
+     "ai-agents"
     ],
-    "why": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681…",
-    "key_metric": "14.7k stars · created 5 May",
+    "why": "Agent skill that removes signs of AI-generated writing from text",
+    "key_metric": "72.1k stars · created 18 Jan",
     "source_key": "gh_new_year"
    },
    {
-    "title": "OpenByteInc/QuantDinger",
-    "url": "https://github.com/OpenByteInc/QuantDinger",
+    "title": "Niko1221/Strata",
+    "url": "https://github.com/Niko1221/Strata",
     "type": "repo",
     "score": 48,
     "seen_on": [
@@ -1561,16 +1511,11 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents",
-     "devtools",
      "cloud-devops",
-     "markets-economy",
-     "fintech",
-     "crypto-web3",
-     "enterprise-saas"
+     "robotics-hardware"
     ],
-    "why": "The most complete open-source, self-hosted Agentic Trading OS—AI research, Python strategies, factor…",
-    "key_metric": "13.9k stars · created 28 Dec",
+    "why": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux.",
+    "key_metric": "46.6k stars · created 24 Sep",
     "source_key": "gh_new_year"
    },
    {
@@ -1610,7 +1555,7 @@
    "name": "Anthropic",
    "headlines": 8,
    "official_posts": 8,
-   "models": 4,
+   "models": 3,
    "sdk_releases": 4,
    "incidents_72h": 1
   },
@@ -1618,9 +1563,9 @@
    "name": "OpenAI",
    "headlines": 8,
    "official_posts": 4,
-   "models": 12,
+   "models": 8,
    "sdk_releases": 4,
-   "incidents_72h": 2
+   "incidents_72h": 1
   },
   "google": {
    "name": "Google DeepMind & Gemini",
@@ -1664,9 +1609,9 @@
   },
   "cohere": {
    "name": "Cohere",
-   "headlines": 5,
+   "headlines": 3,
    "official_posts": 0,
-   "models": 1,
+   "models": 0,
    "sdk_releases": 2,
    "incidents_72h": 0
   },
@@ -1720,7 +1665,7 @@
   },
   "zhipu": {
    "name": "Zhipu (Z.ai, GLM)",
-   "headlines": 5,
+   "headlines": 1,
    "official_posts": 0,
    "models": 2,
    "sdk_releases": 0,
@@ -1736,10 +1681,10 @@
   },
   "huggingface": {
    "name": "Hugging Face",
-   "headlines": 8,
+   "headlines": 4,
    "official_posts": 4,
    "models": 0,
-   "sdk_releases": 1,
+   "sdk_releases": 2,
    "incidents_72h": null
   },
   "stability": {
@@ -1752,9 +1697,9 @@
   }
  },
  "since_previous_day": {
-  "compared_with": "2026-11-20",
+  "compared_with": "2026-11-21",
   "new_ranked_items": 73,
-  "carried_over": 584
+  "carried_over": 668
  },
  "licence": "LicenseRef-OpenRoots-ORA-2.3"
 }
