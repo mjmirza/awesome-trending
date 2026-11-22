@@ -1440,6 +1440,8 @@ def gnews(query: str, days: int, limit: int) -> list[dict]:
         src = el.find("source")
         outlet = (src.text or "").strip() if src is not None else ""
         publisher = domain_of(src.attrib.get("url", "")) if src is not None else ""
+        if "://" in outlet:                       # some sources are named by their URL: show the domain instead
+            outlet = domain_of(outlet) or outlet
         if outlet and title.endswith(" - " + outlet):
             title = title[: -len(outlet) - 3].strip()
         if title and link:
@@ -3233,8 +3235,12 @@ def _story_tokens(title: str) -> set[str]:
     toks = set()
     for w in re.findall(r"[A-Za-z0-9][A-Za-z0-9&.+-]*", (title or "").replace("’", "'")):
         w = w.lower().strip(".-+").removesuffix("'s")
+        if w in STORY_STOP:
+            continue
         if len(w) > 4 and w.endswith("s") and not w.endswith("ss"):
             w = w[:-1]
+        if len(w) > 5 and w.endswith("ed") and not w.endswith("eed"):
+            w = w[:-2]                            # "hacked" and "hack" are the same story word
         if len(w) >= 3 and w not in STORY_STOP and not w.isdigit():
             toks.add(w)
     return toks
@@ -3327,6 +3333,9 @@ def cluster_stories(results) -> list[dict]:
         sig = signature(c) if len(c["members"]) >= 2 else toks[c["members"][0]]
         central = sorted(range(len(mem)), key=lambda x: -len(toks[c["members"][x]] & sig))
         mem = [mem[x] for x in central]           # most central headline first
+        # List outlets with their own feed before Google News results, so readers see direct links first.
+        outlets.sort(key=lambda o: all(it.get("via") == "Google News" for k, it in mem
+                                       if _outlet_key(_outlet(k, it, results)) == _outlet_key(o)))
         with_desc = [(k, it) for k, it in mem if (it.get("desc") or "").strip() and it.get("via") != "Google News"]
         rep = with_desc[0] if with_desc else mem[0]
         inds = []
@@ -3354,7 +3363,7 @@ def render_shaking(results, n: int) -> list[str]:
     for s in stories:
         k, it = s["rep"]
         links = []
-        for mk, mit in s["members"]:
+        for mk, mit in sorted(s["members"], key=lambda m: m[1].get("via") == "Google News"):
             o = _outlet(mk, mit, results)
             if all(_outlet_key(o) != _outlet_key(lbl) for lbl, _u in links):
                 links.append((o, mit.get("discuss") if mit["kind"] == "hn" else mit["url"]))
@@ -3868,7 +3877,8 @@ def render_methodology() -> str:
           '<a id="shaking"></a>', "", "## What's shaking the market", "",
           f"Every headline, lab post and Hacker News front-page story from the last {STORY_HOURS} hours is a candidate. "
           "Each headline is cut into its distinctive words (common words, and words found in more than 6% of all "
-          "candidate headlines, are ignored). A headline joins a story when it shares at least two distinctive words "
+          "candidate headlines, are ignored; plural and past-tense endings are dropped, so \"hacked\" matches "
+          "\"hack\"). A headline joins a story when it shares at least two distinctive words "
           f"with the story's longest headline and those shared words are at least {int(STORY_OVERLAP * 100)}% of the shorter "
           "headline's distinctive words. A second pass merges two stories whose recurring words overlap (three shared "
           "words, or two when one of them is rare), so the same event told by different outlets ends up as one row. "
@@ -3878,7 +3888,8 @@ def render_methodology() -> str:
           "outlets; Google News results carry no summary.", "",
           "**Google News links** open through a Google redirect to the original article. Resolving the redirect needs "
           "undocumented calls, so the link is kept as Google gives it and the publisher's own domain (from the feed's "
-          "`<source url>`) is shown next to the outlet name.", "",
+          "`<source url>`) is shown next to the outlet name. In a story row, outlets with their own feed are listed and "
+          "linked before Google News results.", "",
           "**Markets strip:** FRED (St. Louis Fed) latest published values for the S&P 500, Nasdaq Composite, Dow "
           "Jones, VIX, US 10-year yield and Brent; the ECB euro reference rate for EUR/USD; CoinGecko for Bitcoin and "
           "Ether. Changes compare the last two published values. " + MARKETS_NOT_SHOWN, "",
