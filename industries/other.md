@@ -2,58 +2,54 @@
 
 Items that no rule matched. They still count; nothing is dropped.
 
-**22 November 2026** · 08:12 Europe/Berlin (UTC+1) · 82 items · daily snapshot, rebuilt every morning.
+**23 November 2026** · 08:08 Europe/Berlin (UTC+1) · 89 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (14):** Bloomberg, Bluesky, Google Trends, Hacker News, Lobsters, Mastodon, Product Hunt, Sifted, TechCrunch, Techmeme, The Information, The Verge, Wikipedia, arXiv
+**Sources with items here (16):** Bloomberg, Bluesky, Dev.to, Google Trends, Hacker News, Lobsters, Mastodon, New York Times, Product Hunt, Sifted, TechCrunch, Techmeme, The Information, The Verge, Wikipedia, arXiv
 
-**By type:** [Discussions](#discussions) (19) · [Hashtags](#hashtags) (15) · [Searches](#searches) (15) · [Headlines](#headlines) (12) · [Most-read articles](#most-read-articles) (9) · [Posts](#posts) (5) · [Topics](#topics) (4) · [Product launches](#product-launches) (2) · [Papers](#papers) (1)
+**By type:** [Discussions](#discussions) (15) · [Hashtags](#hashtags) (15) · [Headlines](#headlines) (15) · [Searches](#searches) (14) · [Most-read articles](#most-read-articles) (10) · [Product launches](#product-launches) (7) · [Posts](#posts) (6) · [Topics](#topics) (6) · [Papers](#papers) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [My monitor was cutting my download speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) | Discussions | Link to blog.tymscar.com | 555 pts · 265 comments | **2** <sub>Hacker News, Lobsters</sub> | 73 | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Hurried Announcement: Alessandro Masullo GRH](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) | Discussions | Link to math216.wordpress.com | 2,404 pts · 1,169 comments | 1 | 60 | [Hacker News](https://news.ycombinator.com/) |
-| 3 | [Show HN: Zero C# – C# without a runtime or GC](https://onurgumus.github.io/zero-csharp/index.html) | Discussions | Link to onurgumus.github.io | 151 pts · 104 comments | 1 | 60 | [Hacker News](https://news.ycombinator.com/) |
-| 4 | [Does anybody read their emails anymore?](https://news.ycombinator.com/item?id=50591050) | Discussions | Discussion thread on HN | 5 pts · 14 comments | 1 | 60 | [Hacker News](https://news.ycombinator.com/ask) |
-| 5 | [#TextilesASong](https://mastodon.social/tags/textilesasong) | Hashtags | — | 353 posts / 2 days | 1 | 60 | [Mastodon](https://mastodon.social/explore/tags) |
-| 6 | ['I'm not MAGA,' Elon Musk says after Republicans' midterm thrashing](https://www.pbs.org/newshour/politics/im-not-maga-elon-musk-says-after-republicans-midterm-thrashing) | Headlines | — | PBS News · 19 Nov 18:09 | 1 | 60 | [Mastodon](https://mastodon.social/explore/links) |
-| 7 | [Lean verification of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) | Discussions | Link to leanprover-community.github.io | 954 pts · 810 comments | 1 | 57 | [Hacker News](https://news.ycombinator.com/) |
-| 8 | [TODOs JJ Style](https://bwc9876.dev/blog/jj_todo/) | Posts | #vcs | 47 score · 9 comments | 1 | 56 | [Lobsters](https://lobste.rs/) |
-| 9 | [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis) | Most-read articles | — | 388.3k views | 1 | 56 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 10 | [#Caturday](https://mastodon.social/tags/caturday) | Hashtags | — | 720 posts / 2 days | 1 | 56 | [Mastodon](https://mastodon.social/explore/tags) |
+| 1 | [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) | Discussions | Link to caranddriver.com | 1,267 pts · 696 comments | 1 | 60 | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Ask HN: Are the trades a safe career transition?](https://news.ycombinator.com/item?id=50600771) | Discussions | Discussion thread on HN | 42 pts · 70 comments | 1 | 60 | [Hacker News](https://news.ycombinator.com/ask) |
+| 3 | [Necoz Is Building a New House!!  All Cats, Follow Me!! ](https://dev.to/necoz/necoz-is-building-a-new-house-all-cats-follow-me-530n) | Posts | #necoz, #opensource, #community | 79 reactions · 26 comments | 1 | 60 | [Dev.to](https://dev.to/top/day) |
+| 4 | [charlotte fc vs chicago fire fc standings](https://trends.google.com/trending?geo=US&q=charlotte%20fc%20vs%20chicago%20fire%20fc%20standings) | Searches | Chicago 1-2 Charlotte (Nov 22, 2026) Game Analysis | 20000+ searches (US) | 1 | 60 | [Google Trends](https://trends.google.com/trending) |
+| 5 | [#SilentSunday](https://mastodon.social/tags/silentsunday) | Hashtags | — | 959 posts / 2 days | 1 | 60 | [Mastodon](https://mastodon.social/explore/tags) |
+| 6 | [Tom Jackson (American football, born 1951)](https://en.wikipedia.org/wiki/Tom_Jackson_%28American_football%2C_born_1951%29) | Most-read articles | — | 264k views | 1 | 56 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 7 | [#RoadTripAMovie](https://mastodon.social/tags/roadtripamovie) | Hashtags | — | 361 posts / 2 days | 1 | 56 | [Mastodon](https://mastodon.social/explore/tags) |
+| 8 | [Two young Ontario hockey players get 40 months behind bars for…](https://nationalpost.com/news/canada/ontario-hockey-players-sentenced-unwanted-threesome/) | Headlines | — | National Post · 20 Nov 13:00 | 1 | 55 | [Mastodon](https://mastodon.social/explore/links) |
+| 9 | [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis) | Most-read articles | — | 205.8k views | 1 | 52 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 10 | [#TextilesASong](https://mastodon.social/tags/textilesasong) | Hashtags | — | 434 posts / 2 days | 1 | 52 | [Mastodon](https://mastodon.social/explore/tags) |
 
 ## Discussions
 
 | # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [My monitor was cutting my download speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) | Link to blog.tymscar.com | 555 | 265 | 27 pts/h | [open](https://news.ycombinator.com/item?id=50587875) | **2** <sub>Hacker News, Lobsters</sub> | Other | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Hurried Announcement: Alessandro Masullo GRH](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/) | Link to math216.wordpress.com | 2,404 | 1,169 | 66 pts/h | [open](https://news.ycombinator.com/item?id=50579568) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 3 | [Show HN: Zero C# – C# without a runtime or GC](https://onurgumus.github.io/zero-csharp/index.html) | Link to onurgumus.github.io | 151 | 104 | 10 pts/h | [open](https://news.ycombinator.com/item?id=50590279) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 4 | [Does anybody read their emails anymore?](https://news.ycombinator.com/item?id=50591050) | Discussion thread on HN | 5 | 14 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50591050) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
-| 5 | [Lean verification of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) | Link to leanprover-community.github.io | 954 | 810 | 57 pts/h | [open](https://news.ycombinator.com/item?id=50589618) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 6 | [Ask HN: I'm in highschool, what would y'all recommend to learn?](https://news.ycombinator.com/item?id=50588314) | Discussion thread on HN | 2 | 13 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50588314) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
-| 7 | [Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?](https://news.ycombinator.com/item?id=50583761) | Discussion thread on HN | 675 | 766 | 21 pts/h | [open](https://news.ycombinator.com/item?id=50583761) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 8 | [Show HN: I made a PS1 style racing game](https://outpostracer.com) | Link to outpostracer.com | 28 | 25 | 2 pts/h | [open](https://news.ycombinator.com/item?id=50589184) | 1 | Other | [Hacker News](https://news.ycombinator.com/show) |
-| 9 | [Detonating a pile of lead azide](https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really) | Link to science.org | 588 | 379 | 33 pts/h | [open](https://news.ycombinator.com/item?id=50588982) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 10 | [Inkling-2-Mini in 5.4 GB Memory](https://github.com/ShinMegamiBoson/lookatmyquant) | Link to github.com | 432 | 109 | 33 pts/h | [open](https://news.ycombinator.com/item?id=50591853) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 1 | [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) | Link to caranddriver.com | 1,267 | 696 | 47 pts/h | [open](https://news.ycombinator.com/item?id=50596133) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Ask HN: Are the trades a safe career transition?](https://news.ycombinator.com/item?id=50600771) | Discussion thread on HN | 42 | 70 | 3 pts/h | [open](https://news.ycombinator.com/item?id=50600771) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
+| 3 | [A miniature San Francisco with live buses, planes and boats](https://smallsf.com/) | Link to smallsf.com | 235 | 88 | 22 pts/h | [open](https://news.ycombinator.com/item?id=50603589) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 4 | [Progress map for the Lean formalization of Alessandro Masullo's manuscript](https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3) | Link to claude.ai | 212 | 158 | 27 pts/h | [open](https://news.ycombinator.com/item?id=50605045) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 5 | [Cathedral floor emerges in Sudan, revealing one of the biggest medieval churches](https://apnews.com/article/sudan-antiquities-nubia-cathedral-1b16f67da881ee5592de4481ee55c527) | Link to apnews.com | 193 | 45 | 2 pts/h | [open](https://news.ycombinator.com/item?id=50547698) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 6 | [Masullo on the Riemann Hypothesis](https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/) | Link to johncarlosbaez.wordpress.com | 178 | 93 | 9 pts/h | [open](https://news.ycombinator.com/item?id=50598441) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 7 | [Ask HN: Are startups today worth it even in a best case scenario?](https://news.ycombinator.com/item?id=50602740) | Discussion thread on HN | 5 | 3 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50602740) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
+| 8 | [Assume People Are Not Interested in Your Blog Post](https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/) | Link to danielsada.tech | 152 | 79 | 13 pts/h | [open](https://news.ycombinator.com/item?id=50603143) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 9 | [Nyx, the Oldest Internet Service Provider](https://nyx.net/) | Link to nyx.net | 125 | 18 | 11 pts/h | [open](https://news.ycombinator.com/item?id=50603465) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 10 | [The Usefulness of Useless Knowledge \[pdf\] (1939)](https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf) | Link to ias.edu | 106 | 19 | 12 pts/h | [open](https://news.ycombinator.com/item?id=50604472) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
 
 <details>
-<summary>Show 9 more</summary>
+<summary>Show 5 more</summary>
 
 | # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Toyota, Nissan, and Honda to standardize parts to lower costs](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/) | Link to caranddriver.com | 282 | 140 | 90 pts/h | [open](https://news.ycombinator.com/item?id=50596133) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 12 | [Show HN: The Riemann Proof Handbook](https://github.com/tamnd/riemann-handbook) | Link to github.com | 10 | 3 | 7 pts/h | [open](https://news.ycombinator.com/item?id=50596664) | 1 | Other | [Hacker News](https://news.ycombinator.com/show) |
-| 13 | [Getting the mind to steer the body to steer you](https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body) | Link to notnottalmud.substack.com | 237 | 77 | 7 pts/h | [open](https://news.ycombinator.com/item?id=50583028) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 14 | [Ask HN: How many of you have replaced your everyday apps with something custom?](https://news.ycombinator.com/item?id=50594639) | Discussion thread on HN | 6 | 3 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50594639) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
-| 15 | [Sandwich Simulator](https://stulle.app/) | Link to stulle.app | 150 | 56 | 21 pts/h | [open](https://news.ycombinator.com/item?id=50594911) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
-| 16 | [Show HN: Direct weight edits turn a 0.5B model into an expert species classifier](https://andrewxhill.com/frontier-model-weight-edits/) | Link to andrewxhill.com | 6 | 1 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50590838) | 1 | Other | [Hacker News](https://news.ycombinator.com/show) |
-| 17 | [Ask HN: What have you built for your wife?](https://news.ycombinator.com/item?id=50592047) | Discussion thread on HN | 5 | 2 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50592047) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
-| 18 | [My founders journey of 9 years at Browserless](https://news.ycombinator.com/item?id=50591465) | Discussion thread on HN | 4 | 2 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50591465) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
-| 19 | [Verification files for the Lean proof of the Riemann Hypothesis](https://math.mit.edu/~drew/grh/) | Link to math.mit.edu | 108 | 38 | 7 pts/h | [open](https://news.ycombinator.com/item?id=50590441) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 11 | [Ask HN: Who Owns API Drift](https://news.ycombinator.com/item?id=50597066) | Discussion thread on HN | 2 | 3 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50597066) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
+| 12 | [The struggle for freedom: How BSD escaped AT&T licensing](https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/) | Link to fosscomics.com | 98 | 33 | 10 pts/h | [open](https://news.ycombinator.com/item?id=50604123) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 13 | [DeFlock Amerca Facebook Group Suspended as a Dangerous Organization](https://www.facebook.com/shugvermonte/posts/the-deflock-america-group-with-over-840k-members-has-been-suspended-by-meta-what/10165140280736049/) | Link to facebook.com | 92 | 21 | 35 pts/h | [open](https://news.ycombinator.com/item?id=50607498) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
+| 14 | [Ask HN: Do you agree with Jeremie Harris's prepper guidance?](https://news.ycombinator.com/item?id=50600244) | Discussion thread on HN | 1 | 3 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50600244) | 1 | Other | [Hacker News](https://news.ycombinator.com/ask) |
+| 15 | [Treemap of the Riemann Hypothesis Lean Proof](https://pengowray.github.io/riemann-zeta-proof-visualizer/) | Link to pengowray.github.io | 43 | 9 | 8 pts/h | [open](https://news.ycombinator.com/item?id=50606499) | 1 | Other | [Hacker News](https://news.ycombinator.com/) |
 
 </details>
 
@@ -61,55 +57,27 @@ Items that no rule matched. They still count; nothing is dropped.
 
 | # | Hashtag | Posts (2 d) | Accounts (2 d) | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [#TextilesASong](https://mastodon.social/tags/textilesasong) | 353 | 91 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 2 | [#Caturday](https://mastodon.social/tags/caturday) | 720 | 622 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 3 | [#IndustrializationASong](https://mastodon.social/tags/industrializationasong) | 356 | 84 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 4 | [#sabafoto](https://mastodon.social/tags/sabafoto) | 83 | 59 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 5 | [#bikenite](https://mastodon.social/tags/bikenite) | 214 | 64 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 6 | [#ScreenshotSaturday](https://mastodon.social/tags/ScreenshotSaturday) | 86 | 64 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 7 | [#stulle](https://mastodon.social/tags/stulle) | 47 | 38 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 8 | [#3連休はフォロワーさんが増えるらしい](https://mastodon.social/tags/3%E9%80%A3%E4%BC%91%E3%81%AF%E3%83%95%E3%82%A9%E3%83%AD%E3%83%AF%E3%83%BC%E3%81%95%E3%82%93%E3%81%8C%E5%A2%97%E3%81%88%E3%82%8B%E3%82%89%E3%81%97%E3%81%84) | 40 | 39 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 9 | [#textileASong](https://mastodon.social/tags/textileasong) | 35 | 15 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 10 | [#strictly](https://mastodon.social/tags/strictly) | 151 | 20 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 1 | [#SilentSunday](https://mastodon.social/tags/silentsunday) | 959 | 846 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 2 | [#RoadTripAMovie](https://mastodon.social/tags/roadtripamovie) | 361 | 72 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 3 | [#TextilesASong](https://mastodon.social/tags/textilesasong) | 434 | 115 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 4 | [#Monsterdon](https://mastodon.social/tags/monsterdon) | 2,665 | 123 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 5 | [#tatort](https://mastodon.social/tags/tatort) | 127 | 52 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 6 | [#vacature](https://mastodon.social/tags/vacature) | 716 | 71 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 7 | [#meshiyosoi](https://mastodon.social/tags/meshiyosoi) | 20 | 20 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 8 | [#thedaytimeended1979](https://mastodon.social/tags/thedaytimeended1979) | 541 | 25 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 9 | [#thedaytimeended](https://mastodon.social/tags/thedaytimeended) | 442 | 21 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 10 | [#stillersonntag](https://mastodon.social/tags/stillersonntag) | 34 | 32 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
 
 <details>
 <summary>Show 5 more</summary>
 
 | # | Hashtag | Posts (2 d) | Accounts (2 d) | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [#CatsOfMastodon](https://mastodon.social/tags/catsofmastodon) | 398 | 311 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 12 | [#KungFuSat](https://mastodon.social/tags/kungfusat) | 195 | 20 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 13 | [#fbi](https://mastodon.social/tags/fbi) | 106 | 77 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 14 | [#FensterFreitag](https://mastodon.social/tags/fensterfreitag) | 9 | 7 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-| 15 | [#SilentSunday](https://mastodon.social/tags/silentsunday) | 88 | 80 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
-
-</details>
-
-## Searches
-
-| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [duke vs washington state](https://trends.google.com/trending?geo=US&q=duke%20vs%20washington%20state) | US | 500+ | [Duke holds off Washington State rally behind Patrick Ngongba's 24](https://www.cbssports.com/college-basketball/news/duke-holds-off-washington-state-rally-behind-patrick-ngongbas-24/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 2 | [robert downey jr](https://trends.google.com/trending?geo=US&q=robert%20downey%20jr) | US | 200+ | [WWII Ghost Rider joins Hasbro's Marvel Legends Series with…](https://www.flickeringmyth.com/wwii-ghost-rider-joins-hasbros-marvel-legends-series-with-hellhunters-sgt-sal-romero-figure-motorcycle-set/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 3 | [wsu basketball](https://trends.google.com/trending?geo=US&q=wsu%20basketball) | US | 200+ | [Resolve and timely stops powers WSU to much-needed 79-63 victory…](https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 4 | [john wick](https://trends.google.com/trending?geo=US&q=john%20wick) | US | 200+ | [John Wick Franchise Officially Returning In New Prequel Set Years…](https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 5 | [brandin cooks](https://trends.google.com/trending?geo=US&q=brandin%20cooks) | US | 200+ | [49ers waive ex-Bills, Saints WR with 9,869 career receiving yards](https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 6 | [kran](https://trends.google.com/trending?geo=DE&q=kran) | DE | 2000+ | [Autokran kippt im Kehler Rheinhafen um - Fahrer schwer verletzt](https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-autokran-kippt-im-kehler-rheinhafen-um-fahrer-schwer-verletzt-100.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 7 | [pandemie](https://trends.google.com/trending?geo=DE&q=pandemie) | DE | 500+ | [Wissenschaft - Corona-Stress: Jugendliche reagieren beim Altern…](https://www.radioeins.de/programm/sendungen/die_profis/archivierte_sendungen/beitraege/corona-stress--jugendliche-reagieren-beim-altern--besonders-sens.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 8 | [gouverneur von washington](https://trends.google.com/trending?geo=DE&q=gouverneur%20von%20washington) | DE | 200+ | [USA unter Donald Trump: Gouverneur von Washington kritisiert…](https://www.spiegel.de/ausland/usa-unter-donald-trump-gouverneur-von-washington-kritisiert-ice-festnahmen-a-062b36e4-e1b4-41fb-9298-69978763255f) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 9 | [spielabbruch](https://trends.google.com/trending?geo=DE&q=spielabbruch) | DE | 200+ | [Bargau/Bettringen: Spielabbruch nach Kopfverletzung überschattet…](https://www.schwaebische-post.de/sport/regionalsport/bargau-bettringen-spielabbruch-nach-kopfverletzung-ueberschattet-handball-spiel-94598803.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 10 | [malik tillman](https://trends.google.com/trending?geo=DE&q=malik%20tillman) | DE | 200+ | [Tillman im Zwist mit den Fans: Zuspruch "relativ egal"](https://www.sport1.de/news/fussball/bundesliga/2026/11/tillman-im-zwist-mit-den-fans-zuspruch-relativ-egal) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-
-<details>
-<summary>Show 5 more</summary>
-
-| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [liam hemsworth](https://trends.google.com/trending?geo=DE&q=liam%20hemsworth) | DE | 200+ | [Is Liam Hemsworth In ’Sunrise Of The Reaping’?](https://guides.justwatch.com/us/is-liam-hemsworth-in-surnrise-on-the-reaping) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 12 | [caren miosga caren miosga](https://trends.google.com/trending?geo=DE&q=caren%20miosga%20caren%20miosga) | DE | 200+ | [Kritik an Ukraine-Unterstützung: Die koordinierte Kampagne der USA…](https://www.welt.de/politik/ausland/plus6b011cc55842ff528b9e27b2/kritik-an-ukraine-unterstuetzung-die-koordinierte-kampagne-der-usa-gegen-kiew.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 13 | [polizeieinsatz](https://trends.google.com/trending?geo=DE&q=polizeieinsatz) | DE | 200+ | [Bedrohungslage befürchtet: Großer Polizeieinsatz in Ingolstadt…](https://www.donaukurier.de/lokales/ingolstadt/bedrohungslage-befuerchtet-grosser-polizeieinsatz-in-ingolstadt-gebiet-abgesperrt-22472423) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 14 | [ratten](https://trends.google.com/trending?geo=DE&q=ratten) | DE | 200+ | [Rattenfund in Norma-Lager: Staatsanwaltschaft nimmt Ermittlungen auf](https://www.infranken.de/bayern/rattenfund-in-norma-lager-staatsanwaltschaft-nimmt-ermittlungen-auf-art-6412810) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
-| 15 | [senior](https://trends.google.com/trending?geo=DE&q=senior) | DE | 100+ | [Notre Dame 24-3 SMU (Nov 21, 2026) Game Recap](https://www.espn.com/college-football/recap/_/gameId/401858307) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 11 | [#jfk](https://mastodon.social/tags/jfk) | 25 | 23 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 12 | [#Wasserspiegelung](https://mastodon.social/tags/Wasserspiegelung) | 32 | 24 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 13 | [#豊臣兄弟](https://mastodon.social/tags/%E8%B1%8A%E8%87%A3%E5%85%84%E5%BC%9F) | 219 | 18 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 14 | [#COP31](https://mastodon.social/tags/cop31) | 502 | 342 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
+| 15 | [#FotoVorschlag](https://mastodon.social/tags/FotoVorschlag) | 541 | 430 | 1 | Other | [Mastodon](https://mastodon.social/explore/tags) |
 
 </details>
 
@@ -117,24 +85,54 @@ Items that no rule matched. They still count; nothing is dropped.
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | ['I'm not MAGA,' Elon Musk says after Republicans' midterm thrashing](https://www.pbs.org/newshour/politics/im-not-maga-elon-musk-says-after-republicans-midterm-thrashing) | — | PBS News | 19 Nov 18:09 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
-| 2 | [Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post](https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html) | — | The New York Times | 21 Nov 11:02 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
-| 3 | [US pursuit of ‘Trump-class’ warships has blown cost of new fleet by billions, report warns](https://www.theguardian.com/us-news/2026/nov/21/trump-class-warships) | — | The Guardian | 21 Nov 14:00 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
-| 4 | [A joint statement by the Lean and Mathlib communities says "we have full confidence that…](https://www.techmeme.com/261122/p3#a261122p3) | Lean community blog : A joint statement by the Lean and Mathlib communities says “we have full confidence… | Techmeme | 22 Nov 07:00 | 1 | Other | [Techmeme](https://www.techmeme.com/feed.xml) |
-| 5 | [The FBI and USDA were reportedly hacked](https://www.theverge.com/tech/1039543/fbi-usda-hacked) | Friday, it was reported that both the US Department of Agriculture (USDA) and the FBI were hacked. | The Verge | 21 Nov 18:42 | 1 | Other | [The Verge](https://www.theverge.com/rss/index.xml) |
-| 6 | [John Roberts, the voice of Linda Belcher, is just happy to finish a thing](https://www.theverge.com/report/1038463/john-roberts-linda-belcher-bobs-burgers-interview) | You probably know John Roberts best as the voice of Linda Belcher on Bob's Burgers. | The Verge | 21 Nov 17:00 | 1 | Other | [The Verge](https://www.theverge.com/rss/index.xml) |
-| 7 | [Alaska, your next governor is a Wikipedia nerd](https://techcrunch.com/2026/11/21/alaska-your-next-governor-is-a-wikipedia-nerd/) | Jonathan Kreiss-Tomkins, Alaska's governor-elect, has made more than 13,000 WIkipedia edits. | TechCrunch | 21 Nov 16:18 | 1 | Other | [TechCrunch](https://techcrunch.com/feed/) |
-| 8 | [Inside Malmö: The Swedish city building the future of food](https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/) | — | Sifted | 20 Nov 10:00 | 1 | Other | [Sifted](https://sifted.eu/feed) |
-| 9 | [13 pre-seed fintechs to watch, according to VCs](https://sifted.eu/articles/pre-seed-fintechs-to-watch/) | — | Sifted | 20 Nov 06:00 | 1 | Other | [Sifted](https://sifted.eu/feed) |
-| 10 | [China Objects to US Curbs on Telecoms’ Access to Phone Numbers](https://www.bloomberg.com/news/articles/2026-11-22/china-objects-to-us-curbs-on-telecoms-access-to-phone-numbers) | China urged the US to withdraw a measure barring its three largest telecoms from directly obtaining US phone… | Bloomberg | 22 Nov 03:44 | 1 | Other | [Bloomberg](https://feeds.bloomberg.com/technology/news.rss) |
+| 1 | [Two young Ontario hockey players get 40 months behind bars for ‘joint sexual violation’](https://nationalpost.com/news/canada/ontario-hockey-players-sentenced-unwanted-threesome/) | — | National Post | 20 Nov 13:00 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 2 | [Read the memo to Mailchimp staff as Intuit plans Bending Spoons sale](https://www.businessinsider.com/mailchimp-intuit-plans-bending-spoons-sale-memo-2026-11) | — | Business Insider | 20 Nov 22:51 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 3 | ['I'm not MAGA,' Elon Musk says after Republicans' midterm thrashing](https://www.pbs.org/newshour/politics/im-not-maga-elon-musk-says-after-republicans-midterm-thrashing) | — | PBS News | 19 Nov 18:09 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 4 | [Cop28 is a farce rigged to fail, but there are other ways we can try to save the planet](https://www.theguardian.com/commentisfree/2023/dec/09/cop28-rigged-fail-save-planet-climate-summit-fossil-fuel) | — | The Guardian | 9 Dec 09:00 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 5 | [South Korean PE firm MBK Partners agrees to take Japan's Wacom private, in a deal…](https://www.techmeme.com/261122/p20#a261122p20) | Kim Woo-young / CHOSUNBIZ : South Korean PE firm MBK Partners agrees to take Japan's Wacom private, in a… | Techmeme | 23 Nov 05:40 | 1 | Other | [Techmeme](https://www.techmeme.com/feed.xml) |
+| 6 | [Kodak’s next collectible is a tiny digital photo frame that doubles as a tracker](https://www.theverge.com/tech/1038650/kodak-slidetag-keychain-photo-display-tracker-find-my-hub-google-apple-e-ink) | After expanding its Charmera collection with a Millennium Edition featuring Y2K-inspired designs earlier… | The Verge | 23 Nov 04:00 | 1 | Other | [The Verge](https://www.theverge.com/rss/index.xml) |
+| 7 | [‘You Can See Everything’ has made more than $100M worldwide](https://techcrunch.com/2026/11/22/you-can-see-everything-has-made-more-than-100m-worldwide/) | The new Elizabeth Holmes documentary is just beginning to roll out internationally. | TechCrunch | 22 Nov 22:42 | 1 | Other | [TechCrunch](https://techcrunch.com/feed/) |
+| 8 | [The best apps to make new friends right now](https://techcrunch.com/2026/11/22/as-people-look-for-ways-to-make-new-friends-here-are-the-apps-promising-to-help/) | We've compiled a list of friendship apps, from friend discovery platforms like BFF to event-focused ones… | TechCrunch | 22 Nov 22:00 | 1 | Other | [TechCrunch](https://techcrunch.com/feed/) |
+| 9 | [Eileen Burbidge backs Monzo alums’ anti-fraud startup in £1.8m pre-seed](https://sifted.eu/articles/acorda-pre-seed/) | — | Sifted | 23 Nov 06:00 | 1 | Other | [Sifted](https://sifted.eu/feed) |
+| 10 | [Inside Malmö: The Swedish city building the future of food](https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/) | — | Sifted | 20 Nov 10:00 | 1 | Other | [Sifted](https://sifted.eu/feed) |
 
 <details>
-<summary>Show 2 more</summary>
+<summary>Show 5 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Can Jensen Really Return?](https://www.theinformation.com/articles/can-jensen-return) | Welcome, Weekenders! Jensen Huang wants a mulligan, and a good number of people seem keen to let him have… | The Information | 21 Nov 17:13 | 1 | Other | [The Information](https://www.theinformation.com/feed) |
-| 12 | [Trump turns White House press conference into a 2028 succession audition](https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio) | — | The Guardian | 21 Nov 01:16 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 11 | [Julius Baer Inflows Slow as Client Risk Cleanup Continues](https://www.bloomberg.com/news/articles/2026-11-23/julius-baer-inflows-slow-client-risk-cleanup-continues-finma) | Julius Baer Group Ltd. saw client inflows slow in the first ten months of the year, as efforts to clean up… | Bloomberg | 23 Nov 07:36 | 1 | Other | [Bloomberg](https://feeds.bloomberg.com/technology/news.rss) |
+| 12 | [Looking for the Formula to Stop an Apocalypse](https://www.nytimes.com/2026/11/22/magazine/looking-for-the-formula-to-stop-an-apocalypse.html) | Mike Winer and his colleagues are trying to build a mathematical safeguard to keep A.I. | New York Times | 22 Nov 13:27 | 1 | Other | [New York Times](https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml) |
+| 13 | [Can Jensen Really Return?](https://www.theinformation.com/articles/can-jensen-return) | Welcome, Weekenders! Jensen Huang wants a mulligan, and a good number of people seem keen to let him have… | The Information | 21 Nov 17:13 | 1 | Other | [The Information](https://www.theinformation.com/feed) |
+| 14 | [Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'](https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o) | — | BBC News | — | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+| 15 | [COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels](https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html) | — | The New York Times | 22 Nov 13:25 | 1 | Other | [Mastodon](https://mastodon.social/explore/links) |
+
+</details>
+
+## Searches
+
+| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [charlotte fc vs chicago fire fc standings](https://trends.google.com/trending?geo=US&q=charlotte%20fc%20vs%20chicago%20fire%20fc%20standings) | US | 20000+ | [Chicago 1-2 Charlotte (Nov 22, 2026) Game Analysis](https://www.espn.com/soccer/report/_/gameId/401933730) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 2 | [ben wang](https://trends.google.com/trending?geo=US&q=ben%20wang) | US | 2000+ | [Box Office: 'Hunger Games: Sunrise on Reaping' Opening to $120M, 4th…](https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 3 | [enrique peña nieto](https://trends.google.com/trending?geo=US&q=enrique%20pe%C3%B1a%20nieto) | US | 500+ | [Vicente Fox, Felipe Calderón y Enrique Peña Nieto, los presidentes…](https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 4 | [la noire](https://trends.google.com/trending?geo=US&q=la%20noire) | US | 100+ | [Rockstar Games' next game revealed as GTA 6 ending confirms…](https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 5 | [schneefallgrenze](https://trends.google.com/trending?geo=DE&q=schneefallgrenze) | DE | 200000+ | [Wintereinbruch: Wetterdienst warnt zum Wochenbeginn vor Glätte](https://www.zeit.de/wissenschaft/umwelt/2026-11/glatteis-wetter-deutschland-polizei-winterdienst) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 6 | [russland](https://trends.google.com/trending?geo=DE&q=russland) | DE | 5000+ | ["Sputnik-S": Westliche Geheimdienste warnen vor russischer Atomwaffe…](https://www.tagesschau.de/investigativ/ndr-wdr/satellit-russland-100.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 7 | [salmonellen](https://trends.google.com/trending?geo=DE&q=salmonellen) | DE | 1000+ | [Bundesweite Lebensmittelwarnung: Salmonellen in Süßigkeiten…](https://www.sol.de/deutschland-und-welt/bundesweite-lebensmittelwarnung-salmonellen-in-suessigkeiten-festgestellt-re-11,803469.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 8 | [fc bayern münchen fußball](https://trends.google.com/trending?geo=DE&q=fc%20bayern%20m%C3%BCnchen%20fu%C3%9Fball) | DE | 1000+ | [Diesen Klopp-Star muss Bayern sofort auf der Liste haben – ein…](https://www.bild.de/sport/fussball/diesen-klopp-star-muss-bayern-sofort-auf-der-liste-haben-ein-kommentar-6b032a25816dfbaedcce8a6b) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 9 | [ben hodges](https://trends.google.com/trending?geo=DE&q=ben%20hodges) | DE | 500+ | [Hodges sieht Lücken: Ex-US-General hält Nato nicht gewappnet für…](https://www.n-tv.de/politik/Ex-US-General-haelt-Nato-nicht-gewappnet-fuer-russischen-Luftkrieg-id31564659.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 10 | [knicks – pacers](https://trends.google.com/trending?geo=DE&q=knicks%20%E2%80%93%20pacers) | DE | 200+ | [Josh Hart records triple-double, Knicks outlast Pacers](https://www.thesportsleader.com/2026/11/22/josh-hart-records-triple-double-knicks-outlast-pacers/) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+
+<details>
+<summary>Show 4 more</summary>
+
+| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 11 | [hochzeit auf den ersten blick](https://trends.google.com/trending?geo=DE&q=hochzeit%20auf%20den%20ersten%20blick) | DE | 100+ | ["Hochzeit auf den ersten Blick" 2027: Start steht fest - wer erobert…](https://www.joyn.de/bts/serien/hochzeit-auf-den-ersten-blick/hadeb2027-start-termin-enthuellt-erste-single-frau-silvia-staffel13-219855) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 12 | [düsseldorfer eg](https://trends.google.com/trending?geo=DE&q=d%C3%BCsseldorfer%20eg) | DE | 100+ | [Nächste Pleite im Dome: Zwei Kemp-Tore reichen nicht – DEG-Pleite…](https://rp-online.de/sport/eishockey/deg/duesseldorfer-eg-deg-verliert-trotz-kemp-doppelpack-gegen-die-lausitzer-fuechse_aid-158317783) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 13 | [hamburg wetter](https://trends.google.com/trending?geo=DE&q=hamburg%20wetter) | DE | 100+ | [Hamburg: Winterdienst seit 1 Uhr im Einsatz - wer jetzt die Gehwege…](https://www.ndr.de/nachrichten/hamburg/glaette-in-hamburg-winterdienst-seit-1-uhr-im-einsatz,kurzehh-4968.html) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
+| 14 | [wochenhoroskop](https://trends.google.com/trending?geo=DE&q=wochenhoroskop) | DE | 100+ | [Horoskop Waage vom 23.11. - 29.11.2026: Das Unbekannte bringt Glück](https://www.bild.de/leben-wissen/horoskop/horoskop-waage-vom-23-11-29-11-2026-das-unbekannte-bringt-glueck-6afd8755bb7e7a6679f92b97) | 1 | Other | [Google Trends](https://trends.google.com/trending) |
 
 </details>
 
@@ -142,46 +140,55 @@ Items that no rule matched. They still count; nothing is dropped.
 
 | # | Article | Views | Rank | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis) | 388,288 | 5 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 2 | [.xxx](https://en.wikipedia.org/wiki/.xxx) | 148,049 | 8 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 3 | [Deaths in 2026](https://en.wikipedia.org/wiki/Deaths_in_2026) | 124,212 | 9 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 4 | [Ansel Adams](https://en.wikipedia.org/wiki/Ansel_Adams) | 121,328 | 12 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 5 | [Robert Pattinson](https://en.wikipedia.org/wiki/Robert_Pattinson) | 119,357 | 13 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 6 | [Levent Alpöge](https://en.wikipedia.org/wiki/Levent_Alp%C3%B6ge) | 102,891 | 16 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 7 | [Nikhil Chaudhary (cricketer)](https://en.wikipedia.org/wiki/Nikhil_Chaudhary_%28cricketer%29) | 100,364 | 18 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 8 | [Jeff Bezos](https://en.wikipedia.org/wiki/Jeff_Bezos) | 86,703 | 20 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-| 9 | [Joseph Zada](https://en.wikipedia.org/wiki/Joseph_Zada) | 82,604 | 21 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
-
-## Posts
-
-| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [TODOs JJ Style](https://bwc9876.dev/blog/jj_todo/) | #vcs | 47 score · 9 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
-| 2 | [C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios…](https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/) | #c++ | 17 score · 23 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
-| 3 | [port scanning for mojang](https://sipacid.com/blog/port-scanning-for-mojang/) | #rant | 20 score · 1 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
-| 4 | [Probabilistic data structures in Go, part 2](https://antonz.org/probabilistic-data-structures-2/) | #go | 26 score · 1 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
-| 5 | [Levent Alpöge Claims Proof of Riemann Hypothesis](https://alpo.ge/remark.pdf) | #math, #pdf | 104 score · 63 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
-
-## Topics
-
-| # | Topic | Context | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- |
-| 1 | [Boreen daily trivia game](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/1e7a4b5561eb) | Players share how far rare correct answers carried them across England in the daily quiz. | 1 | Other | [Bluesky](https://bsky.app/) |
-| 2 | [Earthquake felt in Los Angeles](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/248c58b0b6e8) | Users across the greater LA area, including Koreatown, report feeling a rolling quake. | 1 | Other | [Bluesky](https://bsky.app/) |
-| 3 | [Bird photography](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/e91b9e15d194) | Users share photos of flickers, redwings, ospreys, and other birds for daily themes. | 1 | Other | [Bluesky](https://bsky.app/) |
-| 4 | [Thanksgiving dinner preparations](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/4754b557e1be) | Users share side dish recipes, hosting tips, rising food costs, and advice for avoiding family arguments. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 1 | [Tom Jackson (American football, born 1951)](https://en.wikipedia.org/wiki/Tom_Jackson_%28American_football%2C_born_1951%29) | 263,973 | 6 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 2 | [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis) | 205,793 | 8 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 3 | [Miley Cyrus](https://en.wikipedia.org/wiki/Miley_Cyrus) | 170,642 | 9 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 4 | [Deaths in 2026](https://en.wikipedia.org/wiki/Deaths_in_2026) | 131,500 | 11 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 5 | [.xxx](https://en.wikipedia.org/wiki/.xxx) | 113,918 | 12 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 6 | [Ansel Adams](https://en.wikipedia.org/wiki/Ansel_Adams) | 106,888 | 15 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 7 | [S Club](https://en.wikipedia.org/wiki/S_Club) | 104,957 | 16 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 8 | [Joseph Zada](https://en.wikipedia.org/wiki/Joseph_Zada) | 98,864 | 17 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 9 | [Robert Pattinson](https://en.wikipedia.org/wiki/Robert_Pattinson) | 96,131 | 18 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 10 | [Elizabeth Holmes](https://en.wikipedia.org/wiki/Elizabeth_Holmes) | 89,425 | 20 | 1 | Other | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
 
 ## Product launches
 
 | # | Product | Why it matters | Posted by | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Smorza](https://www.producthunt.com/products/smorza) | Every Mac app gets its own volume and output | Roko | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
-| 2 | [LoudFlow](https://www.producthunt.com/products/loudflow) | We taught text to speech to think | Lauro Maffei | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 1 | [MeshLive](https://www.producthunt.com/products/meshlive) | Offline video calls and livestreams over Bluetooth mesh | Gautam Gupta | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 2 | [Daymaker](https://www.producthunt.com/products/daymaker) | Gifts so personal, your prospects take the meeting. | Kevin William David | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 3 | [Slotify](https://www.producthunt.com/products/slotify-2) | Schedule game nights without leaving Discord | Hari SK | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 4 | [Mockreel](https://www.producthunt.com/products/mockreel) | your screen recording, but in a 3D phone. | Saurav Chamoli | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 5 | [Wispim](https://www.producthunt.com/products/wispim-online-teleprompter) | The teleprompter that follows your voice | Evgeny | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 6 | [Squint](https://www.producthunt.com/products/squint) | Explains whatever you're looking at, now on Mac | Evan Schwartzentruber | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+| 7 | [DeNotch](https://www.producthunt.com/products/denotch) | Hide the MacBook notch and tame your menu bar | Juozas Zobernis | 1 | Other | [Product Hunt](https://www.producthunt.com/) |
+
+## Posts
+
+| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Necoz Is Building a New House!!  All Cats, Follow Me!! ](https://dev.to/necoz/necoz-is-building-a-new-house-all-cats-follow-me-530n) | #necoz, #opensource, #community | 79 reactions · 26 comments | nyaomaru | 1 | Other | [Dev.to](https://dev.to/top/day) |
+| 2 | [Falsehoods Programmers Believe About ATProto](https://reiver.link/atproto/falsehoods-programmers-believe/) | #api | 30 score · 4 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
+| 3 | [Wrist vs Camera: Can I Trust a Camera Pulse on My Own Laptop?](https://dev.to/dannwaneri/wrist-vs-camera-can-i-trust-a-camera-pulse-on-my-own-laptop-4g3o) | #devchallenge, #presagechallenge | 16 reactions · 0 comments | Daniel Nwaneri | 1 | Other | [Dev.to](https://dev.to/top/day) |
+| 4 | [Glint: type and speak with your eyebrows and your breath](https://dev.to/yashksaini/glint-type-and-speak-with-your-eyebrows-and-your-breath-569o) | #devchallenge, #presagechallenge, #electron | 18 reactions · 4 comments | Yash Kumar Saini | 1 | Other | [Dev.to](https://dev.to/top/day) |
+| 5 | [My Monitor Was Cutting My Download Speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) | #networking | 127 score · 10 comments | — | 1 | Other | [Lobsters](https://lobste.rs/) |
+| 6 | [C++ STL: WHERE HAVE YOU BEEN ALL MY LIFE? ](https://dev.to/_yourbrainbuffer_/c-stl-where-have-you-been-all-my-life-3gbl) | — | 32 reactions · 11 comments | Shruti Shahi | 1 | Other | [Dev.to](https://dev.to/top/day) |
+
+## Topics
+
+| # | Topic | Context | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [Favorite first Magic set card](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/a7b6a6c402ab) | MTG players share beloved cards from the set they started with, like The Dark and Ice Age. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 2 | [NFL Week 11 games](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/10bf76088faf) | Injury reports, weather updates and fantasy start-sit calls ahead of Sunday's football slate. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 3 | [Liquid Death soda-scented flushable wipes](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/0a479878b0cb) | Goodwipes teams up with Liquid Death on vanilla Scream Soda-scented wipes, puzzling users. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 4 | [Bird photography](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/e91b9e15d194) | Users share photos of flickers, redwings, ospreys, and other birds for daily themes. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 5 | [Russian warship explodes in Libya](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/6e83a5924f0d) | A Steregushchiy-class corvette, possibly the Merkury, reportedly sank after a blast at Benghazi port. | 1 | Other | [Bluesky](https://bsky.app/) |
+| 6 | [Boreen daily trivia game](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/1e7a4b5561eb) | Players share how far rare correct answers carried them across England in the daily quiz. | 1 | Other | [Bluesky](https://bsky.app/) |
 
 ## Papers
 
 | # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Path-Independent Deleveraging Rules](https://arxiv.org/abs/2611.26623) | We characterise path-independent auto-deleveraging (ADL) rules as an extended log-exponential family. | Christoph Schlegel, Akaki Mamageishvili | cs.GT · new | preprint | 1 | Other | [arXiv](https://arxiv.org/) |
+| 1 | [Optimal Linear Regression Without a Variance](https://arxiv.org/abs/2611.27983) | We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has… | Artin Tajdini, Jasper C. H. Lee +2 | stat.ML · new | preprint | 1 | Other | [arXiv](https://arxiv.org/) |
 
-<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
