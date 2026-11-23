@@ -2,63 +2,63 @@
 
 Exploited and new vulnerabilities, attacks, defence and security tooling.
 
-**22 November 2026** · 08:12 Europe/Berlin (UTC+1) · 89 items · daily snapshot, rebuilt every morning.
+**23 November 2026** · 08:08 Europe/Berlin (UTC+1) · 75 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (34):** Anthropic, Ars Technica, BleepingComputer, Bloomberg, Bluesky, CISA KEV, CNBC, Class Central, Decrypt, Docker Hub, EE Times, ENISA EUVD, Electrek, Federal Reserve, Financial Times, GitHub, GitHub Changelog, Google News, Hacker News, Hugging Face, IEEE Spectrum Robotics, Lobsters, MarketWatch, Mastodon, NVD, New York Times, Retail Dive, TechCrunch Enterprise, TechCrunch Transportation, The Hacker News, The Information, UploadVR, arXiv, bioRxiv and medRxiv
+**Sources with items here (31):** Anthropic, BleepingComputer, Bloomberg, Bluesky, CISA KEV, Class Central, CoinDesk, Decrypt, Dev.to, EE Times, ENISA EUVD, Federal Reserve, Financial Times, GitHub, Google News, Google Trends, Hacker News, Hugging Face, IEEE Spectrum Robotics, Lobsters, MarketWatch, NVD, New York Times, Retail Dive, TechCrunch Enterprise, TechCrunch Transportation, The Decoder, The Guardian, The Hacker News, UploadVR, arXiv
 
-**By type:** [Headlines](#headlines) (40) · [Vulnerabilities](#vulnerabilities) (30) · [Papers](#papers) (7) · [Repositories](#repositories) (3) · [Discussions](#discussions) (3) · [Posts](#posts) (2) · [Topics](#topics) (2) · [Datasets](#datasets) (1) · [Container images](#container-images) (1)
+**By type:** [Headlines](#headlines) (30) · [Vulnerabilities](#vulnerabilities) (27) · [Papers](#papers) (5) · [Repositories](#repositories) (4) · [Posts](#posts) (4) · [Topics](#topics) (2) · [Datasets](#datasets) (1) · [Searches](#searches) (1) · [Discussions](#discussions) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Researcher plants 2m canaries into the AI supply chain. A privacy…](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) | Posts | #ai, #security | 11 score · 3 comments | **3** <sub>Lobsters, Ars Technica, Mastodon</sub> | 77 | [Lobsters](https://lobste.rs/) |
-| 2 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | Repositories | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 16.4k stars · +1,803 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
-| 3 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Datasets | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | 1,380 likes · 28.7k dl/30d | 1 | 60 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
-| 4 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Repositories | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34.8k stars · +60 today | 1 | 54 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 5 | [Signal Blocks AI Agents From Reading Private Chats via Screenshots…](https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html) | Headlines | Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI)… | The Hacker News · 21 Nov 09:49 | **2** <sub>The Hacker News, Mastodon</sub> | 53 | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 6 | [nginx/nginx](https://github.com/nginx/nginx) | Repositories | The official NGINX Open Source repository. | 32.8k stars · +189 today | 1 | 38 | [GitHub trending](https://github.com/trending?since=daily) |
-| 7 | [Thousands of UK fridges secured from hackers in secret operation](https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o) | Headlines | — | BBC News · — | 1 | 35 | [Mastodon](https://mastodon.social/explore/links) |
-| 8 | [GnuPG Security Advisory for GPGME](https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html) | Discussions | Link to lists.gnupg.org | 248 pts · 98 comments | 1 | 33 | [Hacker News](https://news.ycombinator.com/) |
-| 9 | [AI patching likely behind outages](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/2fff3b60524e) | Topics | Officials say rushed fixes for AI-found flaws, not hackers, likely downed Microsoft, FAA, banks. | — | 1 | 32 | [Bluesky](https://bsky.app/) |
-| 10 | [FBI crime database reportedly hacked](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/906b49a87470) | Topics | The FBI is probing an apparent breach of its National Crime Information Center used by police. | — | 1 | 16 | [Bluesky](https://bsky.app/) |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | Repositories | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 18.4k stars · +1,716 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Datasets | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | 1,443 likes · 30.3k dl/30d | 1 | 60 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 3 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Repositories | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34.8k stars · +73 today | 1 | 54 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 4 | [Researcher plants 2m canaries into the AI supply chain. A privacy…](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) | Posts | #security | 123 score · 19 comments | 1 | 52 | [Lobsters](https://lobste.rs/) |
+| 5 | [Alice Huang espionage allegations](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/d4900f9c2d16) | Topics | Allegations involve Jensen Huang's former partner and China's Ministry of State Security. | — | 1 | 52 | [Bluesky](https://bsky.app/) |
+| 6 | [cyberleek](https://trends.google.com/trending?geo=US&q=cyberleek) | Searches | Can My PC Run GTA 6? Minimum And Recommended Specs To Expect | 2000+ searches (US) | 1 | 48 | [Google Trends](https://trends.google.com/trending) |
+| 7 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | Repositories | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 73k stars · +668 today | 1 | 42 | [GitHub trending](https://github.com/trending?since=daily) |
+| 8 | [nginx/nginx](https://github.com/nginx/nginx) | Repositories | The official NGINX Open Source repository. | 32.9k stars · +163 today | 1 | 38 | [GitHub trending](https://github.com/trending?since=daily) |
+| 9 | [GL.iNet Security Notice 2026-11-20](https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20) | Discussions | Link to gl-inet.com | 163 pts · 76 comments | 1 | 27 | [Hacker News](https://news.ycombinator.com/) |
+| 10 | [De-fanging dangerous triggers in GitHub Actions across an organization](https://pyfound.blogspot.com/2026/11/de-fanging-dangerous-triggers-in-github.html) | Posts | #security | 3 score · 0 comments | 1 | 20 | [Lobsters](https://lobste.rs/) |
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS](https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html) | Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI)… | The Hacker News | 21 Nov 09:49 | **2** <sub>The Hacker News, Mastodon</sub> | AI, Agents +2 | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 2 | [Thousands of UK fridges secured from hackers in secret operation](https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o) | — | BBC News | — | 1 | Security | [Mastodon](https://mastodon.social/explore/links) |
-| 3 | [OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI…](https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html) | Attackers stole data from inside three AI inference providers for months, and none of the three knew until… | The Hacker News | 22 Nov 06:06 | 1 | AI, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 4 | [Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in…](https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html) | A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run… | The Hacker News | 22 Nov 06:03 | 1 | Agents, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 5 | [A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats](https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html) | A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the… | The Hacker News | 21 Nov 12:53 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 6 | [GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys](https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html) | A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the… | The Hacker News | 21 Nov 12:05 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 7 | [Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access](https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html) | Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label… | The Hacker News | 21 Nov 12:03 | 1 | AI, Agents +3 | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 8 | [Rackspace Spot breach let hackers access customer Kubernetes secrets](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/) | Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised… | BleepingComputer | 21 Nov 23:59 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 9 | [Microsoft Entra Connect Health flaw exploited to steal tenant data](https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/) | Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability… | BleepingComputer | 21 Nov 19:01 | 1 | Security, Health | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 10 | [BADBOX botnet returns with record-breaking 40 billion daily ad requests](https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/) | The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud… | BleepingComputer | 21 Nov 16:17 | 1 | Security, Mobile +1 | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 1 | [OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI…](https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html) | Attackers stole data from inside three AI inference providers for months, and none of the three knew until… | The Hacker News | 22 Nov 06:06 | 1 | AI, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 2 | [Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in…](https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html) | A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run… | The Hacker News | 22 Nov 06:03 | 1 | Agents, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 3 | [Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices](https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/) | GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to… | BleepingComputer | 22 Nov 19:45 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 4 | [Cleverbridge warns hackers stole credit card numbers, CVVs in data breach](https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/) | E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment… | BleepingComputer | 22 Nov 16:43 | 1 | Security, Fintech +1 | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 5 | [Signal to block Siri, Gemini AI from capturing chats on iOS, Android](https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/) | Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from… | BleepingComputer | 22 Nov 16:15 | 1 | AI, Security +1 | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 6 | [Rackspace Spot breach let hackers access customer Kubernetes secrets](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/) | Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised… | BleepingComputer | 21 Nov 23:59 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 7 | [Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins](https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins) | Quantum computers can’t break Bitcoin network’s security yet, but Leo Fan warns that upgrading it and moving… | CoinDesk | 22 Nov 15:00 | 1 | Security, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 8 | [GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump](https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump) | The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could… | Decrypt | 21 Nov 19:01 | 1 | Security, Crypto +1 | [Decrypt](https://decrypt.co/feed) |
+| 9 | [Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots) | The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android… | Decrypt | 21 Nov 17:01 | 1 | AI, Security +2 | [Decrypt](https://decrypt.co/feed) |
+| 10 | [28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?](https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security) | This article is brought to you by VicOne . | IEEE Spectrum Robotics | 16 Nov 11:00 | 1 | Security, Robotics | [IEEE Spectrum Robotics](https://spectrum.ieee.org/feeds/topic/robotics.rss) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [FBI reportedly hacked again, this time targeting nationwide police database](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/) | FBI systems have reportedly been breached for the second time in two months, this time targeting the… | BleepingComputer | 21 Nov 15:26 | 1 | Security, Data | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 12 | [Security advisory permissions are now generally available](https://github.blog/changelog/2026-11-20-security-advisory-permissions-are-now-generally-available) | Organization owners can now let people work on repository security advisories, including private… | GitHub Changelog | 20 Nov 22:49 | 1 | Dev tools, Security | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 13 | [GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump](https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump) | The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could… | Decrypt | 21 Nov 19:01 | 1 | Security, Crypto +1 | [Decrypt](https://decrypt.co/feed) |
-| 14 | [Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots) | The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android… | Decrypt | 21 Nov 17:01 | 1 | AI, Security +2 | [Decrypt](https://decrypt.co/feed) |
-| 15 | [28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?](https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security) | This article is brought to you by VicOne . | IEEE Spectrum Robotics | 16 Nov 11:00 | 1 | Security, Robotics | [IEEE Spectrum Robotics](https://spectrum.ieee.org/feeds/topic/robotics.rss) |
-| 16 | [Palo Alto Networks Expands into Enterprise AI with $4.5B Deal](https://www.eetimes.com/palo-alto-networks-expands-into-enterprise-ai-with-4-5b-deal/) | Enterprise security outfit Palo Alto Networks snaps up a startup with a platform for post-training and… | EE Times | 20 Nov 16:37 | 1 | AI, Security +2 | [EE Times](https://www.eetimes.com/feed/) |
-| 17 | [Gartner Warns of Risks Behind Sovereign Tech Claims](https://www.eetimes.com/gartner-warns-of-risks-behind-sovereign-tech-claims/) | Gartner research predicts that digital sovereignty will become a core component of national security… | EE Times | 19 Nov 17:30 | 1 | Security, Chips | [EE Times](https://www.eetimes.com/feed/) |
-| 18 | [Tesla Cybertruck’s already impressive turning radius gets even tighter](https://electrek.co/2026/11/21/tesla-cybertruck-tighter-turning-radius-update/) | Tesla is rolling out an update that makes the Cybertruck turn even tighter, improving on what was already… | Electrek | 21 Nov 20:14 | 1 | Security, Energy | [Electrek](https://electrek.co/feed/) |
-| 19 | [The Container Store is back online after cybersecurity incident](https://www.retaildive.com/news/container-store-neighborhood-intelligence-cybersecurity-incident/875342/) | The incident has not impacted the security of customer financial data, according to the company. | Retail Dive | 20 Nov 18:41 | 1 | Cloud, Security +2 | [Retail Dive](https://www.retaildive.com/feeds/news/) |
-| 20 | [Hyperlane Highway Early Access Review: High-Octane Cyberpunk Shooting](https://www.uploadvr.com/hyperlane-highway-early-access-review-high-octane-cyberpunk-shooting/) | Hyperlane Highway brings high-speed hoverboard shootouts to PC VR and Quest. | UploadVR | 19 Nov 23:55 | 1 | Security, Gaming | [UploadVR](https://www.uploadvr.com/rss/) |
+| 11 | [Palo Alto Networks Expands into Enterprise AI with $4.5B Deal](https://www.eetimes.com/palo-alto-networks-expands-into-enterprise-ai-with-4-5b-deal/) | Enterprise security outfit Palo Alto Networks snaps up a startup with a platform for post-training and… | EE Times | 20 Nov 16:37 | 1 | AI, Security +2 | [EE Times](https://www.eetimes.com/feed/) |
+| 12 | [Gartner Warns of Risks Behind Sovereign Tech Claims](https://www.eetimes.com/gartner-warns-of-risks-behind-sovereign-tech-claims/) | Gartner research predicts that digital sovereignty will become a core component of national security… | EE Times | 19 Nov 17:30 | 1 | Security, Chips | [EE Times](https://www.eetimes.com/feed/) |
+| 13 | [The Container Store is back online after cybersecurity incident](https://www.retaildive.com/news/container-store-neighborhood-intelligence-cybersecurity-incident/875342/) | The incident has not impacted the security of customer financial data, according to the company. | Retail Dive | 20 Nov 18:41 | 1 | Cloud, Security +2 | [Retail Dive](https://www.retaildive.com/feeds/news/) |
+| 14 | [Hyperlane Highway Early Access Review: High-Octane Cyberpunk Shooting](https://www.uploadvr.com/hyperlane-highway-early-access-review-high-octane-cyberpunk-shooting/) | Hyperlane Highway brings high-speed hoverboard shootouts to PC VR and Quest. | UploadVR | 19 Nov 23:55 | 1 | Security, Gaming | [UploadVR](https://www.uploadvr.com/rss/) |
+| 15 | [Cyber giant Infoblox confirms security incident after hackers access ‘company information’](https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/) | The cybersecurity and automation giant said it's working with outside investigators to understand the scale… | TechCrunch Enterprise | 16 Nov 23:12 | 1 | Cloud, Security +1 | [TechCrunch Enterprise](https://techcrunch.com/category/enterprise/feed/) |
+| 16 | [Black Friday 2026: 150+ Online Learning Deals (Updated Daily)](https://www.classcentral.com/report/online-courses-deals-black-friday-cyber-monday/) | Black Friday & Cyber Monday sales have started: bookmark this page and return often for deals from many… | Class Central | 16 Nov 09:13 | 1 | Security, Retail +1 | [Class Central](https://www.classcentral.com/report/feed/) |
+| 17 | [Uber says hackers stole information on close to 150,000 driver’s licenses during data…](https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/) | The ride-sharing giant said driver's license information stored by AI cloud company Fireworks AI was stolen… | TechCrunch Transportation | 16 Nov 20:53 | 1 | AI, Cloud +2 | [TechCrunch Transportation](https://techcrunch.com/category/transportation/feed/) |
+| 18 | [Expanding the Cyber Verification Program](https://www.anthropic.com/news/cyber-verification-program) | We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber… | Anthropic | 18 Nov 22:55 | 1 | AI, Security | [Anthropic](https://www.anthropic.com/news) |
+| 19 | [AI 'kill switch' no solution to growing cybersecurity risks: Former OpenAI board member](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOVduNjljS3ZpTllHLXJiV3dIX1FYREpqaGVtemlLR194TVNWZi1VQ2lUdEVCalBDdWdZMnkzTUhpVUZTeXIteXg2eG93ajU4WXlsSjRkb2F4UUU4VHRuR3J3WUkwRDh2REZ1MVJMU1BsVUUxT2pPX2toZUYwamFnX1dLdU5Cd2RmemM3YWR1RHdXV0pHY0RBaXI5WkxtMEFwR0pQNExmSFFQRlpEOTl6WkREalNSTnBkM05wQ1NFcmVjSjA2MHFYRkdTUzFWRmxKc21sR1NhUjI?oc=5) | Headline via Google News (Anadolu Ajansı) | Anadolu Ajansı <sub>aa.com.tr · via Google News</sub> | 23 Nov 08:05 | 1 | AI, Security | [Google News](https://news.google.com/search?q=%22OpenAI%22&hl=en-US&gl=US&ceid=US%3Aen) |
+| 20 | [AWS says AI agents found a zero-day. Their operator left the receipts online.](https://news.google.com/rss/articles/CBMiQkFVX3lxTE5YSnFjSlBHSFBpMEF1VjBoSERZYUdDRXlWa3VJakQ1aGxDYmVZVjdIXzdvbGg3MWZMdGRjbHBTREc2Zw?oc=5) | Headline via Google News (Digg) | Digg <sub>digg.com · via Google News</sub> | 22 Nov 16:40 | 1 | AI, Agents +2 | [Google News](https://news.google.com/search?q=%22Amazon%22+AI+%28Bedrock+OR+Nova+OR+AWS%29&hl=en-US&gl=US&ceid=US%3Aen) |
 
 </details>
 
-<sub>20 more in today's archive.</sub>
+<sub>10 more in today's archive.</sub>
 
 ## Vulnerabilities
 
@@ -93,60 +93,59 @@ Exploited and new vulnerabilities, attacks, defence and security tooling.
 
 </details>
 
-<sub>10 more in today's archive.</sub>
+<sub>7 more in today's archive.</sub>
 
 ## Papers
 
 | # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research](https://arxiv.org/abs/2611.26601) | LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities… | Amine Lbath, Manan Suri +4 | cs.CR · new | preprint | 1 | AI, Agents +1 | [arXiv](https://arxiv.org/) |
-| 2 | [Classical Oracle Separation of QMA from the QCMA Hierarchy and Quantum Cryptography Even…](https://arxiv.org/abs/2611.26574) | Remark: This work is in submission at STOC'27 and thus the full manuscript has been publicly posted on the… | Alper Cakan | quant-ph · new | preprint | 1 | Security, Crypto | [arXiv](https://arxiv.org/) |
-| 3 | [Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs](https://arxiv.org/abs/2611.26569) | Multimodal image generation systems have made rapid progress and increasingly emphasize content safety. | Ziqing Yang, Yixin Wu +2 | cs.CR · new | preprint | 1 | AI, AI media +1 | [arXiv](https://arxiv.org/) |
-| 4 | [GEOHunter: Mapping a Generative Engine Optimization Network in the Wild](https://arxiv.org/abs/2611.26564) | Generative engines synthesize retrieved web pages into answers, recommendations, and rankings. | Sean Tang, Peiran Wang +4 | cs.CR · new | preprint | 1 | Security | [arXiv](https://arxiv.org/) |
-| 5 | [Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)](https://arxiv.org/abs/2611.26553) | Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. | Mengxiao Wang, Mahbub Alam +2 | cs.CR · new | preprint | 1 | AI, Agents +3 | [arXiv](https://arxiv.org/) |
-| 6 | [Backtracking Agent Applications Security Incidents](https://arxiv.org/abs/2611.26525) | Agent applications are increasingly deployed, yet agent-specific attacks pose real threats to them. | Yicheng Cai, Taegyu Kim +1 | cs.CR · new | preprint | 1 | Agents, Cloud +1 | [arXiv](https://arxiv.org/) |
-| 7 | [Long-term population monitoring reveals an alarming decline in the endangered endemic…](https://doi.org/10.1101/2025.11.07.687144) | Insular species are disproportionately vulnerable to extinction due to small population sizes, geographic… | Villers, A., Cornulier, T. +12 | bioRxiv · ecology · new | preprint | 1 | Security, Health | [bioRxiv and medRxiv](https://www.biorxiv.org/) |
+| 1 | [Your Camera Can Hear You: Side-Channel Acoustic Eavesdropping via Android Camera2 Metadata](https://arxiv.org/abs/2611.27964) | To prevent motion sensors from acting as covert microphones, Android 12+ caps SensorManager gyroscope and… | Guangyuan Ji, Wenjing Wang +1 | cs.CR · new | preprint | 1 | Security, Mobile | [arXiv](https://arxiv.org/) |
+| 2 | [Autonomous Parameter Surgery: How LLMs Implant Selective Backdoors into Language Models](https://arxiv.org/abs/2611.27920) | Neural network weights are usually treated as opaque artifacts of gradient descent. | Xuyang Liu, Zhiwei Xu +7 | cs.CR · new | preprint | 1 | AI, Dev tools +1 | [arXiv](https://arxiv.org/) |
+| 3 | [Metadata-Private Voice Communication over Tor using Post-Quantum Key Encapsulation](https://arxiv.org/abs/2611.27909) | Encrypted voice communication systems commonly protect call content but expose significant metadata… | Noah Zeinali Yazdi, Samuel Zeinali Yazdi | cs.CR · new | preprint | 1 | Security | [arXiv](https://arxiv.org/) |
+| 4 | [Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks](https://arxiv.org/abs/2611.27860) | Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading… | Nathan Nour Houlamy, Mattia Favretto +2 | cs.CR · new | preprint | 1 | AI, Agents +1 | [arXiv](https://arxiv.org/) |
+| 5 | [BinXSight: Fast Binary Program Summarization via Hierarchical Modular Decomposition](https://arxiv.org/abs/2611.27816) | Binary code summarization (BCS) is crucial in fields such as cybersecurity. | Zhijie Liu, Zhipeng Xue +7 | cs.CR · new | preprint | 1 | Security | [arXiv](https://arxiv.org/) |
 
 ## Repositories
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 16,441 | +1,803 today | +12.3% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,765 | +60 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 3 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 32,778 | +189 today | +0.6% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
-
-## Discussions
-
-| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [GnuPG Security Advisory for GPGME](https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html) | Link to lists.gnupg.org | 248 | 98 | 11 pts/h | [open](https://news.ycombinator.com/item?id=50587208) | 1 | Security | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Upload2Shell (CVE-2026-125396)](https://pwn.ai/upload2shell) | Link to pwn.ai | 108 | 49 | 8 pts/h | [open](https://news.ycombinator.com/item?id=50592097) | 1 | Security | [Hacker News](https://news.ycombinator.com/) |
-| 3 | [Show HN: Open-Source Vulnerability Scanner](https://waffuru.ai/products/pantry) | Link to waffuru.ai | 6 | 0 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50593848) | 1 | Dev tools, Security | [Hacker News](https://news.ycombinator.com/show) |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681… | 18,375 | +1,716 today | +10.3% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,829 | +73 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 3 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 72,961 | +668 today | +0.9% | Python | MIT | 1 | AI, Agents +5 | [GitHub trending](https://github.com/trending?since=daily) |
+| 4 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 32,936 | +163 today | +0.5% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
 
 ## Posts
 
 | # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) | #ai, #security | 11 score · 3 comments | — | **3** <sub>Lobsters, Ars Technica, Mastodon</sub> | AI, Security +1 | [Lobsters](https://lobste.rs/) |
-| 2 | [GhostScript CVE 2026-125396: "Upload2Shell"](https://pwn.ai/upload2shell/research.html) | #security | 2 score · 2 comments | — | 1 | Security | [Lobsters](https://lobste.rs/) |
+| 1 | [Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) | #security | 123 score · 19 comments | — | 1 | AI, Security +1 | [Lobsters](https://lobste.rs/) |
+| 2 | [De-fanging dangerous triggers in GitHub Actions across an organization](https://pyfound.blogspot.com/2026/11/de-fanging-dangerous-triggers-in-github.html) | #security | 3 score · 0 comments | — | 1 | Security | [Lobsters](https://lobste.rs/) |
+| 3 | [How long it actually takes a GPGME fix to reach Ubuntu](https://dev.to/alexgeorgiev17/how-long-it-actually-takes-a-gpgme-fix-to-reach-ubuntu-30go) | #security, #linux, #docker | 8 reactions · 1 comments | Alex Georgiev | 1 | Cloud, Security | [Dev.to](https://dev.to/top/day) |
+| 4 | [What If Netscape Did SSL the HTTP Way?](https://owl.billpg.com/what-if-netscape-did-ssl-the-http-way/) | #cryptography, #web | 6 score · 14 comments | — | 1 | Security, Web +1 | [Lobsters](https://lobste.rs/) |
 
 ## Topics
 
 | # | Topic | Context | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [AI patching likely behind outages](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/2fff3b60524e) | Officials say rushed fixes for AI-found flaws, not hackers, likely downed Microsoft, FAA, banks. | 1 | AI, Cloud +3 | [Bluesky](https://bsky.app/) |
-| 2 | [FBI crime database reportedly hacked](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/906b49a87470) | The FBI is probing an apparent breach of its National Crime Information Center used by police. | 1 | Security, Data | [Bluesky](https://bsky.app/) |
+| 1 | [Alice Huang espionage allegations](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/d4900f9c2d16) | Allegations involve Jensen Huang's former partner and China's Ministry of State Security. | 1 | Security | [Bluesky](https://bsky.app/) |
+| 2 | [Wave of software vulnerability disclosures](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/b659c9e1d0a1) | Flaws in Java's Base64 decoder, Ruby, PHP and Mitel OpenScape push admins to patch faster. | 1 | Security | [Bluesky](https://bsky.app/) |
 
 ## Datasets
 
 | # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | text-generation, question-answering | 1,380 | 28.7k | apache-2.0 | 1 | AI, Security +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 1 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | text-generation, question-answering | 1,443 | 30.3k | apache-2.0 | 1 | AI, Security +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 
-## Container images
+## Searches
 
-| # | Image | Why it matters | Pulls | Stars | Updated | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [sonarqube](https://hub.docker.com/_/sonarqube) | Official images for SonarQube, code analysis tool for code quality and security | 1.2B | 2,567 | 20 Nov 20:16 | 1 | Cloud, Security | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| # | Search | Country | Searches | Top story | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [cyberleek](https://trends.google.com/trending?geo=US&q=cyberleek) | US | 2000+ | [Can My PC Run GTA 6? Minimum And Recommended Specs To Expect](https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs) | 1 | Security | [Google Trends](https://trends.google.com/trending) |
 
-<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+## Discussions
+
+| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [GL.iNet Security Notice 2026-11-20](https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20) | Link to gl-inet.com | 163 | 76 | 20 pts/h | [open](https://news.ycombinator.com/item?id=50604988) | 1 | Security | [Hacker News](https://news.ycombinator.com/) |
+
+<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
