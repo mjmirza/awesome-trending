@@ -314,6 +314,9 @@ def canonical_url(url: str) -> str:
     m = re.match(r"https://github\.com/([^/]+)/([^/?#]+)", u)
     if m:
         return f"https://github.com/{m.group(1).lower()}/{m.group(2).lower()}"
+    m = re.match(r"https://(?:registry\.)?smithery\.ai/servers?/([^?#]+)", u)
+    if m:                                         # old smithery.ai/server/ links and registry records are one item
+        return f"smithery:{m.group(1).rstrip('/').lower()}"
     m = re.match(r"https://(?:arxiv\.org/(?:abs|pdf)|huggingface\.co/papers)/(\d{4}\.\d{4,5})", u)
     if m:
         return f"arxiv:{m.group(1)}"
@@ -856,13 +859,14 @@ def src_smithery():
     data = fetch_json("https://registry.smithery.ai/servers?pageSize=50")
     rows = data.get("servers", [])
     out = [item(
-        "mcp", r.get("displayName") or r.get("qualifiedName"), f"https://smithery.ai/server/{r.get('qualifiedName')}",
+        "mcp", r.get("displayName") or r.get("qualifiedName"), f"https://registry.smithery.ai/servers/{r.get('qualifiedName')}",
         name=r.get("qualifiedName"), desc=strip_html(r.get("description") or ""), uses=r.get("useCount"),
         verified=r.get("verified"), remote=r.get("remote"),
     ) for r in rows if r.get("qualifiedName")]
     out.sort(key=lambda x: x.get("uses") or 0, reverse=True)
     total = (data.get("pagination") or {}).get("totalCount")
-    return out[:10], f"public registry API, first 50 listed servers sorted by use count ({fmt_int(total)} servers listed)"
+    return out[:10], (f"public registry API, first 50 listed servers sorted by use count ({fmt_int(total)} servers listed); "
+                      "links open each server's registry record")
 
 
 # ---- AI models and labs ------------------------------------------------------------
@@ -1203,8 +1207,8 @@ def src_stackoverflow():
         "question", strip_html(q.get("title") or ""), q.get("link"), score=q.get("score"),
         answers=q.get("answer_count"), views=q.get("view_count"), tags=q.get("tags") or [],
         answered=q.get("is_answered"), published=parse_dt(q.get("creation_date")),
-    ) for q in d.get("items", [])]
-    return out, f"Stack Exchange API 2.3, sort=hot (quota left today: {d.get('quota_remaining')})"
+    ) for q in d.get("items", []) if (q.get("score") or 0) >= 0]   # downvoted questions are left out
+    return out, f"Stack Exchange API 2.3, sort=hot, downvoted questions left out (quota left today: {d.get('quota_remaining')})"
 
 
 @source("producthunt", "Product Hunt · newest featured", "https://www.producthunt.com/")
@@ -2899,8 +2903,9 @@ def render_today(results, ents, tech_x) -> list[str]:
     stories = [x for x in cluster_stories(results) if len(x["outlets"]) >= 2]
     if stories:
         st = stories[0]
+        more = f" +{len(st['outlets']) - 4}" if len(st["outlets"]) > 4 else ""
         b.append(f"**Biggest story:** {ttl(st['rep'][1], 80)} — carried by {len(st['outlets'])} outlets "
-                 f"({md_escape(', '.join(st['outlets'][:4]))}).")
+                 f"({md_escape(', '.join(st['outlets'][:4]))}{more}).")
     gh = [i for i in ok("gh_daily") if i.get("gained") is not None]
     if gh:
         top = max(gh, key=lambda i: i["gained"])
@@ -3740,6 +3745,9 @@ def render_since(info, results, prefix: str) -> list[str]:
             p += ["**GitHub trending today: climbers and new entries**", "",
                   f"<sub>Against the top {info['depth']} archived for the previous day.</sub>", ""] + fold_table(
                 ["Repository", "Today", "Previous day", "Move"], rows, 10) + [""]
+        else:
+            p += [f"**GitHub trending today:** no climbers and no new entries against the top {info['depth']} "
+                  "archived for the previous day.", ""]
     return p
 
 
