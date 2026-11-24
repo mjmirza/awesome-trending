@@ -397,8 +397,13 @@ def fetch(url: str, accept: str | None = None, data: bytes | None = None,
             last = f"HTTP {exc.code}"
             if exc.code == 429 and attempt < RETRIES:
                 wait_s = parse_int(exc.headers.get("Retry-After")) or 0
+                if not wait_s:
+                    # Hugging Face and others send "RateLimit: ...;t=<seconds until the window resets>" instead.
+                    m = re.search(r"\bt=(\d+)", exc.headers.get("RateLimit") or "")
+                    wait_s = int(m.group(1)) if m else 0
                 if 0 < wait_s <= 45 and DEADLINE[0] - time.monotonic() > wait_s + 5:
-                    time.sleep(wait_s + 1)
+                    with _host_lock:  # hold back every caller of this host until the window resets
+                        _host_next[host] = max(_host_next.get(host, 0), time.monotonic() + wait_s + 1)
                     continue
             if exc.code in (403, 429):
                 body = ""
@@ -2920,8 +2925,12 @@ def render_today(results, ents, tech_x) -> list[str]:
         b.append(f"**Top on Hacker News:** {ttl(hn[0], 70)} — {key_metric('hn_front', hn[0])}.")
     q = {i["series"]: i for i in ok("fred") if i.get("series")}
     if "SP500" in q or "NASDAQCOM" in q:
+        shown = [s_ for s_ in ("SP500", "NASDAQCOM") if s_ in q]
+        newest = max(str(q[s_].get("asof") or "") for s_ in shown)
+        if "DJIA" in q and str(q["DJIA"].get("asof") or "") > newest:
+            shown.append("DJIA")  # the Dow often has a newer close on FRED; show it too
         bits = [f"{md_escape(i['title'])} {_num(i['value'], i['unit'])} ({i['change']:+.2f}%, {md_escape(i['asof'])})"
-                for s_ in ("SP500", "NASDAQCOM") if (i := q.get(s_))]
+                for s_ in shown if (i := q[s_])]
         b.append("**US markets (last close published on FRED):** " + ", ".join(bits) + ".")
     pp = ok("hf_papers")
     if pp:
