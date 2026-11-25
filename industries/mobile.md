@@ -2,57 +2,56 @@
 
 iOS, Android, phones, wearables and app stores.
 
-**23 November 2026** · 08:08 Europe/Berlin (UTC+1) · 30 items · daily snapshot, rebuilt every morning.
+**25 November 2026** · 08:12 Europe/Berlin (UTC+1) · 27 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (15):** 9to5Mac, Android Police, BleepingComputer, Decrypt, GitHub, Google AI blog, Google News, MCP Registry, Product Hunt, Stack Overflow, TechCrunch, UploadVR, arXiv, crates.io, npm
+**Sources with items here (13):** 9to5Mac, Android Police, Dev.to, EFF Deeplinks, GamesIndustry.biz, GitHub, Google News, Hacker News, Lobsters, Product Hunt, Techmeme, crates.io, npm
 
-**By type:** [Headlines](#headlines) (18) · [Repositories](#repositories) (3) · [Questions](#questions) (2) · [Packages](#packages) (2) · [Papers](#papers) (2) · [Product launches](#product-launches) (2) · [MCP servers](#mcp-servers) (1)
+**By type:** [Headlines](#headlines) (17) · [Repositories](#repositories) (3) · [Posts](#posts) (2) · [Packages](#packages) (2) · [Product launches](#product-launches) (2) · [Discussions](#discussions) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Is Android Restore Credentials required for an app using Microsoft…](https://stackoverflow.com/questions/80018203/is-android-restore-credentials-required-for-an-app-using-microsoft-msal-for-net) | Questions | #android, #google-play, #maui | 0 score · 0 answers · 34 views | 1 | 50 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-| 2 | [How can I capture and inspect all network requests from Android and…](https://stackoverflow.com/questions/80018200/how-can-i-capture-and-inspect-all-network-requests-from-android-and-ios-apps) | Questions | #android, #ios, #network-programming | -2 score · 0 answers · 44 views | 1 | 35 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-| 3 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | Repositories | The open-source cloud for agents & devs. | 58.6k stars · +121 today | 1 | 30 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 4 | [chat](https://www.npmjs.com/package/chat) | Packages | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | 8.1M dl/week | 1 | 21 | [npm](https://www.npmjs.com/) |
-| 5 | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | Repositories | Avoid common App Store and Google Play rejections. | 4.2k stars · +621 today | 1 | 19 | [GitHub trending](https://github.com/trending?since=daily) |
-| 6 | [Your Camera Can Hear You: Side-Channel Acoustic Eavesdropping via…](https://arxiv.org/abs/2611.27964) | Papers | To prevent motion sensors from acting as covert microphones, Android 12+ caps SensorManager gyroscope and… | cs.CR · new | 1 | 15 | [arXiv](https://arxiv.org/) |
-| 7 | [Real-time neuromorphic audio and vision perception for autonomous…](https://arxiv.org/abs/2611.27953) | Papers | Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for… | cs.RO · new | 1 | 15 | [arXiv](https://arxiv.org/) |
-| 8 | [com.mambabuilt/mcp-google-play-app-details](https://github.com/mambalabsdev/mcp-google-play-app-details) | MCP servers | Google Play app details by package or developer: ratings, installs, price. | v1.0.0 · 23 Nov 08:04 | 1 | 15 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
-| 9 | [The Gemini app is now available on lower-memory Android devices.](https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/) | Headlines | The Google Gemini app now supports lower-memory Android devices. | Google AI blog · 18 Nov 18:00 | 1 | 15 | [Google AI blog](https://blog.google/technology/ai/rss/) |
-| 10 | [tallylight-ffi](https://crates.io/crates/tallylight-ffi) | Packages | Kotlin and Swift bindings (UniFFI) for the tallylight screen client | — dl/90d | 1 | 15 | [crates.io](https://crates.io/) |
+| 1 | [Why Your Android App Drops Frames: The Jetpack Compose Architecture…](https://dev.to/smtahosin/why-your-android-app-drops-frames-the-jetpack-compose-architecture-guide-that-fixes-recomposition-3oh3) | Posts | #android, #kotlin, #mobile | 15 reactions · 5 comments | 1 | 54 | [Dev.to](https://dev.to/top/day) |
+| 2 | [Why there are still no non-WebKit browsers on iOS](https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/) | Posts | #browsers, #ios | 30 score · 2 comments | 1 | 44 | [Lobsters](https://lobste.rs/) |
+| 3 | [Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That…](https://rida.dev/blog/bypassing-ios-safari-60-fps-limit) | Discussions | Link to rida.dev | 105 pts · 30 comments | **2** <sub>Hacker News, Lobsters</sub> | 31 | [Hacker News](https://news.ycombinator.com/) |
+| 4 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | Repositories | The open-source cloud for agents & devs. | 58.6k stars · +24 today | 1 | 30 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 5 | [chat](https://www.npmjs.com/package/chat) | Packages | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | 8M dl/week | 1 | 27 | [npm](https://www.npmjs.com/) |
+| 6 | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | Repositories | Avoid common App Store and Google Play rejections. | 6k stars · +928 today | 1 | 19 | [GitHub trending](https://github.com/trending?since=daily) |
+| 7 | [xsign](https://crates.io/crates/xsign) | Packages | Cross-platform code signing and notarization CLI and library for Apple, Windows, Android, Linux, and… | — dl/90d | 1 | 15 | [crates.io](https://crates.io/) |
+| 8 | [SparrowDesk Phone Calls](https://www.producthunt.com/products/sparrowdesk) | Product launches | Phone support in the same inbox as email, chat & WhatsApp | Featured launch | 1 | 15 | [Product Hunt](https://www.producthunt.com/) |
+| 9 | [Umami Manager](https://www.producthunt.com/products/umami-manager) | Product launches | Umami reports, widgets & links – native on iPhone & iPad | Featured launch | 1 | 15 | [Product Hunt](https://www.producthunt.com/) |
+| 10 | [Huawei says HarmonyOS has surpassed 100M installations across…](https://www.techmeme.com/261125/p7#a261125p7) | Headlines | Iris Deng / South China Morning Post : Huawei says HarmonyOS has surpassed 100M installations across… | Techmeme · 25 Nov 08:10 | 1 | 15 | [Techmeme](https://www.techmeme.com/feed.xml) |
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [The Gemini app is now available on lower-memory Android devices.](https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/) | The Google Gemini app now supports lower-memory Android devices. | Google AI blog | 18 Nov 18:00 | 1 | AI, Mobile | [Google AI blog](https://blog.google/technology/ai/rss/) |
-| 2 | [Signal to block Siri, Gemini AI from capturing chats on iOS, Android](https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/) | Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from… | BleepingComputer | 22 Nov 16:15 | 1 | AI, Security +1 | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 3 | [Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots) | The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android… | Decrypt | 21 Nov 17:01 | 1 | AI, Security +2 | [Decrypt](https://decrypt.co/feed) |
-| 4 | [Meta Removing Worlds From Horizon Mobile App, May Rebrand As Meta VR](https://www.uploadvr.com/meta-begins-removing-worlds-from-the-horizon-mobile-app-may-rebrand-it-as-meta-vr/) | Recent updates to the Meta Horizon mobile app have removed the Worlds-focused Horizon Feed for some users… | UploadVR | 20 Nov 00:36 | 1 | Mobile, Gaming | [UploadVR](https://www.uploadvr.com/rss/) |
-| 5 | [iOS 27 has a clever fix for unreliable Wi-Fi connections](https://9to5mac.com/2026/11/22/ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections/) | 9to5Mac is brought to you by Tello Mobile. | 9to5Mac | 22 Nov 23:02 | 1 | Mobile | [9to5Mac](https://9to5mac.com/feed/) |
-| 6 | [Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak](https://9to5mac.com/2026/11/22/apple-tested-a-complication-column-for-the-iphone-duo-lock-screen-per-leak/) | Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping… | 9to5Mac | 22 Nov 18:13 | 1 | Mobile | [9to5Mac](https://9to5mac.com/feed/) |
-| 7 | [MacBook Neo 2 likely to launch around March, could feature new colors: report](https://9to5mac.com/2026/11/22/macbook-neo-2-likely-to-launch-around-march-could-feature-new-colors-report/) | One of Apple’s most beloved products this year was undoubtedly the MacBook Neo . | 9to5Mac | 22 Nov 16:38 | 1 | Mobile | [9to5Mac](https://9to5mac.com/feed/) |
-| 8 | [UGREEN’s excellent liquid cooled 25W MagSafe battery for iPhone is now 40% off](https://9to5mac.com/2026/11/22/ugreen-25w-magsafe-liquid-cooling-battery-black-friday/) | Recently, UGREEN introduced a new Qi2.2 25W 10000mAh MagSafe battery bank for iPhone. | 9to5Mac | 22 Nov 15:43 | 1 | Mobile, Fintech | [9to5Mac](https://9to5mac.com/feed/) |
-| 9 | [AirPods Pro 3 just got even cheaper, now $169 ($80 off)](https://9to5mac.com/2026/11/22/airpods-pro-3-just-got-even-cheaper-now-169-80-off/) | Apple’s AirPods Pro 3 have now dropped even lower for Black Friday, with a solid $80 discount to $169.99… | 9to5Mac | 22 Nov 11:15 | 1 | Mobile, Retail | [9to5Mac](https://9to5mac.com/feed/) |
-| 10 | [iOS 27: My favorite new iPhone features (other than AI)](https://9to5mac.com/2026/11/21/ios-27-my-favorite-new-iphone-features-other-than-ai/) | When Apple released iOS 27 in September, Siri Ai stole a lot of the headline. | 9to5Mac | 21 Nov 23:22 | 1 | AI, Mobile | [9to5Mac](https://9to5mac.com/feed/) |
+| 1 | [Huawei says HarmonyOS has surpassed 100M installations across smartphones, tablets, and…](https://www.techmeme.com/261125/p7#a261125p7) | Iris Deng / South China Morning Post : Huawei says HarmonyOS has surpassed 100M installations across… | Techmeme | 25 Nov 08:10 | 1 | Dev tools, Mobile | [Techmeme](https://www.techmeme.com/feed.xml) |
+| 2 | [UK mobile developers can now apply for their share of a £260 million Google settlement](https://www.gamesindustry.biz/uk-mobile-developers-can-now-apply-for-their-share-of-a-260-million-google-settlement) | UK developers who released games, apps or content on the Google Play Store between August 2018 and July 2026… | GamesIndustry.biz | 24 Nov 11:50 | 1 | Dev tools, Mobile +1 | [GamesIndustry.biz](https://www.gamesindustry.biz/feed) |
+| 3 | [Signal Moves to Block AI Agents](https://www.eff.org/deeplinks/2026/11/signal-now-blocks-ai-agents) | Signal announced an update to its mobile apps on iOS and Android that seeks to curb issues with AI agents… | EFF Deeplinks | 24 Nov 20:43 | 1 | AI, Agents +2 | [EFF Deeplinks](https://www.eff.org/rss/updates.xml) |
+| 4 | [PrismML’s Bonsai 2.5 brings better coding and tool use to on-device AI](https://9to5mac.com/2026/11/24/prismmls-bonsai-2-5-brings-better-coding-and-tool-use-to-on-device-ai/) | Back in July, PrismML claimed its roughly 4 GB, 1-bit Bonsai 27B was the first AI model of its size to run… | 9to5Mac | 25 Nov 02:08 | 1 | AI, Mobile | [9to5Mac](https://9to5mac.com/feed/) |
+| 5 | [9to5Mac Daily: November 24, 2026 – Apple Product(RED) gear is coming soon](https://9to5mac.com/2026/11/24/daily-november-24-2026/) | Listen to a recap of the top stories of the day from 9to5Mac . | 9to5Mac | 25 Nov 00:58 | 1 | Mobile, Media | [9to5Mac](https://9to5mac.com/feed/) |
+| 6 | [Apple Mail added four convenient new features in iOS 27](https://9to5mac.com/2026/11/24/heres-everything-new-for-apple-mail-in-ios-27/) | iOS 27 brought new features to Apple Wallet , Maps , Notes , Messages , and more —and it includes key… | 9to5Mac | 25 Nov 00:56 | 1 | Mobile | [9to5Mac](https://9to5mac.com/feed/) |
+| 7 | [2026 tech gift guide for Apple users](https://9to5mac.com/2026/11/24/2026-tech-gift-guide-for-apple-users-personally-tested-and-recommended/) | Black Friday week is here, so it’s officially time to start checking gifts off your list. | 9to5Mac | 24 Nov 23:07 | 1 | Mobile, Retail | [9to5Mac](https://9to5mac.com/feed/) |
+| 8 | [New Gemini setting lets you keep chat history, but turn off AI training \[U\]](https://9to5google.com/2026/11/24/gemini-history-ai-training/) | Google is rolling out new privacy settings for the Gemini app that will let you “keep your history while… | 9to5Mac | 24 Nov 22:11 | 1 | AI, Mobile +1 | [9to5Mac](https://9to5mac.com/feed/) |
+| 9 | [Walmart drops Apple Pay support from its app and website](https://9to5mac.com/2026/11/24/walmart-drops-apple-pay-support-from-its-app-and-website/) | Walmart appears to have dropped support for Apple Pay on its website and in its iPhone app. | 9to5Mac | 24 Nov 22:01 | 1 | Mobile, Retail | [9to5Mac](https://9to5mac.com/feed/) |
+| 10 | [One UI 9 update brings Samsung's most crucial health feature to the Galaxy Watch 8](https://www.androidpolice.com/one-ui-9-update-brings-samsung-most-crucial-health-feature-to-galaxy-watch-8/) | Your Galaxy Watch can now tell whether you're ready for another workout | Android Police | 25 Nov 07:19 | 1 | Mobile, Health | [Android Police](https://www.androidpolice.com/feed/) |
 
 <details>
-<summary>Show 8 more</summary>
+<summary>Show 7 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [How to use Google Maps' social features](https://www.androidpolice.com/why-google-maps-is-my-social-planner-now-not-my-navigator/) | It works better that way | Android Police | 23 Nov 01:00 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 12 | [I used Gemini to create an Android app that my family uses; they love it](https://www.androidpolice.com/used-gemini-to-create-android-app-that-my-family-uses-they-love-it/) | From a simple prompt to reality | Android Police | 22 Nov 23:00 | 1 | AI, Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 13 | [I found a way to get Pixel updates without waiting for Google](https://www.androidpolice.com/way-to-manually-install-pixel-updates/) | Update your Pixel without waiting for an OTA | Android Police | 22 Nov 21:00 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 14 | [I let Ask Maps, Gemini, and ChatGPT plan my weekend trip](https://www.androidpolice.com/let-google-maps-gemini-chatgpt-plan-weekend-trip-trust-maps-least/) | I asked Google Maps' Ask Maps, Gemini, and ChatGPT to plan the same Chicago weekend. | Android Police | 22 Nov 19:45 | 1 | AI, Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 15 | [One UI 9.5 is here and I'm already loving these features](https://www.androidpolice.com/one-ui-9-5-features-you-should-try/) | My S26 feels new again | Android Police | 22 Nov 19:00 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 16 | [The Kindle Click changed the way I use my Paperwhite (and got me back on the treadmill)](https://www.androidpolice.com/kindle-click-changed-way-i-use-paperwhite-back-on-the-treadmill/) | Friction melts away while cooking or biking thanks to a light wrist-strap remote that pairs in seconds | Android Police | 22 Nov 18:00 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
-| 17 | [Elon Musk’s AI ‘Grok’ Officially Arrives on iPhone CarPlay](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaURsZWl5cHZETElmRVBZams2dlpFNEZ4SjlWMm1BR1A4VktqZVVYS0ZVU01xRWQxengzQzNUV1diMlNIRlZPTGFIeHZjUzhIaUZtRWh1cTNTWmhsdWpIUVZob2x4aHB3UDRDUTVURUstY0NRdG96LXBudmNHWkVlTmhrWWI4S29rRkY0UGhzV1d0eFhoMGVaRUpQNUF2d1lLMkpvODJPOXNDQQ?oc=5) | Headline via Google News (آي-فون إسلام) | آي-فون إسلام <sub>iphoneislam.com · via Google News</sub> | 21 Nov 09:36 | 1 | AI, Mobile | [Google News](https://news.google.com/search?q=%22xAI%22+Musk+AI&hl=en-US&gl=US&ceid=US%3Aen) |
-| 18 | [Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI…](https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/) | Signal is limiting users' ability to take screenshots in both its Android and iOS apps. | TechCrunch | 21 Nov 22:37 | 1 | AI, Mobile | [TechCrunch](https://techcrunch.com/category/artificial-intelligence/feed/) |
+| 11 | [Motorola’s Razr 2027 leak shows it could put Samsung’s Galaxy Z Flip 8 to shame](https://www.androidpolice.com/motorola-razr-2027-leak-shows-it-could-put-samsung-galaxy-z-flip-8-to-shame/) | A monster battery in a compact foldable form factor | Android Police | 25 Nov 04:53 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
+| 12 | [Explanation of Citymapper's comprehensive public transport features](https://www.androidpolice.com/google-maps-is-still-missing-the-one-feature-i-keep-citymapper-installed-for/) | I won't uninstall Citymapper | Android Police | 25 Nov 01:00 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
+| 13 | [Google's Gemini finally lets you keep your chats out of AI training](https://www.androidpolice.com/gemini-chat-ai-training-opt-out/) | A quiet addition to Gemini | Android Police | 24 Nov 23:57 | 1 | AI, Mobile | [Android Police](https://www.androidpolice.com/feed/) |
+| 14 | [You have 7 days to earn Samsung Wallet's Black Friday 50$ bonus without breaking its rules](https://www.androidpolice.com/samsung-wallet-cash-back-setup/) | Samsung Wallet gives new users 10% extra cash back for 7 days, here's how to qualify | Android Police | 24 Nov 23:39 | 1 | Mobile, Retail | [Android Police](https://www.androidpolice.com/feed/) |
+| 15 | [Google Messages could finally get a threaded replies upgrade](https://www.androidpolice.com/google-messages-new-threaded-replies-upgrade/) | To keep chats better organized | Android Police | 24 Nov 22:36 | 1 | Mobile | [Android Police](https://www.androidpolice.com/feed/) |
+| 16 | [Apple Set to Launch iPhone 18, MacBook Neo, and iPad in 2027](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPejlIZUhTemctbG1WSndlNEF6SVVVSkJRQ1hFR0QweUw2YkNmR3hFejFCR21hRC1SOXR4RTZKbnhUNVFSdjRPTTlteTRxc3V0Uk5Va295YUpPVnIxYm1ZWElpdHprcnhuYXdwSGQyeHlOaV9KMk41UUdzTmNPaWtNVEV3WUFhQlQ2SFRySEJUR3hxLWY0Q3E3MkJid3lmZVE2cE9uT0dWUC1aZDJ4NkxiYWt5NUVwR0w3Q1g5LVdvNWcwczVVTlhQUk5HaU1JTzBOUVVWNEdnUUxieFNKMEhRSXFyWXlSWmlFMVgybA?oc=5) | Headline via Google News (RS Web Solutions) | RS Web Solutions <sub>rswebsols.com · via Google News</sub> | 25 Nov 08:00 | 1 | AI, Mobile | [Google News](https://news.google.com/search?q=%22Apple+Intelligence%22+OR+%22Apple+AI%22&hl=en-US&gl=US&ceid=US%3Aen) |
+| 17 | [Apple's New iPad mini Already Discounted on Amazon, From $699 to $599](https://news.google.com/rss/articles/CBMidkFVX3lxTE5BVXB1MmNMT3hLdS1mcVBYYkNaYnl2RDYwWGxYbVVfd2NySHkteVFJNjZDTTdoY2VxT2w3VDk3VDVsa2d1WHViSWU4MlYya0txY1ExZ0NZWWFCVnlwTU10VWhTTVZIZTN2TEVLUHNfZWRVUnpvZGc?oc=5) | Headline via Google News (BigGo Finance) | BigGo Finance <sub>finance.biggo.com · via Google News</sub> | 24 Nov 12:26 | 1 | AI, Mobile +1 | [Google News](https://news.google.com/search?q=%22Apple+Intelligence%22+OR+%22Apple+AI%22&hl=en-US&gl=US&ceid=US%3Aen) |
 
 </details>
 
@@ -60,42 +59,35 @@ iOS, Android, phones, wearables and app stores.
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,607 | +121 today | +0.2% | TypeScript | BSD-3-Clause | 1 | Agents, Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 2 | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | Avoid common App Store and Google Play rejections. | 4,229 | +621 today | +17.2% | Shell | Other | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
-| 3 | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 130,883 | +151 today | +0.1% | Rust | AGPL-3.0 | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 1 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | The open-source cloud for agents & devs. | 58,612 | +24 today | +0.0% | TypeScript | BSD-3-Clause | 1 | Agents, Dev tools +4 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 2 | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | Avoid common App Store and Google Play rejections. | 6,045 | +928 today | +18.1% | Shell | Other | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
+| 3 | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 131,345 | +269 today | +0.2% | Rust | AGPL-3.0 | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
 
-## Questions
+## Posts
 
-| # | Question | Tags | Score | Answers | Views | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Is Android Restore Credentials required for an app using Microsoft MSAL for .Net MAUI…](https://stackoverflow.com/questions/80018203/is-android-restore-credentials-required-for-an-app-using-microsoft-msal-for-net) | #android, #google-play, #maui | 0 | 0 | 34 | 1 | Dev tools, Mobile | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-| 2 | [How can I capture and inspect all network requests from Android and iOS apps?](https://stackoverflow.com/questions/80018200/how-can-i-capture-and-inspect-all-network-requests-from-android-and-ios-apps) | #android, #ios, #network-programming | -2 | 0 | 44 | 1 | Dev tools, Mobile | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Why Your Android App Drops Frames: The Jetpack Compose Architecture Guide That Fixes…](https://dev.to/smtahosin/why-your-android-app-drops-frames-the-jetpack-compose-architecture-guide-that-fixes-recomposition-3oh3) | #android, #kotlin, #mobile | 15 reactions · 5 comments | S M Tahosin | 1 | Dev tools, Mobile | [Dev.to](https://dev.to/top/day) |
+| 2 | [Why there are still no non-WebKit browsers on iOS](https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/) | #browsers, #ios | 30 score · 2 comments | — | 1 | Web, Mobile | [Lobsters](https://lobste.rs/) |
 
 ## Packages
 
 | # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [chat](https://www.npmjs.com/package/chat) | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | npm | `4.45.0` | 8.1M dl/week | 13 Nov | MIT · stable | 1 | AI, Agents +3 | [npm](https://www.npmjs.com/) |
-| 2 | [tallylight-ffi](https://crates.io/crates/tallylight-ffi) | Kotlin and Swift bindings (UniFFI) for the tallylight screen client | crates.io | `0.1.1` | — dl/90d | 23 Nov | pre-1.0 | 1 | Dev tools, Mobile | [crates.io](https://crates.io/) |
-
-## Papers
-
-| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Your Camera Can Hear You: Side-Channel Acoustic Eavesdropping via Android Camera2 Metadata](https://arxiv.org/abs/2611.27964) | To prevent motion sensors from acting as covert microphones, Android 12+ caps SensorManager gyroscope and… | Guangyuan Ji, Wenjing Wang +1 | cs.CR · new | preprint | 1 | Security, Mobile | [arXiv](https://arxiv.org/) |
-| 2 | [Real-time neuromorphic audio and vision perception for autonomous robotic applications…](https://arxiv.org/abs/2611.27953) | Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for… | Guillem Fustier-Castillo, Ruben Ribes-Serrano +3 | cs.RO · new | preprint | 1 | AI, Mobile +2 | [arXiv](https://arxiv.org/) |
+| 1 | [chat](https://www.npmjs.com/package/chat) | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | npm | `4.45.0` | 8M dl/week | 13 Nov | MIT · stable | 1 | AI, Agents +3 | [npm](https://www.npmjs.com/) |
+| 2 | [xsign](https://crates.io/crates/xsign) | Cross-platform code signing and notarization CLI and library for Apple, Windows, Android, Linux, and… | crates.io | `0.1.0` | — dl/90d | 25 Nov | pre-1.0 | 1 | Dev tools, Cloud +1 | [crates.io](https://crates.io/) |
 
 ## Product launches
 
 | # | Product | Why it matters | Posted by | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Creavit Studio 4.0](https://www.producthunt.com/products/creavit-studio) | Screen recording, iPhone camera and cinematic demos for Mac | Onur Aslan | 1 | Mobile | [Product Hunt](https://www.producthunt.com/) |
-| 2 | [Leapdeck](https://www.producthunt.com/products/leapdeck) | Leap to any Mac Space from a key or your iPhone | Barış Çelik | 1 | Mobile | [Product Hunt](https://www.producthunt.com/) |
+| 1 | [SparrowDesk Phone Calls](https://www.producthunt.com/products/sparrowdesk) | Phone support in the same inbox as email, chat & WhatsApp | Justin George | 1 | Mobile | [Product Hunt](https://www.producthunt.com/) |
+| 2 | [Umami Manager](https://www.producthunt.com/products/umami-manager) | Umami reports, widgets & links – native on iPhone & iPad | Typ0 | 1 | Mobile | [Product Hunt](https://www.producthunt.com/) |
 
-## MCP servers
+## Discussions
 
-| # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [com.mambabuilt/mcp-google-play-app-details](https://github.com/mambalabsdev/mcp-google-play-app-details) | Google Play app details by package or developer: ratings, installs, price. | v1.0.0 · 23 Nov 08:04 | 1.0+ | 1 | Agents, Dev tools +1 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native](https://rida.dev/blog/bypassing-ios-safari-60-fps-limit) | Link to rida.dev | 105 | 30 | 25 pts/h | [open](https://news.ycombinator.com/item?id=50637890) | **2** <sub>Hacker News, Lobsters</sub> | Web, Mobile | [Hacker News](https://news.ycombinator.com/) |
 
-<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
