@@ -441,6 +441,13 @@ def fetch_xml(url: str) -> ET.Element:
     try:
         return ET.fromstring(body)
     except ET.ParseError as exc:
+        # Some feeds put a bare "&" in an image URL; escape those and parse once more.
+        fixed = re.sub(r"&(?!(?:[A-Za-z][A-Za-z0-9]*|#[0-9]+|#x[0-9A-Fa-f]+);)", "&amp;", body)
+        if fixed != body:
+            try:
+                return ET.fromstring(fixed)
+            except ET.ParseError:
+                pass
         raise FetchError(f"invalid XML ({exc})")
 
 
@@ -2456,7 +2463,9 @@ def mark_exploited(results) -> None:
 
 def first_sentence(text: str, n: int = 110) -> str:
     t = re.sub(r"\s+", " ", text or "").strip()
-    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    # Do not end the sentence on "Mr.", "U.S." and similar abbreviations.
+    m = re.match(r"(.+?(?<!\bMr)(?<!\bMrs)(?<!\bMs)(?<!\bDr)(?<!\bSt)(?<!\bInc)(?<!\bCorp)(?<!\bCo)(?<!\bJr)"
+                 r"(?<!\bvs)(?<!\b[A-Z]\.[A-Z])[.!?])(\s|$)", t)
     return clip(m.group(1) if m and len(m.group(1)) > 25 else t, n)
 
 
@@ -3360,10 +3369,22 @@ def cluster_stories(results) -> list[dict]:
         epoch = datetime(1970, 1, 1, tzinfo=timezone.utc)
         latest = max(((it.get("published") or it.get("created") or epoch) for _k, it in mem), default=epoch)
         stories.append({"rep": rep, "members": mem, "outlets": outlets, "families": fams, "industries": inds,
-                        "latest": latest,
-                        "why": first_sentence(with_desc[0][1]["desc"], 150) if with_desc else ""})
+                        "latest": latest, "why": story_why(with_desc)})
     stories.sort(key=lambda s: (-len(s["outlets"]), -len(s["families"]), -s["latest"].timestamp()))
     return stories
+
+
+def story_why(with_desc) -> str:
+    """First summary sentence that adds something to its own headline (Techmeme puts "Outlet : headline" there)."""
+    for _k, it in with_desc:
+        text = re.sub(r"\s+", " ", it["desc"]).strip()
+        m = re.match(r"([^:]{2,60}?) : (.+)$", text)
+        body = m.group(2) if m else text
+        head, start = title_key(it.get("title")), title_key(body)
+        if head and start and (start.startswith(head[:60]) or head.startswith(start[:60])):
+            continue
+        return first_sentence(body, 150)
+    return ""
 
 
 def render_shaking(results, n: int) -> list[str]:
@@ -3732,14 +3753,17 @@ def since_yesterday(root: Path, fetched_at: datetime, ents, results, history):
     climbers = sorted([m for m in moves if m[2] and m[2] > m[1]], key=lambda m: m[1] - m[2])[:5]
     entries = [m for m in moves if not m[2] and m[1] <= len(ranks)][:5]   # only within the depth listed yesterday
     return {"prev": prev, "new": new, "carried": carried, "climbers": climbers, "entries": entries,
-            "has_ranks": bool(ranks), "depth": len(ranks)}
+            "has_ranks": bool(ranks), "depth": len(ranks), "today": fetched_at.date().isoformat()}
 
 
 def render_since(info, results, prefix: str) -> list[str]:
     if not info:
         return ["_No earlier archived day to compare with yet._", ""]
     prev = datetime.strptime(info["prev"], "%Y-%m-%d")
-    p = [f"Compared with the archive for **{fmt_date(prev)}**: **{len(info['new'])}** ranked items are new today, "
+    gap = (datetime.strptime(info["today"], "%Y-%m-%d") - prev).days if info.get("today") else 1
+    note = (f" (no archive for {fmt_date(prev + timedelta(days=1))})" if gap == 2
+            else f" (no archive for the {gap - 1} days in between)" if gap > 2 else "")
+    p = [f"Compared with the archive for **{fmt_date(prev)}**{note}: **{len(info['new'])}** ranked items are new today, "
          f"**{info['carried']}** were already listed.", ""]
     if info["new"]:
         p += ["**New and highest-scoring**", ""] + fold_table(
@@ -3752,11 +3776,11 @@ def render_since(info, results, prefix: str) -> list[str]:
         rows += [[ttl(it, 50), f"#{pos}", "not listed", "new"] for it, pos, _b in info["entries"]]
         if rows:
             p += ["**GitHub trending today: climbers and new entries**", "",
-                  f"<sub>Against the top {info['depth']} archived for the previous day.</sub>", ""] + fold_table(
+                  f"<sub>Against the top {info['depth']} archived for {fmt_date(prev)}.</sub>", ""] + fold_table(
                 ["Repository", "Today", "Previous day", "Move"], rows, 10) + [""]
         else:
             p += [f"**GitHub trending today:** no climbers and no new entries against the top {info['depth']} "
-                  "archived for the previous day.", ""]
+                  f"archived for {fmt_date(prev)}.", ""]
     return p
 
 
