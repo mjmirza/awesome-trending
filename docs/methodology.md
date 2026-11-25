@@ -16,7 +16,7 @@ score = 100 × ( 0.6 × best_rank_percentile  +  0.4 × min(sources − 1, 3) / 
 - Items found only in *unranked* sources (news feeds, registries, advisories, releases, markets) get 0.25.
 - **sources** counts distinct platforms, not lists: GitHub trending today, this week and per language all count as GitHub.
 - Items are merged by normalised URL (GitHub repos by owner/name, papers by arXiv id, a paper's code repo joins its repo) and, for headlines and discussions, by normalised title.
-- **Top signals** leaves out items seen only on public-pulse sources (Google Trends, Wikipedia, Mastodon, Bluesky) and items with no ranked source.
+- **Top signals** leaves out items seen only on public-pulse sources (Google Trends, Wikipedia, Mastodon, Bluesky) and items with no ranked source. When scores tie, a secondary engagement score is used, normalised within each source type so GitHub stars gained, Hacker News points per hour, Hugging Face likes, Product Hunt votes, npm weekly downloads and similar figures are not compared in raw units. After that, more recent items win, then the original source order.
 
 Example: a repo at position 2 of 16 on GitHub trending that is also on Hacker News scores `100 × (0.6 × 0.94 + 0.4 × 1/3) = 70`.
 

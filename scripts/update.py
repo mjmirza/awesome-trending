@@ -2394,6 +2394,9 @@ class Entity:
         self.industries: list[str] = []
         self.score = 0
         self.best_pct = 0.0
+        self.engagement = None   # 0..1, normalised within a source type; None if no figure
+        self.raw_engagement = None
+        self.recency = None
 
     @property
     def key(self):
@@ -2968,10 +2971,118 @@ def render_today(results, ents, tech_x) -> list[str]:
     return [f"- {x}" for x in b[:11]]
 
 
-def top_signals(ents, n: int):
+
+def item_recency(it: dict) -> datetime | None:
+    for field in ("created", "published", "pushed"):
+        v = it.get(field)
+        if isinstance(v, datetime):
+            return v if v.tzinfo else v.replace(tzinfo=timezone.utc)
+    return None
+
+
+def _hours_since(ts: datetime | None, now: datetime) -> float | None:
+    if ts is None:
+        return None
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+    return max((now - ts).total_seconds() / 3600, 1.0)
+
+
+def raw_engagement(key: str, it: dict, now: datetime) -> tuple[float, str] | None:
+    """Return (value, group) from the item's own source numbers, or None.
+
+    The group is the unit the number is measured in, so GitHub stars gained
+    are never compared raw against Hacker News points or npm weekly downloads.
+    """
+    k = it["kind"]
+    if k == "repo" and it.get("gained") is not None:
+        return float(it["gained"]), "repo_gained"
+    if k == "hn" and it.get("points") is not None:
+        hours = _hours_since(it.get("created"), now)
+        if hours is None:
+            return float(it["points"]), "hn_points"
+        return it["points"] / hours, "hn_velocity"
+    if k == "post":
+        hours = _hours_since(it.get("published") or it.get("created"), now)
+        if it.get("score") is not None and it.get("reactions") is None:
+            val = float(it["score"])
+            return (val / hours, "lobsters_velocity") if hours else (val, "lobsters_score")
+        if it.get("reactions") is not None:
+            val = float(it["reactions"])
+            return (val / hours, "post_velocity") if hours else (val, "post_reactions")
+        return None
+    if k == "question" and it.get("score") is not None:
+        return float(it["score"]), "question_score"
+    if k == "product" and it.get("votes") is not None:
+        return float(it["votes"]), "product_votes"
+    if k in ("model", "space", "dataset"):
+        if it.get("likes") is not None:
+            return float(it["likes"]), "hf_likes"
+        if it.get("downloads") is not None:
+            return float(it["downloads"]), "hf_downloads"
+        return None
+    if k == "paper" and it.get("upvotes") is not None:
+        return float(it["upvotes"]), "paper_upvotes"
+    if k == "mcp" and it.get("uses") is not None:
+        return float(it["uses"]), "mcp_uses"
+    if k == "package":
+        if it.get("weekly") is not None:
+            return float(it["weekly"]), "package_weekly"
+        if it.get("recent") is not None:
+            return float(it["recent"]), "package_recent"
+        return None
+    if k == "cdn" and it.get("hits") is not None:
+        return float(it["hits"]), "cdn_hits"
+    if k == "image" and it.get("pulls") is not None:
+        return float(it["pulls"]), "image_pulls"
+    if k == "wiki" and it.get("views") is not None:
+        return float(it["views"]), "wiki_views"
+    if k == "reddit" and it.get("ups") is not None:
+        hours = _hours_since(it.get("created") or it.get("published"), now)
+        val = float(it["ups"])
+        return (val / hours, "reddit_velocity") if hours else (val, "reddit_ups")
+    return None
+
+
+def engagement_percentiles(values: list[float]) -> list[float]:
+    """Map the highest value to 1.0 and the lowest to 0.0. A lone value is 1.0. Ties share a score."""
+    n = len(values)
+    if n == 1:
+        return [1.0]
+    return [1 - sum(1 for other in values if other > v) / (n - 1) for v in values]
+
+
+def assign_engagement(ents: list[Entity], now: datetime) -> None:
+    raw: list[tuple[float, str] | None] = []
+    for e in ents:
+        e.recency = item_recency(e.item)
+        raw.append(raw_engagement(e.key, e.item, now))
+        e.engagement = None
+        e.raw_engagement = None
+    by_group: dict[str, list[int]] = {}
+    for i, pair in enumerate(raw):
+        if pair is None:
+            continue
+        val, group = pair
+        ents[i].raw_engagement = val
+        by_group.setdefault(group, []).append(i)
+    for idxs in by_group.values():
+        vals = [raw[i][0] for i in idxs]
+        for i, pct in zip(idxs, engagement_percentiles(vals)):
+            ents[i].engagement = pct
+
+
+def top_signals(ents, n: int, now: datetime | None = None):
     pool = [e for e in ents if not set(e.families) <= PULSE_FAMILIES and e.best_pct != UNRANKED_BASE]
-    pool.sort(key=lambda e: (e.score, len(e.families), e.best_pct), reverse=True)
-    return pool[:n]
+    assign_engagement(pool, now or datetime.now(timezone.utc))
+    def sort_key(pair):
+        i, e = pair
+        eng = e.engagement if e.engagement is not None else -1.0
+        rec = e.recency.timestamp() if e.recency is not None else float("-inf")
+        return (-e.score, -eng, -rec, i)
+    return [e for _i, e in sorted(enumerate(pool), key=sort_key)][:n]
 
 
 def render_top_signals(ents, results, n: int, visible: int, prefix: str) -> list[str]:
@@ -2987,6 +3098,7 @@ def render_top_signals(ents, results, n: int, visible: int, prefix: str) -> list
                      key_metric(k, it), momentum(k, it), seen_cell(it), ind_cell(it), f"**{e.score}**"])
     return fold_table(headers, rows, visible) + [
         "", f"<sub>Score = 100 × ({W_RANK} × best rank percentile + {W_SPREAD} × extra sources ÷ {SPREAD_CAP}, capped). "
+        "Ties break on a secondary engagement score normalised within each source type, then recency, then source order. "
         f"[How the score works]({prefix}docs/methodology.md#score).</sub>", ""]
 
 
@@ -3869,7 +3981,10 @@ def render_methodology() -> str:
          "- Items are merged by normalised URL (GitHub repos by owner/name, papers by arXiv id, a paper's code repo joins its repo) "
          "and, for headlines and discussions, by normalised title.",
          "- **Top signals** leaves out items seen only on public-pulse sources (Google Trends, Wikipedia, Mastodon, Bluesky) "
-         "and items with no ranked source.", "",
+         "and items with no ranked source. When scores tie, a secondary engagement score is used, normalised within each "
+         "source type so GitHub stars gained, Hacker News points per hour, Hugging Face likes, Product Hunt votes, "
+         "npm weekly downloads and similar figures are not compared in raw units. After that, more recent items win, "
+         "then the original source order.", "",
          "Example: a repo at position 2 of 16 on GitHub trending that is also on Hacker News scores "
          f"`100 × ({W_RANK} × 0.94 + {W_SPREAD} × 1/3) = {round(100 * (W_RANK * (1 - 1 / 16) + W_SPREAD / 3))}`.", "",
          "**Ranked sources:** " + ", ".join(f"`{k}`" for k in sorted(RANKED)), "",
