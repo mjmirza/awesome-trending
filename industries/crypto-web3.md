@@ -2,89 +2,90 @@
 
 Cryptocurrencies, blockchains, DeFi, stablecoins and tokenisation.
 
-**23 November 2026** · 08:08 Europe/Berlin (UTC+1) · 48 items · daily snapshot, rebuilt every morning.
+**25 November 2026** · 08:12 Europe/Berlin (UTC+1) · 45 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (7):** CoinDesk, CoinGecko, Decrypt, GitHub, Google News, Lobsters, Smithery
+**Sources with items here (7):** CNBC, CoinDesk, CoinGecko, Decrypt, GitHub, Google News, Smithery
 
-**By type:** [Crypto assets](#crypto-assets) (27) · [Headlines](#headlines) (15) · [Repositories](#repositories) (3) · [MCP servers](#mcp-servers) (2) · [Posts](#posts) (1)
+**By type:** [Crypto assets](#crypto-assets) (25) · [Headlines](#headlines) (16) · [Repositories](#repositories) (2) · [MCP servers](#mcp-servers) (2)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Bitcoin (BTC)](https://www.coingecko.com/en/coins/bitcoin) | Crypto assets | Market-cap rank #1 | $61,456.75 · +4.1% 24h | 1 | 60 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 2 | [Pudgy Penguins (PENGU)](https://www.coingecko.com/en/coins/pudgy-penguins) | Crypto assets | Market-cap rank #129 | $0.004317 · +2.6% 24h | 1 | 56 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 3 | [Pearl (PEARL)](https://www.coingecko.com/en/coins/pearl-2) | Crypto assets | Market-cap rank #77 | $2.10 · +7.4% 24h | 1 | 52 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 4 | [hasan6969macho-bit/vectorbt-avoria-analysis](https://github.com/hasan6969macho-bit/vectorbt-avoria-analysis) | Repositories | Vectorbt research code for Avoria analysis, built for reproducible strategy experiments. | 147 stars · created 18 Nov | 1 | 48 | [GitHub](https://github.com/topics/fintech) |
-| 5 | [Hyperliquid (HYPE)](https://www.coingecko.com/en/coins/hyperliquid) | Crypto assets | Market-cap rank #10 | $62.83 · +4.6% 24h | 1 | 48 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 6 | [Pons (PONS)](https://www.coingecko.com/en/coins/pons) | Crypto assets | Market-cap rank #327 | $0.097782 · +6.3% 24h | 1 | 44 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 7 | [Pump.fun (PUMP)](https://www.coingecko.com/en/coins/pump-fun) | Crypto assets | Market-cap rank #72 | $0.002605 · +12.4% 24h | 1 | 40 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 8 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Repositories | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45.9k stars · +12 today | 1 | 36 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 9 | [Stellar-Pathfinder/stellar-pathfinder](https://github.com/Stellar-Pathfinder/stellar-pathfinder) | Repositories | A corridor-integrity monitor for the Stellar network. | 131 stars · created 6 Oct | 1 | 36 | [GitHub](https://github.com/topics/fintech) |
-| 10 | [Pi Network (PI)](https://www.coingecko.com/en/coins/pi-network) | Crypto assets | Market-cap rank #88 | $0.055516 · +5.0% 24h | 1 | 36 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 1 | [Bitcoin (BTC)](https://www.coingecko.com/en/coins/bitcoin) | Crypto assets | Market-cap rank #1 | $59,156.66 · -2.1% 24h | 1 | 60 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 2 | [Hyperliquid (HYPE)](https://www.coingecko.com/en/coins/hyperliquid) | Crypto assets | Market-cap rank #10 | $59.16 · -8.0% 24h | 1 | 56 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 3 | [Monad (MON)](https://www.coingecko.com/en/coins/monad) | Crypto assets | Market-cap rank #201 | $0.0104 · -24.2% 24h | 1 | 52 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 4 | [Solana (SOL)](https://www.coingecko.com/en/coins/solana) | Crypto assets | Market-cap rank #7 | $68.75 · -4.3% 24h | 1 | 48 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 5 | [Ethereum (ETH)](https://www.coingecko.com/en/coins/ethereum) | Crypto assets | Market-cap rank #2 | $1,657.64 · -2.5% 24h | 1 | 44 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 6 | [Stellar-Pathfinder/stellar-pathfinder](https://github.com/Stellar-Pathfinder/stellar-pathfinder) | Repositories | A corridor-integrity monitor for the Stellar network. | 130 stars · created 6 Oct | 1 | 43 | [GitHub](https://github.com/topics/fintech) |
+| 7 | [Pudgy Penguins (PENGU)](https://www.coingecko.com/en/coins/pudgy-penguins) | Crypto assets | Market-cap rank #129 | $0.004251 · -5.1% 24h | 1 | 40 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 8 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Repositories | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45.9k stars · +18 today | 1 | 36 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 9 | [Pearl (PEARL)](https://www.coingecko.com/en/coins/pearl-2) | Crypto assets | Market-cap rank #75 | $2.07 · -4.4% 24h | 1 | 36 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 10 | [Sui (SUI)](https://www.coingecko.com/en/coins/sui) | Crypto assets | Market-cap rank #31 | $0.64435 · -4.3% 24h | 1 | 32 | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
 
 ## Crypto assets
 
 | # | Asset | Market-cap rank | Price (USD) | 24 h | 7 d | Market cap | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Bitcoin (BTC)](https://www.coingecko.com/en/coins/bitcoin) | 1 | 61,456.75 | +4.1% | — | $1,236,154,810,610 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 2 | [Pudgy Penguins (PENGU)](https://www.coingecko.com/en/coins/pudgy-penguins) | 129 | 0.004317 | +2.6% | — | $271,361,743 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 3 | [Pearl (PEARL)](https://www.coingecko.com/en/coins/pearl-2) | 77 | 2.10 | +7.4% | — | $815,711,148 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 4 | [Hyperliquid (HYPE)](https://www.coingecko.com/en/coins/hyperliquid) | 10 | 62.83 | +4.6% | — | $14,932,956,301 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 5 | [Pons (PONS)](https://www.coingecko.com/en/coins/pons) | 327 | 0.097782 | +6.3% | — | $65,178,098 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 6 | [Pump.fun (PUMP)](https://www.coingecko.com/en/coins/pump-fun) | 72 | 0.002605 | +12.4% | — | $920,363,000 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 7 | [Pi Network (PI)](https://www.coingecko.com/en/coins/pi-network) | 88 | 0.055516 | +5.0% | — | $633,100,873 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 8 | [Solana (SOL)](https://www.coingecko.com/en/coins/solana) | 7 | 71.99 | +4.2% | — | $42,616,154,707 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 9 | [Pepe (PEPE)](https://www.coingecko.com/en/coins/pepe) | 52 | 0.000003 | +3.5% | — | $1,452,252,581 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 10 | [Sui (SUI)](https://www.coingecko.com/en/coins/sui) | 32 | 0.664628 | +4.0% | — | $2,750,751,919 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 1 | [Bitcoin (BTC)](https://www.coingecko.com/en/coins/bitcoin) | 1 | 59,156.66 | -2.1% | — | $1,190,058,803,020 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 2 | [Hyperliquid (HYPE)](https://www.coingecko.com/en/coins/hyperliquid) | 10 | 59.16 | -8.0% | — | $14,060,803,186 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 3 | [Monad (MON)](https://www.coingecko.com/en/coins/monad) | 201 | 0.0104 | -24.2% | — | $122,987,018 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 4 | [Solana (SOL)](https://www.coingecko.com/en/coins/solana) | 7 | 68.75 | -4.3% | — | $40,706,774,140 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 5 | [Ethereum (ETH)](https://www.coingecko.com/en/coins/ethereum) | 2 | 1,657.64 | -2.5% | — | $202,647,554,380 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 6 | [Pudgy Penguins (PENGU)](https://www.coingecko.com/en/coins/pudgy-penguins) | 129 | 0.004251 | -5.1% | — | $267,239,172 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 7 | [Pearl (PEARL)](https://www.coingecko.com/en/coins/pearl-2) | 75 | 2.07 | -4.4% | — | $805,164,308 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 8 | [Sui (SUI)](https://www.coingecko.com/en/coins/sui) | 31 | 0.64435 | -4.3% | — | $2,666,994,771 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 9 | [NEAR Protocol (NEAR)](https://www.coingecko.com/en/coins/near) | 23 | 2.87 | -5.4% | — | $3,764,159,740 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 10 | [Big Time (BIGTIME)](https://www.coingecko.com/en/coins/big-time) | 696 | 0.007231 | +78.2% | — | $21,189,687 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | Asset | Market-cap rank | Price (USD) | 24 h | 7 d | Market cap | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Backpack (BP)](https://www.coingecko.com/en/coins/backpack) | 148 | 0.86225 | +7.9% | — | $215,532,510 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 12 | [Ethena (ENA)](https://www.coingecko.com/en/coins/ethena) | 54 | 0.103528 | +5.8% | — | $1,396,810,554 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
-| 13 | [Ethereum (ETH)](https://www.coingecko.com/en/coins/ethereum) | 2 | 1,723.37 | +3.8% | -4.8% | 210.7B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 14 | [Tether (USDT)](https://www.coingecko.com/en/coins/tether) | 3 | 0.998772 | +0.0% | -0.1% | 174.6B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 15 | [BNB (BNB)](https://www.coingecko.com/en/coins/binancecoin) | 4 | 557.20 | +3.4% | -5.4% | 73.3B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 16 | [USDC (USDC)](https://www.coingecko.com/en/coins/usd-coin) | 5 | 0.99937 | +0.0% | -0.0% | 68.4B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 17 | [XRP (XRP)](https://www.coingecko.com/en/coins/ripple) | 6 | 0.939569 | +2.8% | -1.2% | 59.7B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 18 | [TRON (TRX)](https://www.coingecko.com/en/coins/tron) | 8 | 0.305009 | +0.6% | +0.7% | 29B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 19 | [Figure Heloc (FIGR_HELOC)](https://www.coingecko.com/en/coins/figure-heloc) | 9 | 1.06 | -1.1% | -0.9% | 28.6B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
-| 20 | [Zcash (ZEC)](https://www.coingecko.com/en/coins/zcash) | 11 | 785.82 | +0.4% | -10.5% | 13.4B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 11 | [Venice Token (VVV)](https://www.coingecko.com/en/coins/venice-token) | 60 | 25.05 | -2.4% | — | $1,231,469,277 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 12 | [LayerZero (ZRO)](https://www.coingecko.com/en/coins/layerzero) | 107 | 0.996347 | -13.0% | — | $398,515,022 | 1 | Crypto | [CoinGecko](https://www.coingecko.com/en/highlights/trending-crypto) |
+| 13 | [Tether (USDT)](https://www.coingecko.com/en/coins/tether) | 3 | 0.998888 | -0.0% | -0.0% | 174.6B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 14 | [BNB (BNB)](https://www.coingecko.com/en/coins/binancecoin) | 4 | 543.57 | -1.5% | -8.3% | 71.5B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 15 | [USDC (USDC)](https://www.coingecko.com/en/coins/usd-coin) | 5 | 0.99953 | -0.0% | +0.0% | 69.1B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 16 | [XRP (XRP)](https://www.coingecko.com/en/coins/ripple) | 6 | 0.921047 | -2.7% | -6.7% | 58.5B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 17 | [TRON (TRX)](https://www.coingecko.com/en/coins/tron) | 8 | 0.308497 | -0.3% | +0.2% | 29.3B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 18 | [Figure Heloc (FIGR_HELOC)](https://www.coingecko.com/en/coins/figure-heloc) | 9 | 1.04 | +0.0% | +3.5% | 28.4B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 19 | [Zcash (ZEC)](https://www.coingecko.com/en/coins/zcash) | 11 | 738.46 | -3.3% | -23.2% | 12.6B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
+| 20 | [Dogecoin (DOGE)](https://www.coingecko.com/en/coins/dogecoin) | 13 | 0.054839 | -2.7% | -7.9% | 8.6B | 1 | Crypto | [CoinGecko](https://www.coingecko.com/) |
 
 </details>
 
-<sub>7 more in today's archive.</sub>
+<sub>5 more in today's archive.</sub>
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Cardano holders are turning down a $4 million request for running its flagship event](https://www.coindesk.com/markets/2026/11/23/cardano-holders-are-turning-down-a-usd4-million-request-for-running-its-flagship-event) | Roughly five times as much voting stake has opposed the Foundation's 2027 conference budget as has backed… | CoinDesk | 23 Nov 07:15 | 1 | Dev tools, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 2 | [Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand](https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand) | An apparent breakdown in Kraken's CAD order book cut every coin on it by over 70%, overnight. | CoinDesk | 23 Nov 06:42 | 1 | Markets, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 3 | [Market rout kills 50 basis points December Fed rate hike bets](https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets) | Traders have removed the possibility of a 50-basis-point December Fed rate hike after last week’s market rout. | CoinDesk | 23 Nov 05:45 | 1 | Markets, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 4 | [More on the pending oversight hearings: State of Crypto](https://www.coindesk.com/) | New letters show the widening range of Congressional committees that will be probing the presidential… | CoinDesk | 22 Nov 20:30 | 1 | Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 5 | [Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins](https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins) | Quantum computers can’t break Bitcoin network’s security yet, but Leo Fan warns that upgrading it and moving… | CoinDesk | 22 Nov 15:00 | 1 | Security, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 6 | [Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave](https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open) | The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices. | CoinDesk | 21 Nov 18:50 | 1 | Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 7 | [Google's Quantum Chip Beats Classical Limits in 'Impossible' Game](https://decrypt.co/383743/googles-quantum-chip-beats-classical-limits-in-impossible-game-tests-105-qubits) | Google’s Willow quantum processor beat the classical ceiling in a four-qubit coordination game, revealing a… | Decrypt | 22 Nov 15:01 | 1 | Crypto, Robotics +1 | [Decrypt](https://decrypt.co/feed) |
-| 8 | [GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump](https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump) | The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could… | Decrypt | 21 Nov 19:01 | 1 | Security, Crypto +1 | [Decrypt](https://decrypt.co/feed) |
-| 9 | [Fraudsters Used Fake Crypto Exchanges to Steal $37 Million, SEC Alleges](https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec) | The agency says eight Colorado-registered entities, likely run from overseas, posed as legitimate advisers… | Decrypt | 21 Nov 18:01 | 1 | Crypto | [Decrypt](https://decrypt.co/feed) |
-| 10 | [Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It](https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots) | The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android… | Decrypt | 21 Nov 17:01 | 1 | AI, Security +2 | [Decrypt](https://decrypt.co/feed) |
+| 1 | [Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive](https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive) | Derive’s new options on Nvidia, Anthropic, stock indices and oil bring hedging tools to onchain RWA markets. | CoinDesk | 25 Nov 05:57 | **2** <sub>CoinDesk, Google News</sub> | AI, Markets +3 | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 2 | [Solana developers move to stop validators finishing work on blocks that already lost](https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost) | The fix would stop the computers that run Solana from wasting effort on transactions the network has already… | CoinDesk | 25 Nov 07:33 | 1 | Dev tools, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 3 | [Just 10 accounts drove all of the XRP Ledger's trading growth last quarter](https://www.coindesk.com/markets/2026/11/25/ten-accounts-drove-all-of-the-xrp-ledger-s-trading-growth-last-quarter) | Data shows that the ten busiest accounts accounted for more than all of the exchange's quarterly growth… | CoinDesk | 25 Nov 07:15 | 1 | Fintech, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 4 | [A year after buying bitcoin, Czech central bank won't say what it's worth](https://www.coindesk.com/markets/2026/11/23/a-year-after-buying-bitcoin-czech-central-bank-won-t-say-what-it-s-worth) | The Czech National Bank bought bitcoin a year ago as an experiment. | CoinDesk | 25 Nov 05:50 | 1 | Markets, Fintech +1 | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 5 | [Trump says he's willing to give Nvidia's Huang a pardon, doesn't think he needs one](https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one) | President Donald Trump said in an interview with the New York Post that he's fine clearing Nvidia's CEO from… | CoinDesk | 25 Nov 04:35 | 1 | Crypto, Chips | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 6 | [Utah moves to drop criminal pursuit of Kalshi after the firm halted services there](https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there) | The state continues to hold the criminal charges in its back pocket with a vow to hit Kalshi and other… | CoinDesk | 24 Nov 18:50 | 1 | Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 7 | [OpenAI and Anthropic Insiders Fear Their Next AI Models Are Too Dangerous to Release](https://decrypt.co/383933/openai-and-anthropic-insiders-fear-next-ai-models-too-dangerous) | Employees at both AI labs reportedly question whether their strongest models should ever reach the public… | Decrypt | 24 Nov 23:36 | 1 | AI, Crypto | [Decrypt](https://decrypt.co/feed) |
+| 8 | [Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code](https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code) | Anthropic’s new coding tools can review and repair software changes before approving them for release… | Decrypt | 24 Nov 22:46 | 1 | AI, Crypto | [Decrypt](https://decrypt.co/feed) |
+| 9 | [Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits](https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits) | Coinkite’s postmortem reveals a software random-number generator shipped in place of the hardware one for… | Decrypt | 24 Nov 22:16 | 1 | Security, Crypto +1 | [Decrypt](https://decrypt.co/feed) |
+| 10 | [Ethereum Foundation Says AI Is a More Urgent Threat Than Quantum Computing](https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing) | The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul… | Decrypt | 24 Nov 21:36 | 1 | AI, Security +1 | [Decrypt](https://decrypt.co/feed) |
 
 <details>
-<summary>Show 5 more</summary>
+<summary>Show 6 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the…](https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm) | Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has… | Decrypt | 21 Nov 15:01 | 1 | AI, Markets +2 | [Decrypt](https://decrypt.co/feed) |
-| 12 | [Claude Claims Historic Math Breakthrough One Day After Anthropic IPO](https://decrypt.co/383747/claude-historic-math-breakthrough-anthropic-ipo) | Levent Alpöge claims Claude helped prove a 167-year-old math conjecture, but independent checks remain… | Decrypt | 20 Nov 22:36 | 1 | AI, Markets +1 | [Decrypt](https://decrypt.co/feed) |
-| 13 | [Ripple CEO Says Crypto Will Rebound After Anthropic IPO, as It Did After SpaceX](https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1N29uRG1Bcm0wemhmQXRqXzJIYXNmZHkwczY3aTdJVTlfQkxBTE8wRGFFMld0X2VhTE1zNkpIQ2VCYWhOdWpjS2tEZ240ZDdMdmJsNA?oc=5) | Headline via Google News (bloomingbit) | bloomingbit <sub>en.bloomingbit.io · via Google News</sub> | 23 Nov 07:53 | 1 | AI, Markets +2 | [Google News](https://news.google.com/search?q=%22Anthropic%22+OR+%22Claude+AI%22&hl=en-US&gl=US&ceid=US%3Aen) |
-| 14 | [MiniMax publishes AI-discovered cryptographic attacks with papers and code](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRXJpeGxEVkRpeWJiTnBlc2pYYm1hX0JvcjBKZjFPWTZMZE5JWi1HVXRoLVI0NDlZVS11WVdrcGZNN3BPV1NBdFBpLXM0Q3NnRDl6U1pQbDJmaklWaUExcmxHNmhDY2laSGFPS1ZWYTZkSWRKVjR6SDFmWjVKSXFURHI0dzlHTk5NMDZPZkRzWDdIcExRN1JwbWRaZzdmQjlXeHZwNUI2b2p6Nm8?oc=5) | Headline via Google News (TechNode) | TechNode <sub>technode.com · via Google News</sub> | 23 Nov 07:52 | 1 | AI, AI media +1 | [Google News](https://news.google.com/search?q=Hailuo+OR+MiniMax+video+OR+Higgsfield+OR+Midjourney&hl=en-US&gl=US&ceid=US%3Aen) |
-| 15 | [MiniMax Says Its AI Broke 4 Old NIST Crypto Candidates](https://news.google.com/rss/articles/CBMiigFBVV95cUxPT2JNNGhQSUVnNHR2VGxvOC1iaVpra1hwaElTYlZPaC0wUUJNcF9FRzI0UlZ6YUliWl9JblpHM25iVFlEOFl2dFlselY0NW5jaVc0SEVvbmJEV05VOGx5b2NGVWo0enhjS3BvVVdGYXJlMlE4aWM5UDZzN0xrRktISVhhYUkteVNzR1E?oc=5) | Headline via Google News (FourWeekMBA) | FourWeekMBA <sub>fourweekmba.com · via Google News</sub> | 21 Nov 19:40 | 1 | AI, AI media +1 | [Google News](https://news.google.com/search?q=Hailuo+OR+MiniMax+video+OR+Higgsfield+OR+Midjourney&hl=en-US&gl=US&ceid=US%3Aen) |
+| 11 | [Bitcoin Losses Are the Worst Since FTX. Is the Bottom Near?](https://decrypt.co/383909/bitcoin-losses-worst-since-ftx-is-bottom-near) | Bitcoin slipped below $60,000 as realized losses nearly doubled in a week. | Decrypt | 24 Nov 20:35 | 1 | Crypto | [Decrypt](https://decrypt.co/feed) |
+| 12 | [What the CFTC’s New Crypto Reserves Guidance Actually Allows—And What It Doesn’t](https://decrypt.co/383906/cftc-new-crypto-reserves-guidance-actually-allows-what-it-doesnt) | Staff guidance lets swap venues and clearinghouses count Bitcoin, Ethereum, and stablecoins toward their… | Decrypt | 24 Nov 19:55 | 1 | Crypto | [Decrypt](https://decrypt.co/feed) |
+| 13 | [SpaceX, Anthropic IPOs Shut Out Retail Investors, Says Coinbase CEO — Brian Armstrong…](https://news.google.com/rss/articles/CBMinwFBVV95cUxPanlGbTc1NVZDX1pmMHYtdFNpV2MzNE0wZ19aWkg4UkxnOUIxSUZMYV9Pa0luejYzTWVBMUZJRnplMWpOREw1cWphTzdtUFN3TDhXZ21HNzZOak05Mk1VVGlTVjRKWGkyeEZ4ZHpOM05CQTlCWS1rR1RQRVFkTm5DdUpOSUc3SHk0aFg0YV80c2ZONk4tOFlLLWJGMFd2LUE?oc=5) | Headline via Google News (Yahoo Finance) | Yahoo Finance <sub>finance.yahoo.com · via Google News</sub> | 25 Nov 07:01 | 1 | AI, Markets +3 | [Google News](https://news.google.com/search?q=%22Anthropic%22+OR+%22Claude+AI%22&hl=en-US&gl=US&ceid=US%3Aen) |
+| 14 | [MiniMax publishes code for cryptographic attacks it says its internal AI discovered](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYlRMc081VXpzbVdJOWlhMEZwaXJZN0tpYWx3ZDkzeVliYnRWakh3d2NERHJOT0VHNXZKTlF0UE04a1Y1X2ZTakFQNEtyWW5vMXF0bzM4eEhZVW81UmRQU2phRHZoUWhWTTNLRUNrRng3Y1lBX3dWUWVaVVZTdDNreExFMjhWNWFOVGl3NFdpa1pobnpyZEl3azFIeV9jR19uN1dEWk1nejZDeEVBSVJqRGhWaFB6ZWZV?oc=5) | Headline via Google News (Superpower Daily) | Superpower Daily <sub>superpowerdaily.com · via Google News</sub> | 24 Nov 00:43 | 1 | AI, AI media +1 | [Google News](https://news.google.com/search?q=Hailuo+OR+MiniMax+video+OR+Higgsfield+OR+Midjourney&hl=en-US&gl=US&ceid=US%3Aen) |
+| 15 | [MiniMax publishes AI-discovered cryptographic attacks with papers and code](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRXJpeGxEVkRpeWJiTnBlc2pYYm1hX0JvcjBKZjFPWTZMZE5JWi1HVXRoLVI0NDlZVS11WVdrcGZNN3BPV1NBdFBpLXM0Q3NnRDl6U1pQbDJmaklWaUExcmxHNmhDY2laSGFPS1ZWYTZkSWRKVjR6SDFmWjVKSXFURHI0dzlHTk5NMDZPZkRzWDdIcExRN1JwbWRaZzdmQjlXeHZwNUI2b2p6Nm8?oc=5) | Headline via Google News (TechNode) | TechNode <sub>technode.com · via Google News</sub> | 23 Nov 07:52 | 1 | AI, AI media +1 | [Google News](https://news.google.com/search?q=Hailuo+OR+MiniMax+video+OR+Higgsfield+OR+Midjourney&hl=en-US&gl=US&ceid=US%3Aen) |
+| 16 | [Crypto talent will return ‘when AI implodes,’ Arthur Hayes says](https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html) | Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup… | CNBC | 25 Nov 07:09 | 1 | AI, Markets +1 | [CNBC](https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114) |
 
 </details>
 
@@ -92,21 +93,14 @@ Cryptocurrencies, blockchains, DeFi, stablecoins and tokenisation.
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [hasan6969macho-bit/vectorbt-avoria-analysis](https://github.com/hasan6969macho-bit/vectorbt-avoria-analysis) | Vectorbt research code for Avoria analysis, built for reproducible strategy experiments. | 147 | new | — | TypeScript | MIT · 4 d old | 1 | AI, Data +3 | [GitHub](https://github.com/topics/fintech) |
-| 2 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45,873 | +12 today | +0.0% | Rust | Apache-2.0 | 1 | Dev tools, Cloud +5 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 3 | [Stellar-Pathfinder/stellar-pathfinder](https://github.com/Stellar-Pathfinder/stellar-pathfinder) | A corridor-integrity monitor for the Stellar network. | 131 | new | — | Go | Apache-2.0 · 47 d old | 1 | Fintech, Crypto | [GitHub](https://github.com/topics/fintech) |
+| 1 | [Stellar-Pathfinder/stellar-pathfinder](https://github.com/Stellar-Pathfinder/stellar-pathfinder) | A corridor-integrity monitor for the Stellar network. | 130 | new | — | Go | Apache-2.0 · 49 d old | 1 | Fintech, Crypto | [GitHub](https://github.com/topics/fintech) |
+| 2 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | Open source, composable payments platform \| PCI compliant \| SaaS and Self-host options \| Enables… | 45,903 | +18 today | +0.0% | Rust | Apache-2.0 | 1 | Dev tools, Cloud +5 | [GitHub trending](https://github.com/trending/rust?since=daily) |
 
 ## MCP servers
 
 | # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [sap-mcp](https://smithery.ai/server/oobe-protocol/sap-mcp) | Use the SAP MCP Wizard or install the library from the npm registry to automatically create and configure a… | 34,350 uses | unverified · remote | 1 | AI, Agents +3 | [Smithery](https://smithery.ai/) |
-| 2 | [emblem-mcp](https://smithery.ai/server/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | AI, Agents +7 | [Smithery](https://smithery.ai/) |
+| 1 | [sap-mcp](https://registry.smithery.ai/servers/oobe-protocol/sap-mcp) | Use the SAP MCP Wizard or install the library from the npm registry to automatically create and configure a… | 34,350 uses | unverified · remote | 1 | AI, Agents +3 | [Smithery](https://smithery.ai/) |
+| 2 | [emblem-mcp](https://registry.smithery.ai/servers/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | AI, Agents +7 | [Smithery](https://smithery.ai/) |
 
-## Posts
-
-| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [What If Netscape Did SSL the HTTP Way?](https://owl.billpg.com/what-if-netscape-did-ssl-the-http-way/) | #cryptography, #web | 6 score · 14 comments | — | 1 | Security, Web +1 | [Lobsters](https://lobste.rs/) |
-
-<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
