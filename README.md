@@ -1546,6 +1546,7 @@ The maintainer's own projects. **This is not a ranking.** They show up in the ta
 <summary>Every past day</summary>
 
 - [25 November 2026](archive/2026/11/2026-11-25.md)
+- [24 November 2026](archive/2026/11/2026-11-24.md)
 - [23 November 2026](archive/2026/11/2026-11-23.md)
 - [22 November 2026](archive/2026/11/2026-11-22.md)
 - [21 November 2026](archive/2026/11/2026-11-21.md)
