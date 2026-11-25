@@ -2,94 +2,100 @@
 
 Chip design, fabs, GPUs, accelerators and the supply chain.
 
-**23 November 2026** · 08:08 Europe/Berlin (UTC+1) · 60 items · daily snapshot, rebuilt every morning.
+**25 November 2026** · 08:12 Europe/Berlin (UTC+1) · 83 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (29):** AWS Machine Learning blog, Bloomberg, CNBC, Decrypt, EE Times, Financial Times, GitHub, GitHub releases, Google News, Hacker News, Hugging Face, IEEE Spectrum Semiconductors, Last Week in AI, Lobsters, MarketWatch, Mastodon, NVIDIA blog, New York Times, OpenRouter, PyPI, SemiWiki, Sifted, Stack Overflow, TLDR AI, Tech.eu, TechCrunch, Techmeme, The Information, The Rundown AI
+**Sources with items here (32):** AWS Machine Learning blog, BBC, Bloomberg, Bluesky, CNBC, CoinDesk, EE Times, Financial Times, Game Developer, GitHub, GitHub releases, Google News, Hacker News, Hugging Face, IEEE Spectrum Semiconductors, Last Week in AI, Latent Space, Mastodon, NVIDIA blog, New York Times, OpenRouter, PyPI, SemiWiki, TLDR AI, TechCrunch, TechCrunch Enterprise, Techmeme, The Guardian, The Information, The Robot Report, The Rundown AI, Wikipedia
 
-**By type:** [Headlines](#headlines) (51) · [Discussions](#discussions) (2) · [Datasets](#datasets) (1) · [Repositories](#repositories) (1) · [Posts](#posts) (1) · [Packages](#packages) (1) · [Releases](#releases) (1) · [Hosted models](#hosted-models) (1) · [Questions](#questions) (1)
+**By type:** [Headlines](#headlines) (74) · [Topics](#topics) (2) · [Discussions](#discussions) (1) · [Datasets](#datasets) (1) · [Most-read articles](#most-read-articles) (1) · [Repositories](#repositories) (1) · [Packages](#packages) (1) · [Releases](#releases) (1) · [Hosted models](#hosted-models) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [What Happened to Silicon Valley?](https://www.oreilly.com/radar/what-happened-to-silicon-valley/) | Discussions | Link to oreilly.com | 589 pts · 308 comments | 1 | 57 | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Datasets | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | 1,743 likes · 1.8M dl/30d | 1 | 45 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
-| 3 | [bendlang/bend](https://github.com/bendlang/bend) | Repositories | Bend 2: a fast language that blocks AI mistakes via proof. | 25.8k stars · +53 today | 1 | 36 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-| 4 | [NixOS bring-up on an Alibaba RISC-V board](https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board/) | Posts | #hardware, #nix | 34 score · 12 comments | 1 | 36 | [Lobsters](https://lobste.rs/) |
-| 5 | [U.S. Tracked Alice Huang’s Contacts With China Spy Agency During…](https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html) | Headlines | — | The New York Times · 23 Nov 01:05 | 1 | 35 | [Mastodon](https://mastodon.social/explore/links) |
-| 6 | [AMD acquires AI chip startup Taalas for $2.9B to advance AI…](https://tech.eu/2026/11/23/amd-acquires-ai-chip-startup-taalas-for-29b-to-advance-ai-inference-technology/) | Headlines | Taalas, an AI chip startup developingspecialised hardware for artificial intelligence models, has been… | Tech.eu · 23 Nov 06:38 | **2** <sub>Tech.eu, Google News</sub> | 28 | [Tech.eu](https://tech.eu/feed/) |
-| 7 | [torch](https://pypi.org/project/torch/) | Packages | Tensors and Dynamic neural networks in Python with strong GPU acceleration | v2.15.0 | 1 | 15 | [PyPI](https://pypi.org/) |
-| 8 | [New US chip export rules threaten SEA's data center boom, risking…](https://www.techmeme.com/261123/p2#a261123p2) | Headlines | Bloomberg : New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned… | Techmeme · 23 Nov 07:02 | 1 | 15 | [Techmeme](https://www.techmeme.com/feed.xml) |
-| 9 | [Google's Quantum Chip Beats Classical Limits in 'Impossible' Game](https://decrypt.co/383743/googles-quantum-chip-beats-classical-limits-in-impossible-game-tests-105-qubits) | Headlines | Google’s Willow quantum processor beat the classical ceiling in a four-qubit coordination game, revealing a… | Decrypt · 22 Nov 15:01 | 1 | 15 | [Decrypt](https://decrypt.co/feed) |
-| 10 | [Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street…](https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm) | Headlines | Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has… | Decrypt · 21 Nov 15:01 | 1 | 15 | [Decrypt](https://decrypt.co/feed) |
+| 1 | [Show HN: Old Nvidia and ATI tech demos, running again in the browser](https://gpu-demo-gallery.pages.dev/) | Discussions | Link to gpu-demo-gallery.pages.dev | 50 pts · 9 comments | 1 | 54 | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Nvidia hiring first compliance officer](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/4c6959ba363f) | Topics | Jensen Huang says the chipmaker never had such a role, amid an SEC accounting probe. | — | 1 | 52 | [Bluesky](https://bsky.app/) |
+| 3 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Datasets | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | 1,785 likes · 1.7M dl/30d | 1 | 40 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 4 | [Nvidia](https://en.wikipedia.org/wiki/Nvidia) | Most-read articles | — | 89.5k views | 1 | 40 | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
+| 5 | [Trump made up to $15m on Nvidia stock after Huang’s return](https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market) | Headlines | — | The Guardian · 24 Nov 16:23 | 1 | 40 | [Mastodon](https://mastodon.social/explore/links) |
+| 6 | [bendlang/bend](https://github.com/bendlang/bend) | Repositories | Bend 2: a fast language that blocks AI mistakes via proof. | 25.9k stars · +33 today | 1 | 36 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 7 | [Trump made up to $15mn on Nvidia shares after Huang’s return](https://www.ft.com/content/67b0a070-c2a9-4229-885a-383cca657763) | Headlines | — | Financial Times · 23 Nov 23:21 | 1 | 30 | [Mastodon](https://mastodon.social/explore/links) |
+| 8 | [Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive](https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive) | Headlines | Derive’s new options on Nvidia, Anthropic, stock indices and oil bring hedging tools to onchain RWA markets. | CoinDesk · 25 Nov 05:57 | **2** <sub>CoinDesk, Google News</sub> | 28 | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 9 | [AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze](https://news.google.com/rss/articles/CBMieEFVX3lxTE56eC1rNEgtamFWQ0kzWWw0bVZObjZqMDdkZE9XOU91aVdST0RtYk91U0EtNEFYWEo0RWFDVklpaTUtZjFVc2FyM2paTk5nMWhDOHFBRkNHOWdVdmpiZTBKVkJoWFlSN1NWTUVPeEhQcm1wbXdveGtrWNIBfkFVX3lxTE9DVkFsbFdUOEk3YmRtWHR2bmJYRXFCbXNpMHZBeHd2X21MRFFBRGxXdXdOT05wRm9ISWhkRzZSVDI4Q0pSWEJ3MlZDTS1saXNpVm8tU3NIVnIzWkRxcWdGZE5SbGdOVEVaZURnNnRIcGRKTERfMllaaW9xQTBxUQ?oc=5) | Headlines | Headline via Google News (CNBC) | CNBC · 25 Nov 07:29 | **2** <sub>Google News, CNBC</sub> | 28 | [Google News](https://news.google.com/search?q=Nvidia+AI&hl=en-US&gl=US&ceid=US%3Aen) |
+| 10 | [Trump floats Jensen Huang pardon](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/716f7ca460d4) | Topics | Trump told the New York Post a pardon for the Nvidia CEO is "always an option" before his congressional… | — | 1 | 20 | [Bluesky](https://bsky.app/) |
 
 ## Headlines
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair](https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html) | — | The New York Times | 23 Nov 01:05 | 1 | Chips | [Mastodon](https://mastodon.social/explore/links) |
-| 2 | [AMD acquires AI chip startup Taalas for $2.9B to advance AI inference technology](https://tech.eu/2026/11/23/amd-acquires-ai-chip-startup-taalas-for-29b-to-advance-ai-inference-technology/) | Taalas, an AI chip startup developingspecialised hardware for artificial intelligence models, has been… | Tech.eu | 23 Nov 06:38 | **2** <sub>Tech.eu, Google News</sub> | AI, Markets +2 | [Tech.eu](https://tech.eu/feed/) |
-| 3 | [New US chip export rules threaten SEA's data center boom, risking incomplete and…](https://www.techmeme.com/261123/p2#a261123p2) | Bloomberg : New US chip export rules threaten SEA's data center boom, risking incomplete and abandoned… | Techmeme | 23 Nov 07:02 | 1 | Cloud, Chips | [Techmeme](https://www.techmeme.com/feed.xml) |
-| 4 | [Google's Quantum Chip Beats Classical Limits in 'Impossible' Game](https://decrypt.co/383743/googles-quantum-chip-beats-classical-limits-in-impossible-game-tests-105-qubits) | Google’s Willow quantum processor beat the classical ceiling in a four-qubit coordination game, revealing a… | Decrypt | 22 Nov 15:01 | 1 | Crypto, Robotics +1 | [Decrypt](https://decrypt.co/feed) |
-| 5 | [Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the…](https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm) | Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has… | Decrypt | 21 Nov 15:01 | 1 | AI, Markets +2 | [Decrypt](https://decrypt.co/feed) |
-| 6 | [Z2RAM Claims SRAM Memory Speeds at Much Greater Density](https://spectrum.ieee.org/sram-memory-z2ram) | Pat Gelsinger is familiar with the graveyard of failed memory technologies. | IEEE Spectrum Semiconductors | 21 Nov 15:00 | 1 | Chips | [IEEE Spectrum Semiconductors](https://spectrum.ieee.org/feeds/topic/semiconductors.rss) |
-| 7 | [Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement](https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaign=series1) | In advanced semiconductor manufacturing, small defects can have a large effect on yield. | IEEE Spectrum Semiconductors | 16 Nov 12:00 | 1 | Markets, Health +2 | [IEEE Spectrum Semiconductors](https://spectrum.ieee.org/feeds/topic/semiconductors.rss) |
-| 8 | [Pat Gelsinger Goes Hunting for Europe’s Unbuilt Tech Companies](https://www.eetimes.com/pat-gelsinger-goes-hunting-for-europes-unbuilt-tech-companies/) | Playground Global is searching CEA laboratories for technologies that could create new markets—but global… | EE Times | 20 Nov 23:23 | 1 | Chips | [EE Times](https://www.eetimes.com/feed/) |
-| 9 | [Palo Alto Networks Expands into Enterprise AI with $4.5B Deal](https://www.eetimes.com/palo-alto-networks-expands-into-enterprise-ai-with-4-5b-deal/) | Enterprise security outfit Palo Alto Networks snaps up a startup with a platform for post-training and… | EE Times | 20 Nov 16:37 | 1 | AI, Security +2 | [EE Times](https://www.eetimes.com/feed/) |
-| 10 | [Anthropic’s IPO and the B2D Strategy](https://www.eetimes.com/anthropic-ipo-and-the-b2d-strategy/) | From Nvidia’s CUDA to Anthropic's Claude Code, developer adoption can drive enterprise sales, but hardware… | EE Times | 20 Nov 10:43 | 1 | AI, Agents +4 | [EE Times](https://www.eetimes.com/feed/) |
+| 1 | [Trump made up to $15m on Nvidia stock after Huang’s return](https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market) | — | The Guardian | 24 Nov 16:23 | 1 | Markets, Chips | [Mastodon](https://mastodon.social/explore/links) |
+| 2 | [Trump made up to $15mn on Nvidia shares after Huang’s return](https://www.ft.com/content/67b0a070-c2a9-4229-885a-383cca657763) | — | Financial Times | 23 Nov 23:21 | 1 | Chips | [Mastodon](https://mastodon.social/explore/links) |
+| 3 | [Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive](https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive) | Derive’s new options on Nvidia, Anthropic, stock indices and oil bring hedging tools to onchain RWA markets. | CoinDesk | 25 Nov 05:57 | **2** <sub>CoinDesk, Google News</sub> | AI, Markets +3 | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 4 | [AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze](https://news.google.com/rss/articles/CBMieEFVX3lxTE56eC1rNEgtamFWQ0kzWWw0bVZObjZqMDdkZE9XOU91aVdST0RtYk91U0EtNEFYWEo0RWFDVklpaTUtZjFVc2FyM2paTk5nMWhDOHFBRkNHOWdVdmpiZTBKVkJoWFlSN1NWTUVPeEhQcm1wbXdveGtrWNIBfkFVX3lxTE9DVkFsbFdUOEk3YmRtWHR2bmJYRXFCbXNpMHZBeHd2X21MRFFBRGxXdXdOT05wRm9ISWhkRzZSVDI4Q0pSWEJ3MlZDTS1saXNpVm8tU3NIVnIzWkRxcWdGZE5SbGdOVEVaZURnNnRIcGRKTERfMllaaW9xQTBxUQ?oc=5) | Headline via Google News (CNBC) | CNBC <sub>cnbc.com · via Google News</sub> | 25 Nov 07:29 | **2** <sub>Google News, CNBC</sub> | AI, Markets +1 | [Google News](https://news.google.com/search?q=Nvidia+AI&hl=en-US&gl=US&ceid=US%3Aen) |
+| 5 | [Trump's tech allies reasserted their power in DC by lobbying the president to defy US…](https://www.techmeme.com/261125/p3#a261125p3) | Financial Times : Trump's tech allies reasserted their power in DC by lobbying the president to defy US… | Techmeme | 25 Nov 07:05 | 1 | Fintech, Chips | [Techmeme](https://www.techmeme.com/feed.xml) |
+| 6 | [Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion](https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/) | Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed… | TechCrunch | 25 Nov 01:12 | 1 | AI, Chips | [TechCrunch](https://techcrunch.com/feed/) |
+| 7 | [In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy](https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/) | The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead… | TechCrunch | 24 Nov 22:48 | 1 | AI, Chips | [TechCrunch](https://techcrunch.com/feed/) |
+| 8 | [Nvidia drama has women talking. What does Huang's reinstatement mean?](https://eu.usatoday.com/story/money/careers/work-relationships/2026/11/23/nvidia-drama-women-workforce/92925890007/) | — | USA TODAY | 23 Nov 21:07 | 1 | Chips | [Mastodon](https://mastodon.social/explore/links) |
+| 9 | [Trump says he's willing to give Nvidia's Huang a pardon, doesn't think he needs one](https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one) | President Donald Trump said in an interview with the New York Post that he's fine clearing Nvidia's CEO from… | CoinDesk | 25 Nov 04:35 | 1 | Crypto, Chips | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
+| 10 | [NVIDIA reinstates Jensen Huang after 11-day absence](https://www.therobotreport.com/nvidia-reinstates-jensen-huang-after-11-day-absence/) | The NVIDIA board reversed its decision following discussions with Huang and senior U.S. | The Robot Report | 23 Nov 15:20 | 1 | Robotics, Chips +1 | [The Robot Report](https://www.therobotreport.com/feed/) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Geehy Launches G32R502 1kW Bidirectional Inverter Solution](https://www.eetimes.com/geehy-launches-the-g32r502-1kw-fully-digital-bidirectional-energy-storage-inverter-solution/) | Explore Geehy’s G32R502 1kW bidirectional energy storage inverter reference design, featuring digital… | EE Times | 20 Nov 08:00 | 1 | Chips, Energy | [EE Times](https://www.eetimes.com/feed/) |
-| 12 | [Memory R&D Is a High-Stakes Game](https://www.eetimes.com/memory-rd-is-a-high-stakes-game/) | AI is driving memory makers’ research agenda, while partnerships help share the cost and risk of developing… | EE Times | 19 Nov 23:21 | 1 | AI, Chips | [EE Times](https://www.eetimes.com/feed/) |
-| 13 | [Gartner Warns of Risks Behind Sovereign Tech Claims](https://www.eetimes.com/gartner-warns-of-risks-behind-sovereign-tech-claims/) | Gartner research predicts that digital sovereignty will become a core component of national security… | EE Times | 19 Nov 17:30 | 1 | Security, Chips | [EE Times](https://www.eetimes.com/feed/) |
-| 14 | [CEO Interview with Manu Gulati of Velaura AI](https://semiwiki.com/ceo-interviews/376481-ceo-interview-with-manu-gulati-of-velaura-ai/) | Manu Gulati serves as Co-founder & Chief Development Officer at Velaura AI. | SemiWiki | 22 Nov 19:00 | 1 | AI, Chips | [SemiWiki](https://semiwiki.com/feed/) |
-| 15 | [CEO Interview with Tobias Pohl of CELUS](https://semiwiki.com/ceo-interviews/376273-ceo-interview-with-tobias-pohl-of-celus/) | Tobias Pohl is co-founder and CEO of CELUS, a Munich-based company that builds an AI-powered electronics… | SemiWiki | 22 Nov 17:00 | 1 | AI, Chips | [SemiWiki](https://semiwiki.com/feed/) |
-| 16 | [CEO Interview with Dr. Sameer Pawanekar of Ramtera](https://semiwiki.com/ceo-interviews/376107-ceo-interview-with-dr-sameer-pawanekar-of-ramtera/) | Dr. Sameer Pawanekar is the founder and CEO of Ramtera Inc., an EDA company building physical design and… | SemiWiki | 22 Nov 15:00 | 1 | Chips | [SemiWiki](https://semiwiki.com/feed/) |
-| 17 | [TSMC’s Supplier Awards Put Manufacturing Execution in Focus](https://semiwiki.com/semiconductor-manufacturers/tsmc/376475-tsmcs-supplier-awards-put-manufacturing-execution-in-focus/) | “Amid macroeconomic uncertainties, TSMC’s confidence in continuous investment and growth stems from the deep… | SemiWiki | 20 Nov 17:00 | 1 | Chips | [SemiWiki](https://semiwiki.com/feed/) |
-| 18 | [Why Intel’s EMIB Matters for Microsoft Azure](https://semiwiki.com/semiconductor-manufacturers/intel/376571-why-intels-emib-matters-for-microsoft-azure/) | Microsoft and Intel are expanding their decades-long partnership, and the most consequential part of the… | SemiWiki | 20 Nov 15:00 | 1 | Cloud, Chips | [SemiWiki](https://semiwiki.com/feed/) |
-| 19 | [Backed by Nvidia and a16z, Black Forest Labs sets its sights on world models](https://sifted.eu/articles/black-forest-labs-nvidia-a16z-andreas-blattmann-interview/) | — | Sifted | 23 Nov 06:00 | 1 | AI media, Chips | [Sifted](https://sifted.eu/feed) |
-| 20 | [NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs](https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/) | NVIDIA and Microsoft are extending their full-stack collaboration to help organizations build, customize and… | NVIDIA blog | 19 Nov 21:00 | 1 | AI, Cloud +1 | [NVIDIA blog](https://blogs.nvidia.com/feed/) |
+| 11 | [Z2RAM Claims SRAM Memory Speeds at Much Greater Density](https://spectrum.ieee.org/sram-memory-z2ram) | Pat Gelsinger is familiar with the graveyard of failed memory technologies. | IEEE Spectrum Semiconductors | 21 Nov 15:00 | 1 | Chips | [IEEE Spectrum Semiconductors](https://spectrum.ieee.org/feeds/topic/semiconductors.rss) |
+| 12 | [From Precision to Autonomous Agriculture: The Role of Edge AI and Robotics](https://www.eetimes.com/from-precision-to-autonomous-agriculture-the-role-of-edge-ai-and-robotics/) | Edge AI and robotics bring greater precision and autonomy to agricultural machinery, from targeted spraying… | EE Times | 24 Nov 17:16 | 1 | AI, Robotics +1 | [EE Times](https://www.eetimes.com/feed/) |
+| 13 | [Vehicle-to-Grid: Great Idea or Unrealistic Dream? (Part 2)](https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream-part-2/) | Vehicle-to-grid technology promises grid benefits but raises concerns over battery life, charging access… | EE Times | 24 Nov 12:53 | 1 | Chips | [EE Times](https://www.eetimes.com/feed/) |
+| 14 | [Vehicle-to-Grid: Great Idea or Unrealistic Dream?](https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream/) | Vehicle-to-grid sounds like a partial solution for enhancing the grid, but the reality of the human factor… | EE Times | 24 Nov 09:40 | 1 | Chips | [EE Times](https://www.eetimes.com/feed/) |
+| 15 | [NSING Featured CRA, AI Robotics, Motor Control and Digital Energy at electronica 2026](https://www.eetimes.com/nsing-featured-cra-ai-robotics-motor-control-and-digital-energy-at-electronica-2026/) | At electronica 2026 in Munich, NSING exhibited 35 solutions built on N32‑series MCUs, N32WB BLE SoCs and… | EE Times | 24 Nov 08:41 | 1 | AI, Robotics +2 | [EE Times](https://www.eetimes.com/feed/) |
+| 16 | [Nvidia Board Reinstates Jensen Huang as CEO](https://www.eetimes.com/nvidia-board-reinstates-jensen-huang-as-ceo/) | Nvidia goes back to business as usual following Huang's resignation and reinstatement after a week. | EE Times | 23 Nov 19:17 | 1 | Chips | [EE Times](https://www.eetimes.com/feed/) |
+| 17 | [The Sovereign AI Paradox: Who Controls the Compute?](https://www.eetimes.com/the-sovereign-ai-paradox-who-controls-the-compute/) | U.S. restrictions on overseas AI infrastructure could accelerate sovereign computing and weaken American… | EE Times | 23 Nov 17:08 | 1 | AI, Cloud +1 | [EE Times](https://www.eetimes.com/feed/) |
+| 18 | [Moores Lab AI’s Benchmark Push: Measuring Whether AI Can Actually Verify Chips](https://semiwiki.com/eda/moores-lab-ai/375754-moores-lab-ais-benchmark-push-measuring-whether-ai-can-actually-verify-chips/) | AI tools can generate hardware code quickly. | SemiWiki | 24 Nov 19:00 | 1 | AI, Robotics +1 | [SemiWiki](https://semiwiki.com/feed/) |
+| 19 | [Why Siemens’ Breker Deal Matters for the Next Generation of AI Chips](https://semiwiki.com/eda/376542-why-siemens-breker-deal-matters-for-the-next-generation-of-ai-chips/) | A chip can pass tests for every major component and still run into trouble when those components work… | SemiWiki | 24 Nov 17:00 | 1 | AI, Chips | [SemiWiki](https://semiwiki.com/feed/) |
+| 20 | [Why Peak FLOPS is the Wrong Yardstick for Inference Hardware](https://semiwiki.com/semiconductor-manufacturers/vsora/376702-why-peak-flops-is-the-wrong-yardstick-for-inference-hardware/) | For a decade we have ranked AI processors by peak FLOPS. | SemiWiki | 24 Nov 15:00 | 1 | AI, Robotics +1 | [SemiWiki](https://semiwiki.com/feed/) |
 
 </details>
 
-<sub>31 more in today's archive.</sub>
+<sub>54 more in today's archive.</sub>
+
+## Topics
+
+| # | Topic | Context | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [Nvidia hiring first compliance officer](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/4c6959ba363f) | Jensen Huang says the chipmaker never had such a role, amid an SEC accounting probe. | 1 | Chips | [Bluesky](https://bsky.app/) |
+| 2 | [Trump floats Jensen Huang pardon](https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/716f7ca460d4) | Trump told the New York Post a pardon for the Nvidia CEO is "always an option" before his congressional… | 1 | Chips | [Bluesky](https://bsky.app/) |
 
 ## Discussions
 
 | # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [What Happened to Silicon Valley?](https://www.oreilly.com/radar/what-happened-to-silicon-valley/) | Link to oreilly.com | 589 | 308 | 50 pts/h | [open](https://news.ycombinator.com/item?id=50602947) | 1 | Chips | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Show HN: Rmux – A lightweight GPU rendered terminal workspace](https://rmux.app) | Link to rmux.app | 6 | 0 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50599552) | 1 | Dev tools, Chips | [Hacker News](https://news.ycombinator.com/show) |
+| 1 | [Show HN: Old Nvidia and ATI tech demos, running again in the browser](https://gpu-demo-gallery.pages.dev/) | Link to gpu-demo-gallery.pages.dev | 50 | 9 | 19 pts/h | [open](https://news.ycombinator.com/item?id=50638503) | 1 | Web, Chips | [Hacker News](https://news.ycombinator.com/) |
 
 ## Datasets
 
 | # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | — | 1,743 | 1.8M | cc-by-4.0 | 1 | AI, Dev tools +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 1 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | — | 1,785 | 1.7M | cc-by-4.0 | 1 | AI, Dev tools +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+
+## Most-read articles
+
+| # | Article | Views | Rank | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Nvidia](https://en.wikipedia.org/wiki/Nvidia) | 89,488 | 13 | 1 | Chips | [Wikipedia](https://en.wikipedia.org/wiki/Special:TopViews) |
 
 ## Repositories
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [bendlang/bend](https://github.com/bendlang/bend) | Bend 2: a fast language that blocks AI mistakes via proof. | 25,790 | +53 today | +0.2% | TypeScript | Apache-2.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
-
-## Posts
-
-| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [NixOS bring-up on an Alibaba RISC-V board](https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board/) | #hardware, #nix | 34 score · 12 comments | — | 1 | Robotics, Chips | [Lobsters](https://lobste.rs/) |
+| 1 | [bendlang/bend](https://github.com/bendlang/bend) | Bend 2: a fast language that blocks AI mistakes via proof. | 25,857 | +33 today | +0.1% | TypeScript | Apache-2.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
 
 ## Packages
 
 | # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [torch](https://pypi.org/project/torch/) | Tensors and Dynamic neural networks in Python with strong GPU acceleration | PyPI | `2.15.0` | v2.15.0 | 28 Oct | Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND ISC AND MIT AND Zlib · stable | 1 | AI, Dev tools +1 | [PyPI](https://pypi.org/) |
+| 1 | [torch](https://pypi.org/project/torch/) | Tensors and Dynamic neural networks in Python with strong GPU acceleration | PyPI | `2.15.0` | 12.6M dl/week | 28 Oct | Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND ISC AND MIT AND Zlib · stable | 1 | AI, Dev tools +1 | [PyPI](https://pypi.org/) |
 
 ## Releases
 
@@ -103,10 +109,4 @@ Chip design, fabs, GPUs, accelerators and the supply chain.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [NVIDIA: Nemotron 3.5 Super VL](https://openrouter.ai/nvidia/nemotron-3.5-super-vl) | NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active… | 0.15 | 0.47 | 1M | 15 Oct | 1 | AI, Chips | [OpenRouter](https://openrouter.ai/models) |
 
-## Questions
-
-| # | Question | Tags | Score | Answers | Views | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Difficult GPU Installation](https://stackoverflow.com/questions/80018179/difficult-gpu-installation) | #gpu, #hardware | -5 | 0 | 69 | 1 | Dev tools, Robotics +1 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-
-<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
