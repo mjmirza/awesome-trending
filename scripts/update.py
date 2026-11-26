@@ -328,6 +328,42 @@ def title_key(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (title or "").lower()).strip()
 
 
+def _same_headline(title: str, text: str) -> bool:
+    """True when text is the headline, aside from a trailing outlet name."""
+    head, start = title_key(title), title_key(text)
+    if len(start) < 20 or len(head) < 20:
+        return bool(head) and head == start
+    n = min(len(head), len(start), 80)
+    if head[:n] != start[:n]:
+        return False
+    short, long_ = sorted((len(head), len(start)))
+    return short >= 40 or short / long_ >= 0.55
+
+
+def headline_dek(title: str, summary: str) -> str | None:
+    """Dek from "Outlet : <headline> — <dek> — <later blurb>", or None.
+
+    Techmeme repeats the headline and puts the useful sentence after an
+    em dash. A summary that is not in that form returns None so it is
+    shown as written. An em dash with no spaces (scrambling—and) is not a split.
+    """
+    text = re.sub(r"\s+", " ", summary or "").strip()
+    if not text:
+        return None
+    m = re.match(r"([^:]{2,80}?) : (.+)$", text)
+    body = m.group(2).strip() if m else text
+    parts = [p.strip() for p in re.split(r"\s+—\s+", body)]
+    if len(parts) < 2 or not parts[1] or not _same_headline(title, parts[0]):
+        return None
+    return parts[1]
+
+
+def summary_text(title: str, summary: str) -> str:
+    """Summary to store. A repeated headline is replaced by its dek."""
+    dek = headline_dek(title, summary)
+    return dek if dek is not None else (summary or "")
+
+
 def within(dt: datetime | None, hours: float, ref: datetime) -> bool:
     return bool(dt) and (ref - dt) <= timedelta(hours=hours)
 
@@ -920,7 +956,8 @@ def _feed_source(key, name, url, kind, hours, limit, niche=None):
         recent = [e for e in entries if e["published"] and within(e["published"], hours, ref)]
         recent.sort(key=lambda e: e["published"], reverse=True)
         out = [item(kind, e["title"], e["url"], outlet=name.split(" · ")[0], published=e["published"],
-                    desc=clip(e["summary"], 140), author=e["author"], industry=niche) for e in recent[:limit]]
+                    desc=clip(summary_text(e["title"], e["summary"]), 140), author=e["author"],
+                    industry=niche) for e in recent[:limit]]
         return out, f"feed, items from the last {hours} h ({len(recent)} found)"
     return _src
 
@@ -2504,7 +2541,7 @@ def why(key: str, it: dict) -> str:
         return "Served from the jsDelivr CDN"
     if k in ("question", "post"):
         return ", ".join(f"#{t}" for t in (it.get("tags") or [])[:3]) or "—"
-    return first_sentence(it.get("desc") or "", 110) or "—"
+    return first_sentence(summary_text(it.get("title"), it.get("desc") or ""), 110) or "—"
 
 
 def momentum(key: str, it: dict) -> str:
@@ -3487,9 +3524,15 @@ def cluster_stories(results) -> list[dict]:
 
 
 def story_why(with_desc) -> str:
-    """First summary sentence that adds something to its own headline (Techmeme puts "Outlet : headline" there)."""
+    """First summary sentence that adds something the headline did not already say.
+
+    Techmeme writes "Outlet : <headline> — <dek>". The dek is kept; a summary
+    that only repeats the headline is skipped.
+    """
     for _k, it in with_desc:
-        text = re.sub(r"\s+", " ", it["desc"]).strip()
+        text = re.sub(r"\s+", " ", summary_text(it.get("title"), it.get("desc") or "")).strip()
+        if not text:
+            continue
         m = re.match(r"([^:]{2,60}?) : (.+)$", text)
         body = m.group(2) if m else text
         head, start = title_key(it.get("title")), title_key(body)
@@ -3998,7 +4041,8 @@ def render_methodology() -> str:
           "- **Momentum (repos):** stars gained ÷ stars before the gain. **Velocity (HN):** points ÷ hours since posting.",
           "- **Exploited:** the CVE is in the CISA Known Exploited Vulnerabilities catalogue (the whole catalogue is checked).",
           "- **Downloads:** the period is always written next to the number (30 d for Hugging Face, week for npm and PyPI, 90 d for crates.io).",
-          "- **Why it matters** is the item's own description, abstract or summary, cut to its first sentence. Where a source "
+          "- **Why it matters** is the item's own description, abstract or summary, cut to its first sentence. A summary "
+          "that repeats the headline and then a dek after an em dash (as Techmeme writes it) uses the dek. Where a source "
           "has no description (Hacker News), the cell names the linked site instead.", "",
           '<a id="industries"></a>', "", "## Industries", "",
           "An item can belong to several industries. It is placed by:", "",
@@ -4041,7 +4085,8 @@ def render_methodology() -> str:
           "Stories are ranked by the number of distinct outlets (Google News results "
           "count the original outlet, not Google), then distinct platforms, then recency. Only stories carried by two "
           "or more outlets are shown. \"Why it matters\" is the first sentence of a summary written by one of the "
-          "outlets; Google News results carry no summary.", "",
+          "outlets. When that summary repeats the headline and then a dek after an em dash, the dek is used. "
+          "Google News results carry no summary.", "",
           "**Google News links** open through a Google redirect to the original article. Resolving the redirect needs "
           "undocumented calls, so the link is kept as Google gives it and the publisher's own domain (from the feed's "
           "`<source url>`) is shown next to the outlet name. In a story row, outlets with their own feed are listed and "

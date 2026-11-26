@@ -62,7 +62,7 @@ Industry tables mix types, so they use one shared layout: item, type, why it mat
 - **Momentum (repos):** stars gained ÷ stars before the gain. **Velocity (HN):** points ÷ hours since posting.
 - **Exploited:** the CVE is in the CISA Known Exploited Vulnerabilities catalogue (the whole catalogue is checked).
 - **Downloads:** the period is always written next to the number (30 d for Hugging Face, week for npm and PyPI, 90 d for crates.io).
-- **Why it matters** is the item's own description, abstract or summary, cut to its first sentence. Where a source has no description (Hacker News), the cell names the linked site instead.
+- **Why it matters** is the item's own description, abstract or summary, cut to its first sentence. A summary that repeats the headline and then a dek after an em dash (as Techmeme writes it) uses the dek. Where a source has no description (Hacker News), the cell names the linked site instead.
 
 <a id="industries"></a>
 
@@ -218,7 +218,7 @@ An item can belong to several industries. It is placed by:
 
 ## What's shaking the market
 
-Every headline, lab post and Hacker News front-page story from the last 36 hours is a candidate. Each headline is cut into its distinctive words (common words, and words found in more than 6% of all candidate headlines, are ignored; plural and past-tense endings are dropped, so "hacked" matches "hack"). A headline joins a story when it shares at least two distinctive words with the story's longest headline and those shared words are at least 50% of the shorter headline's distinctive words. A second pass merges two stories whose recurring words overlap (three shared words, or two when one of them is rare), so the same event told by different outlets ends up as one row. Stories are ranked by the number of distinct outlets (Google News results count the original outlet, not Google), then distinct platforms, then recency. Only stories carried by two or more outlets are shown. "Why it matters" is the first sentence of a summary written by one of the outlets; Google News results carry no summary.
+Every headline, lab post and Hacker News front-page story from the last 36 hours is a candidate. Each headline is cut into its distinctive words (common words, and words found in more than 6% of all candidate headlines, are ignored; plural and past-tense endings are dropped, so "hacked" matches "hack"). A headline joins a story when it shares at least two distinctive words with the story's longest headline and those shared words are at least 50% of the shorter headline's distinctive words. A second pass merges two stories whose recurring words overlap (three shared words, or two when one of them is rare), so the same event told by different outlets ends up as one row. Stories are ranked by the number of distinct outlets (Google News results count the original outlet, not Google), then distinct platforms, then recency. Only stories carried by two or more outlets are shown. "Why it matters" is the first sentence of a summary written by one of the outlets. When that summary repeats the headline and then a dek after an em dash, the dek is used. Google News results carry no summary.
 
 **Google News links** open through a Google redirect to the original article. Resolving the redirect needs undocumented calls, so the link is kept as Google gives it and the publisher's own domain (from the feed's `<source url>`) is shown next to the outlet name. In a story row, outlets with their own feed are listed and linked before Google News results.
 

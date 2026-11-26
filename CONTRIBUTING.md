@@ -14,7 +14,7 @@ This repository is a daily directory, not a dump of everything on the internet. 
 ## Rules every page follows
 
 - Numbers come from the source named in the row. A dash means the source gave no number. Nothing is estimated or invented.
-- "Why it matters" is the first sentence of the item's own description, abstract or summary, shortened. It is never written by hand.
+- "Why it matters" is the first sentence of the item's own description, abstract or summary, shortened. When that summary repeats the headline and then a dek after an em dash, the dek is used. It is never written by hand.
 - Each item gets one score from 0 to 100. The formula and every weight are in [docs/methodology.md](docs/methodology.md#score).
 - An item listed by more than one source appears once per table, with **Seen on** counting the distinct platforms.
 - The layout stays the same every day: today in 30 seconds, what's shaking the market (with the markets strip), since yesterday, top signals, this month, this week, this year, AI labs, AI media, the industry map, industry sections, source sections, status, the maintainer's picks, the archive.
