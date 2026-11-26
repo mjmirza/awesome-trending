@@ -1067,6 +1067,7 @@ def src_releases():
 # ---- Security ---------------------------------------------------------------------------
 
 KEV_ALL: set[str] = set()
+KEV_RECENT: dict = {}
 
 
 @source("kev", "CISA KEV · known exploited vulnerabilities (last 14 days)",
@@ -1091,7 +1092,34 @@ def src_kev():
             desc=v.get("shortDescription") or "",
         ))
     out.sort(key=lambda x: x["added"], reverse=True)
-    return out[:20], f"catalog version {d.get('catalogVersion')}, {fmt_int(d.get('count'))} entries in total"
+    KEV_RECENT.clear()
+    KEV_RECENT["total"] = len(out)
+    by_day: dict[str, int] = {}
+    for x in out:
+        by_day[x["added"]] = by_day.get(x["added"], 0) + 1
+    KEV_RECENT["by_day"] = by_day
+    note = f"catalog version {d.get('catalogVersion')}, {fmt_int(d.get('count'))} entries in total"
+    if len(out) > 20:
+        note += f"; {len(out)} added in the last 14 days, newest 20 listed"
+    return out[:20], note
+
+
+def kev_line(kev: list[dict]) -> str:
+    """30-second line: distinct products of the newest day (a product with several CVEs shows once, with its count),
+    and the true 14-day total even though only the newest 20 entries are listed."""
+    day = kev[0]["added"]
+    recent = [k for k in kev if k["added"] == day]
+    counts: dict[str, int] = {}
+    for k in recent:
+        name = re.sub(r"\s*\([^)]*\)", "", k.get("product") or k.get("vendor") or "").strip() or "unnamed product"
+        counts[name] = counts.get(name, 0) + 1
+    shown = sorted(counts.items(), key=lambda kv: -kv[1])[:4]
+    names = ", ".join(md_escape(n) + (f" ({c} CVEs)" if c > 1 else "") for n, c in shown)
+    if len(counts) > 4:
+        names += f" +{len(counts) - 4} more"
+    n_day = KEV_RECENT.get("by_day", {}).get(day, len(recent))
+    total = KEV_RECENT.get("total", len(kev))
+    return f"**Exploited in the wild:** CISA added {n_day} on {day} ({names}); {total} in 14 days."
 
 
 def _nvd_score(metrics: dict) -> tuple[float | None, str, str]:
@@ -2952,9 +2980,7 @@ def render_today(results, ents, tech_x) -> list[str]:
         b.append(f"**Newest hosted model:** {ttl(lm[0], 50)} — {key_metric('openrouter', lm[0])}.")
     kev = ok("kev")
     if kev:
-        recent = [k for k in kev if k["added"] == kev[0]["added"]]
-        names = ", ".join(md_escape(re.sub(r"\s*\([^)]*\)", "", k["product"])) for k in recent[:4])
-        b.append(f"**Exploited in the wild:** CISA added {len(recent)} on {kev[0]['added']} ({names}); {len(kev)} in 14 days.")
+        b.append(kev_line(kev))
     coins = ok("coingecko_markets")
     if coins:
         c = coins[0]
@@ -3492,6 +3518,8 @@ def story_why(with_desc) -> str:
         text = re.sub(r"\s+", " ", it["desc"]).strip()
         m = re.match(r"([^:]{2,60}?) : (.+)$", text)
         body = m.group(2) if m else text
+        if re.match(r"(PLUS|ALSO|PLUS ALSO)\s*:", body, re.I):
+            continue
         head, start = title_key(it.get("title")), title_key(body)
         if head and start and (start.startswith(head[:60]) or head.startswith(start[:60])):
             continue
