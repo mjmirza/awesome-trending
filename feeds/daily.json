@@ -1,223 +1,163 @@
 {
- "date": "2026-11-25",
- "fetched_at": "2026-11-25T07:12:07Z",
+ "date": "2026-11-26",
+ "fetched_at": "2026-11-26T07:08:39Z",
  "timezone_shown": "Europe/Berlin",
  "home": "https://github.com/mjmirza/awesome-trending",
  "methodology": "https://github.com/mjmirza/awesome-trending/blob/main/docs/methodology.md",
- "sources_ok": 178,
+ "sources_ok": 177,
  "sources_total": 179,
  "stories": [
   {
-   "title": "Trump's tech allies reasserted their power in DC by lobbying the president to defy US intelligence agencies and pressure Nvidia to reinstate Jensen Huang as CEO (Financial Times)",
-   "url": "https://www.techmeme.com/261125/p3#a261125p3",
-   "why": "Financial Times : Trump's tech allies reasserted their power in DC by lobbying the president to defy US intelligence agencies and pressure…",
-   "outlets": [
-    "Techmeme",
-    "New York Times",
-    "Game Developer",
-    "TechCrunch",
-    "The Information",
-    "Financial Times",
-    "The Rundown AI",
-    "CNBC"
-   ],
-   "industries": [
-    "fintech",
-    "semiconductors",
-    "gaming-xr",
-    "ai-llms",
-    "web-frontend"
-   ],
-   "latest": "2026-11-25T06:05:01Z"
-  },
-  {
-   "title": "Anthropic’s stock just broke below its IPO price for the first time",
-   "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668?mod=mw_rss_topstories",
-   "why": "Shares are trading below their IPO price of $83, less than a week after their debut on the Nasdaq.",
-   "outlets": [
-    "MarketWatch",
-    "TechCrunch",
-    "The Information",
-    "TradingView",
-    "The Economist",
-    "Trefis"
-   ],
-   "industries": [
-    "ai-llms",
-    "markets-economy",
-    "fintech"
-   ],
-   "latest": "2026-11-25T06:41:13Z"
-  },
-  {
-   "title": "DeepSeek founder now worth US$55bil",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ1RldlFYcnl6R25xWUk0SEVzVTRPRlhxWnBRbDFudXRtZWlIWWZOdl9kX2ZMd3NYYThVT1kxaENqelBQUkRXRkNHSkNpd21GNlRlalFwX3d5UDZOUFVHcjFZRlRXUlJaajRrS2c0NWdGZFYzWExCMmt3VUIzQzRQQnZnc1Bmemp4SHVEaThn?oc=5",
-   "why": "",
-   "outlets": [
-    "Business Today",
-    "VnExpress International",
-    "KLSE Screener",
-    "The Star",
-    "FlipItMoney",
-    "India Today"
-   ],
-   "industries": [
-    "ai-llms",
-    "media-creator"
-   ],
-   "latest": "2026-11-25T06:53:25Z"
-  },
-  {
-   "title": "Gary Vaynerchuk launches a social channel run by his AI avatar built with HeyGen",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE53Z1N1WFYzUWhLVWxCZ2ExeF9VdDhDTVdXOGNpVktnXzNvRWZMOHZSbFdOM0o3T1B1TFBZLXBIV2lOejhvN09uaU5YYmR1V3RCdjFTT0kxVXRDQnlCQmVyVGMxMlYwTTVvejBJZzktWS1fd0czVjlz?oc=5",
-   "why": "",
-   "outlets": [
-    "The Next Web",
-    "Net Influencer",
-    "MediaPost",
-    "Unite.AI",
-    "PR Newswire"
-   ],
-   "industries": [
-    "ai-llms",
-    "ai-media"
-   ],
-   "latest": "2026-11-24T21:25:20Z"
-  },
-  {
-   "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
-   "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-   "why": "The verdict follows a months-long trial in New York.",
+   "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+   "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+   "why": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer…",
    "outlets": [
     "CNBC",
     "BBC",
-    "The Verge",
+    "CleanTechnica",
+    "The Guardian",
     "Bloomberg"
    ],
    "industries": [
     "markets-economy",
-    "fintech"
+    "policy-regulation",
+    "climate-energy",
+    "space-mobility"
    ],
-   "latest": "2026-11-25T02:59:27Z"
+   "latest": "2026-11-26T06:10:56Z"
   },
   {
-   "title": "Trump’s Own Stock Portfolio Likely Benefits From Nvidia’s Rise",
-   "url": "https://www.nytimes.com/2026/11/23/technology/trump-nvidia-stock-purchases.html",
-   "why": "It’s not possible to determine the size of the president’s stake in the chip maker because there is a lag between when trades occur and…",
+   "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+   "why": "Most codes of conduct serve as a reflection of corporate culture.",
    "outlets": [
-    "New York Times",
     "The Guardian",
-    "Unite.AI",
-    "조선일보"
+    "CNBC",
+    "The Atlantic",
+    "TechCrunch",
+    "New York Times"
    ],
    "industries": [
     "ai-llms",
     "semiconductors",
-    "policy-regulation",
-    "markets-economy"
+    "markets-economy",
+    "cybersecurity",
+    "policy-regulation"
    ],
-   "latest": "2026-11-25T06:57:04Z"
+   "latest": "2026-11-25T21:00:08Z"
   },
   {
-   "title": "xAI founding members launch Epochal, an AI startup built to predict future events",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUXZKVGQ3QXRLOTlLN0FmdmlER19KSDdQQmdIVWhCV3AtaGdUN2ZHWlVUVTJzbHhocFFQdjVEOHRkTmJjNHpUM1NxVzRxN044UjBsYjh5NmctZ0liR1M5MlJCZDJnbG1IdzBRazZ1QVVLb0tXREx6ZGdZY002SnQ2NFhSQ3pyS2NYSkFlOVdIZ3RmMkR5bGRLcmRNTUdzZDdpcThr?oc=5",
-   "why": "",
+   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "why": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and…",
    "outlets": [
-    "India Today",
-    "NewsBytes",
-    "MLQ.ai",
-    "Bloomberg.com"
+    "CNBC",
+    "TechCrunch",
+    "Ars Technica",
+    "BBC"
+   ],
+   "industries": [
+    "cloud-devops",
+    "ecommerce-retail",
+    "space-mobility",
+    "policy-regulation",
+    "ai-llms",
+    "markets-economy",
+    "climate-energy"
+   ],
+   "latest": "2026-11-26T02:35:39Z"
+  },
+  {
+   "title": "Three xAI founders want AI to predict the future",
+   "url": "https://www.therundown.ai/articles/three-xai-founders-want-ai-to-predict-the-future",
+   "why": "PLUS: How to put Microsoft Copilot to work",
+   "outlets": [
+    "The Rundown AI",
+    "dev.ua",
+    "Analytics Insight",
+    "NewsBytes"
    ],
    "industries": [
     "ai-llms"
    ],
-   "latest": "2026-11-25T04:45:19Z"
+   "latest": "2026-11-25T13:22:25Z"
   },
   {
-   "title": "US Banks Tighten Controls on AI Agents After OpenAI and Hugging Face Security Incidents",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYUxZOTlGZ0V2bENoclh1Zzg0c1RPWU91RkRoMHY2TUxfZFFvN3dxaEtQaldlTjlHYnVwN04zbU96akt4SC1KZk1PZTlqaGIyc0NCbDJsQTFtOEJ3Zk5BNV9QZ000aElRZUhZUi1pUUdadkY3dGZGV0FfaDM5SG9NaDB3VkpHWEhQSHBhazBxVFZpdUY5b1F0NDk5Wm02WG1pVUJqVzVDWTR5bXh0cHZmRktn?oc=5",
+   "title": "Korea Fair Trade Commission Sanctions Apple for False iPhone 16 AI Ads",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSXRKWW95YVhrU2pXSm1WenpMR1huMThTclVsMTY0ZVp1NzFiQ3V1TjBTeENMWmIyZElNVW9OaVp4dnhSbmxUcnV4QTFaRFo5Y2hGdkFYc2d6bTI3UVlYMXBYTDd6emp4Y2Z4Z0JrWC11MTY1QkEwRjY4RTJqZlYyWkpEdkZ1NEhSZ2dlVGt3?oc=5",
    "why": "",
    "outlets": [
-    "Tekedia",
-    "portalcripto.com.br",
+    "아시아경제",
+    "조선일보",
+    "The Korea Times",
+    "Business Upturn"
+   ],
+   "industries": [
+    "ai-llms",
+    "mobile",
+    "policy-regulation"
+   ],
+   "latest": "2026-11-26T05:34:03Z"
+  },
+  {
+   "title": "JFrog reports AI agent exploited Hugging Face to steal secrets, then leaked its own",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MSnQ5eVRtWWhGZU81WW1zeV9JZjJpdHFZbGtDQmhUSDBVTFU2eEpFcGRpNjJUc3pRbUNaWENnc09PTms5YTI3ZlRNaVI0SEx2bUlXV3pBOXVJUQ?oc=5",
+   "why": "",
+   "outlets": [
+    "Cryptonews.net",
+    "Dataconomy",
     "Crypto Briefing",
-    "KDnuggets"
+    "varindia"
    ],
    "industries": [
     "ai-llms",
     "ai-agents",
     "cybersecurity",
-    "fintech"
+    "policy-regulation"
    ],
-   "latest": "2026-11-24T16:18:05Z"
+   "latest": "2026-11-25T14:56:36Z"
   },
   {
-   "title": "OpenAI publishes a preprint claiming to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a major open problem in mathematics (Deedy/@deedydas)",
-   "url": "https://www.techmeme.com/261125/p5#a261125p5",
-   "why": "Deedy / @deedydas : OpenAI publishes a preprint claiming to prove that the matrix multiplication exponent (ω) is exactly 9/4, addressing a…",
+   "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia as the US steps up export controls (Financial Times)",
+   "url": "https://www.techmeme.com/261126/p2#a261126p2",
+   "why": "Move comes as US steps up export controls to prevent Chinese access to AI computing power",
    "outlets": [
     "Techmeme",
-    "Hacker News",
-    "Unite.AI"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "latest": "2026-11-25T06:55:01Z"
-  },
-  {
-   "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
-   "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
-   "why": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
-   "outlets": [
-    "TechCrunch",
-    "The Guardian",
-    "BBC"
+    "Financial Times",
+    "Modern Diplomacy"
    ],
    "industries": [
     "ai-llms",
-    "ai-agents",
-    "ecommerce-retail",
+    "fintech",
+    "semiconductors",
+    "policy-regulation",
     "markets-economy"
    ],
-   "latest": "2026-11-24T21:32:38Z"
+   "latest": "2026-11-26T07:01:17Z"
   },
   {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
-   "why": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai.",
+   "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+   "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+   "why": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
    "outlets": [
-    "Simon Willison",
-    "Incrypted",
-    "UrduPoint"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "latest": "2026-11-24T18:25:01Z"
-  },
-  {
-   "title": "Alibaba in talks for potential yuan, dollar bond sale next year — Bloomberg",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5GWHI1cXJudmk4REx1SVJRcWJpX1dpUkN6Rk1WMURkQm5NQTQ3NkZhY0g1YXlwb3RuWmp5NVRJQjExS2tUUjZNV2E1ZVRFWHZH?oc=5",
-   "why": "",
-   "outlets": [
-    "MLQ.ai",
-    "The Edge Malaysia",
-    "Bloomberg.com"
+    "TechCrunch",
+    "PYMNTS",
+    "ET Enterprise AI"
    ],
    "industries": [
     "ai-llms",
     "markets-economy",
     "fintech"
    ],
-   "latest": "2026-11-25T05:12:09Z"
+   "latest": "2026-11-26T05:08:26Z"
   },
   {
-   "title": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
-   "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
-   "why": "Big Tech could find it increasingly tough to secure funding from debt markets critical to the AI build-out, as lenders become pickier over…",
+   "title": "Software stocks spared in tech rout as AI narrative shifts",
+   "url": "https://www.ft.com/content/90b82a64-4f58-45d7-8a6a-4c2730545b65?syn-25a6b1a6=1",
+   "why": "Semiconductor and software shares now neck-and-neck in 2026 as investors think again about the technology’s winners and losers",
    "outlets": [
     "CNBC",
+    "New York Times",
     "Financial Times"
    ],
    "industries": [
@@ -225,342 +165,308 @@
     "markets-economy",
     "semiconductors"
    ],
-   "latest": "2026-11-25T06:29:46Z"
+   "latest": "2026-11-26T05:00:29Z"
   },
   {
-   "title": "Meta Commits $700k AI Impact Grant, Launches Impact Hub for Africa, Middle East and Türkiye",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11WXpvRV9iazZFY3dFUnhwbDlkVGlxZ3NiemZta0FjSWh0d0NmM05LbEx6VDVsTjdzUzRIUFVaY1N6VnZLb3JjaWQzeWZscThVbkhwbmNwSFVRYUdpeXF5YXlIY0cwWUdDOTFPMjNhQ1dEeTdmaEpZb1dyUFZaZw?oc=5",
-   "why": "",
+   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+   "why": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
    "outlets": [
-    "Bloomberg",
-    "Tech Build Africa"
+    "CNBC",
+    "TechCrunch",
+    "The Information"
    ],
    "industries": [
     "ai-llms",
-    "markets-economy"
+    "markets-economy",
+    "semiconductors"
    ],
-   "latest": "2026-11-25T06:57:52Z"
+   "latest": "2026-11-26T03:19:44Z"
   },
   {
-   "title": "Solana developers move to stop validators finishing work on blocks that already lost",
-   "url": "https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost",
-   "why": "The fix would stop the computers that run Solana from wasting effort on transactions the network has already thrown out, freeing up power…",
+   "title": "This Black Friday, your AI chief of staff is 20% off",
+   "url": "https://www.androidpolice.com/plaud-black-friday-2026/",
+   "why": "This article is sponsored by Plaud.",
    "outlets": [
-    "CoinDesk",
-    "EFF Deeplinks"
+    "Android Police",
+    "Boing Boing",
+    "Mashable"
    ],
    "industries": [
-    "devtools",
-    "crypto-web3",
     "ai-llms",
-    "ai-agents",
-    "mobile",
-    "policy-regulation"
+    "ecommerce-retail",
+    "mobile"
    ],
-   "latest": "2026-11-25T06:33:10Z"
+   "latest": "2026-11-26T01:00:00Z"
   },
   {
-   "title": "Novartis CEO says AI will shave four years off drug development, not cure all disease",
-   "url": "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/",
-   "why": "Novartis CEO Vas Narasimhan, who also sits on Anthropic's board, is pushing back on the cure-all promises from Anthropic CEO Amodei and…",
+   "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+   "why": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
+   "outlets": [
+    "CNBC",
+    "Bloomberg"
+   ],
+   "industries": [
+    "markets-economy",
+    "space-mobility"
+   ],
+   "latest": "2026-11-26T06:39:34Z"
+  },
+  {
+   "title": "AI Stocks’ Big Worry: a Chip Glut",
+   "url": "https://www.theinformation.com/articles/ai-stocks-big-worry-chip-glut",
+   "why": "If anyone needs therapy nowadays, it may be tech investors more than Jensen Huang .",
+   "outlets": [
+    "The Information",
+    "Yahoo Finance"
+   ],
+   "industries": [
+    "ai-llms",
+    "markets-economy",
+    "semiconductors"
+   ],
+   "latest": "2026-11-26T06:28:00Z"
+  },
+  {
+   "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+   "url": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+   "why": "Amazon and Meta are in talks to bring back Muse, Meta's AI shopping agent that Amazon kicked off its platform in September.",
    "outlets": [
     "The Decoder",
-    "Financial Times"
+    "NewsBytes"
    ],
    "industries": [
     "ai-llms",
-    "health-biotech",
-    "markets-economy"
+    "ai-agents",
+    "ecommerce-retail"
    ],
-   "latest": "2026-11-25T05:00:22Z"
+   "latest": "2026-11-26T05:45:32Z"
   },
   {
-   "title": "PrismML’s Bonsai 2.5 brings better coding and tool use to on-device AI",
-   "url": "https://9to5mac.com/2026/11/24/prismmls-bonsai-2-5-brings-better-coding-and-tool-use-to-on-device-ai/",
-   "why": "Back in July, PrismML claimed its roughly 4 GB, 1-bit Bonsai 27B was the first AI model of its size to run on an iPhone.",
+   "title": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",
+   "url": "https://9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns/",
+   "why": "Following reports that its characters sent inappropriate messages to minors, Apple has removed the popular Chinese AI companion app Talkie…",
+   "outlets": [
+    "9to5Mac",
+    "Miami Herald"
+   ],
+   "industries": [
+    "ai-llms",
+    "mobile",
+    "ai-media"
+   ],
+   "latest": "2026-11-26T05:35:05Z"
+  },
+  {
+   "title": "Tom Blomfield has left Anthropic after less than six months",
+   "url": "https://tech.eu/2026/11/25/tom-blomfield-leaves-anthropic-after-less-than-six-months/",
+   "why": "Tom Blomfield, the Monzo co-founder and one of the UK’s most high-profile technology entrepreneurs, has left his role at AI giant…",
+   "outlets": [
+    "Sifted",
+    "Tech.eu"
+   ],
+   "industries": [
+    "ai-llms"
+   ],
+   "latest": "2026-11-26T05:00:18Z"
+  },
+  {
+   "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+   "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+   "why": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the…",
+   "outlets": [
+    "The Hacker News",
+    "BleepingComputer"
+   ],
+   "industries": [
+    "cloud-devops",
+    "cybersecurity"
+   ],
+   "latest": "2026-11-26T04:20:22Z"
+  },
+  {
+   "title": "ElevenLabs Targets $33 Billion Valuation in Early 2027 Funding Round",
+   "url": "https://www.pymnts.com/news/investment-tracker/2026/elevenlabs-targets-33-billion-valuation-in-early-2027-funding-round/",
+   "why": "ElevenLabs, a builder of artificial intelligence (AI) voice models and agents, plans to launch a funding round process in the first three…",
+   "outlets": [
+    "PYMNTS",
+    "The Economic Times"
+   ],
+   "industries": [
+    "ai-llms",
+    "ai-agents",
+    "ai-media",
+    "markets-economy",
+    "fintech"
+   ],
+   "latest": "2026-11-26T03:20:36Z"
+  },
+  {
+   "title": "X is doubling down on short-form vertical video with a series of updates",
+   "url": "https://www.tubefilter.com/2026/11/25/x-doubles-down-on-short-form-vertical-video/",
+   "why": "Earlier this month, X launched a new feature that allows users to clip moments from their favorite videos, add their own takes, and hit…",
+   "outlets": [
+    "Tubefilter",
+    "TMCnet"
+   ],
+   "industries": [
+    "ai-media",
+    "enterprise-saas",
+    "media-creator"
+   ],
+   "latest": "2026-11-26T00:28:13Z"
+  },
+  {
+   "title": "1Password confirms security incident, here’s what you need to know",
+   "url": "https://9to5mac.com/2026/11/25/1password-confirms-security-incident-heres-what-you-need-to-know/",
+   "why": "Password management platform 1Password today disclosed a security incident in which an attacker gained access to internal systems and…",
    "outlets": [
     "9to5Mac",
     "Hacker News"
    ],
    "industries": [
-    "ai-llms",
+    "cloud-devops",
+    "cybersecurity",
     "mobile"
    ],
-   "latest": "2026-11-25T01:08:37Z"
-  },
-  {
-   "title": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
-   "url": "https://9to5google.com/2026/11/24/gemini-history-ai-training/",
-   "why": "Google is rolling out new privacy settings for the Gemini app that will let you “keep your history while independently controlling…",
-   "outlets": [
-    "9to5Mac",
-    "Android Police"
-   ],
-   "industries": [
-    "ai-llms",
-    "mobile",
-    "policy-regulation"
-   ],
-   "latest": "2026-11-24T22:57:42Z"
-  },
-  {
-   "title": "2026 tech gift guide for Apple users",
-   "url": "https://9to5mac.com/2026/11/24/2026-tech-gift-guide-for-apple-users-personally-tested-and-recommended/",
-   "why": "Black Friday week is here, so it’s officially time to start checking gifts off your list.",
-   "outlets": [
-    "9to5Mac",
-    "TechJuice"
-   ],
-   "industries": [
-    "ai-llms",
-    "mobile",
-    "ecommerce-retail"
-   ],
-   "latest": "2026-11-24T22:07:04Z"
-  },
-  {
-   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-   "why": "GPT-6 models design protein structures and sequences using reasoning and code.",
-   "outlets": [
-    "Hacker News",
-    "OpenAI News"
-   ],
-   "industries": [
-    "ai-llms",
-    "health-biotech"
-   ],
-   "latest": "2026-11-24T21:02:22Z"
+   "latest": "2026-11-25T23:30:05Z"
   }
  ],
  "markets": [
   {
    "name": "S&P 500",
-   "value": 7237.17,
-   "previous": 6910.39,
-   "as_of": "2026-11-23",
-   "change": 4.7288,
+   "value": 7201.09,
+   "previous": 7237.17,
+   "as_of": "2026-11-24",
+   "change": -0.4985,
    "change_unit": "%",
    "source": "https://fred.stlouisfed.org/series/SP500"
   },
   {
    "name": "Nasdaq Composite",
-   "value": 23733.54,
-   "previous": 24089.56,
-   "as_of": "2026-11-24",
-   "change": -1.4779,
+   "value": 23585.8,
+   "previous": 23733.54,
+   "as_of": "2026-11-25",
+   "change": -0.6225,
    "change_unit": "%",
    "source": "https://fred.stlouisfed.org/series/NASDAQCOM"
   },
   {
    "name": "Dow Jones Industrial Average",
-   "value": 50018.7,
-   "previous": 49595.31,
-   "as_of": "2026-11-24",
-   "change": 0.8537,
+   "value": 50182.95,
+   "previous": 50018.7,
+   "as_of": "2026-11-25",
+   "change": 0.3284,
    "change_unit": "%",
    "source": "https://fred.stlouisfed.org/series/DJIA"
   },
   {
    "name": "VIX volatility index",
-   "value": 26.62,
-   "previous": 35.89,
-   "as_of": "2026-11-23",
-   "change": -25.8289,
+   "value": 26.36,
+   "previous": 26.62,
+   "as_of": "2026-11-24",
+   "change": -0.9767,
    "change_unit": "%",
    "source": "https://fred.stlouisfed.org/series/VIXCLS"
   },
   {
    "name": "US 10-year Treasury yield",
-   "value": 4.92,
+   "value": 4.91,
    "previous": 4.92,
-   "as_of": "2026-11-23",
-   "change": 0.0,
+   "as_of": "2026-11-24",
+   "change": -1.0,
    "change_unit": "bp",
    "source": "https://fred.stlouisfed.org/series/DGS10"
   },
   {
    "name": "Brent crude oil",
-   "value": 92.94,
-   "previous": 92.9,
-   "as_of": "2026-11-17",
-   "change": 0.0431,
+   "value": 91.8,
+   "previous": 91.2,
+   "as_of": "2026-11-24",
+   "change": 0.6579,
    "change_unit": "%",
    "source": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
   },
   {
    "name": "EUR/USD (ECB reference rate)",
-   "value": 1.0963,
-   "previous": 1.0939,
-   "as_of": "2026-11-24",
-   "change": 0.2194,
+   "value": 1.0935,
+   "previous": 1.0963,
+   "as_of": "2026-11-25",
+   "change": -0.2554,
    "change_unit": "%",
    "source": "https://data.ecb.europa.eu/data/datasets/EXR"
   }
  ],
  "top_signals": [
   {
-   "title": "elementalsouls/Claude-BugHunter",
-   "url": "https://github.com/elementalsouls/Claude-BugHunter",
-   "type": "repo",
-   "score": 60,
+   "title": "1Password Security Incident",
+   "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+   "type": "hn",
+   "score": 73,
    "seen_on": [
-    "GitHub"
+    "Hacker News",
+    "Lobsters"
    ],
    "industries": [
-    "ai-llms",
-    "ai-agents",
     "cloud-devops",
     "cybersecurity"
    ],
-   "why": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681…",
-   "key_metric": "21.9k stars · +1,826 today",
-   "source_key": "gh_daily"
+   "why": "Link to 1password.com",
+   "key_metric": "1,334 pts · 562 comments",
+   "source_key": "hn_front"
   },
   {
-   "title": "cursor/plugins",
-   "url": "https://github.com/cursor/plugins",
-   "type": "repo",
+   "title": "Slow Ubuntu security response times",
+   "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+   "type": "hn",
+   "score": 73,
+   "seen_on": [
+    "Hacker News",
+    "Lobsters"
+   ],
+   "industries": [
+    "cloud-devops",
+    "cybersecurity"
+   ],
+   "why": "Link to openwall.com",
+   "key_metric": "246 pts · 108 comments",
+   "source_key": "hn_front"
+  },
+  {
+   "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+   "url": "https://scottaaronson.blog/?p=10379",
+   "type": "hn",
+   "score": 70,
+   "seen_on": [
+    "Hacker News",
+    "Lobsters"
+   ],
+   "industries": [
+    "ai-llms"
+   ],
+   "why": "Link to scottaaronson.blog",
+   "key_metric": "1,306 pts · 1,147 comments",
+   "source_key": "hn_front"
+  },
+  {
+   "title": "I narrowed a segfault to 22 lines of code but I already accounted for null terminators in dynamic memory and variable limits, what else could it be?",
+   "url": "https://stackoverflow.com/questions/80018742/i-narrowed-a-segfault-to-22-lines-of-code-but-i-already-accounted-for-null-termi",
+   "type": "question",
    "score": 60,
    "seen_on": [
-    "GitHub"
+    "Stack Overflow"
    ],
    "industries": [
     "devtools"
    ],
-   "why": "Cursor plugin specification and official plugins",
-   "key_metric": "19.3k stars · +360 today",
-   "source_key": "gh_daily"
+   "why": "#c, #struct, #buffer-overflow",
+   "key_metric": "4 score · 1 answers · 122 views",
+   "source_key": "stackoverflow"
   },
   {
-   "title": "janhq/jan",
-   "url": "https://github.com/janhq/jan",
-   "type": "repo",
-   "score": 60,
-   "seen_on": [
-    "GitHub"
-   ],
-   "industries": [
-    "ai-llms",
-    "devtools",
-    "cloud-devops"
-   ],
-   "why": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-   "key_metric": "46.1k stars · +34 today",
-   "source_key": "gh_rust"
-  },
-  {
-   "title": "datazip-inc/olake-go",
-   "url": "https://github.com/datazip-inc/olake-go",
-   "type": "repo",
-   "score": 60,
-   "seen_on": [
-    "GitHub"
-   ],
-   "industries": [
-    "devtools",
-    "data-analytics"
-   ],
-   "why": "OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet.",
-   "key_metric": "2.3k stars · +38 today",
-   "source_key": "gh_go"
-  },
-  {
-   "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
-   "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-   "type": "hn",
-   "score": 60,
-   "seen_on": [
-    "Hacker News"
-   ],
-   "industries": [
-    "other"
-   ],
-   "why": "Link to github.com",
-   "key_metric": "474 pts · 232 comments",
-   "source_key": "hn_front"
-  },
-  {
-   "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-   "url": "https://news.ycombinator.com/item?id=50630809",
-   "type": "hn",
-   "score": 60,
-   "seen_on": [
-    "Hacker News"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "why": "Discussion thread on HN",
-   "key_metric": "242 pts · 183 comments",
-   "source_key": "hn_front"
-  },
-  {
-   "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
-   "url": "https://masondata.ai/",
-   "type": "hn",
-   "score": 60,
-   "seen_on": [
-    "Hacker News"
-   ],
-   "industries": [
-    "data-analytics"
-   ],
-   "why": "Link to masondata.ai",
-   "key_metric": "93 pts · 17 comments",
-   "source_key": "hn_show"
-  },
-  {
-   "title": "thinkingmachines/Inkling-2-Mini",
-   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-   "type": "model",
-   "score": 60,
-   "seen_on": [
-    "Hugging Face"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "why": "image-text-to-text · transformers",
-   "key_metric": "5,838 likes · 69k dl/30d",
-   "source_key": "hf_models"
-  },
-  {
-   "title": "JCisHERE/wan2-2-i2v-v3",
-   "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
-   "type": "space",
-   "score": 60,
-   "seen_on": [
-    "Hugging Face"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "why": "Wan2.2 14B Fast Preview [NEW]",
-   "key_metric": "730 likes",
-   "source_key": "hf_spaces"
-  },
-  {
-   "title": "Vyber07/cyber-security",
-   "url": "https://huggingface.co/datasets/Vyber07/cyber-security",
-   "type": "dataset",
-   "score": 60,
-   "seen_on": [
-    "Hugging Face"
-   ],
-   "industries": [
-    "ai-llms",
-    "cybersecurity",
-    "data-analytics",
-    "enterprise-saas"
-   ],
-   "why": "Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most…",
-   "key_metric": "1,744 likes · 35.3k dl/30d",
-   "source_key": "hf_datasets"
-  },
-  {
-   "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
-   "url": "https://huggingface.co/papers/2611.31205",
+   "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+   "url": "https://huggingface.co/papers/2611.31358",
    "type": "paper",
    "score": 60,
    "seen_on": [
@@ -568,27 +474,11 @@
    ],
    "industries": [
     "ai-llms",
-    "ai-agents",
-    "robotics-hardware"
-   ],
-   "why": "Coding agents can construct and revise robot behavior during execution, but using one agent for the whole…",
-   "key_metric": "44 upvotes",
-   "source_key": "hf_papers"
-  },
-  {
-   "title": "Brave Search",
-   "url": "https://registry.smithery.ai/servers/brave",
-   "type": "mcp",
-   "score": 60,
-   "seen_on": [
-    "Smithery"
-   ],
-   "industries": [
     "ai-agents"
    ],
-   "why": "Search the web with Brave's independent index — web, news, images, and videos.",
-   "key_metric": "87,579 uses",
-   "source_key": "smithery"
+   "why": "Visual creation demands expressive imagery together with precise control over text, layout, and structure.",
+   "key_metric": "82 upvotes",
+   "source_key": "hf_papers"
   },
   {
    "title": "@modelcontextprotocol/sdk",
@@ -607,6 +497,39 @@
    "source_key": "npm"
   },
   {
+   "title": "elementalsouls/Claude-BugHunter",
+   "url": "https://github.com/elementalsouls/Claude-BugHunter",
+   "type": "repo",
+   "score": 60,
+   "seen_on": [
+    "GitHub"
+   ],
+   "industries": [
+    "ai-llms",
+    "ai-agents",
+    "cloud-devops",
+    "cybersecurity"
+   ],
+   "why": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681…",
+   "key_metric": "23.4k stars · +1,652 today",
+   "source_key": "gh_daily"
+  },
+  {
+   "title": "Brave Search",
+   "url": "https://registry.smithery.ai/servers/brave",
+   "type": "mcp",
+   "score": 60,
+   "seen_on": [
+    "Smithery"
+   ],
+   "industries": [
+    "ai-agents"
+   ],
+   "why": "Search the web with Brave's independent index — web, news, images, and videos.",
+   "key_metric": "87,579 uses",
+   "source_key": "smithery"
+  },
+  {
    "title": "swiper",
    "url": "https://www.jsdelivr.com/package/npm/swiper",
    "type": "cdn",
@@ -622,81 +545,145 @@
    "source_key": "jsdelivr"
   },
   {
-   "title": "The Third Cup: After Everything Has a Name",
-   "url": "https://dev.to/thethirdcup/the-third-cup-after-everything-has-a-name-2b14",
+   "title": "thinkingmachines/Inkling-2-Mini",
+   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+   "type": "model",
+   "score": 60,
+   "seen_on": [
+    "Hugging Face"
+   ],
+   "industries": [
+    "ai-llms"
+   ],
+   "why": "image-text-to-text · transformers",
+   "key_metric": "6,089 likes · 96.5k dl/30d",
+   "source_key": "hf_models"
+  },
+  {
+   "title": "Vyber07/cyber-security",
+   "url": "https://huggingface.co/datasets/Vyber07/cyber-security",
+   "type": "dataset",
+   "score": 60,
+   "seen_on": [
+    "Hugging Face"
+   ],
+   "industries": [
+    "ai-llms",
+    "cybersecurity",
+    "data-analytics",
+    "enterprise-saas"
+   ],
+   "why": "Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most…",
+   "key_metric": "1,999 likes · 58.5k dl/30d",
+   "source_key": "hf_datasets"
+  },
+  {
+   "title": "Tell HN: Lots of Ask HNs again",
+   "url": "https://news.ycombinator.com/item?id=50649864",
+   "type": "hn",
+   "score": 60,
+   "seen_on": [
+    "Hacker News"
+   ],
+   "industries": [
+    "other"
+   ],
+   "why": "Discussion thread on HN",
+   "key_metric": "223 pts · 82 comments",
+   "source_key": "hn_front"
+  },
+  {
+   "title": "The Price You Pay for Passion",
+   "url": "https://dev.to/thethirdcup/the-price-you-pay-for-passion-3h5l",
    "type": "post",
    "score": 60,
    "seen_on": [
     "Dev.to"
    ],
    "industries": [
-    "devtools"
+    "other"
    ],
-   "why": "#discuss, #career, #programming",
-   "key_metric": "72 reactions · 32 comments",
+   "why": "#discuss, #mentalhealth",
+   "key_metric": "101 reactions · 55 comments",
    "source_key": "devto_day"
   },
   {
-   "title": "Pokemon Childhood Version: A romhack where Mew is under the truck",
-   "url": "https://wheybags.com/blog/pokemon_childhood_version.html",
-   "type": "post",
+   "title": "cursor/plugins",
+   "url": "https://github.com/cursor/plugins",
+   "type": "repo",
    "score": 60,
    "seen_on": [
-    "Lobsters"
+    "GitHub"
+   ],
+   "industries": [
+    "devtools"
+   ],
+   "why": "Cursor plugin specification and official plugins",
+   "key_metric": "19.6k stars · +416 today",
+   "source_key": "gh_daily"
+  },
+  {
+   "title": "JCisHERE/wan2-2-i2v-v3",
+   "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
+   "type": "space",
+   "score": 60,
+   "seen_on": [
+    "Hugging Face"
+   ],
+   "industries": [
+    "ai-llms"
+   ],
+   "why": "Wan2.2 14B Fast Preview [NEW]",
+   "key_metric": "781 likes",
+   "source_key": "hf_spaces"
+  },
+  {
+   "title": "Show HN: Turned a $5 AliExpress clock into a desk Clawd pet(+usage)",
+   "url": "https://github.com/click6067-ship-it/token-tv",
+   "type": "hn",
+   "score": 60,
+   "seen_on": [
+    "Hacker News"
    ],
    "industries": [
     "other"
    ],
-   "why": "#assembly, #games",
-   "key_metric": "33 score · 1 comments",
-   "source_key": "lobsters"
+   "why": "Link to github.com",
+   "key_metric": "44 pts · 3 comments",
+   "source_key": "hn_show"
   },
   {
-   "title": "Improving EF Core SQLite queries and seeding (AnyAsync, AddRangeAsync) and understanding DbContext",
-   "url": "https://stackoverflow.com/questions/80018513/improving-ef-core-sqlite-queries-and-seeding-anyasync-addrangeasync-and-under",
-   "type": "question",
+   "title": "janhq/jan",
+   "url": "https://github.com/janhq/jan",
+   "type": "repo",
    "score": 60,
    "seen_on": [
-    "Stack Overflow"
+    "GitHub"
+   ],
+   "industries": [
+    "ai-llms",
+    "devtools",
+    "cloud-devops"
+   ],
+   "why": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
+   "key_metric": "46.2k stars · +45 today",
+   "source_key": "gh_rust"
+  },
+  {
+   "title": "datazip-inc/olake-go",
+   "url": "https://github.com/datazip-inc/olake-go",
+   "type": "repo",
+   "score": 60,
+   "seen_on": [
+    "GitHub"
    ],
    "industries": [
     "devtools",
     "data-analytics"
    ],
-   "why": "#best-practices, #c#, #database",
-   "key_metric": "2 score · 1 answers · 92 views",
-   "source_key": "stackoverflow"
-  },
-  {
-   "title": "KingKongRobotics/jumper",
-   "url": "https://github.com/KingKongRobotics/jumper",
-   "type": "repo",
-   "score": 60,
-   "seen_on": [
-    "GitHub"
-   ],
-   "industries": [
-    "robotics-hardware"
-   ],
-   "why": " Jumper — an crab robot.",
-   "key_metric": "3.2k stars · created 28 Sep",
-   "source_key": "gh_topic_robotics"
-  },
-  {
-   "title": "heise3/ExtremaRank",
-   "url": "https://github.com/heise3/ExtremaRank",
-   "type": "repo",
-   "score": 60,
-   "seen_on": [
-    "GitHub"
-   ],
-   "industries": [
-    "devtools",
-    "health-biotech"
-   ],
-   "why": "Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds…",
-   "key_metric": "288 stars · created 3 Oct",
-   "source_key": "gh_topic_bioinformatics"
+   "why": "OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet.",
+   "key_metric": "2.4k stars · +21 today",
+   "source_key": "gh_go"
   },
   {
    "title": "LosaLosSantos/aurelio-finance",
@@ -718,8 +705,39 @@
    "source_key": "gh_topic_fintech"
   },
   {
-   "title": "Bitcoin (BTC)",
-   "url": "https://www.coingecko.com/en/coins/bitcoin",
+   "title": "heise3/ExtremaRank",
+   "url": "https://github.com/heise3/ExtremaRank",
+   "type": "repo",
+   "score": 60,
+   "seen_on": [
+    "GitHub"
+   ],
+   "industries": [
+    "devtools",
+    "health-biotech"
+   ],
+   "why": "Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds…",
+   "key_metric": "288 stars · created 3 Oct",
+   "source_key": "gh_topic_bioinformatics"
+  },
+  {
+   "title": "KingKongRobotics/jumper",
+   "url": "https://github.com/KingKongRobotics/jumper",
+   "type": "repo",
+   "score": 60,
+   "seen_on": [
+    "GitHub"
+   ],
+   "industries": [
+    "robotics-hardware"
+   ],
+   "why": " Jumper — an crab robot.",
+   "key_metric": "3.2k stars · created 28 Sep",
+   "source_key": "gh_topic_robotics"
+  },
+  {
+   "title": "Venice Token (VVV)",
+   "url": "https://www.coingecko.com/en/coins/venice-token",
    "type": "coin",
    "score": 60,
    "seen_on": [
@@ -728,24 +746,9 @@
    "industries": [
     "crypto-web3"
    ],
-   "why": "Market-cap rank #1",
-   "key_metric": "$59,156.66 · -2.1% 24h",
+   "why": "Market-cap rank #55",
+   "key_metric": "$27.67 · +10.6% 24h",
    "source_key": "coingecko_trending"
-  },
-  {
-   "title": "The Spray Bottle",
-   "url": "https://mechanical-pencil.com/products/spray-bottle",
-   "type": "hn",
-   "score": 57,
-   "seen_on": [
-    "Hacker News"
-   ],
-   "industries": [
-    "other"
-   ],
-   "why": "Link to mechanical-pencil.com",
-   "key_metric": "447 pts · 107 comments",
-   "source_key": "hn_front"
   },
   {
    "title": "ai",
@@ -761,43 +764,12 @@
     "devtools"
    ],
    "why": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model…",
-   "key_metric": "48.2M dl/week",
+   "key_metric": "47.7M dl/week",
    "source_key": "npm"
   },
   {
-   "title": "obra/superpowers",
-   "url": "https://github.com/obra/superpowers",
-   "type": "repo",
-   "score": 56,
-   "seen_on": [
-    "GitHub"
-   ],
-   "industries": [
-    "ai-llms",
-    "ai-agents"
-   ],
-   "why": "An agentic skills framework & software development methodology that works.",
-   "key_metric": "326k stars · +1,003 today",
-   "source_key": "gh_daily"
-  },
-  {
-   "title": "unsloth/Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-   "type": "model",
-   "score": 56,
-   "seen_on": [
-    "Hugging Face"
-   ],
-   "industries": [
-    "ai-llms"
-   ],
-   "why": "image-text-to-text",
-   "key_metric": "1,283 likes · 1.9M dl/30d",
-   "source_key": "hf_models"
-  },
-  {
-   "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
-   "url": "https://huggingface.co/papers/2611.31358",
+   "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+   "url": "https://huggingface.co/papers/2611.33144",
    "type": "paper",
    "score": 56,
    "seen_on": [
@@ -807,8 +779,8 @@
     "ai-llms",
     "ai-agents"
    ],
-   "why": "Visual creation demands expressive imagery together with precise control over text, layout, and structure.",
-   "key_metric": "43 upvotes",
+   "why": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting…",
+   "key_metric": "37 upvotes",
    "source_key": "hf_papers"
   },
   {
@@ -827,8 +799,39 @@
    "source_key": "jsdelivr"
   },
   {
-   "title": "2035 came early",
-   "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+   "title": "obra/superpowers",
+   "url": "https://github.com/obra/superpowers",
+   "type": "repo",
+   "score": 56,
+   "seen_on": [
+    "GitHub"
+   ],
+   "industries": [
+    "ai-llms",
+    "ai-agents"
+   ],
+   "why": "An agentic skills framework & software development methodology that works.",
+   "key_metric": "326.8k stars · +903 today",
+   "source_key": "gh_daily"
+  },
+  {
+   "title": "unsloth/Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+   "type": "model",
+   "score": 56,
+   "seen_on": [
+    "Hugging Face"
+   ],
+   "industries": [
+    "ai-llms"
+   ],
+   "why": "image-text-to-text",
+   "key_metric": "1,389 likes · 2.4M dl/30d",
+   "source_key": "hf_models"
+  },
+  {
+   "title": "Entering the Geminispace",
+   "url": "https://jmmv.dev/2026/11/entering-the-geminispace.html",
    "type": "post",
    "score": 56,
    "seen_on": [
@@ -837,13 +840,13 @@
    "industries": [
     "web-frontend"
    ],
-   "why": "#nix, #wasm",
-   "key_metric": "102 score · 6 comments",
+   "why": "#web",
+   "key_metric": "18 score · 10 comments",
    "source_key": "lobsters"
   },
   {
-   "title": "Hyperliquid (HYPE)",
-   "url": "https://www.coingecko.com/en/coins/hyperliquid",
+   "title": "Pudgy Penguins (PENGU)",
+   "url": "https://www.coingecko.com/en/coins/pudgy-penguins",
    "type": "coin",
    "score": 56,
    "seen_on": [
@@ -852,26 +855,26 @@
    "industries": [
     "crypto-web3"
    ],
-   "why": "Market-cap rank #10",
-   "key_metric": "$59.16 · -8.0% 24h",
+   "why": "Market-cap rank #126",
+   "key_metric": "$0.00439 · +3.3% 24h",
    "source_key": "coingecko_trending"
   },
   {
-   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
-   "type": "hn",
+   "title": "Angais/pixel-art-atlas-1.4m",
+   "url": "https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m",
+   "type": "dataset",
    "score": 55,
    "seen_on": [
-    "Hacker News",
-    "OpenAI News"
+    "Hugging Face"
    ],
    "industries": [
     "ai-llms",
-    "health-biotech"
+    "ai-media",
+    "data-analytics"
    ],
-   "why": "Link to openai.com",
-   "key_metric": "239 pts · 73 comments",
-   "source_key": "hn_front"
+   "why": "Pixel Art Atlas · 1.4M Synthetic Sprites 1,409,404 synthetic game sprites with English…",
+   "key_metric": "765 likes · 80.3k dl/30d",
+   "source_key": "hf_datasets"
   }
  ],
  "windows": {
@@ -889,7 +892,7 @@
      "ai-agents"
     ],
     "why": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share…",
-    "key_metric": "15k stars · +1,956 this week",
+    "key_metric": "15.1k stars · +1,764 this week",
     "source_key": "gh_weekly"
    },
    {
@@ -904,7 +907,7 @@
      "gaming-xr"
     ],
     "why": "An attempt at running GTA VI on PC",
-    "key_metric": "11.7k stars · created 23 Nov",
+    "key_metric": "12.8k stars · created 23 Nov",
     "source_key": "gh_new"
    },
    {
@@ -919,12 +922,12 @@
      "other"
     ],
     "why": "Link to alpo.ge",
-    "key_metric": "2,929 pts · 2,120 comments",
+    "key_metric": "2,934 pts · 2,126 comments",
     "source_key": "hn_best"
    },
    {
-    "title": "Is Coding with AI Actually Faster and Cheaper?",
-    "url": "https://dev.to/sylwia-lask/is-coding-with-ai-actually-faster-and-cheaper-2810",
+    "title": "Tell us your story, and we might read it on the CodeNewbie Podcast ",
+    "url": "https://dev.to/codenewbie/tell-us-your-story-and-we-might-read-it-on-the-codenewbie-podcast-2840",
     "type": "post",
     "score": 60,
     "seen_on": [
@@ -932,12 +935,10 @@
     ],
     "industries": [
      "ai-llms",
-     "ai-agents",
-     "devtools",
-     "enterprise-saas"
+     "media-creator"
     ],
-    "why": "#ai, #programming, #productivity",
-    "key_metric": "254 reactions · 251 comments",
+    "why": "#codenewbie, #ai, #beginners",
+    "key_metric": "57 reactions · 42 comments",
     "source_key": "devto_week"
    },
    {
@@ -954,7 +955,7 @@
      "robotics-hardware"
     ],
     "why": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid…",
-    "key_metric": "186 upvotes",
+    "key_metric": "217 upvotes",
     "source_key": "hf_papers_week"
    },
    {
@@ -969,7 +970,7 @@
      "gaming-xr"
     ],
     "why": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console…",
-    "key_metric": "8k stars · created 20 Nov",
+    "key_metric": "8.4k stars · created 20 Nov",
     "source_key": "gh_new"
    },
    {
@@ -986,7 +987,7 @@
      "devtools"
     ],
     "why": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot…",
-    "key_metric": "3.7k stars · created 21 Nov",
+    "key_metric": "4.1k stars · created 21 Nov",
     "source_key": "gh_new"
    },
    {
@@ -1003,8 +1004,25 @@
      "gaming-xr"
     ],
     "why": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with…",
-    "key_metric": "132 upvotes",
+    "key_metric": "136 upvotes",
     "source_key": "hf_papers_week"
+   },
+   {
+    "title": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "type": "repo",
+    "score": 56,
+    "seen_on": [
+     "GitHub"
+    ],
+    "industries": [
+     "ai-llms",
+     "ai-agents",
+     "devtools"
+    ],
+    "why": "A library of Agent Skills designed to work with the Stitch MCP server.",
+    "key_metric": "13.1k stars · +2,616 this week",
+    "source_key": "gh_weekly"
    },
    {
     "title": "AFK-surf/xnulinux",
@@ -1018,41 +1036,22 @@
      "cloud-devops"
     ],
     "why": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
-    "key_metric": "3.6k stars · created 20 Nov",
+    "key_metric": "4k stars · created 20 Nov",
     "source_key": "gh_new"
    },
    {
-    "title": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "type": "repo",
-    "score": 55,
-    "seen_on": [
-     "GitHub"
-    ],
-    "industries": [
-     "ai-llms",
-     "ai-agents",
-     "devtools"
-    ],
-    "why": "A library of Agent Skills designed to work with the Stitch MCP server.",
-    "key_metric": "12.8k stars · +2,626 this week",
-    "source_key": "gh_weekly"
-   },
-   {
-    "title": "iamajmeena/neonclipping",
-    "url": "https://github.com/iamajmeena/neonclipping",
+    "title": "fxceless/victory-fork",
+    "url": "https://github.com/fxceless/victory-fork",
     "type": "repo",
     "score": 54,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "ai-llms",
-     "devtools",
-     "media-creator"
+     "gaming-xr"
     ],
-    "why": "Paste a link, get captioned 9:16 clips in ~2 min.",
-    "key_metric": "2.5k stars · created 19 Nov",
+    "why": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC.",
+    "key_metric": "3.2k stars · created 24 Nov",
     "source_key": "gh_new"
    },
    {
@@ -1067,28 +1066,27 @@
      "semiconductors"
     ],
     "why": "Link to cnbc.com",
-    "key_metric": "2,812 pts · 3,747 comments",
+    "key_metric": "2,842 pts · 3,802 comments",
     "source_key": "hn_best"
    },
    {
-    "title": "The CodeNewbie Podcast is Back for Season 28!",
-    "url": "https://dev.to/codenewbie/the-codenewbie-podcast-is-back-for-season-28-2484",
+    "title": "What are you Grateful for this Thanksgiving?",
+    "url": "https://dev.to/francistrdev/what-are-you-grateful-for-this-thanksgiving-4570",
     "type": "post",
     "score": 54,
     "seen_on": [
      "Dev.to"
     ],
     "industries": [
-     "ai-llms",
-     "media-creator"
+     "other"
     ],
-    "why": "#codenewbie, #ai, #podcast",
-    "key_metric": "91 reactions · 16 comments",
+    "why": "#discuss, #community, #watercooler",
+    "key_metric": "158 reactions · 76 comments",
     "source_key": "devto_week"
    },
    {
-    "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
-    "url": "https://huggingface.co/papers/2611.31201",
+    "title": "Antom 3-in-1 Transformer: A Payment Foundation Model",
+    "url": "https://huggingface.co/papers/2611.25403",
     "type": "paper",
     "score": 54,
     "seen_on": [
@@ -1096,15 +1094,15 @@
     ],
     "industries": [
      "ai-llms",
-     "robotics-hardware"
+     "fintech"
     ],
-    "why": "Frontier multimodal models exhibit extraordinary generalization in generating robot actions from…",
-    "key_metric": "97 upvotes",
+    "why": "We report the development of Antom 3-in-1 Transformer, a payment foundation model that integrates sequence…",
+    "key_metric": "104 upvotes",
     "source_key": "hf_papers_week"
    },
    {
-    "title": "fxceless/victory-fork",
-    "url": "https://github.com/fxceless/victory-fork",
+    "title": "ubiquitarianism/leonida",
+    "url": "https://github.com/ubiquitarianism/leonida",
     "type": "repo",
     "score": 52,
     "seen_on": [
@@ -1113,8 +1111,8 @@
     "industries": [
      "gaming-xr"
     ],
-    "why": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC.",
-    "key_metric": "2.3k stars · created 24 Nov",
+    "why": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+    "key_metric": "2.4k stars · created 24 Nov",
     "source_key": "gh_new"
    }
   ],
@@ -1132,7 +1130,7 @@
      "ai-agents"
     ],
     "why": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "key_metric": "60.7k stars · +29,170 this month",
+    "key_metric": "61.2k stars · +28,295 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1147,7 +1145,7 @@
      "other"
     ],
     "why": "Craft Anything: understand how any software works, and craft your own.",
-    "key_metric": "43k stars · created 31 Oct",
+    "key_metric": "43.7k stars · created 31 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1194,7 +1192,7 @@
      "robotics-hardware"
     ],
     "why": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid…",
-    "key_metric": "186 upvotes",
+    "key_metric": "217 upvotes",
     "source_key": "hf_papers_month"
    },
    {
@@ -1209,7 +1207,7 @@
      "ai-agents"
     ],
     "why": "Towards a More Autonomous Agent System",
-    "key_metric": "24.5k stars · created 31 Oct",
+    "key_metric": "24.6k stars · created 31 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1258,7 +1256,7 @@
      "cybersecurity"
     ],
     "why": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "key_metric": "78.1k stars · +35,068 this month",
+    "key_metric": "78.5k stars · +32,663 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1288,7 +1286,7 @@
      "ai-llms"
     ],
     "why": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-    "key_metric": "21.4k stars · created 29 Oct",
+    "key_metric": "21.8k stars · created 29 Oct",
     "source_key": "gh_new_month"
    },
    {
@@ -1320,7 +1318,7 @@
      "gaming-xr"
     ],
     "why": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive…",
-    "key_metric": "163 upvotes",
+    "key_metric": "166 upvotes",
     "source_key": "hf_papers_month"
    },
    {
@@ -1338,7 +1336,7 @@
      "cloud-devops"
     ],
     "why": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "key_metric": "27.6k stars · +22,073 this month",
+    "key_metric": "27.9k stars · +22,391 this month",
     "source_key": "gh_monthly"
    },
    {
@@ -1355,24 +1353,26 @@
      "media-creator"
     ],
     "why": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure…",
-    "key_metric": "17.9k stars · created 29 Oct",
+    "key_metric": "18.3k stars · created 29 Oct",
     "source_key": "gh_new_month"
    }
   ],
   "year": [
    {
-    "title": "astrid-runtime/handbook",
-    "url": "https://github.com/astrid-runtime/handbook",
+    "title": "codeany-ai/open-agent-sdk-typescript",
+    "url": "https://github.com/codeany-ai/open-agent-sdk-typescript",
     "type": "repo",
     "score": 60,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "other"
+     "ai-llms",
+     "ai-agents",
+     "devtools"
     ],
-    "why": "Contributor handbook for Astrid: the polyrepo, public contracts, contribution process, and release workflow.",
-    "key_metric": "7.4k stars · created 6 Jun",
+    "why": "Agent-SDK without CLI dependencies, as an alternative to claude-agent-sdk, completely open source",
+    "key_metric": "2.7k stars · created 31 Mar",
     "source_key": "gh_new_year"
    },
    {
@@ -1406,18 +1406,18 @@
     "source_key": "devto_year"
    },
    {
-    "title": "astrid-runtime/sdk-rust",
-    "url": "https://github.com/astrid-runtime/sdk-rust",
+    "title": "hardenrun/aif",
+    "url": "https://github.com/hardenrun/aif",
     "type": "repo",
     "score": 58,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "devtools"
+     "ai-agents"
     ],
-    "why": "Rust SDK for building Astrid capsules.",
-    "key_metric": "4.3k stars · created 16 Mar",
+    "why": "On device Firewall for Coding and Personal Agents",
+    "key_metric": "2k stars · created 1 Aug",
     "source_key": "gh_new_year"
    },
    {
@@ -1451,21 +1451,18 @@
     "source_key": "devto_year"
    },
    {
-    "title": "Alpha-Dojo/DojoAgents",
-    "url": "https://github.com/Alpha-Dojo/DojoAgents",
+    "title": "diudiu-tech/delivery-harness",
+    "url": "https://github.com/diudiu-tech/delivery-harness",
     "type": "repo",
     "score": 55,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "ai-llms",
-     "ai-agents",
-     "markets-economy",
-     "fintech"
+     "ai-llms"
     ],
-    "why": "DojoAgents: Full-Market AI Copilot for Personal Investment",
-    "key_metric": "3.9k stars · created 21 May",
+    "why": "AI harness reference implementation for on-demand delivery workflows",
+    "key_metric": "1.7k stars · created 13 Aug",
     "source_key": "gh_new_year"
    },
    {
@@ -1484,8 +1481,8 @@
     "source_key": "hn_year"
    },
    {
-    "title": "Open-Curiosity/gini-agent",
-    "url": "https://github.com/Open-Curiosity/gini-agent",
+    "title": "helloianneo/ian-handdrawn-ppt",
+    "url": "https://github.com/helloianneo/ian-handdrawn-ppt",
     "type": "repo",
     "score": 53,
     "seen_on": [
@@ -1494,11 +1491,10 @@
     "industries": [
      "ai-llms",
      "ai-agents",
-     "devtools",
-     "web-frontend"
+     "ai-media"
     ],
-    "why": "The agent that remembers and learns.",
-    "key_metric": "2.4k stars · created 5 May",
+    "why": "中文手绘技术 PPT 整页图像生成 Skill | 21:9 封面 + 16:9 正文配图 | PNG 输出",
+    "key_metric": "1.5k stars · created 25 Apr",
     "source_key": "gh_new_year"
    },
    {
@@ -1532,35 +1528,35 @@
     "source_key": "hn_year"
    },
    {
-    "title": "BuilderPulse/BuilderPulse",
-    "url": "https://github.com/BuilderPulse/BuilderPulse",
+    "title": "dRoninFlight/dRonin",
+    "url": "https://github.com/dRoninFlight/dRonin",
     "type": "repo",
     "score": 50,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "ai-llms",
-     "cybersecurity"
+     "robotics-hardware"
     ],
-    "why": "AI-powered daily intelligence for indie hackers and builders.",
-    "key_metric": "1.6k stars · created 14 Apr",
+    "why": "The dRonin flight controller software.",
+    "key_metric": "1.5k stars · created 4 Mar",
     "source_key": "gh_new_year"
    },
    {
-    "title": "ShawnPana/smux",
-    "url": "https://github.com/ShawnPana/smux",
+    "title": "thu-ml/Motus",
+    "url": "https://github.com/thu-ml/Motus",
     "type": "repo",
     "score": 48,
     "seen_on": [
      "GitHub"
     ],
     "industries": [
-     "ai-agents",
-     "devtools"
+     "ai-llms",
+     "ai-media",
+     "robotics-hardware"
     ],
-    "why": "tmux config with built-in terminal automation and agent-to-agent communication.",
-    "key_metric": "1.5k stars · created 28 Feb",
+    "why": "Official code of Motus: A Unified Latent Action World Model",
+    "key_metric": "1.3k stars · created 12 Dec",
     "source_key": "gh_new_year"
    },
    {
@@ -1610,12 +1606,12 @@
    "official_posts": 4,
    "models": 8,
    "sdk_releases": 4,
-   "incidents_72h": 1
+   "incidents_72h": 3
   },
   "google": {
    "name": "Google DeepMind & Gemini",
    "headlines": 8,
-   "official_posts": 12,
+   "official_posts": 11,
    "models": 7,
    "sdk_releases": 4,
    "incidents_72h": null
@@ -1646,7 +1642,7 @@
   },
   "mistral": {
    "name": "Mistral AI",
-   "headlines": 7,
+   "headlines": 6,
    "official_posts": 0,
    "models": 2,
    "sdk_releases": 2,
@@ -1654,7 +1650,7 @@
   },
   "cohere": {
    "name": "Cohere",
-   "headlines": 4,
+   "headlines": 1,
    "official_posts": 0,
    "models": 0,
    "sdk_releases": 2,
@@ -1671,7 +1667,7 @@
   "amazon": {
    "name": "Amazon & AWS",
    "headlines": 8,
-   "official_posts": 5,
+   "official_posts": 0,
    "models": 0,
    "sdk_releases": 0,
    "incidents_72h": null
@@ -1679,7 +1675,7 @@
   "apple": {
    "name": "Apple",
    "headlines": 8,
-   "official_posts": 3,
+   "official_posts": 0,
    "models": 4,
    "sdk_releases": 1,
    "incidents_72h": null
@@ -1736,15 +1732,15 @@
    "name": "Stability AI",
    "headlines": 1,
    "official_posts": 0,
-   "models": 3,
+   "models": 1,
    "sdk_releases": 0,
    "incidents_72h": null
   }
  },
  "since_previous_day": {
-  "compared_with": "2026-11-23",
-  "new_ranked_items": 96,
-  "carried_over": 365
+  "compared_with": "2026-11-25",
+  "new_ranked_items": 83,
+  "carried_over": 487
  },
  "licence": "LicenseRef-OpenRoots-ORA-2.3"
 }
