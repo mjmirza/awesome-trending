@@ -2,59 +2,59 @@
 
 Languages, editors, CLIs, package ecosystems and the software toolchain.
 
-**25 November 2026** · 08:12 Europe/Berlin (UTC+1) · 158 items · daily snapshot, rebuilt every morning.
+**26 November 2026** · 08:08 Europe/Berlin (UTC+1) · 159 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (33):** Anthropic, Bloomberg, Canary Media, CoinDesk, Dev.to, Docker Hub, Financial Times, Game Developer, GamesIndustry.biz, GitHub, GitHub Changelog, GitHub releases, Google News, Hacker News, Hugging Face, LWN.net, Latent Space, Lobsters, MCP Registry, NVIDIA blog, OpenRouter, Product Hunt, PyPI, Simon Willison, Smithery, Stack Overflow, Techmeme, The Decoder, The Hacker News, arXiv, bioRxiv and medRxiv, crates.io, npm
+**Sources with items here (29):** 9to5Mac, Anthropic, Canary Media, Decrypt, Dev.to, Docker Hub, Game Developer, GitHub, GitHub Changelog, GitHub releases, Google News, Hacker News, Hugging Face, LWN.net, Latent Space, Lobsters, MCP Registry, NVIDIA blog, OpenRouter, Product Hunt, PyPI, Smithery, Stack Overflow, The Hacker News, The Information, The Robot Report, arXiv, crates.io, npm
 
-**By type:** [Packages](#packages) (58) · [Repositories](#repositories) (43) · [Headlines](#headlines) (21) · [Posts](#posts) (7) · [Container images](#container-images) (7) · [Releases](#releases) (6) · [Discussions](#discussions) (4) · [Papers](#papers) (4) · [MCP servers](#mcp-servers) (4) · [Questions](#questions) (1) · [Datasets](#datasets) (1) · [Hosted models](#hosted-models) (1) · [Product launches](#product-launches) (1)
+**By type:** [Packages](#packages) (58) · [Repositories](#repositories) (43) · [Headlines](#headlines) (15) · [Container images](#container-images) (8) · [Releases](#releases) (8) · [Questions](#questions) (6) · [Posts](#posts) (6) · [Discussions](#discussions) (4) · [Papers](#papers) (4) · [MCP servers](#mcp-servers) (3) · [Product launches](#product-launches) (2) · [Datasets](#datasets) (1) · [Hosted models](#hosted-models) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [cursor/plugins](https://github.com/cursor/plugins) | Repositories | Cursor plugin specification and official plugins | 19.3k stars · +360 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [janhq/jan](https://github.com/janhq/jan) | Repositories | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 46.1k stars · +34 today | 1 | 60 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 3 | [datazip-inc/olake-go](https://github.com/datazip-inc/olake-go) | Repositories | OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet. | 2.3k stars · +38 today | 1 | 60 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 1 | [cursor/plugins](https://github.com/cursor/plugins) | Repositories | Cursor plugin specification and official plugins | 19.6k stars · +416 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [janhq/jan](https://github.com/janhq/jan) | Repositories | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 46.2k stars · +45 today | 1 | 60 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 3 | [datazip-inc/olake-go](https://github.com/datazip-inc/olake-go) | Repositories | OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet. | 2.4k stars · +21 today | 1 | 60 | [GitHub trending](https://github.com/trending/go?since=daily) |
 | 4 | [@modelcontextprotocol/sdk](https://www.npmjs.com/package/@modelcontextprotocol/sdk) | Packages | Model Context Protocol implementation for TypeScript | 93.2M dl/week | 1 | 60 | [npm](https://www.npmjs.com/) |
-| 5 | [The Third Cup: After Everything Has a Name](https://dev.to/thethirdcup/the-third-cup-after-everything-has-a-name-2b14) | Posts | #discuss, #career, #programming | 72 reactions · 32 comments | 1 | 60 | [Dev.to](https://dev.to/top/day) |
-| 6 | [Improving EF Core SQLite queries and seeding (AnyAsync…](https://stackoverflow.com/questions/80018513/improving-ef-core-sqlite-queries-and-seeding-anyasync-addrangeasync-and-under) | Questions | #best-practices, #c#, #database | 2 score · 1 answers · 92 views | 1 | 60 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
-| 7 | [heise3/ExtremaRank](https://github.com/heise3/ExtremaRank) | Repositories | Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds… | 288 stars · created 3 Oct | 1 | 60 | [GitHub](https://github.com/topics/bioinformatics) |
-| 8 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Repositories | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 350 stars · created 6 Oct | 1 | 60 | [GitHub](https://github.com/topics/fintech) |
-| 9 | [ai](https://www.npmjs.com/package/ai) | Packages | AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model… | 48.2M dl/week | 1 | 57 | [npm](https://www.npmjs.com/) |
-| 10 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | Repositories | "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: https://clianything.cc/ | 65.1k stars · +1,074 today | 1 | 54 | [GitHub trending](https://github.com/trending?since=daily) |
+| 5 | [I narrowed a segfault to 22 lines of code but I already accounted…](https://stackoverflow.com/questions/80018742/i-narrowed-a-segfault-to-22-lines-of-code-but-i-already-accounted-for-null-termi) | Questions | #c, #struct, #buffer-overflow | 4 score · 1 answers · 122 views | 1 | 60 | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 6 | [heise3/ExtremaRank](https://github.com/heise3/ExtremaRank) | Repositories | Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds… | 288 stars · created 3 Oct | 1 | 60 | [GitHub](https://github.com/topics/bioinformatics) |
+| 7 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Repositories | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 350 stars · created 6 Oct | 1 | 60 | [GitHub](https://github.com/topics/fintech) |
+| 8 | [ai](https://www.npmjs.com/package/ai) | Packages | AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model… | 47.7M dl/week | 1 | 57 | [npm](https://www.npmjs.com/) |
+| 9 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | Repositories | "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: https://clianything.cc/ | 65.9k stars · +1,106 today | 1 | 54 | [GitHub trending](https://github.com/trending?since=daily) |
+| 10 | [malisper/pgrust](https://github.com/malisper/pgrust) | Repositories | Postgres rewritten in Rust, now faster than Postgres and Clickhouse | 6.1k stars · +28 today | 1 | 54 | [GitHub trending](https://github.com/trending/rust?since=daily) |
 
 ## Packages
 
 | # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [@modelcontextprotocol/sdk](https://www.npmjs.com/package/@modelcontextprotocol/sdk) | Model Context Protocol implementation for TypeScript | npm | `1.32.2` | 93.2M dl/week | 23 Oct | MIT · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
-| 2 | [ai](https://www.npmjs.com/package/ai) | AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model… | npm | `7.0.181` | 48.2M dl/week | 23 Nov | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
-| 3 | [@modelcontextprotocol/core](https://www.npmjs.com/package/@modelcontextprotocol/core) | Model Context Protocol for TypeScript — public Zod schemas (spec + OAuth/OpenID) | npm | `2.4.0` | 43.8M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
+| 2 | [ai](https://www.npmjs.com/package/ai) | AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model… | npm | `7.0.183` | 47.7M dl/week | 26 Nov | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 3 | [@modelcontextprotocol/core](https://www.npmjs.com/package/@modelcontextprotocol/core) | Model Context Protocol for TypeScript — public Zod schemas (spec + OAuth/OpenID) | npm | `2.4.0` | 44.1M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
 | 4 | [@modelcontextprotocol/server](https://www.npmjs.com/package/@modelcontextprotocol/server) | Model Context Protocol implementation for TypeScript - Server package | npm | `2.4.0` | 33.9M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
-| 5 | [@modelcontextprotocol/client](https://www.npmjs.com/package/@modelcontextprotocol/client) | Model Context Protocol implementation for TypeScript - Client package | npm | `2.4.0` | 21.4M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
-| 6 | [@earendil-works/pi-ai](https://www.npmjs.com/package/@earendil-works/pi-ai) | Unified LLM API with automatic model discovery and provider configuration | npm | `1.6.0` | 12.4M dl/week | 20 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
+| 5 | [@modelcontextprotocol/client](https://www.npmjs.com/package/@modelcontextprotocol/client) | Model Context Protocol implementation for TypeScript - Client package | npm | `2.4.0` | 21.5M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
+| 6 | [@earendil-works/pi-ai](https://www.npmjs.com/package/@earendil-works/pi-ai) | Unified LLM API with automatic model discovery and provider configuration | npm | `1.6.1` | 12.4M dl/week | 25 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
 | 7 | [@opentelemetry/instrumentation-openai](https://www.npmjs.com/package/@opentelemetry/instrumentation-openai) | OpenTelemetry instrumentation for the `openai` OpenAI client library | npm | `0.23.0` | 12.4M dl/week | 5 Nov | Apache-2.0 · pre-1.0 | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
-| 8 | [@ai-sdk/mcp](https://www.npmjs.com/package/@ai-sdk/mcp) | The **Model Context Protocol (MCP) client** for the [AI SDK](https://ai-sdk.dev/docs) lets you connect to… | npm | `2.0.104` | 10.6M dl/week | 23 Nov | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
-| 9 | [@vercel/detect-agent](https://www.npmjs.com/package/@vercel/detect-agent) | Detect if code is running in an AI agent or automated development environment | npm | `1.2.7` | 9.2M dl/week | 13 Oct | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
-| 10 | [am-i-vibing](https://www.npmjs.com/package/am-i-vibing) | Detect agentic coding environments and AI assistant tools | npm | `0.5.0` | 8.9M dl/week | 23 Jun | MIT · pre-1.0 | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 8 | [@ai-sdk/mcp](https://www.npmjs.com/package/@ai-sdk/mcp) | The **Model Context Protocol (MCP) client** for the [AI SDK](https://ai-sdk.dev/docs) lets you connect to… | npm | `2.0.106` | 10.5M dl/week | 26 Nov | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 9 | [@earendil-works/pi-agent-core](https://www.npmjs.com/package/@earendil-works/pi-agent-core) | General-purpose agent with transport abstraction, state management, and attachment support | npm | `1.6.1` | 9.3M dl/week | 25 Nov | MIT · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 10 | [@modelcontextprotocol/node](https://www.npmjs.com/package/@modelcontextprotocol/node) | Model Context Protocol implementation for TypeScript - Node.js middleware | npm | `2.1.2` | 9.1M dl/week | 23 Oct | Apache-2.0 · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [@langchain/core](https://www.npmjs.com/package/@langchain/core) | Core LangChain.js abstractions and schemas | npm | `1.5.1` | 8.7M dl/week | 24 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
-| 12 | [chat](https://www.npmjs.com/package/chat) | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | npm | `4.45.0` | 8M dl/week | 13 Nov | MIT · stable | 1 | AI, Agents +3 | [npm](https://www.npmjs.com/) |
-| 13 | [@earendil-works/pi-coding-agent](https://www.npmjs.com/package/@earendil-works/pi-coding-agent) | Coding agent CLI with read, bash, edit, write tools and session management | npm | `1.6.0` | 7.5M dl/week | 20 Nov | MIT · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
-| 14 | [agent-install](https://www.npmjs.com/package/agent-install) | Install SKILL.md files, MCP servers, and AGENTS.md guidance for any coding agent. | npm | `0.0.8` | 5.3M dl/week | 24 Jun | MIT · pre-1.0 | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
-| 15 | [@langchain/openai](https://www.npmjs.com/package/@langchain/openai) | OpenAI integrations for LangChain.js | npm | `1.8.5` | 5.2M dl/week | 20 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
-| 16 | [@earendil-works/pi-mcp](https://www.npmjs.com/package/@earendil-works/pi-mcp) | Standalone Model Context Protocol client for pi and other applications | npm | `1.6.0` | 5.2M dl/week | 20 Nov | MIT · stable | 1 | Agents, Dev tools | [npm](https://www.npmjs.com/) |
-| 17 | [litellm](https://pypi.org/project/litellm/) | Library to easily interface with LLM API providers | PyPI | `1.111.0` | 27M dl/week | 25 Nov | MIT · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
-| 18 | [anthropic](https://pypi.org/project/anthropic/) | The official Python library for the anthropic API | PyPI | `2.14.0` | 51.9M dl/week | 24 Nov | Apache-2.0 · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
-| 19 | [uv](https://pypi.org/project/uv/) | An extremely fast Python package and project manager, written in Rust. | PyPI | `0.13.10` | 49.8M dl/week | 24 Nov | MIT OR Apache-2.0 · pre-1.0 | 1 | Dev tools | [PyPI](https://pypi.org/) |
-| 20 | [openai](https://pypi.org/project/openai/) | The official Python library for the openai API | PyPI | `3.59.0` | 93.9M dl/week | 24 Nov | Apache-2.0 · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
+| 11 | [am-i-vibing](https://www.npmjs.com/package/am-i-vibing) | Detect agentic coding environments and AI assistant tools | npm | `0.5.0` | 8.9M dl/week | 23 Jun | MIT · pre-1.0 | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 12 | [@vercel/detect-agent](https://www.npmjs.com/package/@vercel/detect-agent) | Detect if code is running in an AI agent or automated development environment | npm | `1.2.7` | 8.8M dl/week | 13 Oct | Apache-2.0 · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 13 | [@langchain/core](https://www.npmjs.com/package/@langchain/core) | Core LangChain.js abstractions and schemas | npm | `1.5.1` | 8.7M dl/week | 24 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
+| 14 | [chat](https://www.npmjs.com/package/chat) | Chat SDK — universal TypeScript toolkit for building multi-platform chat bots and AI agents on Slack, Teams… | npm | `4.45.0` | 8M dl/week | 13 Nov | MIT · stable | 1 | AI, Agents +3 | [npm](https://www.npmjs.com/) |
+| 15 | [@earendil-works/pi-coding-agent](https://www.npmjs.com/package/@earendil-works/pi-coding-agent) | Coding agent CLI with read, bash, edit, write tools and session management | npm | `1.6.1` | 7.5M dl/week | 25 Nov | MIT · stable | 1 | AI, Agents +1 | [npm](https://www.npmjs.com/) |
+| 16 | [@langchain/openai](https://www.npmjs.com/package/@langchain/openai) | OpenAI integrations for LangChain.js | npm | `1.8.5` | 5.2M dl/week | 20 Nov | MIT · stable | 1 | AI, Dev tools | [npm](https://www.npmjs.com/) |
+| 17 | [litellm](https://pypi.org/project/litellm/) | Library to easily interface with LLM API providers | PyPI | `1.111.0` | 27.1M dl/week | 25 Nov | MIT · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
+| 18 | [anthropic](https://pypi.org/project/anthropic/) | The official Python library for the anthropic API | PyPI | `2.14.0` | 51.6M dl/week | 24 Nov | Apache-2.0 · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
+| 19 | [uv](https://pypi.org/project/uv/) | An extremely fast Python package and project manager, written in Rust. | PyPI | `0.13.10` | 48.9M dl/week | 24 Nov | MIT OR Apache-2.0 · pre-1.0 | 1 | Dev tools | [PyPI](https://pypi.org/) |
+| 20 | [openai](https://pypi.org/project/openai/) | The official Python library for the openai API | PyPI | `3.59.0` | 93.3M dl/week | 24 Nov | Apache-2.0 · stable | 1 | AI, Dev tools | [PyPI](https://pypi.org/) |
 
 </details>
 
@@ -64,32 +64,32 @@ Languages, editors, CLIs, package ecosystems and the software toolchain.
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [cursor/plugins](https://github.com/cursor/plugins) | Cursor plugin specification and official plugins | 19,338 | +360 today | +1.9% | TypeScript | no licence | 1 | Dev tools | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [janhq/jan](https://github.com/janhq/jan) | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 46,101 | +34 today | +0.1% | Rust | Other | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 3 | [datazip-inc/olake-go](https://github.com/datazip-inc/olake-go) | OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet. | 2,337 | +38 today | +1.7% | Go | Apache-2.0 | 1 | Dev tools, Data | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 4 | [heise3/ExtremaRank](https://github.com/heise3/ExtremaRank) | Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds… | 288 | new | — | HTML | MIT · 53 d old | 1 | Dev tools, Health | [GitHub](https://github.com/topics/bioinformatics) |
-| 5 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 350 | new | — | Python | MIT · 49 d old | 1 | AI, Dev tools +3 | [GitHub](https://github.com/topics/fintech) |
-| 6 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: https://clianything.cc/ | 65,096 | +1,074 today | +1.7% | Python | Apache-2.0 | 1 | Agents, Dev tools | [GitHub trending](https://github.com/trending?since=daily) |
-| 7 | [malisper/pgrust](https://github.com/malisper/pgrust) | Postgres rewritten in Rust, now faster than Postgres and Clickhouse | 6,060 | +20 today | +0.3% | Rust | AGPL-3.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
-| 8 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,980 | +84 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 9 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | A library of Agent Skills designed to work with the Stitch MCP server. | 12,763 | +403 today | +3.3% | TypeScript | Apache-2.0 | 1 | AI, Agents +1 | [GitHub trending](https://github.com/trending?since=daily) |
-| 10 | [pola-rs/polars](https://github.com/pola-rs/polars) | Extremely fast Query Engine for DataFrames, written in Rust | 40,494 | +25 today | +0.1% | Rust | MIT | 1 | Dev tools, Data | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 1 | [cursor/plugins](https://github.com/cursor/plugins) | Cursor plugin specification and official plugins | 19,608 | +416 today | +2.2% | TypeScript | no licence | 1 | Dev tools | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [janhq/jan](https://github.com/janhq/jan) | Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. | 46,165 | +45 today | +0.1% | Rust | Other | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 3 | [datazip-inc/olake-go](https://github.com/datazip-inc/olake-go) | OLake Go: open-source replication from databases, Kafka and S3 to Apache Iceberg and Parquet. | 2,356 | +21 today | +0.9% | Go | Apache-2.0 | 1 | Dev tools, Data | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 4 | [heise3/ExtremaRank](https://github.com/heise3/ExtremaRank) | Native R and Python sample-deletion robustness for omics: candidate certificates, minimum deletion bounds… | 288 | new | — | HTML | MIT · 54 d old | 1 | Dev tools, Health | [GitHub](https://github.com/topics/bioinformatics) |
+| 5 | [LosaLosSantos/aurelio-finance](https://github.com/LosaLosSantos/aurelio-finance) | Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash… | 350 | new | — | Python | MIT · 50 d old | 1 | AI, Dev tools +3 | [GitHub](https://github.com/topics/fintech) |
+| 6 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: https://clianything.cc/ | 65,886 | +1,106 today | +1.7% | Python | Apache-2.0 | 1 | Agents, Dev tools | [GitHub trending](https://github.com/trending?since=daily) |
+| 7 | [malisper/pgrust](https://github.com/malisper/pgrust) | Postgres rewritten in Rust, now faster than Postgres and Clickhouse | 6,081 | +28 today | +0.5% | Rust | AGPL-3.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 8 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 35,063 | +81 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 9 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | A library of Agent Skills designed to work with the Stitch MCP server. | 13,080 | +355 today | +2.8% | TypeScript | Apache-2.0 | 1 | AI, Agents +1 | [GitHub trending](https://github.com/trending?since=daily) |
+| 10 | [pola-rs/polars](https://github.com/pola-rs/polars) | Extremely fast Query Engine for DataFrames, written in Rust | 40,517 | +30 today | +0.1% | Rust | MIT | 1 | Dev tools, Data | [GitHub trending](https://github.com/trending/rust?since=daily) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Self-hosted workflows for coding-agent delivery. | 6,043 | +133 today | +2.3% | Go | Other | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 12 | [reality-opened/openreality](https://github.com/reality-opened/openreality) | Open Reality: phone video to AI-queryable 3D scenes. | 690 | new | — | Python | BSD-2-Clause · 2 mo old | 1 | AI, Agents +3 | [GitHub](https://github.com/topics/robotics) |
-| 13 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | 101 | new | — | — | Other · 34 d old | 1 | Dev tools, Cloud +4 | [GitHub](https://github.com/topics/bioinformatics) |
-| 14 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 74,523 | +703 today | +1.0% | Python | MIT | 1 | AI, Agents +5 | [GitHub trending](https://github.com/trending?since=daily) |
-| 15 | [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | There can be more than Notion and Miro. | 78,130 | +584 today | +0.8% | TypeScript | Other | 1 | Dev tools, SaaS +1 | [GitHub trending](https://github.com/trending?since=daily) |
-| 16 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,371 | +108 today | +0.3% | Rust | Apache-2.0 | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 11 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Self-hosted workflows for coding-agent delivery. | 6,126 | +112 today | +1.9% | Go | Other | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 12 | [talharaziq/Advanced-Bioinformatics](https://github.com/talharaziq/Advanced-Bioinformatics) | A free, hands-on bioinformatics roadmap from Linux, Python & R to RNA-seq, genomics, Bioconductor, and… | 102 | new | — | — | Other · 35 d old | 1 | Dev tools, Cloud +4 | [GitHub](https://github.com/topics/bioinformatics) |
+| 13 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 75,306 | +945 today | +1.3% | Python | MIT | 1 | AI, Agents +5 | [GitHub trending](https://github.com/trending?since=daily) |
+| 14 | [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | There can be more than Notion and Miro. | 78,641 | +574 today | +0.7% | TypeScript | Other | 1 | Dev tools, SaaS +1 | [GitHub trending](https://github.com/trending?since=daily) |
+| 15 | [t8y2/dbx](https://github.com/t8y2/dbx) | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite… | 31,477 | +101 today | +0.3% | Rust | Apache-2.0 | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/rust?since=daily) |
+| 16 | [reality-opened/openreality](https://github.com/reality-opened/openreality) | Open Reality: phone video to AI-queryable 3D scenes. | 690 | new | — | Python | BSD-2-Clause · 2 mo old | 1 | AI, Agents +3 | [GitHub](https://github.com/topics/robotics) |
 | 17 | [JkingYu/DiffExplorer](https://github.com/JkingYu/DiffExplorer) | Differential analysis tool for coding-free researchers – instant statistical results and charts, ready for… | 96 | new | — | Python | MIT · 2 mo old | 1 | Dev tools, Health | [GitHub](https://github.com/topics/bioinformatics) |
-| 18 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 33,271 | +158 today | +0.5% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
-| 19 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | The open-source agent for CI/CD reliability. | 15,294 | +398 today | +2.7% | Python | Apache-2.0 | 1 | AI, Agents +3 | [GitHub trending](https://github.com/trending?since=daily) |
-| 20 | [bendlang/bend](https://github.com/bendlang/bend) | Bend 2: a fast language that blocks AI mistakes via proof. | 25,857 | +33 today | +0.1% | TypeScript | Apache-2.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
+| 18 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 33,423 | +176 today | +0.5% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
+| 19 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | The open-source agent for CI/CD reliability. | 15,610 | +348 today | +2.3% | Python | Apache-2.0 | 1 | AI, Agents +3 | [GitHub trending](https://github.com/trending?since=daily) |
+| 20 | [bendlang/bend](https://github.com/bendlang/bend) | Bend 2: a fast language that blocks AI mistakes via proof. | 25,890 | +33 today | +0.1% | TypeScript | Apache-2.0 | 1 | AI, Dev tools +1 | [GitHub trending](https://github.com/trending/typescript?since=daily) |
 
 </details>
 
@@ -99,48 +99,29 @@ Languages, editors, CLIs, package ecosystems and the software toolchain.
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Huawei says HarmonyOS has surpassed 100M installations across smartphones, tablets, and…](https://www.techmeme.com/261125/p7#a261125p7) | Iris Deng / South China Morning Post : Huawei says HarmonyOS has surpassed 100M installations across… | Techmeme | 25 Nov 08:10 | 1 | Dev tools, Mobile | [Techmeme](https://www.techmeme.com/feed.xml) |
-| 2 | [Security updates for Tuesday](https://lwn.net/Articles/1109472/) | Security updates have been issued by AlmaLinux (aspell, curl, fence-agents, flatpak, flatpak-builder… | LWN.net | 24 Nov 15:03 | 1 | Agents, Dev tools +2 | [LWN.net](https://lwn.net/headlines/rss) |
-| 3 | [WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live](https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html) | WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November… | The Hacker News | 25 Nov 07:21 | 1 | Dev tools, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 4 | [More predictable notifications on GitHub.com](https://github.blog/changelog/2026-11-24-more-predictable-notifications-on-github-com) | Starting December 1, 2026, we’re migrating notifications on GitHub.com over the course of a week to make… | GitHub Changelog | 24 Nov 17:40 | 1 | Dev tools, Education | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 5 | [Issue statuses and repository boards are in public preview](https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview) | Open or closed doesn’t always tell you where an issue stands. | GitHub Changelog | 23 Nov 21:37 | 1 | Agents, Dev tools | [GitHub Changelog](https://github.blog/changelog/feed/) |
-| 6 | [datasette-charts 0.2a0](https://simonwillison.net/2026/Nov/24/datasette-charts/) | Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . | Simon Willison | 24 Nov 05:24 | 1 | AI, Dev tools | [Simon Willison](https://simonwillison.net/atom/everything/) |
-| 7 | [Solana developers move to stop validators finishing work on blocks that already lost](https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost) | The fix would stop the computers that run Solana from wasting effort on transactions the network has already… | CoinDesk | 25 Nov 07:33 | 1 | Dev tools, Crypto | [CoinDesk](https://www.coindesk.com/arc/outboundfeeds/rss/) |
-| 8 | [Want 24/7 clean power for data centers? Try giant heat batteries.](https://www.canarymedia.com/articles/batteries/24-7-clean-power-giant-heat-batteries) | Data center developers are scrambling to find enough electricity to power their energy-intensive facilities. | Canary Media | 23 Nov 09:30 | 1 | Dev tools, Cloud +1 | [Canary Media](https://www.canarymedia.com/rss.rss) |
-| 9 | ["You are still taking 100% of the risk" – Why Cairn dev The Game Bakers backs…](https://www.gamesindustry.biz/you-are-still-taking-100-of-the-risk-why-cairn-dev-the-game-bakers-backs-self-publishing-for-all-but-the-smallest-developers) | Self-publishing is now firmly established as a viable route to market for indie developers, with many only… | GamesIndustry.biz | 24 Nov 16:28 | 1 | Dev tools, Gaming +1 | [GamesIndustry.biz](https://www.gamesindustry.biz/feed) |
-| 10 | [Splitscreen Croatia conference offers attendance packages for developers looking to…](https://www.gamesindustry.biz/splitscreen-croatia-conference-offers-free-travel-packages-for-developers-looking-to-showcase-unreleased-games-to-publishers-and-investors) | Splitcreen Croatia, the new industry conference seeking to fill the gap left by Reboot Develop , has opened… | GamesIndustry.biz | 24 Nov 13:18 | 1 | Dev tools, Markets +2 | [GamesIndustry.biz](https://www.gamesindustry.biz/feed) |
+| 1 | [Security updates for Wednesday](https://lwn.net/Articles/1109650/) | Security updates have been issued by AlmaLinux (emacs, go-toolset:rhel8, xorg-x11-server-Xwayland, and… | LWN.net | 25 Nov 15:06 | 1 | Dev tools, Cloud +1 | [LWN.net](https://lwn.net/headlines/rss) |
+| 2 | [13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps](https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html) | Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows… | The Hacker News | 26 Nov 04:48 | 1 | Dev tools, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 3 | [Copilot code review billing will default to the organization](https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization) | If you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will… | GitHub Changelog | 25 Nov 23:18 | 1 | AI, Dev tools | [GitHub Changelog](https://github.blog/changelog/feed/) |
+| 4 | [China's Google Just Released Its Fast New AI Model for Free](https://decrypt.co/384015/china-google-released-fast-new-ai-model-free-baidu-ernie) | Baidu has released the weights of its new high-speed reasoning model, giving developers a commercially… | Decrypt | 25 Nov 23:38 | 1 | AI, Dev tools +1 | [Decrypt](https://decrypt.co/feed) |
+| 5 | [How Vention is cutting factory programming from weeks to minutes](https://www.therobotreport.com/how-vention-is-cutting-factory-programming-from-weeks-to-minutes/) | Etienne Lacroix explains why AI deployment—not just better models—will define the future of industrial… | The Robot Report | 25 Nov 19:24 | 1 | AI, Dev tools +1 | [The Robot Report](https://www.therobotreport.com/feed/) |
+| 6 | [Want 24/7 clean power for data centers? Try giant heat batteries.](https://www.canarymedia.com/articles/batteries/24-7-clean-power-giant-heat-batteries) | Data center developers are scrambling to find enough electricity to power their energy-intensive facilities. | Canary Media | 23 Nov 09:30 | 1 | Dev tools, Cloud +1 | [Canary Media](https://www.canarymedia.com/rss.rss) |
+| 7 | [Devs can now utilize the high-end ambient occlusion technique seen in EVE: Frontier](https://www.gamedeveloper.com/programming/devs-can-now-utilize-high-end-ambient-occlusion-technique-seen-in-eve-frontier) | CORTAO, a personal programming project by Fenris Creations developer Daniel Isheden, is being used for EVE… | Game Developer | 23 Nov 16:10 | 1 | Dev tools, Gaming | [Game Developer](https://www.gamedeveloper.com/rss.xml) |
+| 8 | [Major developers, legal experts, and 32 states back Epic in Apple’s SCOTUS appeal](https://9to5mac.com/2026/11/25/major-developers-legal-experts-and-32-states-back-epic-in-apples-scotus-appeal/) | In a significant development in Apple’s Supreme Court appeal of a civil contempt ruling, Epic Games has… | 9to5Mac | 25 Nov 23:16 | 1 | Dev tools, Mobile +2 | [9to5Mac](https://9to5mac.com/feed/) |
+| 9 | [Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents](https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/) | Turning a simulation idea into a working application means assembling assets, connecting physics and… | NVIDIA blog | 19 Nov 18:00 | 1 | AI, Agents +1 | [NVIDIA blog](https://blogs.nvidia.com/feed/) |
+| 10 | [Advancing Claude for Financial Services](https://www.anthropic.com/news/advancing-claude-for-financial-services) | Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for… | Anthropic | 17 Nov 18:10 | 1 | AI, Dev tools +2 | [Anthropic](https://www.anthropic.com/news) |
 
 <details>
-<summary>Show 10 more</summary>
+<summary>Show 5 more</summary>
 
 | # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [UK mobile developers can now apply for their share of a £260 million Google settlement](https://www.gamesindustry.biz/uk-mobile-developers-can-now-apply-for-their-share-of-a-260-million-google-settlement) | UK developers who released games, apps or content on the Google Play Store between August 2018 and July 2026… | GamesIndustry.biz | 24 Nov 11:50 | 1 | Dev tools, Mobile +1 | [GamesIndustry.biz](https://www.gamesindustry.biz/feed) |
-| 12 | [Devs can now utilize the high-end ambient occlusion technique seen in EVE: Frontier](https://www.gamedeveloper.com/programming/devs-can-now-utilize-high-end-ambient-occlusion-technique-seen-in-eve-frontier) | CORTAO, a personal programming project by Fenris Creations developer Daniel Isheden, is being used for EVE… | Game Developer | 23 Nov 16:10 | 1 | Dev tools, Gaming | [Game Developer](https://www.gamedeveloper.com/rss.xml) |
-| 13 | [Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents](https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/) | Turning a simulation idea into a working application means assembling assets, connecting physics and… | NVIDIA blog | 19 Nov 18:00 | 1 | AI, Agents +1 | [NVIDIA blog](https://blogs.nvidia.com/feed/) |
-| 14 | [Advancing Claude for Financial Services](https://www.anthropic.com/news/advancing-claude-for-financial-services) | Claude for Financial Services adds a native Excel plugin, real-time market connectors, and skills for… | Anthropic | 17 Nov 18:10 | 1 | AI, Dev tools +2 | [Anthropic](https://www.anthropic.com/news) |
-| 15 | [Commentary: Can China's AI chipmakers break Nvidia's hold on developers?](https://news.google.com/rss/articles/CBMikwFBVV95cUxNSDJ5SWJBaHJRQjhPM3BNc3F4N1N3YndscFcyY1ZPSmo3Tk9mYUxhWkFsdFZFVGJwU0VwZ0hmYXJpTjNBVDhiVDk2MHNQeVZ2SVZTUDBWbFRjLUY5UmdFN29hbzNrd01XM1dsOUg1SFVLQTJqbnRxeERDX2NoT2hjanpKX005cjR5SkowZ3lXR1FNb2M?oc=5) | Headline via Google News (digitimes) | digitimes <sub>digitimes.com · via Google News</sub> | 25 Nov 06:49 | 1 | AI, Dev tools +1 | [Google News](https://news.google.com/search?q=Nvidia+AI&hl=en-US&gl=US&ceid=US%3Aen) |
-| 16 | [Z.ai’s GLM-5.4 Runs 28 Layers Twice: What Developers Should Test](https://news.google.com/rss/articles/CBMie0FVX3lxTE5NMWpMTXVfUDZJRkdaTlhwMDh5eTFjV3BSUk40ZmhHM2Y3QVBMcndhdkFxV1BWUVpsWkx5dGRCbFdhT0JZVjM5Q1cyejFEWVZDT3U2Zks3TVg4Q3lKcF9mSkFZVGpOZ3d1XzBGTjBjZE11Q0dqT0JIOWhwYw?oc=5) | Headline via Google News (TechRepublic) | TechRepublic <sub>techrepublic.com · via Google News</sub> | 24 Nov 14:18 | 1 | AI, Dev tools | [Google News](https://news.google.com/search?q=Zhipu+OR+%22Z.ai%22+GLM&hl=en-US&gl=US&ceid=US%3Aen) |
-| 17 | [Anthropic tops 700 million monthly MCP SDK downloads and expands the protocol for more…](https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/) | Two years after launch, Anthropic reports more than 700 million monthly downloads for its MCP interface… | The Decoder | 24 Nov 20:23 | 1 | AI, Agents +1 | [The Decoder](https://the-decoder.com/feed/) |
-| 18 | [\[AINews\] Gemini 4 Neon marks GDM's full return as a Frontier Lab](https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/) | November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by… | Latent Space | 25 Nov 05:29 | 1 | AI, Dev tools | [Latent Space](https://www.latent.space/feed) |
-| 19 | [\[AINews\] Anthropic successfully completes largest IPO in history, valued at $1.5T](https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/) | November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. | Latent Space | 20 Nov 08:12 | 1 | AI, Dev tools +1 | [Latent Space](https://www.latent.space/feed) |
-| 20 | [Unsold Apartments Pile Up in Iceland as High Rates Hit Developers](https://www.bloomberg.com/news/articles/2026-11-25/unsold-apartments-pile-up-in-iceland-as-high-rates-hit-developers) | A cooling economy attracts fewer immigrants, curtailing demand for housing | Bloomberg | 25 Nov 07:15 | 1 | Dev tools, Markets | [Bloomberg](https://feeds.bloomberg.com/economics/news.rss) |
+| 11 | [Call for Applications: Meta AI Impact Grant for Startups and Developers in Nigeria (Up…](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYlNUbUdfUTZFRy1uTVlFVXB3d3UySktTeEkwNkJnUk5RWTVDbFhTQXE1WjktQzlhRVJKcG5tY3Y5OVltM2hEam1tUVI3Q2Eyd0VRdmhUR3NMWXk1dk9HeUJGUjlIOG9CUFc5TGhMdkRQSndrWWJUd2toV05QOWpYWFYxTG5wZzNiZ18zSXJXbklkTy1VRU5PWlRNbno3dHJ4X1UwMUZqV081bmdzT2F3YVdibDJkeU9tYXVxTE5ad0ZSczJUZXBYNmltU0lSeEli?oc=5) | Headline via Google News (MSME Africa) | MSME Africa <sub>msmeafricaonline.com · via Google News</sub> | 25 Nov 20:07 | 1 | AI, Dev tools | [Google News](https://news.google.com/search?q=%22Meta+AI%22+OR+%22Meta+Superintelligence%22+OR+%22Llama%22+Meta&hl=en-US&gl=US&ceid=US%3Aen) |
+| 12 | [OtterlyAI Launches Official ChatGPT Plugin for GEO, Adds Tracking for Bing AI Mode…](https://news.google.com/rss/articles/CBMiiAJBVV95cUxPMUpIdG9KRWxFNld0ajA3R1pPMzVPRzlfNTFWSlhGVGYtYzIzTlFmMkItMUl5dkRwN1U5YWFUUHFxcjVIRXlGdFpIVkEtSFBQNFJfQVdVUHgzMFVtMWNxVE53TFBGUjJ5UmVxSV9ENFgyRGdma1dLOEtNQkpXQUxXQWxXSlBXM0p5N1BkNF9IejVnaG90cXVVTy13NTRRaGdGOWxzLVpEMWUway11dVJ0QnAyWFlEZlRpY1VwVy1tdmM4UF9Fc1ZNNERaVEZkem1pVjJ3WWtkR0FWMTV2Y0Q3NWQ4SGs1UjJEVGpHdHBrMEEwMVNEZzRfc2tCZnllQ3plZlNJOGF3eWc?oc=5) | Headline via Google News (markets.businessinsider.com) | markets.businessinsider.com <sub>markets.businessinsider.com · via Google News</sub> | 25 Nov 15:06 | 1 | AI, Dev tools | [Google News](https://news.google.com/search?q=DeepSeek&hl=en-US&gl=US&ceid=US%3Aen) |
+| 13 | [MiniMax H3 Open-Source 100-Day Report Card: One Model Spawns 1,472 Models, Downloads…](https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ET3puZ21Nb00zNFJZbFJFOEROVzhyNU91cHBJRTl2XzJZeGVGdzM3QUMyOXZ6OGV3QmVWUXdrSVRXblI5cVBHNGJn?oc=5) | Headline via Google News (AIBase) | AIBase <sub>news.aibase.com · via Google News</sub> | 24 Nov 06:05 | 1 | AI media, Dev tools | [Google News](https://news.google.com/search?q=%22Luma+AI%22+OR+%22Pika%22+AI+video+OR+%22Kling%22+AI&hl=en-US&gl=US&ceid=US%3Aen) |
+| 14 | [\[AINews\] Gemini 4 Neon marks GDM's full return as a Frontier Lab](https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/) | November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by… | Latent Space | 25 Nov 05:29 | 1 | AI, Dev tools | [Latent Space](https://www.latent.space/feed) |
+| 15 | [Chinese AI Firms Confront Dire Future as U.S. Tightens Access to Chips and Tokens](https://www.theinformation.com/articles/chinese-ai-firms-confront-dire-future-u-s-tightens-access-chips-tokens) | China’s AI model developers are suddenly confronting a dire future, as both the U.S. government and American… | The Information | 25 Nov 15:00 | 1 | AI, Dev tools +2 | [The Information](https://www.theinformation.com/feed) |
 
 </details>
-
-<sub>1 more in today's archive.</sub>
-
-## Posts
-
-| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [The Third Cup: After Everything Has a Name](https://dev.to/thethirdcup/the-third-cup-after-everything-has-a-name-2b14) | #discuss, #career, #programming | 72 reactions · 32 comments | xulingfeng | 1 | Dev tools | [Dev.to](https://dev.to/top/day) |
-| 2 | [Why Your Android App Drops Frames: The Jetpack Compose Architecture Guide That Fixes…](https://dev.to/smtahosin/why-your-android-app-drops-frames-the-jetpack-compose-architecture-guide-that-fixes-recomposition-3oh3) | #android, #kotlin, #mobile | 15 reactions · 5 comments | S M Tahosin | 1 | Dev tools, Mobile | [Dev.to](https://dev.to/top/day) |
-| 3 | [Why Your AI Release Notes Hallucinate: The "Why vs What" Problem in Git History](https://dev.to/necoz/why-your-ai-release-notes-hallucinate-the-why-vs-what-problem-in-git-history-5ch0) | #ai, #devops, #github | 38 reactions · 14 comments | 𝗝𝗼𝗵𝗻 | 1 | AI, Dev tools +1 | [Dev.to](https://dev.to/top/day) |
-| 4 | [Abolish Lock Poisoning](https://lucumr.pocoo.org/2026/11/25/poisoning/) | #rust | 8 score · 1 comments | — | 1 | Dev tools | [Lobsters](https://lobste.rs/) |
-| 5 | [Beyond Linux: A Journey Through the Open Source Ecosystem](https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/) | #freebsd, #netbsd, #openbsd | 15 score · 2 comments | — | 1 | Dev tools, Cloud | [Lobsters](https://lobste.rs/) |
-| 6 | [The Art of the Canary in the Age of AI](https://dev.to/copyleftdev/the-art-of-the-canary-in-the-age-of-ai-2o41) | #ai, #testing, #programming | 14 reactions · 5 comments | Don Johnson | 1 | AI, Dev tools +1 | [Dev.to](https://dev.to/top/day) |
-| 7 | [Install and Use the Google Workspace CLI: gwscli on Linux, From curl to Agent Skills](https://dev.to/gde/install-and-use-the-google-workspace-cli-gwscli-on-linux-from-curl-to-agent-skills-12dm) | #googleworkspace, #cli, #mcp | 8 reactions · 0 comments | xbill | 1 | Agents, Dev tools +1 | [Dev.to](https://dev.to/top/day) |
 
 ## Container images
 
@@ -151,58 +132,83 @@ Languages, editors, CLIs, package ecosystems and the software toolchain.
 | 3 | [node](https://hub.docker.com/_/node) | Node.js is a JavaScript-based platform for server-side and networking applications. | 7.5B | 14,216 | 24 Nov 21:41 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 4 | [rabbitmq](https://hub.docker.com/_/rabbitmq) | RabbitMQ is an open source multi-protocol messaging broker. | 3.9B | 5,375 | 25 Nov 06:54 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 5 | [golang](https://hub.docker.com/_/golang) | Go (golang) is a general purpose, higher-level, imperative programming language. | 2.8B | 5,125 | 24 Nov 20:24 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
-| 6 | [debian](https://hub.docker.com/_/debian) | Debian is a Linux distribution that's composed entirely of free and open-source software. | 1.8B | 5,329 | 25 Nov 03:23 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| 6 | [debian](https://hub.docker.com/_/debian) | Debian is a Linux distribution that's composed entirely of free and open-source software. | 1.8B | 5,329 | 25 Nov 21:24 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
 | 7 | [ruby](https://hub.docker.com/_/ruby) | Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language. | 1.6B | 2,411 | 25 Nov 03:01 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
+| 8 | [wordpress](https://hub.docker.com/_/wordpress) | The WordPress rich content management system can utilize plugins, widgets, and themes. | 1.5B | 5,895 | 25 Nov 01:25 | 1 | Dev tools, Cloud | [Docker Hub](https://hub.docker.com/search?badges=official) |
 
 ## Releases
 
 | # | Project | Release | Stage | Published | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) | [v2.14.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0) | stable | 24 Nov 22:00 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-| 2 | [openai/openai-python](https://github.com/openai/openai-python) | [v3.59.0](https://github.com/openai/openai-python/releases/tag/v3.59.0) | stable | 24 Nov 20:18 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-| 3 | [mistralai/client-python](https://github.com/mistralai/client-python) | [python - v3.9.0 - 2026-11-24 14:51:52](https://github.com/mistralai/client-python/releases/tag/v3.9.0) | stable | 24 Nov 16:02 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-| 4 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | [Release v0.71.1](https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1) | stable | 24 Nov 04:50 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-| 5 | [cohere-ai/cohere-python](https://github.com/cohere-ai/cohere-python) | [7.3.3](https://github.com/cohere-ai/cohere-python/releases/tag/7.3.3) | stable | 19 Nov 16:50 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-| 6 | [googleapis/python-genai](https://github.com/googleapis/python-genai) | [v3.6.1](https://github.com/googleapis/python-genai/releases/tag/v3.6.1) | stable | 18 Nov 22:51 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
-
-## Discussions
-
-| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Marginalia Search, Money, C++, Rust, AI, Stuff](https://www.marginalia.nu/log/a_141_marginalia_update/) | Link to marginalia.nu | 70 | 19 | 20 pts/h | [open](https://news.ycombinator.com/item?id=50638220) | **2** <sub>Hacker News, Lobsters</sub> | AI, Dev tools | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Show HN: 3D story maps in JupyterLab, written in Python, run in the browser](https://notebook.link/@arjxn-py/3d-nepal-flood) | Link to notebook.link | 10 | 2 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50628421) | 1 | Dev tools, Web | [Hacker News](https://news.ycombinator.com/show) |
-| 3 | [Claude Desktop or Terminal?](https://news.ycombinator.com/item?id=50632007) | Discussion thread on HN | 1 | 5 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50632007) | 1 | AI, Dev tools | [Hacker News](https://news.ycombinator.com/ask) |
-| 4 | [Show HN: Mergeon – A native desktop Git client written in Rust with GPUI](https://github.com/Spilveru/mergeon) | Link to github.com | 7 | 0 | 2 pts/h | [open](https://news.ycombinator.com/item?id=50637887) | 1 | Dev tools | [Hacker News](https://news.ycombinator.com/show) |
-
-## Papers
-
-| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers](https://arxiv.org/abs/2611.32973) | Autonomous specification engineering requires coding agents to translate functional requirements into… | Xingjian Wang, Shijian Wang +11 | cs.SE · new | preprint | 1 | Agents, Dev tools | [arXiv](https://arxiv.org/) |
-| 2 | [How Use Case Tables Enable the Elicitation of Explanation Needs](https://arxiv.org/abs/2611.32809) | [Context and motivation] While software systems get more integrated into people's daily lives - like… | Lucas Burgath, Jovita Vahlhaus +3 | cs.SE · new | preprint | 1 | Dev tools | [arXiv](https://arxiv.org/) |
-| 3 | [Energy as a Service-Level Objective: Transaction-Level Energy Attribution](https://arxiv.org/abs/2611.32731) | Service engineers assess every change against functional requirements and qualities such as reliability… | Julian Legler | cs.SE · new | preprint | 1 | Dev tools, Energy | [arXiv](https://arxiv.org/) |
-| 4 | [Terminally differentiated CX3CR1+ natural killer cells drive coronary arteritis through…](https://doi.org/10.64898/2026.11.20.767965) | Natural killer (NK) cells acquire potent effector function through terminal differentiation, yet the signals… | Fujita, M., Satooka, H. +8 | bioRxiv · immunology · new | preprint | 1 | Dev tools, Markets +1 | [bioRxiv and medRxiv](https://www.biorxiv.org/) |
-
-## MCP servers
-
-| # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [SophiaLabs Nomos (Apache 2.0) - Git Worktree &…](https://github.com/mgantlett/nomos) | SophiaLabs Go CLI & MCP: GitHub repo AST X-Ray, 42 coding-agent DoD gates, worktree & CI guards. | v4.32.1 · 25 Nov 08:00 | 1.0+ | 1 | Agents, Dev tools | [MCP Registry](https://registry.modelcontextprotocol.io/) |
-| 2 | [SkillTotal](https://github.com/pezhik/skilltotal) | Static security scan of npm and PyPI packages, MCP servers, agent skills and VS Code extensions. | v1.13.0 · 25 Nov 07:13 | 1.0+ | 1 | Agents, Dev tools +1 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
-| 3 | [sap-mcp](https://registry.smithery.ai/servers/oobe-protocol/sap-mcp) | Use the SAP MCP Wizard or install the library from the npm registry to automatically create and configure a… | 34,350 uses | unverified · remote | 1 | AI, Agents +3 | [Smithery](https://smithery.ai/) |
-| 4 | [emblem-mcp](https://registry.smithery.ai/servers/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | AI, Agents +7 | [Smithery](https://smithery.ai/) |
+| 1 | [microsoft/vscode](https://github.com/microsoft/vscode) | [1.148.0](https://github.com/microsoft/vscode/releases/tag/1.148.0) | stable | 25 Nov 10:44 | 1 | Dev tools | [GitHub releases](https://github.com/) |
+| 2 | [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) | [v2.14.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0) | stable | 24 Nov 22:00 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 3 | [openai/openai-python](https://github.com/openai/openai-python) | [v3.59.0](https://github.com/openai/openai-python/releases/tag/v3.59.0) | stable | 24 Nov 20:18 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 4 | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | [SDK TypeScript Release v0.1.36](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.36) | stable | 26 Nov 07:46 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 5 | [mistralai/client-python](https://github.com/mistralai/client-python) | [python - v3.9.0 - 2026-11-24 14:51:52](https://github.com/mistralai/client-python/releases/tag/v3.9.0) | stable | 24 Nov 16:02 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 6 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | [Release v0.71.1](https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1) | stable | 24 Nov 04:50 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 7 | [cohere-ai/cohere-python](https://github.com/cohere-ai/cohere-python) | [7.3.3](https://github.com/cohere-ai/cohere-python/releases/tag/7.3.3) | stable | 19 Nov 16:50 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
+| 8 | [googleapis/python-genai](https://github.com/googleapis/python-genai) | [v3.6.1](https://github.com/googleapis/python-genai/releases/tag/v3.6.1) | stable | 18 Nov 22:51 | 1 | AI, Dev tools | [GitHub releases](https://github.com/) |
 
 ## Questions
 
 | # | Question | Tags | Score | Answers | Views | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Improving EF Core SQLite queries and seeding (AnyAsync, AddRangeAsync) and understanding…](https://stackoverflow.com/questions/80018513/improving-ef-core-sqlite-queries-and-seeding-anyasync-addrangeasync-and-under) | #best-practices, #c#, #database | 2 | 1 (accepted) | 92 | 1 | Dev tools, Data | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 1 | [I narrowed a segfault to 22 lines of code but I already accounted for null terminators…](https://stackoverflow.com/questions/80018742/i-narrowed-a-segfault-to-22-lines-of-code-but-i-already-accounted-for-null-termi) | #c, #struct, #buffer-overflow | 4 | 1 (accepted) | 122 | 1 | Dev tools | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 2 | [Script to generate and fill a template does not populate](https://stackoverflow.com/questions/80018752/script-to-generate-and-fill-a-template-does-not-populate) | #google-sheets, #google-apps-script | 1 | 0 | 65 | 1 | Dev tools | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 3 | [Why does Milvus 2.4.4 reject a scalar-only collection that worked in 2.4.1?](https://stackoverflow.com/questions/80018747/why-does-milvus-2-4-4-reject-a-scalar-only-collection-that-worked-in-2-4-1) | #python, #database, #vector | 0 | 0 | 29 | 1 | Dev tools, Data | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 4 | [Why is reveal_type() recognised without import, but not assert_type() or assert_never()?](https://stackoverflow.com/questions/80018710/why-is-reveal-type-recognised-without-import-but-not-assert-type-or-assert) | #python, #python-typing | 0 | 1 (accepted) | 99 | 1 | Dev tools | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 5 | [How to make Pyright obey my annotated type instead of narrowing it?](https://stackoverflow.com/questions/80018711/how-to-make-pyright-obey-my-annotated-type-instead-of-narrowing-it) | #python, #python-typing, #pyright | 0 | 2 | 127 | 1 | Dev tools | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+| 6 | [Delphi Custom Control - Name assignment error at design time](https://stackoverflow.com/questions/80018684/delphi-custom-control-name-assignment-error-at-design-time) | #delphi, #custom-controls, #design-time | 1 | 1 (accepted) | 50 | 1 | Dev tools | [Stack Overflow](https://stackoverflow.com/questions?tab=Hot) |
+
+## Posts
+
+| # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Optimizing Rustc's next trait solver](https://donsz.nl/blog/optimizing-rustcs-next-trait-solver) | #compilers, #performance, #rust | 47 score · 7 comments | — | 1 | Dev tools | [Lobsters](https://lobste.rs/) |
+| 2 | [Marginalia Search, Money, C++, Rust, AI, stuff](https://www.marginalia.nu/log/a_141_marginalia_update/) | #c++, #java, #performance | 107 score · 21 comments | — | 1 | AI, Dev tools | [Lobsters](https://lobste.rs/) |
+| 3 | [Typed indexes in Zig](https://lvignoli.eu/posts/2026-11-16-typed-indexes-in-zig/) | #programming, #zig | 16 score · 0 comments | — | 1 | Dev tools | [Lobsters](https://lobste.rs/) |
+| 4 | [Which OpenAPI Codegen Should You Choose in 2026?  openapi-typescript vs Hey API vs…](https://dev.to/necoz/which-openapi-codegen-should-you-choose-in-2026-openapi-typescript-vs-hey-api-vs-orval-vs-kubb-m8c) | #typescript, #frontend, #backend | 64 reactions · 16 comments | nyaomaru | 1 | Dev tools, Web | [Dev.to](https://dev.to/top/day) |
+| 5 | [October in Servo: video captions and inert content](https://servo.org/blog/2026/11/25/october-in-servo/) | #browsers, #release, #rust | 46 score · 0 comments | — | 1 | Dev tools, Web | [Lobsters](https://lobste.rs/) |
+| 6 | [Abolish Lock Poisoning](https://lucumr.pocoo.org/2026/11/25/poisoning/) | #rust | 49 score · 74 comments | — | 1 | Dev tools | [Lobsters](https://lobste.rs/) |
+
+## Discussions
+
+| # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Show HN: Rust agent with an Inkling 2 Mini inference engine for Apple Silicon](https://github.com/onatm/rustling) | Link to github.com | 12 | 0 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50646482) | 1 | AI, Agents +2 | [Hacker News](https://news.ycombinator.com/show) |
+| 2 | [SSH is a GUI framework](https://zydra.sh/articles/ssh-is-a-gui-framework/) | Link to zydra.sh | 172 | 83 | 2 pts/h | [open](https://news.ycombinator.com/item?id=50589784) | **2** <sub>Hacker News, Lobsters</sub> | Dev tools | [Hacker News](https://news.ycombinator.com/) |
+| 3 | [Show HN: Run your own Hacker News on Hatamoto (open-source, one binary)](https://news.hatamoto.dev/) | Link to news.hatamoto.dev | 7 | 0 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50650402) | 1 | Dev tools, Security | [Hacker News](https://news.ycombinator.com/show) |
+| 4 | [Show HN: Rusty Teams – A Native Microsoft Teams Client in Rust](https://github.com/danieldaeschle/rusty-teams) | Link to github.com | 6 | 3 | 0 pts/h | [open](https://news.ycombinator.com/item?id=50642773) | 1 | Dev tools | [Hacker News](https://news.ycombinator.com/show) |
+
+## Papers
+
+| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in…](https://arxiv.org/abs/2611.34875) | Agent patches are larger than developers', which is widely read as over-editing. | Aakash Goel, Benjamin Steenhoek +1 | cs.SE · new | preprint | 1 | Agents, Dev tools | [arXiv](https://arxiv.org/) |
+| 2 | [Multi-Party Authorization of Maintenance Prescriptions on a Permissioned Blockchain](https://arxiv.org/abs/2611.34662) | In industrial prescriptive maintenance, an equipment supplier's model may recommend an intervention that a… | Siyuan Chen, Ebru Turanoglu Bekar +1 | cs.SE · new | preprint | 1 | Dev tools, Crypto | [arXiv](https://arxiv.org/) |
+| 3 | [Evaluating More with Less: Black-Box Test Selection for AI Agents](https://arxiv.org/abs/2611.34617) | Agentic software systems are increasingly used in development, where changes to the model, prompt, scaffold… | Ali Asgari, Mitchell Olsthoorn +2 | cs.SE · new | preprint | 1 | AI, Agents +1 | [arXiv](https://arxiv.org/) |
+| 4 | [SmartLens: Turning AI Agent Changes into Learning, Review, and Risk Signals in the IDE](https://arxiv.org/abs/2611.34377) | Developers increasingly act as managers of AI agents: they hand tasks to AI coding agents and then have to… | Vahid Etemadi, Gregorio Robles | cs.SE · new | preprint | 1 | AI, Agents +1 | [arXiv](https://arxiv.org/) |
+
+## MCP servers
+
+| # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [SophiaLabs Nomos (Apache 2.0) - Git Worktree &…](https://github.com/mgantlett/nomos) | SophiaLabs Go CLI & MCP: GitHub repo AST X-Ray, 42 coding-agent DoD gates, worktree & CI guards. | v4.34.0 · 26 Nov 07:43 | 1.0+ | 1 | Agents, Dev tools | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+| 2 | [sap-mcp](https://registry.smithery.ai/servers/oobe-protocol/sap-mcp) | Use the SAP MCP Wizard or install the library from the npm registry to automatically create and configure a… | 34,350 uses | unverified · remote | 1 | AI, Agents +3 | [Smithery](https://smithery.ai/) |
+| 3 | [emblem-mcp](https://registry.smithery.ai/servers/emblemai/emblem-mcp) | # EmblemAI MCP EmblemAI is a hosted Model Context Protocol server that gives AI agents a full-featured… | 25,084 uses | unverified · remote | 1 | AI, Agents +7 | [Smithery](https://smithery.ai/) |
+
+## Product launches
+
+| # | Product | Why it matters | Posted by | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | [GibHub](https://www.producthunt.com/products/gibhub-git-file-history) | Retrieve and compare Git versions | Señor Tomato | 1 | Dev tools | [Product Hunt](https://www.producthunt.com/) |
+| 2 | [VibeCode.surf](https://www.producthunt.com/products/vibecode-surf) | AI code editor where agents build, run and test your app | Zac Zuo | 1 | AI, Agents +1 | [Product Hunt](https://www.producthunt.com/) |
 
 ## Datasets
 
 | # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | — | 1,785 | 1.7M | cc-by-4.0 | 1 | AI, Dev tools +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 1 | [nvidia/simready-assets](https://huggingface.co/datasets/nvidia/simready-assets) | Welcome to NVIDIA SimReady Assets Welcome to NVIDIA's open-source SimReady Assets… | — | 1,809 | 1.5M | cc-by-4.0 | 1 | AI, Dev tools +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 
 ## Hosted models
 
@@ -210,10 +216,4 @@ Languages, editors, CLIs, package ecosystems and the software toolchain.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | [Google: Gemini 4 Neon](https://openrouter.ai/google/gemini-4-neon) | Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic… | 3 | 15 | 1M | 18 Nov | 1 | AI, Agents +1 | [OpenRouter](https://openrouter.ai/models) |
 
-## Product launches
-
-| # | Product | Why it matters | Posted by | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | [distribution.dev](https://www.producthunt.com/products/distribution-dev) | Advertise to developers on many sites with one campaign | fmerian | 1 | Dev tools | [Product Hunt](https://www.producthunt.com/) |
-
-<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
