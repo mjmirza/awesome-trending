@@ -2,142 +2,147 @@
 
 Exploited and new vulnerabilities, attacks, defence and security tooling.
 
-**25 November 2026** · 08:12 Europe/Berlin (UTC+1) · 86 items · daily snapshot, rebuilt every morning.
+**26 November 2026** · 08:08 Europe/Berlin (UTC+1) · 86 items · daily snapshot, rebuilt every morning.
 
 [← Main page](../README.md) · [Industry map](../README.md#map) · [How items get here](../docs/methodology.md#industries) · [Submit a repo](https://github.com/mjmirza/awesome-trending/issues/new?template=submit-repo.yml)
 
-**Sources with items here (29):** Anthropic, Ars Technica, BleepingComputer, CISA KEV, Decrypt, ENISA EUVD, Federal Reserve, Financial Times, GamesIndustry.biz, GitHub, Google News, Hacker News, Hugging Face, LWN.net, Lobsters, MCP Registry, MarketWatch, Mastodon, NVD, Retail Dive, Sifted, TechCrunch Transportation, The Economist, The Guardian, The Hacker News, The Information, The Verge, arXiv, bioRxiv and medRxiv
+**Sources with items here (29):** 9to5Mac, Anthropic, BleepingComputer, Bloomberg, CISA KEV, CNBC, Decrypt, Dev.to, Digital Commerce 360, ENISA EUVD, Federal Reserve, GitHub, Google News, Hacker News, Hugging Face, LWN.net, Lobsters, MCP Registry, NVD, PYMNTS, TechCrunch, TechCrunch Transportation, Techmeme, The Economist, The Hacker News, The Robot Report, The Rundown AI, arXiv, crates.io
 
-**By type:** [Headlines](#headlines) (36) · [Vulnerabilities](#vulnerabilities) (35) · [Papers](#papers) (5) · [Repositories](#repositories) (4) · [Discussions](#discussions) (3) · [Datasets](#datasets) (1) · [Posts](#posts) (1) · [MCP servers](#mcp-servers) (1)
+**By type:** [Vulnerabilities](#vulnerabilities) (39) · [Headlines](#headlines) (32) · [Repositories](#repositories) (4) · [Discussions](#discussions) (3) · [Posts](#posts) (3) · [Papers](#papers) (2) · [Datasets](#datasets) (1) · [MCP servers](#mcp-servers) (1) · [Packages](#packages) (1)
 
 ## Top 10
 
 | # | Item | Type | Why it matters | Key metric | Seen on | Score | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | Repositories | A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681… | 21.9k stars · +1,826 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Datasets | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | 1,744 likes · 35.3k dl/30d | 1 | 60 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
-| 3 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Repositories | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 35k stars · +84 today | 1 | 54 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 4 | [Security incident on Hex.pm](https://hex.pm/blog/security-incident-on-hexpm) | Posts | #elixir, #erlang, #gleam | 56 score · 6 comments | 1 | 52 | [Lobsters](https://lobste.rs/) |
-| 5 | [I’ve Been Under A Rock. Why Is TikTok A National Security Threat…](https://www.techdirt.com/2026/11/24/ive-been-under-a-rock-why-is-tiktok-a-national-security-threat-but-jensen-huang-is-fine/) | Headlines | — | Techdirt · 24 Nov 18:30 | 1 | 50 | [Mastodon](https://mastodon.social/explore/links) |
-| 6 | [Active intrusion campaign against Check Point security management…](https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign) | Discussions | Link to greynoise.io | 280 pts · 141 comments | 1 | 48 | [Hacker News](https://news.ycombinator.com/) |
-| 7 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | Repositories | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 74.5k stars · +703 today | 1 | 42 | [GitHub trending](https://github.com/trending?since=daily) |
-| 8 | [nginx/nginx](https://github.com/nginx/nginx) | Repositories | The official NGINX Open Source repository. | 33.3k stars · +158 today | 1 | 38 | [GitHub trending](https://github.com/trending?since=daily) |
-| 9 | [Ask HN: Everything will get breached. How do you limit the blast…](https://news.ycombinator.com/item?id=50626772) | Discussions | Discussion thread on HN | 14 pts · 9 comments | 1 | 30 | [Hacker News](https://news.ycombinator.com/ask) |
-| 10 | [Show HN: Analysis of Hacker News predictions since 2008](https://hnpredictions.com/) | Discussions | Link to hnpredictions.com | 10 pts · 3 comments | 1 | 18 | [Hacker News](https://news.ycombinator.com/show) |
-
-## Headlines
-
-| # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [I’ve Been Under A Rock. Why Is TikTok A National Security Threat, But Jensen Huang Is…](https://www.techdirt.com/2026/11/24/ive-been-under-a-rock-why-is-tiktok-a-national-security-threat-but-jensen-huang-is-fine/) | — | Techdirt | 24 Nov 18:30 | 1 | Security, Media | [Mastodon](https://mastodon.social/explore/links) |
-| 2 | [US financial crimes bureau discloses ‘cybersecurity incident’](https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident) | The Financial Crimes Enforcement Network (FinCEN) disclosed on Tuesday that it's investigating a… | The Verge | 25 Nov 02:00 | 1 | Cloud, Security +1 | [The Verge](https://www.theverge.com/rss/index.xml) |
-| 3 | [Amazon says hackers' AI agents found and exploited 0-day with little human input](https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/) | The Cairn AI framework is proving to be a boon for defenders and attackers. | Ars Technica | 24 Nov 13:30 | 1 | AI, Agents +2 | [Ars Technica](https://feeds.arstechnica.com/arstechnica/technology-lab) |
-| 4 | [Security updates for Tuesday](https://lwn.net/Articles/1109472/) | Security updates have been issued by AlmaLinux (aspell, curl, fence-agents, flatpak, flatpak-builder… | LWN.net | 24 Nov 15:03 | 1 | Agents, Dev tools +2 | [LWN.net](https://lwn.net/headlines/rss) |
-| 5 | [Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack…](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html) | An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign… | The Hacker News | 25 Nov 07:50 | 1 | AI, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 6 | [Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion](https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html) | Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to "numerous waves of vishing… | The Hacker News | 25 Nov 07:37 | 1 | Cloud, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 7 | [WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live](https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html) | WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November… | The Hacker News | 25 Nov 07:21 | 1 | Dev tools, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 8 | [Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns](https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html) | A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted… | The Hacker News | 24 Nov 17:54 | 1 | Security, Space | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 9 | [VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day…](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html) | Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation… | The Hacker News | 24 Nov 14:28 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-| 10 | [Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site](https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html) | A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have… | The Hacker News | 24 Nov 14:28 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
-
-<details>
-<summary>Show 10 more</summary>
-
-| # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [Rackspace shuts down Spot cloud platform after security breach](https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/) | Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to… | BleepingComputer | 24 Nov 22:37 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 12 | [New Inception extortion gang launches large-scale vishing campaign](https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/) | A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets… | BleepingComputer | 24 Nov 21:21 | 1 | Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 13 | [Turnitin discloses cyberattack affecting customer-facing systems](https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/) | Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized… | BleepingComputer | 24 Nov 19:59 | 1 | Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 14 | [Radware discloses breach exposing customer cloud access keys](https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/) | Cybersecurity company Radware says attackers gained access to some of its customers' account details and… | BleepingComputer | 24 Nov 18:49 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 15 | [ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof](https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/) | The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of… | BleepingComputer | 24 Nov 17:30 | 1 | Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 16 | [European Commission confirms data theft in EU Academy breach](https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/) | The European Commission, the European Union's main executive body, has confirmed that attackers breached its… | BleepingComputer | 24 Nov 17:22 | 1 | Security, Policy | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
-| 17 | [Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits](https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits) | Coinkite’s postmortem reveals a software random-number generator shipped in place of the hardware one for… | Decrypt | 24 Nov 22:16 | 1 | Security, Crypto +1 | [Decrypt](https://decrypt.co/feed) |
-| 18 | [Ethereum Foundation Says AI Is a More Urgent Threat Than Quantum Computing](https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing) | The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul… | Decrypt | 24 Nov 21:36 | 1 | AI, Security +1 | [Decrypt](https://decrypt.co/feed) |
-| 19 | [Retailers brace for Black Friday after widespread tech outages](https://www.retaildive.com/news/black-friday-retailers-tech-outages-ai/875541/) | The vital shopping event and Cyber Week already pose a challenge to retailers’ online systems — but the… | Retail Dive | 24 Nov 16:23 | 1 | Cloud, Security +1 | [Retail Dive](https://www.retaildive.com/feeds/news/) |
-| 20 | [Black Friday, Cyber Monday shopping projected to slip](https://www.retaildive.com/news/black-friday-cyber-monday-shopping-projected-to-slip/875473/) | Shoppers will scoop up deals during Thanksgiving weekend, but extended sales events have enticed consumers… | Retail Dive | 23 Nov 21:39 | 1 | Security, Retail | [Retail Dive](https://www.retaildive.com/feeds/news/) |
-
-</details>
-
-<sub>16 more in today's archive.</sub>
+| 1 | [1Password Security Incident](https://1password.com/blog/update-on-nov-2026-security-incident) | Discussions | Link to 1password.com | 1,334 pts · 562 comments | **2** <sub>Hacker News, Lobsters</sub> | 73 | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Slow Ubuntu security response times](https://www.openwall.com/lists/oss-security/2026/11/25/9) | Discussions | Link to openwall.com | 246 pts · 108 comments | **2** <sub>Hacker News, Lobsters</sub> | 73 | [Hacker News](https://news.ycombinator.com/) |
+| 3 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | Repositories | A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681… | 23.4k stars · +1,652 today | 1 | 60 | [GitHub trending](https://github.com/trending?since=daily) |
+| 4 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Datasets | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | 1,999 likes · 58.5k dl/30d | 1 | 60 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 5 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Repositories | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 35.1k stars · +81 today | 1 | 54 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 6 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | Repositories | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 75.3k stars · +945 today | 1 | 42 | [GitHub trending](https://github.com/trending?since=daily) |
+| 7 | [nginx/nginx](https://github.com/nginx/nginx) | Repositories | The official NGINX Open Source repository. | 33.4k stars · +176 today | 1 | 38 | [GitHub trending](https://github.com/trending?since=daily) |
+| 8 | [I Know It's You, But I Can't Prove It](https://dev.to/codingwithjiro/i-know-its-you-but-i-cant-prove-it-39i2) | Posts | #jwt, #security, #backend | 19 reactions · 8 comments | 1 | 30 | [Dev.to](https://dev.to/top/day) |
+| 9 | [The canceled Tesla Cybertruck is the fastest-selling used truck in…](https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/) | Headlines | The Tesla Cybertruck was the fastest-selling used truck last month, averaging just 39.1 days on the market… | TechCrunch · 25 Nov 20:54 | **2** <sub>TechCrunch, TechCrunch Transportation</sub> | 28 | [TechCrunch](https://techcrunch.com/feed/) |
+| 10 | [Show HN: Run your own Hacker News on Hatamoto (open-source, one…](https://news.hatamoto.dev/) | Discussions | Link to news.hatamoto.dev | 7 pts · 0 comments | 1 | 15 | [Hacker News](https://news.ycombinator.com/show) |
 
 ## Vulnerabilities
 
 | # | ID | Why it matters | Vendor · product | CVSS | Exploited | Ransomware | Date | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [CVE-2026-132224](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) | Optimizely Web Experimentation External Control of Critical State Data Vulnerability | Optimizely · Web Experimentation | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 2 | [CVE-2026-131914](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) | Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability | Idunno · AntiCsrf | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 3 | [CVE-2026-132165](https://nvd.nist.gov/vuln/detail/CVE-2026-132165) | Drupal Core Remote Code Execution Vulnerability | Drupal · Core | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 4 | [CVE-2026-133968](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) | Project MONAI MONAI Label Path Traversal Vulnerability | Project MONAI · MONAI Label | — | **yes** (CISA KEV) | Unknown | 2026-11-23 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 5 | [CVE-2026-134624](https://nvd.nist.gov/vuln/detail/CVE-2026-134624) | N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability | N-able · MailAssure | — | **yes** (CISA KEV) | Unknown | 2026-11-23 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 6 | [CVE-2026-129448](https://nvd.nist.gov/vuln/detail/CVE-2026-129448) | Apache Roller Deserialization of Untrusted Data Vulnerability | Apache · Roller | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 7 | [CVE-2026-123890](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) | VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability | Broadcom · VMware vCenter | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 8 | [CVE-2025-42884](https://nvd.nist.gov/vuln/detail/CVE-2025-42884) | SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability | SAP · NetWeaver | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 9 | [CVE-2026-76466](https://nvd.nist.gov/vuln/detail/CVE-2026-76466) | Cisco Expressway Series Use of Hard-coded Credentials Vulnerability | Cisco · Expressway Series | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 10 | [CVE-2024-10441](https://nvd.nist.gov/vuln/detail/CVE-2024-10441) | Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability | Synology · DiskStation Manager (DSM) | — | **yes** (CISA KEV) | Known | 2026-11-18 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 1 | [CVE-2026-103406](https://nvd.nist.gov/vuln/detail/CVE-2026-103406) | Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS… | Hewlett Packard Enterprise (HPE) · Juniper Session Smart… | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 2 | [CVE-2026-133469](https://nvd.nist.gov/vuln/detail/CVE-2026-133469) | Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability | Vates · Xen Orchestra | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 3 | [CVE-2025-41450](https://nvd.nist.gov/vuln/detail/CVE-2025-41450) | Danfoss AK-SM 800A Series Improper Authentication Vulnerability | Danfoss · AK-SM 800A Series | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 4 | [CVE-2023-25914](https://nvd.nist.gov/vuln/detail/CVE-2023-25914) | Danfoss AK-SM 800A Series Path Traversal Vulnerability | Danfoss · AK-SM 800A Series | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 5 | [CVE-2023-25915](https://nvd.nist.gov/vuln/detail/CVE-2023-25915) | Danfoss AK-SM 800A Series Improper Input Validation Vulnerability | Danfoss · AK-SM 800A Series | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 6 | [CVE-2026-133324](https://nvd.nist.gov/vuln/detail/CVE-2026-133324) | Mitel MiCollab Not Failing Securely Vulnerability | Mitel · MiCollab | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 7 | [CVE-2026-133275](https://nvd.nist.gov/vuln/detail/CVE-2026-133275) | Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability | Mitel · MiCollab | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 8 | [CVE-2026-133311](https://nvd.nist.gov/vuln/detail/CVE-2026-133311) | Mitel MiCollab Weak Authentication Vulnerability | Mitel · MiCollab | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 9 | [CVE-2026-133303](https://nvd.nist.gov/vuln/detail/CVE-2026-133303) | Mitel MiCollab XML Injection Vulnerability | Mitel · MiCollab | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 10 | [CVE-2026-133323](https://nvd.nist.gov/vuln/detail/CVE-2026-133323) | Mitel MiCollab OS Command Injection Vulnerability | Mitel · MiCollab | — | **yes** (CISA KEV) | Unknown | 2026-11-25 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
 
 <details>
 <summary>Show 10 more</summary>
 
 | # | ID | Why it matters | Vendor · product | CVSS | Exploited | Ransomware | Date | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11 | [CVE-2026-40217](https://nvd.nist.gov/vuln/detail/CVE-2026-40217) | BerriAI LiteLLM Unprotected Alternate Channel Vulnerability | BerriAI · LiteLLM | — | **yes** (CISA KEV) | Unknown | 2026-11-18 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 12 | [CVE-2026-90817](https://nvd.nist.gov/vuln/detail/CVE-2026-90817) | Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability | Vanderbilt University · Research Electronic Data Capture… | — | **yes** (CISA KEV) | Unknown | 2026-11-18 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 13 | [CVE-2026-90436](https://nvd.nist.gov/vuln/detail/CVE-2026-90436) | Apache Axis Unsafe Reflection Vulnerability | Apache · Axis | — | **yes** (CISA KEV) | Unknown | 2026-11-18 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 14 | [CVE-2026-115731](https://nvd.nist.gov/vuln/detail/CVE-2026-115731) | Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability | Perforce · Puppet Enterprise | — | **yes** (CISA KEV) | Unknown | 2026-11-17 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 15 | [CVE-2026-114713](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) | UnrealIRCd Improper Neutralization of Delimiters Vulnerability | UnrealIRCd · UnrealIRCd | — | **yes** (CISA KEV) | Unknown | 2026-11-13 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 16 | [CVE-2026-123039](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) | Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability | Check Point · Multiple Products | — | **yes** (CISA KEV) | Unknown | 2026-11-13 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
-| 17 | [CVE-2026-134882](https://nvd.nist.gov/vuln/detail/CVE-2026-134882) | A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. | reported by vuldb.com | 10.0 Critical | not in KEV | — | 23 Nov 10:17 | 1 | Security | [NVD](https://nvd.nist.gov/vuln/search) |
-| 18 | [CVE-2026-123987](https://nvd.nist.gov/vuln/detail/CVE-2026-123987) | Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection')… | reported by adobe.com | 9.9 Critical | not in KEV | — | 24 Nov 19:18 | 1 | Security | [NVD](https://nvd.nist.gov/vuln/search) |
-| 19 | [CVE-2026-123986](https://nvd.nist.gov/vuln/detail/CVE-2026-123986) | Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection')… | reported by adobe.com | 9.9 Critical | not in KEV | — | 24 Nov 19:18 | 1 | Security | [NVD](https://nvd.nist.gov/vuln/search) |
-| 20 | [CVE-2026-123723](https://nvd.nist.gov/vuln/detail/CVE-2026-123723) | Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection')… | reported by adobe.com | 9.9 Critical | not in KEV | — | 24 Nov 19:18 | 1 | Security | [NVD](https://nvd.nist.gov/vuln/search) |
+| 11 | [CVE-2026-132224](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) | Optimizely Web Experimentation External Control of Critical State Data Vulnerability | Optimizely · Web Experimentation | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 12 | [CVE-2026-131914](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) | Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability | Idunno · AntiCsrf | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 13 | [CVE-2026-132165](https://nvd.nist.gov/vuln/detail/CVE-2026-132165) | Drupal Core Remote Code Execution Vulnerability | Drupal · Core | — | **yes** (CISA KEV) | Unknown | 2026-11-24 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 14 | [CVE-2026-133968](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) | Project MONAI MONAI Label Path Traversal Vulnerability | Project MONAI · MONAI Label | — | **yes** (CISA KEV) | Unknown | 2026-11-23 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 15 | [CVE-2026-134624](https://nvd.nist.gov/vuln/detail/CVE-2026-134624) | N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability | N-able · MailAssure | — | **yes** (CISA KEV) | Unknown | 2026-11-23 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 16 | [CVE-2026-129448](https://nvd.nist.gov/vuln/detail/CVE-2026-129448) | Apache Roller Deserialization of Untrusted Data Vulnerability | Apache · Roller | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 17 | [CVE-2026-123890](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) | VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability | Broadcom · VMware vCenter | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 18 | [CVE-2025-42884](https://nvd.nist.gov/vuln/detail/CVE-2025-42884) | SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability | SAP · NetWeaver | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 19 | [CVE-2026-76466](https://nvd.nist.gov/vuln/detail/CVE-2026-76466) | Cisco Expressway Series Use of Hard-coded Credentials Vulnerability | Cisco · Expressway Series | — | **yes** (CISA KEV) | Unknown | 2026-11-20 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
+| 20 | [CVE-2024-10441](https://nvd.nist.gov/vuln/detail/CVE-2024-10441) | Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability | Synology · DiskStation Manager (DSM) | — | **yes** (CISA KEV) | Known | 2026-11-18 | 1 | Security | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) |
 
 </details>
 
-<sub>15 more in today's archive.</sub>
+<sub>19 more in today's archive.</sub>
 
-## Papers
+## Headlines
 
-| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [A Bernstein-Type Variance-Adaptive PMW Mechanism for DP Query Release](https://arxiv.org/abs/2611.33045) | Private Multiplicative Weights (PMW) is a central mechanism for the differentially private release of… | Mohamed Aniss Benstaali, Habib Louafi +1 | cs.CR · new | preprint | 1 | Security | [arXiv](https://arxiv.org/) |
-| 2 | [SALSA: Sampling Adversarial Suffixes from Learned Distributions for LLM Safety Assessment](https://arxiv.org/abs/2611.33030) | Large language models (LLMs) remain vulnerable to jailbreak attacks, where adversaries append optimized… | Shivank Rajput, Himanshu Singh +1 | cs.CL · new | preprint | 1 | AI, Security | [arXiv](https://arxiv.org/) |
-| 3 | [PORTA: Systematic Discovery of Vulnerabilities in Identity Brokers](https://arxiv.org/abs/2611.33015) | Identity brokers such as Keycloak, Vault, and Dex translate authentication proofs from an upstream identity… | Zixu Zhou, Xiangyu Guo +2 | cs.CR · new | preprint | 1 | Security | [arXiv](https://arxiv.org/) |
-| 4 | [Attestation is All You Need: Toward a Zero-Trust Architecture for HPC AI Agents](https://arxiv.org/abs/2611.32958) | AI agents are beginning to automate data analysis, orchestration, and simulation steering in HPC… | Jie Li, Chenxu Niu +2 | cs.CR · new | preprint | 1 | AI, Agents +1 | [arXiv](https://arxiv.org/) |
-| 5 | [Identification of a human Anxa1-associated dopaminergic population linked to Parkinson's…](https://doi.org/10.64898/2026.11.20.766782) | The selective loss of dopaminergic (DA) neurons drives motor symptoms of Parkinson's disease (PD). | Schonfeld, E., Baliki, M. N. +9 | bioRxiv · neuroscience · new | preprint | 1 | Security, Health | [bioRxiv and medRxiv](https://www.biorxiv.org/) |
+| # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [The canceled Tesla Cybertruck is the fastest-selling used truck in America](https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/) | The Tesla Cybertruck was the fastest-selling used truck last month, averaging just 39.1 days on the market… | TechCrunch | 25 Nov 20:54 | **2** <sub>TechCrunch, TechCrunch Transportation</sub> | Security, Space | [TechCrunch](https://techcrunch.com/feed/) |
+| 2 | [Sources: Trump's national security adviser, Secretary Marco Rubio, was not involved in…](https://www.techmeme.com/261125/p47#a261125p47) | Jo Ling / CBS News : Sources: Trump's national security adviser, Secretary Marco Rubio, was not involved in… | Techmeme | 26 Nov 04:50 | 1 | Security | [Techmeme](https://www.techmeme.com/feed.xml) |
+| 3 | [Security updates for Wednesday](https://lwn.net/Articles/1109650/) | Security updates have been issued by AlmaLinux (emacs, go-toolset:rhel8, xorg-x11-server-Xwayland, and… | LWN.net | 25 Nov 15:06 | 1 | Dev tools, Cloud +1 | [LWN.net](https://lwn.net/headlines/rss) |
+| 4 | [1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html) | Popular password management software 1Password on Wednesday disclosed a security incident involving its… | The Hacker News | 26 Nov 05:20 | 1 | Cloud, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 5 | [13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps](https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html) | Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows… | The Hacker News | 26 Nov 04:48 | 1 | Dev tools, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 6 | [Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html) | Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. | The Hacker News | 25 Nov 13:48 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 7 | [U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion](https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html) | The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity… | The Hacker News | 25 Nov 13:30 | 1 | Cloud, Security +2 | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 8 | [Credential Remediation Is Slow When You Don’t Know What Will Break](https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html) | TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most… | The Hacker News | 25 Nov 12:51 | 1 | Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 9 | [Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html) | The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting… | The Hacker News | 25 Nov 12:23 | 1 | Cloud, Security | [The Hacker News](https://feeds.feedburner.com/TheHackersNews) |
+| 10 | [Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/) | Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto… | BleepingComputer | 25 Nov 23:05 | 1 | Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+
+<details>
+<summary>Show 10 more</summary>
+
+| # | Headline | Why it matters | Outlet | Published | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 11 | [1Password customer data stolen after employee GitHub account breach](https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/) | 1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to… | BleepingComputer | 25 Nov 22:33 | 1 | Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 12 | [Italy and Switzerland warn of autonomous AI-driven cyberattacks](https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/) | Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents… | BleepingComputer | 25 Nov 20:39 | 1 | AI, Agents +1 | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 13 | [CISA warns of critical unpatched flaw in Danfoss refrigeration controllers](https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/) | The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability… | BleepingComputer | 25 Nov 17:13 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 14 | [More Pentests Without More Pentesters: Where AI Safely Helps](https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/) | Penetration testers spend a significant portion of their engagements on documentation, reporting, and other… | BleepingComputer | 25 Nov 16:00 | 1 | AI, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 15 | [InfraTrust warns of exploited supply chain flaws in network appliances](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/) | Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing… | BleepingComputer | 25 Nov 16:00 | 1 | Cloud, Security | [BleepingComputer](https://www.bleepingcomputer.com/feed/) |
+| 16 | [FinCEN Extends Reporting Deadlines Amid Cyber-Related Service Disruption](https://www.pymnts.com/cybersecurity/2026/fincen-extends-reporting-deadlines-amid-cyber-related-service-disruption/) | The Financial Crimes Enforcement Network (FinCEN) is giving financial institutions, companies and… | PYMNTS | 26 Nov 00:51 | 1 | Security, Fintech | [PYMNTS](https://www.pymnts.com/feed/) |
+| 17 | [The 1Password Breach Didn’t Touch Your Vault. The Phishing Emails Might](https://decrypt.co/384002/1password-breach-vaults-phishing-emails) | An attacker compromised an employee’s GitHub account to reach 1Password’s backend and copy customer names… | Decrypt | 25 Nov 22:16 | 1 | Security, Crypto | [Decrypt](https://decrypt.co/feed) |
+| 18 | [Another Bitcoin Mining Firm Flags 'Hashrate Hijacking' Attacks That Reroute Rewards](https://decrypt.co/383999/another-bitcoin-mining-firm-hashrate-hijacking-attacks) | Braiins says an attacker exploited the unencrypted Stratum V1 protocol and internet route hijacking to… | Decrypt | 25 Nov 21:36 | 1 | Security, Crypto | [Decrypt](https://decrypt.co/feed) |
+| 19 | [What Is Artex? The AI Hacking Tool Linked to the US Spy Agency Breach](https://decrypt.co/383997/what-is-artex-ai-hacking-tool-us-spy-agency-breach) | Microsoft says state-backed hackers and cybercriminals are using Artex to automate attacks with AI agents… | Decrypt | 25 Nov 21:06 | 1 | AI, Agents +2 | [Decrypt](https://decrypt.co/feed) |
+| 20 | [FCC should focus on robot security, not country of origin](https://www.therobotreport.com/fcc-should-focus-on-robot-security-not-country-of-origin/) | Where a robot was assembled tells you little about who controls it once it's deployed, writes Brain Corp CEO… | The Robot Report | 25 Nov 18:00 | 1 | Security, Robotics +1 | [The Robot Report](https://www.therobotreport.com/feed/) |
+
+</details>
+
+<sub>12 more in today's archive.</sub>
 
 ## Repositories
 
 | # | Repository | Why it matters | Stars | Gained | Momentum | Lang | Licence · age | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681… | 21,882 | +1,826 today | +9.1% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
-| 2 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 34,980 | +84 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
-| 3 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 74,523 | +703 today | +1.0% | Python | MIT | 1 | AI, Agents +5 | [GitHub trending](https://github.com/trending?since=daily) |
-| 4 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 33,271 | +158 today | +0.5% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681… | 23,399 | +1,652 today | +7.6% | Python | MIT | 1 | AI, Agents +2 | [GitHub trending](https://github.com/trending?since=daily) |
+| 2 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 35,063 | +81 today | +0.2% | Go | MIT | 1 | AI, Agents +4 | [GitHub trending](https://github.com/trending/go?since=daily) |
+| 3 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then… | 75,306 | +945 today | +1.3% | Python | MIT | 1 | AI, Agents +5 | [GitHub trending](https://github.com/trending?since=daily) |
+| 4 | [nginx/nginx](https://github.com/nginx/nginx) | The official NGINX Open Source repository. | 33,423 | +176 today | +0.5% | C | BSD-2-Clause | 1 | Dev tools, Cloud +1 | [GitHub trending](https://github.com/trending?since=daily) |
 
 ## Discussions
 
 | # | Story | Why it matters | Points | Comments | Velocity | Thread | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Active intrusion campaign against Check Point security management servers](https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign) | Link to greynoise.io | 280 | 141 | 19 pts/h | [open](https://news.ycombinator.com/item?id=50630594) | 1 | Security | [Hacker News](https://news.ycombinator.com/) |
-| 2 | [Ask HN: Everything will get breached. How do you limit the blast radius?](https://news.ycombinator.com/item?id=50626772) | Discussion thread on HN | 14 | 9 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50626772) | 1 | Security | [Hacker News](https://news.ycombinator.com/ask) |
-| 3 | [Show HN: Analysis of Hacker News predictions since 2008](https://hnpredictions.com/) | Link to hnpredictions.com | 10 | 3 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50633531) | 1 | Security | [Hacker News](https://news.ycombinator.com/show) |
-
-## Datasets
-
-| # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | text-generation, question-answering | 1,744 | 35.3k | apache-2.0 | 1 | AI, Security +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
+| 1 | [1Password Security Incident](https://1password.com/blog/update-on-nov-2026-security-incident) | Link to 1password.com | 1,334 | 562 | 96 pts/h | [open](https://news.ycombinator.com/item?id=50644817) | **2** <sub>Hacker News, Lobsters</sub> | Cloud, Security | [Hacker News](https://news.ycombinator.com/) |
+| 2 | [Slow Ubuntu security response times](https://www.openwall.com/lists/oss-security/2026/11/25/9) | Link to openwall.com | 246 | 108 | 23 pts/h | [open](https://news.ycombinator.com/item?id=50647181) | **2** <sub>Hacker News, Lobsters</sub> | Cloud, Security | [Hacker News](https://news.ycombinator.com/) |
+| 3 | [Show HN: Run your own Hacker News on Hatamoto (open-source, one binary)](https://news.hatamoto.dev/) | Link to news.hatamoto.dev | 7 | 0 | 1 pts/h | [open](https://news.ycombinator.com/item?id=50650402) | 1 | Dev tools, Security | [Hacker News](https://news.ycombinator.com/show) |
 
 ## Posts
 
 | # | Post | Tags | Engagement | Author | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [Security incident on Hex.pm](https://hex.pm/blog/security-incident-on-hexpm) | #elixir, #erlang, #gleam | 56 score · 6 comments | — | 1 | Cloud, Security | [Lobsters](https://lobste.rs/) |
+| 1 | [I Know It's You, But I Can't Prove It](https://dev.to/codingwithjiro/i-know-its-you-but-i-cant-prove-it-39i2) | #jwt, #security, #backend | 19 reactions · 8 comments | Elmar Chavez | 1 | Security | [Dev.to](https://dev.to/top/day) |
+| 2 | [Can Your Agent Review Your Cloud Architecture?](https://dev.to/aws/can-your-agent-review-your-cloud-architecture-4coh) | #aws, #ai, #architecture | 12 reactions · 2 comments | Rohini Gaonkar | 1 | AI, Agents +2 | [Dev.to](https://dev.to/top/day) |
+| 3 | [JWT Says ‘Admin’. Should Your API Believe It?](https://dev.to/hadil/jwt-says-admin-should-your-api-believe-it-4m4m) | #keycloak, #security, #api | 43 reactions · 4 comments | Hadil Ben Abdallah | 1 | Security, SaaS | [Dev.to](https://dev.to/top/day) |
+
+## Papers
+
+| # | Paper | Why it matters | Authors | Signal | Code · maturity | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Distance from the Truth: Why Fragmented Merchant Underwriting Misses Risk, and What…](https://arxiv.org/abs/2611.34696) | Merchant underwriting becomes vulnerable when evidence is evaluated without enough visibility into its… | Russell Lessard, Jeremy Blackburn +3 | cs.CR · new | preprint | 1 | Security, Retail | [arXiv](https://arxiv.org/) |
+| 2 | [Graph-Informed Deep Factor Model for Statistical Arbitrage](https://arxiv.org/abs/2611.34209) | Statistical arbitrage exploits temporary mispricings between similar assets in the cross-section of daily… | Evelyn Zhu, Mucheng Zhu +2 | q-fin.ST · new | preprint | 1 | Security, Fintech | [arXiv](https://arxiv.org/) |
+
+## Datasets
+
+| # | Dataset | Why it matters | Task | Likes | Downloads 30 d | Licence | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [Vyber07/cyber-security](https://huggingface.co/datasets/Vyber07/cyber-security) | Cybersecurity AI Knowledge Base — PhD-Level Dataset Overview This is the most… | text-generation, question-answering | 1,999 | 58.5k | apache-2.0 | 1 | AI, Security +2 | [Hugging Face](https://huggingface.co/datasets?sort=trending) |
 
 ## MCP servers
 
 | # | Server | Why it matters | Signal | Maturity | Seen on | Industry | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [SkillTotal](https://github.com/pezhik/skilltotal) | Static security scan of npm and PyPI packages, MCP servers, agent skills and VS Code extensions. | v1.13.0 · 25 Nov 07:13 | 1.0+ | 1 | Agents, Dev tools +1 | [MCP Registry](https://registry.modelcontextprotocol.io/) |
+| 1 | [BlackVeil DNS & Email Security Scanner](https://github.com/MadaBurns/bv-mcp) | DNS and email security scanner with 82 MCP tools for SPF, DMARC, DNSSEC, SSL, and brand audits. | v3.120.0 · 26 Nov 07:49 | 1.0+ | 1 | Agents, Security | [MCP Registry](https://registry.modelcontextprotocol.io/) |
 
-<sub>Every figure comes from the linked source, fetched 08:12 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
+## Packages
+
+| # | Package | Why it matters | Ecosystem | Version | Downloads | Released | Licence · stage | Seen on | Industry | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | [origincloud-sts](https://crates.io/crates/origincloud-sts) | The Origin Cloud STS API: the security token service: it turns a token from an identity provider outside… | crates.io | `0.61.0` | 419 dl/90d | 26 Nov | pre-1.0 | 1 | Dev tools, Cloud +1 | [crates.io](https://crates.io/) |
+
+<sub>Every figure comes from the linked source, fetched 08:08 Europe/Berlin (UTC+1). See the [sources table](../README.md#sources).</sub>
