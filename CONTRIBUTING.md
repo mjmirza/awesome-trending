@@ -271,9 +271,10 @@ python3 scripts/update.py --dry-run   # fetch everything, print a report, write 
 python3 scripts/update.py             # fetch and write README.md, archive/, industries/, windows/ and labs/
 python3 scripts/update.py --only hn_front,kev --dry-run   # test a few sources by key
 python3 scripts/update.py --docs      # rewrite docs/methodology.md and the niches/ pointers (only after a rule change)
+python3 -m unittest discover -s tests          # unit tests; CI runs the same command
 ```
 
-Python 3.9+ and the standard library only. Each request has a 15-second timeout and one retry, hosts are spaced out politely (arXiv every 3 seconds, NVD every 6.5, the GitHub search API every 6.2, Google News every 1.6), up to 16 sources run at once, and the whole fetch stops after about 150 seconds.
+Python 3.9+ and the standard library only. GitHub Actions runs that test command on Python 3.9, 3.12 and 3.15 for every push and pull request. Each request has a 15-second timeout and one retry, hosts are spaced out politely (arXiv every 3 seconds, NVD every 6.5, the GitHub search API every 6.2, Google News every 1.6), up to 16 sources run at once, and the whole fetch stops after about 150 seconds.
 
 ## Licence
 
