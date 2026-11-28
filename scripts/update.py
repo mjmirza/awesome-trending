@@ -1104,6 +1104,18 @@ def src_kev():
     return out[:20], note
 
 
+def kev_product_name(k: dict) -> str:
+    """Product as CISA names it, with the vendor in front when the product is one bare word that does not already
+    name the vendor (CISA lists Drupal's product as just "Core"), so the 30-second line reads "Drupal Core"."""
+    product = re.sub(r"\s*\([^)]*\)", "", k.get("product") or "").strip()
+    vendor = re.sub(r"\s*\([^)]*\)", "", k.get("vendor") or "").strip()
+    if not product:
+        return vendor or "unnamed product"
+    if vendor and " " not in product and vendor.split()[0].lower() not in product.lower():
+        return f"{vendor} {product}"
+    return product
+
+
 def kev_line(kev: list[dict]) -> str:
     """30-second line: distinct products of the newest day (a product with several CVEs shows once, with its count),
     and the true 14-day total even though only the newest 20 entries are listed."""
@@ -1111,8 +1123,7 @@ def kev_line(kev: list[dict]) -> str:
     recent = [k for k in kev if k["added"] == day]
     counts: dict[str, int] = {}
     for k in recent:
-        name = re.sub(r"\s*\([^)]*\)", "", k.get("product") or k.get("vendor") or "").strip() or "unnamed product"
-        counts[name] = counts.get(name, 0) + 1
+        counts[kev_product_name(k)] = counts.get(kev_product_name(k), 0) + 1
     shown = sorted(counts.items(), key=lambda kv: -kv[1])[:4]
     names = ", ".join(md_escape(n) + (f" ({c} CVEs)" if c > 1 else "") for n, c in shown)
     if len(counts) > 4:
