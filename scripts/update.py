@@ -24,6 +24,7 @@ import argparse
 import gzip
 import html as htmlmod
 import json
+import math
 import re
 import sys
 import threading
@@ -2407,6 +2408,129 @@ PULSE_FAMILIES = {"Google Trends", "Wikipedia", "Mastodon", "Bluesky"}
 UNRANKED_BASE = 0.25
 W_RANK, W_SPREAD, SPREAD_CAP = 0.6, 0.4, 3
 
+# Typical raw figure for a strong #1 on that kind of list. A source's rank
+# percentile is multiplied by source_reach, so a #1 on a quiet or tiny list
+# is not worth as much as a #1 on a busy one.
+VOLUME_SCALE = {
+    "repo_gained": 200,
+    "repo_stars": 1000,
+    "hn_points": 100,
+    "lobsters_score": 25,
+    "question_score": 10,
+    "post_reactions": 50,
+    "product_votes": 100,
+    "hf_likes": 500,
+    "hf_downloads": 20_000,
+    "paper_upvotes": 50,
+    "mcp_uses": 10_000,
+    "package_weekly": 100_000,
+    "package_recent": 10_000,
+    "cdn_hits": 1_000_000,
+    "image_pulls": 10_000,
+    "wiki_views": 50_000,
+    "reddit_ups": 200,
+}
+VOLUME_SCALE_LABELS = {
+    "repo_gained": "GitHub stars gained today",
+    "repo_stars": "GitHub stars (no daily gain published)",
+    "hn_points": "Hacker News points",
+    "lobsters_score": "Lobsters score",
+    "question_score": "Stack Overflow score",
+    "post_reactions": "Dev.to reactions",
+    "product_votes": "Product Hunt votes",
+    "hf_likes": "Hugging Face likes",
+    "hf_downloads": "Hugging Face downloads (30 d)",
+    "paper_upvotes": "Hugging Face paper upvotes",
+    "mcp_uses": "Smithery uses",
+    "package_weekly": "npm weekly downloads",
+    "package_recent": "package recent downloads",
+    "cdn_hits": "jsDelivr hits",
+    "image_pulls": "container pulls",
+    "wiki_views": "Wikipedia views",
+    "reddit_ups": "Reddit upvotes",
+}
+REACH_FLOOR = 0.25
+REACH_DEFAULT = 0.5
+
+
+def raw_volume(key: str, it: dict) -> tuple[float, str] | None:
+    """Absolute source figure used to judge how big a list's top slot is.
+
+    Unlike raw_engagement, this is not a rate (points per hour). A 7-point
+    HN story and a 495-point story are compared on points, not velocity.
+    """
+    k = it["kind"]
+    if k == "repo":
+        if it.get("gained") is not None:
+            return float(it["gained"]), "repo_gained"
+        if it.get("stars") is not None:
+            return float(it["stars"]), "repo_stars"
+        return None
+    if k == "hn" and it.get("points") is not None:
+        return float(it["points"]), "hn_points"
+    if k == "post":
+        if it.get("score") is not None and it.get("reactions") is None:
+            return float(it["score"]), "lobsters_score"
+        if it.get("reactions") is not None:
+            return float(it["reactions"]), "post_reactions"
+        return None
+    if k == "question" and it.get("score") is not None:
+        return float(it["score"]), "question_score"
+    if k == "product" and it.get("votes") is not None:
+        return float(it["votes"]), "product_votes"
+    if k in ("model", "space", "dataset"):
+        if it.get("likes") is not None:
+            return float(it["likes"]), "hf_likes"
+        if it.get("downloads") is not None:
+            return float(it["downloads"]), "hf_downloads"
+        return None
+    if k == "paper" and it.get("upvotes") is not None:
+        return float(it["upvotes"]), "paper_upvotes"
+    if k == "mcp" and it.get("uses") is not None:
+        return float(it["uses"]), "mcp_uses"
+    if k == "package":
+        if it.get("weekly") is not None:
+            return float(it["weekly"]), "package_weekly"
+        if it.get("recent") is not None:
+            return float(it["recent"]), "package_recent"
+        return None
+    if k == "cdn" and it.get("hits") is not None:
+        return float(it["hits"]), "cdn_hits"
+    if k == "image" and it.get("pulls") is not None:
+        return float(it["pulls"]), "image_pulls"
+    if k == "wiki" and it.get("views") is not None:
+        return float(it["views"]), "wiki_views"
+    if k == "reddit" and it.get("ups") is not None:
+        return float(it["ups"]), "reddit_ups"
+    return None
+
+
+def reach_from_volume(vol: tuple[float, str] | None) -> float | None:
+    """Map a (value, group) pair to a reach in [REACH_FLOOR, 1], or None."""
+    if vol is None:
+        return None
+    val, group = vol
+    scale = VOLUME_SCALE.get(group)
+    if not scale:
+        return None
+    if val <= 0:
+        return REACH_FLOOR
+    return min(1.0, math.log1p(val) / math.log1p(scale))
+
+
+def source_reach(key: str, items: list[dict]) -> float:
+    """Reach of a ranked source today, from the #1 item's own figure.
+
+    1.0 means that #1 matches or beats the typical strong figure for its
+    type. Lists with no such figure get REACH_DEFAULT.
+    """
+    if not items:
+        return REACH_DEFAULT
+    r = reach_from_volume(raw_volume(key, items[0]))
+    return r if r is not None else REACH_DEFAULT
+
+
+
 
 def family(key: str, results) -> str:
     for prefix, name in (("gh_", "GitHub"), ("hn_", "Hacker News"), ("hf_", "Hugging Face"), ("devto", "Dev.to"),
@@ -2455,13 +2579,14 @@ def build_entities(results, keys=None) -> list["Entity"]:
     for key in order:
         items = results[key].items
         n = len(items)
+        reach = source_reach(key, items) if key in RANKED and n else 1.0
         for pos, it in enumerate(items):
             ks = dedupe_keys(it)
             ent = next((by_key[k] for k in ks if k in by_key), None)
             if ent is None:
                 ent = Entity()
                 ents.append(ent)
-            pct = (1 - pos / n) if key in RANKED and n else None
+            pct = (1 - pos / n) * reach if key in RANKED and n else None
             ent.hits.append((key, it, pct, pos + 1))
             fam = family(key, results)
             if fam not in ent.families:
@@ -3135,6 +3260,7 @@ def render_top_signals(ents, results, n: int, visible: int, prefix: str) -> list
                      key_metric(k, it), momentum(k, it), seen_cell(it), ind_cell(it), f"**{e.score}**"])
     return fold_table(headers, rows, visible) + [
         "", f"<sub>Score = 100 × ({W_RANK} × best rank percentile + {W_SPREAD} × extra sources ÷ {SPREAD_CAP}, capped). "
+        "The rank percentile is scaled by source reach (0.25–1), from how strong that source's #1 item is, so a #1 on a tiny or quiet list scores lower than a #1 on a busy one. "
         "Ties break on a secondary engagement score normalised within each source type, then recency, then source order. "
         f"[How the score works]({prefix}docs/methodology.md#score).</sub>", ""]
 
@@ -4013,8 +4139,18 @@ def render_methodology() -> str:
          "```text",
          f"score = 100 × ( {W_RANK} × best_rank_percentile  +  {W_SPREAD} × min(sources − 1, {SPREAD_CAP}) / {SPREAD_CAP} )",
          "```", "",
-         "- **best_rank_percentile**: for each *ranked* source that lists the item, `1 − (position − 1) / list length`. "
-         "Position 1 of 20 is 1.0 and position 11 of 20 is 0.5. The best value across sources counts.",
+         "- **best_rank_percentile**: for each *ranked* source that lists the item, "
+         "`(1 − (position − 1) / list length) × source_reach`. Position 1 of 20 is 1.0 before "
+         "reach is applied, and position 11 of 20 is 0.5. The best value across sources counts.",
+         "- **source_reach**: a number from "
+         f"{REACH_FLOOR} to 1 that reflects how big that source's top slot is today. It is "
+         "`min(1, log(1 + the #1 item's own figure) / log(1 + the typical strong #1 for that source type))`. "
+         f"A Hacker News #1 with {VOLUME_SCALE['hn_points']} points, or a GitHub trending #1 with "
+         f"{VOLUME_SCALE['repo_gained']} stars gained today, gets 1.0. A 7-point Ask HN story gets about "
+         f"{math.log1p(7) / math.log1p(VOLUME_SCALE['hn_points']):.2f}. A Stack Overflow question with score 0 gets "
+         f"the floor, {REACH_FLOOR}. Lists that publish no such figure get {REACH_DEFAULT}. "
+         "The typical strong #1 figures are: " +
+         ", ".join(f"{VOLUME_SCALE_LABELS[g]} {v:,}" for g, v in VOLUME_SCALE.items()) + ".",
          f"- Items found only in *unranked* sources (news feeds, registries, advisories, releases, markets) get {UNRANKED_BASE}.",
          "- **sources** counts distinct platforms, not lists: GitHub trending today, this week and per language all count as GitHub.",
          "- Items are merged by normalised URL (GitHub repos by owner/name, papers by arXiv id, a paper's code repo joins its repo) "
@@ -4024,8 +4160,11 @@ def render_methodology() -> str:
          "source type so GitHub stars gained, Hacker News points per hour, Hugging Face likes, Product Hunt votes, "
          "npm weekly downloads and similar figures are not compared in raw units. After that, more recent items win, "
          "then the original source order.", "",
-         "Example: a repo at position 2 of 16 on GitHub trending that is also on Hacker News scores "
-         f"`100 × ({W_RANK} × 0.94 + {W_SPREAD} × 1/3) = {round(100 * (W_RANK * (1 - 1 / 16) + W_SPREAD / 3))}`.", "",
+         "Example: a repo at position 2 of 16 on GitHub trending, when that list's #1 meets the typical "
+         "strong figure (reach 1.0), that is also on Hacker News scores "
+         f"`100 × ({W_RANK} × 0.94 + {W_SPREAD} × 1/3) = {round(100 * (W_RANK * (1 - 1 / 16) + W_SPREAD / 3))}`. "
+         f"A #1 Ask HN story with 7 points has reach {math.log1p(7) / math.log1p(VOLUME_SCALE['hn_points']):.2f}, "
+         f"so it scores `{round(100 * (W_RANK * (math.log1p(7) / math.log1p(VOLUME_SCALE['hn_points']))))}`, not 60.", "",
          "**Ranked sources:** " + ", ".join(f"`{k}`" for k in sorted(RANKED)), "",
          "## Table designs", "",
          "Each item type has its own columns. Every table ends with **Seen on** (number of platforms listing the item), "
