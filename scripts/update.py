@@ -435,6 +435,50 @@ def fetch_json(url: str, **kw) -> Any:
         raise FetchError(f"invalid JSON ({exc.msg})")
 
 
+def _json_error(data: Any, what: str) -> str:
+    """A short reason from an error payload, otherwise a note that `what` was missing."""
+    if isinstance(data, dict):
+        status = data.get("status")
+        if isinstance(status, dict):
+            msg = status.get("error_message") or status.get("message")
+            if isinstance(msg, str) and msg.strip():
+                return msg.strip()[:160]
+        errors = data.get("errors")
+        if isinstance(errors, list) and errors:
+            first = errors[0]
+            if isinstance(first, str) and first.strip():
+                return first.strip()[:160]
+            if isinstance(first, dict):
+                msg = first.get("detail") or first.get("title") or first.get("message")
+                if isinstance(msg, str) and msg.strip():
+                    return msg.strip()[:160]
+        for field in ("error_message", "message", "detail", "error"):
+            msg = data.get(field)
+            if isinstance(msg, str) and msg.strip():
+                return msg.strip()[:160]
+            if isinstance(msg, dict):
+                inner = msg.get("message") or msg.get("error_message") or msg.get("detail")
+                if isinstance(inner, str) and inner.strip():
+                    return inner.strip()[:160]
+    return f"response had no {what} list"
+
+
+def json_list(data: Any, key: str | None = None) -> list:
+    """The list a JSON source promised.
+
+    A body with no such list (a throttle or other error object on HTTP 200) is a
+    failed fetch, so the source is marked skipped. A present empty list is a real
+    empty result and is returned unchanged.
+    """
+    if key is None:
+        if isinstance(data, list):
+            return data
+        raise FetchError(_json_error(data, "result"))
+    if isinstance(data, dict) and isinstance(data.get(key), list):
+        return data[key]
+    raise FetchError(_json_error(data, key))
+
+
 def fetch_xml(url: str) -> ET.Element:
     body = fetch(url, accept="application/rss+xml, application/atom+xml, application/xml, text/xml")
     body = body.lstrip("\ufeff").strip()
@@ -590,9 +634,7 @@ def github_search(q: str, per_page: int = 30, sort: str = "", order: str = "desc
         params.update({"sort": sort, "order": order})
     data = fetch_json("https://api.github.com/search/repositories?" + urlencode(params),
                       headers={"Accept": "application/vnd.github+json"})
-    if not isinstance(data, dict) or "items" not in data:
-        raise FetchError(str((data or {}).get("message", "unexpected response"))[:80])
-    return data["items"]
+    return json_list(data, "items")
 
 
 def repo_from_api(r: dict) -> dict:
@@ -674,7 +716,7 @@ def enrich_repos(results: dict[str, SourceResult]) -> str:
 def _hn(params: dict, limit: int) -> list[dict]:
     data = fetch_json("https://hn.algolia.com/api/v1/search?" + urlencode(params))
     out = []
-    for h in data.get("hits", [])[:limit]:
+    for h in json_list(data, "hits")[:limit]:
         oid = h.get("objectID")
         disc = f"https://news.ycombinator.com/item?id={oid}"
         url = h.get("url") or disc
@@ -729,7 +771,7 @@ def _hf_license(tags: list[str]) -> str:
 
 @source("hf_models", "Hugging Face · trending models", "https://huggingface.co/models?sort=trending")
 def src_hf_models():
-    rows = fetch_json("https://huggingface.co/api/models?sort=trendingScore&limit=15")
+    rows = json_list(fetch_json("https://huggingface.co/api/models?sort=trendingScore&limit=15"))
     out = [item(
         "model", r["id"], f"https://huggingface.co/{r['id']}", task=r.get("pipeline_tag") or "",
         library=r.get("library_name") or "", downloads=r.get("downloads"), likes=r.get("likes"),
@@ -740,8 +782,8 @@ def src_hf_models():
 
 @source("hf_spaces", "Hugging Face · trending Spaces", "https://huggingface.co/spaces?sort=trending")
 def src_hf_spaces():
-    rows = fetch_json("https://huggingface.co/api/spaces?sort=trendingScore&limit=12"
-                      "&expand%5B%5D=cardData&expand%5B%5D=likes&expand%5B%5D=sdk")
+    rows = json_list(fetch_json("https://huggingface.co/api/spaces?sort=trendingScore&limit=12"
+                                "&expand%5B%5D=cardData&expand%5B%5D=likes&expand%5B%5D=sdk"))
     out = [item(
         "space", r["id"], f"https://huggingface.co/spaces/{r['id']}",
         desc=((r.get("cardData") or {}).get("short_description") or (r.get("cardData") or {}).get("title") or ""),
@@ -753,7 +795,7 @@ def src_hf_spaces():
 
 @source("hf_datasets", "Hugging Face · trending datasets", "https://huggingface.co/datasets?sort=trending")
 def src_hf_datasets():
-    rows = fetch_json("https://huggingface.co/api/datasets?sort=trendingScore&limit=12")
+    rows = json_list(fetch_json("https://huggingface.co/api/datasets?sort=trendingScore&limit=12"))
     out = []
     for r in rows:
         tags = r.get("tags") or []
@@ -768,7 +810,7 @@ def src_hf_datasets():
 
 @source("hf_papers", "Hugging Face · daily papers", "https://huggingface.co/papers")
 def src_hf_papers():
-    rows = fetch_json("https://huggingface.co/api/daily_papers?limit=50")
+    rows = json_list(fetch_json("https://huggingface.co/api/daily_papers?limit=50"))
     out = []
     for r in rows:
         p = r.get("paper") or {}
@@ -840,7 +882,7 @@ def src_mcp_registry():
         if page_token:
             params["cursor"] = page_token
         data = fetch_json("https://registry.modelcontextprotocol.io/v0/servers?" + urlencode(params))
-        for row in data.get("servers", []):
+        for row in json_list(data, "servers"):
             total += 1
             s = row.get("server") or {}
             meta = (row.get("_meta") or {}).get("io.modelcontextprotocol.registry/official") or {}
@@ -869,7 +911,7 @@ def src_mcp_registry():
 @source("smithery", "Smithery · most-used MCP servers", "https://smithery.ai/")
 def src_smithery():
     data = fetch_json("https://registry.smithery.ai/servers?pageSize=50")
-    rows = data.get("servers", [])
+    rows = json_list(data, "servers")
     out = [item(
         "mcp", r.get("displayName") or r.get("qualifiedName"), f"https://registry.smithery.ai/servers/{r.get('qualifiedName')}",
         name=r.get("qualifiedName"), desc=strip_html(r.get("description") or ""), uses=r.get("useCount"),
@@ -886,7 +928,7 @@ def src_smithery():
 @source("openrouter", "OpenRouter · newest models", "https://openrouter.ai/models")
 def src_openrouter():
     data = fetch_json("https://openrouter.ai/api/v1/models")
-    rows = sorted(data.get("data", []), key=lambda r: r.get("created") or 0, reverse=True)
+    rows = sorted(json_list(data, "data"), key=lambda r: r.get("created") or 0, reverse=True)
     out, seen = [], set()
     for r in rows:
         base = (r.get("id") or "").split(":", 1)[0]
@@ -909,7 +951,7 @@ def src_openrouter():
         ))
         if len(out) >= 10:
             break
-    return out, f"public models API ({len(data.get('data', []))} models listed), newest first; prices in USD per 1M tokens"
+    return out, f"public models API ({len(rows)} models listed), newest first; prices in USD per 1M tokens"
 
 
 def _feed_source(key, name, url, kind, hours, limit, niche=None):
@@ -934,7 +976,7 @@ for _k, _n, _u in LAB_FEEDS:
 def _npm(keyword: str, size: int = 10) -> list[dict]:
     data = fetch_json("https://registry.npmjs.org/-/v1/search?" + urlencode({"text": f"keywords:{keyword}", "size": size}))
     out = []
-    for o in data.get("objects", []):
+    for o in json_list(data, "objects"):
         p = o.get("package") or {}
         out.append(item(
             "package", p.get("name"), (p.get("links") or {}).get("npm") or f"https://www.npmjs.com/package/{p.get('name')}",
@@ -993,9 +1035,15 @@ def src_pypi():
 @source("crates", "crates.io · most downloaded recently", "https://crates.io/")
 def src_crates():
     d = fetch_json("https://crates.io/api/v1/summary")
+    groups = ("most_recently_downloaded", "new_crates", "just_updated")
+    if not isinstance(d, dict) or not any(isinstance(d.get(g), list) for g in groups):
+        raise FetchError(_json_error(d, "most_recently_downloaded"))
     out = []
     for group, label in (("most_recently_downloaded", "recent"), ("new_crates", "new"), ("just_updated", "updated")):
-        for c in d.get(group, [])[:8]:
+        rows = d.get(group)
+        if not isinstance(rows, list):
+            continue
+        for c in rows[:8]:
             out.append(item(
                 "package", c.get("name"), f"https://crates.io/crates/{c.get('name')}", ecosystem="crates.io",
                 version=c.get("newest_version") or c.get("max_version"), recent=c.get("recent_downloads"),
@@ -1007,7 +1055,7 @@ def src_crates():
 
 @source("jsdelivr", "jsDelivr · top npm packages by CDN hits this week", "https://www.jsdelivr.com/statistics")
 def src_jsdelivr():
-    rows = fetch_json("https://data.jsdelivr.com/v1/stats/packages?" + urlencode({"period": "week", "type": "npm", "limit": 15}))
+    rows = json_list(fetch_json("https://data.jsdelivr.com/v1/stats/packages?" + urlencode({"period": "week", "type": "npm", "limit": 15})))
     out = []
     for r in rows:
         hits, prev = r.get("hits"), (r.get("prev") or {}).get("hits")
@@ -1022,7 +1070,7 @@ def src_dockerhub():
     d = fetch_json("https://hub.docker.com/v2/repositories/library/?" + urlencode({"page_size": 50, "ordering": "last_updated"}))
     ref = datetime.now(timezone.utc)
     out = []
-    for r in d.get("results", []):
+    for r in json_list(d, "results"):
         upd = parse_dt(r.get("last_updated"))
         if not within(upd, 48, ref):
             continue
@@ -1074,10 +1122,11 @@ KEV_RECENT: dict = {}
         "https://www.cisa.gov/known-exploited-vulnerabilities-catalog")
 def src_kev():
     d = fetch_json("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json")
-    KEV_ALL.update(v.get("cveID") for v in d.get("vulnerabilities", []) if v.get("cveID"))
+    vulns = json_list(d, "vulnerabilities")
+    KEV_ALL.update(v.get("cveID") for v in vulns if v.get("cveID"))
     ref = now_berlin().date()
     out = []
-    for v in d.get("vulnerabilities", []):
+    for v in vulns:
         try:
             added = datetime.strptime(v["dateAdded"], "%Y-%m-%d").date()
         except (KeyError, ValueError):
@@ -1152,8 +1201,9 @@ def src_nvd():
         params = {"pubStartDate": start.strftime(fmt), "pubEndDate": end.strftime(fmt),
                   "cvssV3Severity": sev, "resultsPerPage": 40}
         d = fetch_json("https://services.nvd.nist.gov/rest/json/cves/2.0?" + urlencode(params))
+        vulns = json_list(d, "vulnerabilities")
         total += d.get("totalResults") or 0
-        for v in d.get("vulnerabilities", []):
+        for v in vulns:
             c = v.get("cve") or {}
             score, severity, ver = _nvd_score(c.get("metrics") or {})
             vendors = []
@@ -1175,7 +1225,7 @@ def src_nvd():
 
 @source("euvd", "ENISA EUVD · latest vulnerabilities", "https://euvd.enisa.europa.eu/")
 def src_euvd():
-    rows = fetch_json("https://euvdservices.enisa.europa.eu/api/lastvulnerabilities")
+    rows = json_list(fetch_json("https://euvdservices.enisa.europa.eu/api/lastvulnerabilities"))
     out = []
     for r in rows:
         aliases = [a.strip() for a in (r.get("aliases") or "").split("\n") if a.strip()]
@@ -1201,7 +1251,7 @@ def _status_source(key, name, url):
         d = fetch_json(url)
         ref = datetime.now(timezone.utc)
         out = []
-        for inc in d.get("incidents", []):
+        for inc in json_list(d, "incidents"):
             started = parse_dt(inc.get("started_at") or inc.get("created_at"))
             if not within(started, 72, ref):
                 continue
@@ -1222,7 +1272,7 @@ for _k, _n, _u in STATUS_PAGES:
 # ---- Community ---------------------------------------------------------------------------
 
 def _devto(params: dict) -> list[dict]:
-    rows = fetch_json("https://dev.to/api/articles?" + urlencode(params))
+    rows = json_list(fetch_json("https://dev.to/api/articles?" + urlencode(params)))
     return [item(
         "post", r.get("title"), r.get("url"), outlet="Dev.to", reactions=r.get("public_reactions_count"),
         comments=r.get("comments_count"), tags=r.get("tag_list") or [], author=(r.get("user") or {}).get("name"),
@@ -1242,7 +1292,7 @@ def src_devto_week():
 
 @source("lobsters", "Lobsters · hottest", "https://lobste.rs/")
 def src_lobsters():
-    rows = fetch_json("https://lobste.rs/hottest.json")
+    rows = json_list(fetch_json("https://lobste.rs/hottest.json"))
     return [item(
         "post", r.get("title"), r.get("url") or r.get("comments_url"), outlet="Lobsters", score=r.get("score"),
         comments=r.get("comment_count"), tags=r.get("tags") or [], discuss=r.get("comments_url"),
@@ -1258,7 +1308,7 @@ def src_stackoverflow():
         "question", strip_html(q.get("title") or ""), q.get("link"), score=q.get("score"),
         answers=q.get("answer_count"), views=q.get("view_count"), tags=q.get("tags") or [],
         answered=q.get("is_answered"), published=parse_dt(q.get("creation_date")),
-    ) for q in d.get("items", []) if (q.get("score") or 0) >= 0]   # downvoted questions are left out
+    ) for q in json_list(d, "items") if (q.get("score") or 0) >= 0]   # downvoted questions are left out
     return out, f"Stack Exchange API 2.3, sort=hot, downvoted questions left out (quota left today: {d.get('quota_remaining')})"
 
 
@@ -1320,13 +1370,24 @@ def src_gtrends():
 @source("wikipedia", "Wikipedia · most read yesterday (English)", "https://en.wikipedia.org/wiki/Special:TopViews")
 def src_wikipedia():
     day = now_berlin() - timedelta(days=1)
-    url = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{day:%Y/%m/%d}"
+
+    def load(when: datetime) -> list:
+        url = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/"
+               f"{when:%Y/%m/%d}")
+        items = json_list(fetch_json(url), "items")
+        block = items[0] if items else {}
+        if not isinstance(block, dict):
+            raise FetchError("response had no articles list")
+        found = block.get("articles") or []
+        if not isinstance(found, list):
+            raise FetchError("response had no articles list")
+        return found
+
     try:
-        d = fetch_json(url)
+        arts = load(day)
     except FetchError:
         day = day - timedelta(days=1)
-        d = fetch_json(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{day:%Y/%m/%d}")
-    arts = (d.get("items") or [{}])[0].get("articles", [])
+        arts = load(day)
     out = []
     for a in arts:
         name = a.get("article") or ""
@@ -1341,7 +1402,7 @@ def src_wikipedia():
 
 @source("mastodon_tags", "Mastodon · trending hashtags (mastodon.social)", "https://mastodon.social/explore/tags")
 def src_mastodon_tags():
-    rows = fetch_json("https://mastodon.social/api/v1/trends/tags?limit=15")
+    rows = json_list(fetch_json("https://mastodon.social/api/v1/trends/tags?limit=15"))
     out = []
     for r in rows:
         hist = r.get("history") or []
@@ -1353,7 +1414,7 @@ def src_mastodon_tags():
 
 @source("mastodon_links", "Mastodon · most shared links (mastodon.social)", "https://mastodon.social/explore/links")
 def src_mastodon_links():
-    rows = fetch_json("https://mastodon.social/api/v1/trends/links?limit=12")
+    rows = json_list(fetch_json("https://mastodon.social/api/v1/trends/links?limit=12"))
     out = []
     for r in rows:
         hist = r.get("history") or []
@@ -1367,7 +1428,7 @@ def src_mastodon_links():
 def src_bluesky():
     d = fetch_json("https://public.api.bsky.app/xrpc/app.bsky.unspecced.getTrendingTopics?limit=15")
     out = []
-    for t in d.get("topics", []):
+    for t in json_list(d, "topics"):
         link = t.get("link") or ""
         out.append(item("topic", t.get("displayName") or t.get("topic"),
                         ("https://bsky.app" + link) if link.startswith("/") else link,
@@ -1405,7 +1466,7 @@ for _t, _ind in GITHUB_TOPICS:
 def src_coingecko_trending():
     d = fetch_json("https://api.coingecko.com/api/v3/search/trending")
     out = []
-    for c in d.get("coins", []):
+    for c in json_list(d, "coins"):
         it = c.get("item") or {}
         data = it.get("data") or {}
         out.append(item(
@@ -1419,8 +1480,8 @@ def src_coingecko_trending():
 
 @source("coingecko_markets", "CoinGecko · top 15 by market cap", "https://www.coingecko.com/")
 def src_coingecko_markets():
-    rows = fetch_json("https://api.coingecko.com/api/v3/coins/markets?" + urlencode(
-        {"vs_currency": "usd", "order": "market_cap_desc", "per_page": 15, "price_change_percentage": "24h,7d"}))
+    rows = json_list(fetch_json("https://api.coingecko.com/api/v3/coins/markets?" + urlencode(
+        {"vs_currency": "usd", "order": "market_cap_desc", "per_page": 15, "price_change_percentage": "24h,7d"})))
     out = [item(
         "coin", f"{r.get('name')} ({(r.get('symbol') or '').upper()})", f"https://www.coingecko.com/en/coins/{r.get('id')}",
         mcap_rank=r.get("market_cap_rank"), price=r.get("current_price"), change_24h=r.get("price_change_percentage_24h"),
@@ -1438,11 +1499,12 @@ def src_biorxiv():
     for server in ("biorxiv", "medrxiv"):
         try:
             d = fetch_json(f"https://api.biorxiv.org/details/{server}/{start}/{end}/0")
+            collection = json_list(d, "collection")
         except FetchError as exc:
             failed.append(f"{server}: {exc}")
             continue
         seen = set()
-        for r in d.get("collection", []):
+        for r in collection:
             doi = r.get("doi")
             if doi in seen:
                 continue
@@ -1465,7 +1527,7 @@ def src_biorxiv():
 def src_launches():
     d = fetch_json("https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=10&mode=list")
     out = []
-    for r in d.get("results", []):
+    for r in json_list(d, "results"):
         st = r.get("status") or {}
         out.append(item(
             "launch", r.get("name"), r.get("url") or "https://thespacedevs.com/llapi",
@@ -1681,7 +1743,7 @@ def src_lab_models():
     data = fetch_json("https://openrouter.ai/api/v1/models")
     ref = datetime.now(timezone.utc)
     out, seen = [], set()
-    for r in sorted(data.get("data", []), key=lambda r: r.get("created") or 0, reverse=True):
+    for r in sorted(json_list(data, "data"), key=lambda r: r.get("created") or 0, reverse=True):
         base = (r.get("id") or "").split(":", 1)[0]
         lab = _lab_of_model_id(base)
         created = parse_dt(r.get("created"))
@@ -1712,7 +1774,7 @@ def src_lab_hf():
         orgs += [(lab[0], o) for o in lab[7]]
     for slug, org in orgs:
         try:
-            rows = fetch_json(f"https://huggingface.co/api/models?author={org}&sort=createdAt&limit=4")
+            rows = json_list(fetch_json(f"https://huggingface.co/api/models?author={org}&sort=createdAt&limit=4"))
         except FetchError:
             failed += 1
             continue
@@ -1735,7 +1797,7 @@ def _arena(config: str, n: int):
            urlencode({"dataset": "lmarena-ai/leaderboard-dataset", "config": config, "split": "latest",
                       "offset": 0, "length": 100}))
     d = fetch_json(url)
-    rows = [r["row"] for r in d.get("rows", []) if (r.get("row") or {}).get("category") == "overall"]
+    rows = [r["row"] for r in json_list(d, "rows") if (r.get("row") or {}).get("category") == "overall"]
     rows.sort(key=lambda r: r.get("rank") or 9999)
     out = []
     for r in rows[:n]:
@@ -1801,7 +1863,7 @@ def src_hf_media():
     out, failed = [], 0
     for task in HF_MEDIA_TASKS:
         try:
-            rows = fetch_json(f"https://huggingface.co/api/models?pipeline_tag={task}&sort=trendingScore&limit=6")
+            rows = json_list(fetch_json(f"https://huggingface.co/api/models?pipeline_tag={task}&sort=trendingScore&limit=6"))
         except FetchError:
             failed += 1
             continue
@@ -1980,7 +2042,7 @@ def src_devto_year():
 
 
 def _hf_period_papers(param: str, value: str):
-    rows = fetch_json(f"https://huggingface.co/api/daily_papers?{param}={value}&limit=100")
+    rows = json_list(fetch_json(f"https://huggingface.co/api/daily_papers?{param}={value}&limit=100"))
     out = []
     for r in rows:
         p = r.get("paper") or {}
